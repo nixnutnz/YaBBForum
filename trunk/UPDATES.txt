@@ -3,3 +3,8 @@
 	Changed Yabb.pl to index.pl
 	fixed insecurity issue with param call in subs.pm
 	
+	25/7/26
+	replaced sf.gif with github.png in /Templates/default/default.html
+	added github.png to /yabbfiles/Templates/Forum/default/
+
+	

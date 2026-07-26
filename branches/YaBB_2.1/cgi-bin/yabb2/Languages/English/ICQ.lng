@@ -1,0 +1,28 @@
+###############################################################################
+# ICQ.lng (ICQ Pager text definitions)                                        #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBB 2.1                                                    #
+# Released:       November 8, 2005                                            #
+# Distributed by: http://www.yabbforum.com                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2005 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by: The YaBB Development Team                                      #
+#              with assistance from the YaBB community.                       #
+# Sponsored by: Xnull Internet Media, Inc. - http://www.ximinc.com            #
+#               Your source for web hosting, web design, and domains.         #
+###############################################################################
+
+%icqtxt = (
+'1' => "ICQ",
+'2' => "Pager",
+'3' => "To",
+'4' => "Your name",
+'5' => "Your e-mail address",
+'6' => "Message",
+'7' => "hit alt+s to send (some browsers)",
+'8' => "Send",
+);
+
+1;

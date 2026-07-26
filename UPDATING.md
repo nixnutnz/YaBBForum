@@ -1,12 +1,14 @@
 
-	2.6.12.xx branch discontinued although they are still functional and still in wide use and still in trunk
+	2.6.12.xx branch discontinued although they are still functional and still in wide use and .02 is still in trunk
+	
+	most likely do away with trunk at some point
 
 
 	2.6.14 has had dead website links updated/removed in almost all files
 
 	added language files (I have no idea who translated them but kudos to them)
 	
-	the French translation is broken if some wants to check that out
+	the French translation is broken if someone wants to check that out
 
 	changed some of the variables in setup.pl so it's ready to rock without too much for new forum admins to configure
 
@@ -23,7 +25,7 @@
 
 	To contribute to development or help in any way use the contacts on the sites above.
 
-	Looking for help from experts in graphics, proof reading, beta testing, Perl coding, 
+	Looking for help from experts in graphics, proof reading, beta testing, Perl coding, HTML guru's,
 
 	style sheets & ideas people, all working to bring this fantastic free software to perfection & beyond.
 

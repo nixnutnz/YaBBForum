@@ -8,7 +8,7 @@
 # Packaged:       July 26, 2026                                             #
 # Distributed by: http://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2016 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################

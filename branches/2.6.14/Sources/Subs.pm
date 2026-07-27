@@ -8,7 +8,7 @@
 # Packaged:       July 26, 2026                                             #
 # Distributed by: http://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2016 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
@@ -19,7 +19,7 @@ use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
 our $VERSION = '2.6.14';
 
-$subspmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$subspmver = 'YaBB 2.6.14 $Revision: 2602 $';
 
 use subs 'exit';
 
@@ -334,6 +334,10 @@ qq~$tabsep <span onclick="toTop(0)" class="cursor">$img_txt{'102'}</span> &nbsp;
     @whole_file = <TEMPLATE>;
     $output = join q{}, @whole_file;
     fclose(TEMPLATE);
+
+    # Replace the old $yystyle line with this global regex swap:
+    my $shared_meta = get_shared_meta();
+    $output =~ s/\{yabb style\}/$shared_meta\{yabb style\}/g;
 
     if ( $iamadmin || $iamgmod ) {
         if ($maintenance) {
@@ -3427,6 +3431,22 @@ sub isempty {
         $y = $x;
     }
     return $y;
+}
+sub get_shared_meta {
+    # 1. Pull in and execute your external meta file natively
+    do './meta.pl';
+
+    # 2. Trap the print output from that file's subroutine into a string
+    my $meta_content;
+    {
+        local *STDOUT;
+        open STDOUT, '>', \$meta_content;
+
+        # Call the sub *inside* your meta.pl file
+        &get_shared_meta;
+    }
+
+    return $meta_content;
 }
 
 1;

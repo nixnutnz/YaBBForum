@@ -1,10 +1,17 @@
-
+	
+	2.6.14 Removed all files/folders related to sourgeforge repo
+	
+	removed dead links and obsolete IM's from Lang files
+	
+	
+	
 	2.6.12.xx branch discontinued although they are still functional and still in wide use and .02 is still in trunk
 	
 	most likely do away with trunk at some point
 
 
-	2.6.14 has had dead website links updated/removed in almost all files
+	
+	2.6.14-beta has had dead website links updated/removed in almost all files
 
 	added language files (I have no idea who translated them but kudos to them)
 	

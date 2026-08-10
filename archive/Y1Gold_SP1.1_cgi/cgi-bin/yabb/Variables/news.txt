@@ -1,5 +1,0 @@
-<font color=#6394BD>Welcome to our Forum</font>
-We've Upgraded to <font color=#C4A100>YaBB 1 Gold - Service Pack 1</font> !!!
-Visit <a href=http://yabb.xnull.com><font color=orange>YaBB</font></a> today ;)
-YaBB is a part of the <a href="http://www.xnull.com">Xnull Network</a>!
-Signup for free on our forum and benefit from new features!

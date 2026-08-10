@@ -1,1 +1,0 @@
-The Russian Language folder is named 'Russianx' due to an issue with the English/Debug.lng - on *some* servers, when the Russian Language folder is named 'Russian', the Russian version of Debug.lng is loaded when the selected language is English and debug is turned on. This does not happen when the folder is named 'Russianx'.

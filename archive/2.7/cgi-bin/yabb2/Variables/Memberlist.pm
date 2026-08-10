@@ -1,1 +1,0 @@
-$memberlist{'admin'} = '1278201660';

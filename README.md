@@ -1,5 +1,6 @@
 	
 	This is version 3.0-beta, if you want the previous version it's in 2.6.14
+	>>> googiespell has not been removed from 2.6.14 <<<
 	
 	The original Forum software most other message boards are based on!
 

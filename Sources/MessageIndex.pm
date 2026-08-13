@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -16,9 +16,9 @@
 # use warnings;
 no warnings qw(uninitialized once);
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$messageindexpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$messageindexpmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 get_micon();
@@ -725,7 +725,7 @@ qq~<img src="$micon_bg{'locked'}" alt="$messageindex_txt{'104'}" title="$message
           ${$mnum}{'board'} eq $annboard ? $annboard : $currentboard;
         my $permdate = permtimer($mnum);
         my $message_permalink =
-qq~<a href="http://$perm_domain/$symlink$permdate/$permlinkboard/$mnum">$messageindex_txt{'10'}</a>~;
+qq~<a href="https://$perm_domain/$symlink$permdate/$permlinkboard/$mnum">$messageindex_txt{'10'}</a>~;
 
         $threadclass = 'thread';
         if    ( $mstate =~ /h/ism ) { $threadclass = 'hide'; }

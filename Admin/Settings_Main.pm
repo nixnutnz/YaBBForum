@@ -2,22 +2,22 @@
 # Settings_Main.pm                                                            #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 # use strict;
 use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-our $settings_mainpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+our $settings_mainpmver = 'YaBBForum 3.0';
 if ($action eq 'detailedversion') { return 1; }
 
 # Language requirements
@@ -25,25 +25,49 @@ LoadLanguage('Register');
 $admin_images = "$yyhtml_root/Templates/Admin/default";
 
 # Date/Time selector
-my (
-    $forumstart_month, $forumstart_day,    $forumstart_year,
-    $forumstart_hour,  $forumstart_minute, $forumstart_secund
-  )
-  = $forumstart =~
-  m/(\d{2})\/(\d{2})\/(\d{2,4}).*?(\d{2})\:(\d{2})\:(\d{2})/xsm;
+# 1. Clean backslashes from $forumstart so regex can match (e.g. "30\/07\/26" -> "30/07/26")
+my $clean_forumstart = $forumstart;
+$clean_forumstart =~ s/\\//g;
 
+# 2. Extract components (SWAPPED: Day is now first, Month is second)
+my (
+    $forumstart_day,    $forumstart_month,   $forumstart_year,
+    $forumstart_hour,   $forumstart_minute,  $forumstart_secund
+  )
+  = $clean_forumstart =~
+  m/(\d{1,2})\/(\d{1,2})\/(\d{2,4}).*?(\d{1,2})\:(\d{1,2})\:(\d{1,2})/xsm;
+
+# Fallbacks if regex doesn't capture (e.g. empty string)
+$forumstart_day    ||= 1;
+$forumstart_month  ||= 1;
+$forumstart_year   ||= 26; # 2-digit fallback
+$forumstart_hour   ||= 0;
+$forumstart_minute ||= 0;
+$forumstart_secund ||= 0;
+
+# Bounds validation
+if ($forumstart_day > 31)   { $forumstart_day = 31; }
+if ($forumstart_day < 1)    { $forumstart_day = 1; }
 if ($forumstart_month > 12) { $forumstart_month = 12; }
-if ($forumstart_month < 1) { $forumstart_month = 1; }
-if ($forumstart_day > 31) { $forumstart_day = 31; }
-if ($forumstart_day < 1) { $forumstart_day = 1; }
-if ( length($forumstart_year) > 2 ) {
-    $forumstart_year = substr $forumstart_year, length($forumstart_year) - 2, 2;
+if ($forumstart_month < 1)  { $forumstart_month = 1; }
+
+# ... (Keep regex extraction at top the same) ...
+
+# Fallback to 4 digits if empty
+$forumstart_year ||= 2026; 
+
+# Expand 2-digit years to 4 digits if reading old data (e.g. "26" -> "2026")
+if ( length($forumstart_year) == 2 ) {
+    $forumstart_year = "20" . $forumstart_year; 
 }
-if ($forumstart_year < 90 && $forumstart_year > 20) { $forumstart_year = 90; }
-if ($forumstart_year > 20 && $forumstart_year < 90) { $forumstart_year = 20; }
-if ($forumstart_hour > 23) { $forumstart_hour = 23; }
-if ($forumstart_minute > 59) { $forumstart_minute = 59; }
-if ($forumstart_secund > 59) { $forumstart_secund = 59; }
+
+# Ensure correct zero-padding formatting
+$forumstart_day    = sprintf('%02d', $forumstart_day);
+$forumstart_month  = sprintf('%02d', $forumstart_month);
+$forumstart_year   = sprintf('%04d', $forumstart_year); # Enforce 4 digits
+$forumstart_hour   = sprintf('%02d', $forumstart_hour);
+$forumstart_minute = sprintf('%02d', $forumstart_minute);
+$forumstart_secund = sprintf('%02d', $forumstart_secund);
 
 my $sel_day = q~
 <select name="forumstart_day"~
@@ -74,18 +98,25 @@ qq~<option value="$month_val" ${isselected($forumstart_month == $z)}>$months[$i]
 }
 $sel_month .= qq~</select>\n~;
 
+############
+
+my $current_year_offset = ( gmtime(time) )[5]; # 126 for 2026
 my $sel_year = qq~<select name="forumstart_year">\n~;
-foreach my $i ( 90 .. 120 ) {
-    if   ( $i < 100 ) { $z = $i;       $year_pre = q~19~; }
-    else              { $z = $i - 100; $year_pre = q~20~; }
-    $year_val = sprintf '%02d', $z;
-    $sel_year .=
-qq~<option value="$year_val" ${isselected($forumstart_year == $z)}>$year_pre$year_val</option>\n~;
+
+foreach my $i ( 120 .. $current_year_offset ) {
+    my $full_yr  = 1900 + $i; # e.g., 2026
+    
+    # Match against the full 4-digit year directly
+    my $is_sel = ( $forumstart_year == $full_yr ) ? ' selected="selected"' : '';
+
+    $sel_year .= qq~<option value="$full_yr"$is_sel>$full_yr</option>\n~;
 }
 $sel_year .= qq~</select>\n~;
 
+##############
+
 if ( $timeselected == 1 || $timeselected == 4 || $timeselected == 5 ) {
-    $all_date = qq~$sel_month $sel_day $sel_year~;
+    $all_date = qq~$sel_day $sel_month $sel_year~;
 }
 else { $all_date = qq~$sel_day $sel_month $sel_year~; }
 
@@ -192,31 +223,12 @@ if ($default_userpic eq q{}) { $default_userpic = 'nn.gif';}
 
 require Admin::ManageBoards; # needed for avatar upload settings
 
-# Insert default if forum is being upgraded to YaBB 2.4
+# Insert default if forum is being upgraded to YaBBForum 2.4
 if (!$pwstrengthmeter_scores && !$pwstrengthmeter_common && !$pwstrengthmeter_minchar) {
     $FORM{'pwstrengthmeter_scores'} = '10,15,30,40';
     $FORM{'pwstrengthmeter_common'} = q~"123456","abcdef","password"~;
     $FORM{'pwstrengthmeter_minchar'} = 3;
 }
-
-# googiespell start
-eval { require LWP::UserAgent };
-my $modulLWP = $EVAL_ERROR;
-eval { require HTTP::Request::Common };
-my $modulHTTP = $EVAL_ERROR;
-eval { require Crypt::SSLeay };
-my $modulCrypt = $EVAL_ERROR;
-
-my $googiehtml = qq~<input type="checkbox" name="enable_spell_check" id="enable_spell_check" value="1"${ischecked($enable_spell_check)} />~;
- if ($modulLWP || $modulHTTP || $modulCrypt) {
-    $googiehtml = q~<input type="hidden" name="enable_spell_check" value="0" />~ .
-    $admin_txt{'377a'} .
-    '- LWP::UserAgent &lt;- <b>' . ($modulLWP ? $modulLWP : $admin_txt{'377b'}) . '</b><br />' .
-    '- HTTP::Request::Common &lt;- <b>' . ($modulHTTP ? $modulHTTP : $admin_txt{'377b'}) . '</b><br />' .
-    '- Crypt::SSLeay &lt;- <b>' . ($modulCrypt ? $modulCrypt : $admin_txt{'377b'}) . '</b><br />' .
-    $admin_txt{'377c'};
-}
-# googiespell end
 
 $qcksearchtype ||= 'allwords';
 $qckage    ||= 31;
@@ -259,6 +271,26 @@ $qckage    ||= 31;
             name => 'default_template',
             validate => 'text',
         },
+
+         ### Style Switcher MOD START
+                {
+            description =>qq~<label for="templ_switcher">$admin_txt{'813a'}</label>~,,
+            input_html => qq~<input type="checkbox" name="templ_switcher" id="templ_switcher" value="1"${ischecked($templ_switcher)} />~,
+            name => 'templ_switcher',
+            validate => 'boolean',
+        },
+        {
+            description => qq~<label for="temp_switcher_allowed">$admin_txt{'813b'}</label>~,
+            input_html => qq~
+            <select name="temp_switcher_allowed" id="temp_switcher_allowed">
+            <option value="0" ${isselected($temp_switcher_allowed == 0)}>$userlevel_txt{'all'}</option>
+            <option value="1" ${isselected($temp_switcher_allowed == 1)}>$userlevel_txt{'members'}</option>
+            </select>~,
+            name => 'temp_switcher_allowed',
+            validate => 'number',
+        },
+        ### Style Switcher MOD END
+
         {
             description => qq~<label for="lang">$admin_txt{'816'}</label>~,
             input_html => qq~<select name="lang" id="lang">$drawnldirs</select>~,
@@ -477,12 +509,6 @@ $qckage    ||= 31;
     items => [
         {
             header => $settings_txt{'posting'},
-        },
-        {
-            description => qq~<label for="enable_spell_check">$admin_txt{'377'}</label>~,
-            input_html => $googiehtml,
-            name => 'enable_spell_check',
-            validate => 'boolean',
         },
         {
             description => qq~<label for="enable_ubbc">$admin_txt{'378'}</label>~,
@@ -1654,7 +1680,7 @@ sub SaveSettings {
         $max_days = 28;
     }
     if ($forumstart_day > $max_days) { $forumstart_day = $max_days;}
-    $forumstart = qq~$forumstart_month/$forumstart_day/$forumstart_year $maintxt{'107'} $forumstart_hour:$forumstart_minute:$forumstart_secund~;
+    $forumstart = qq~$forumstart_day/$forumstart_month/$forumstart_year $maintxt{'107'} $forumstart_hour:$forumstart_minute:$forumstart_secund~;
 
     # Validate Timezone
     if ( $FORM{'default_tz'} eq q{-} ) {

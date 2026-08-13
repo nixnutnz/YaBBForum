@@ -1,4 +1,4 @@
-﻿###############################################################################
+###############################################################################
 # ExtendedProfiles.lng                                                        #
 ###############################################################################
 # Dutch/Nederlands - Translation by Pieszyce                                  #
@@ -6,16 +6,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:      YaBB 2.6.11                                                   #
+# Version:      YaBBForum 3.0                                                   #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by: The YaBB Development Team                                      #
 #              with assistance from the YaBB community.                       #
 ###############################################################################
 
-$dutchextendedprofileslngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$dutchextendedprofileslngver = 'YaBBForum 3.0 $0 $';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 %lang_ext = (
@@ -128,7 +128,7 @@ if ( $action eq 'detailedversion' ) { return 1; }
 'converter_title' => 'Oude uitgebreide profielvelden converteren',
 'convlock' => 'Uitgebreide profiel Converter',
 'convlock_desc' => qq~Het uitgebreide profielen conversieprogramma is al uitgevoerd. Proberen om het nog eens uit te voeren kan leiden tot schade aan uw bestanden.<br /><br />Om de uitgebreide profielen Converter nogmaals uit te voeren, verwijder het bestand "$vardir/Extended.lock," en bezoek deze pagina opnieuw.~,
-'converter_description' => 'Hier kunt u uw oude \'uitgebreide profielen\' converteren naar YaBB 2.6.11. Voor u daar mee begint, overtuig u ervan dat de oude  \'Leden\' en \'Variables\ in de juiste converteer / mappen hebt. Vul de paden in de vakjes hieronder in. Druk vervolgens op de knop converteren. <b>Opmerking:</b> start converteren pas nadat uw normale ledengegevens reeds geconverteerd zijn. Deze converter zal de oude .ext-bestanden converteren naar de nieuwe Y2 bestandsindeling en het zal de oude informatie <i>extended_profiles_fields.txt</i> en <i>extended_profiles_order.txt</i> bestanden in Settings.pm.',
+'converter_description' => 'Hier kunt u uw oude \'uitgebreide profielen\' converteren naar YaBBForum 3.0. Voor u daar mee begint, overtuig u ervan dat de oude  \'Leden\' en \'Variables\ in de juiste converteer / mappen hebt. Vul de paden in de vakjes hieronder in. Druk vervolgens op de knop converteren. <b>Opmerking:</b> start converteren pas nadat uw normale ledengegevens reeds geconverteerd zijn. Deze converter zal de oude .ext-bestanden converteren naar de nieuwe Y2 bestandsindeling en het zal de oude informatie <i>extended_profiles_fields.txt</i> en <i>extended_profiles_order.txt</i> bestanden in Settings.pm.',
 'converter_button' => 'Converteer Nu',
 'cannot_open_file' => 'Kan bestand niet openen ',
 'invalid_extension' => 'Uw afbeelding heeft een verboden extensie.',

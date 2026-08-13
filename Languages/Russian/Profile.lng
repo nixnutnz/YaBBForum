@@ -5,18 +5,18 @@
 # Open-Source Community Software for Webmasters                               #
 # Version:        YaBB 2.6.1                                                  #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2015 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
-#     Локализация: Васильев Д.В. (http://www.mysopromat.ru)                   #
+#     Локализация: Васильев Д.В. (https://www.mysopromat.ru)                   #
 #           $Date: 2009/04/22 03:04:56 $                                      #
 #   Copyright (c): Васильев Д.В. 2005                                         #
 ###############################################################################
 
-$russianprofilelngver = 'YaBB 2.6.11 $Revision: 1484 $';
+$russianprofilelngver = 'YaBBForum 3.0 $0484 $';
 @russianprofilelngmods = ();
 if(@russianprofilelngmods){
     $russianprofilelngmods = 1;
@@ -97,13 +97,13 @@ if ( $action eq 'detailedversion' ) { return 1; }
 '477' => '<b>Примечание: Размер Вашего изображения может быть изменен.</b>',
 '479' => 'Здесь вы можете определить, в каком формате будут отображаться даты на Форуме.',
 '480a' => 'Использовать мой формат времени',
-'480' => "01/31/01 $maintxt{'107'} 13:15:17",
-'481' => "31.01.01 $maintxt{'107'} 13:15:17",
-'482' => "31.01.2001 $maintxt{'107'} 13:15:17",
-'483' => "Янв 12-е, 2001, $maintxt{'107'} 1:15pm",
-'483a' => "12th Jan, 2001 at 1:15pm",
-'484' => "01/31/01 $maintxt{'107'} 1:15pm",
-'485' => "31. Янв $maintxt{'107'} 13:15",
+'480' => '01/31/26 $main_txt{'107'} 13:15:17',
+'481' => '31.01.26 $main_txt{'107'} 13:15:17',
+'482' => '31.01.2026 $main_txt{'107'} 13:15:17',
+'483' => 'Jan 31st, 2026 $main_txt{'107'} 1:15pm',
+'483a' => '31st Jan, 2026 $main_txt{'107'} 1:15pm',
+'484' => '01/31/26 $main_txt{'107'} 1:15pm',
+'485' => '31. Jan $main_txt{'107'} 13:15',
 '486' => 'Заданный Формат отображения Времени',
 '486a' => 'или Пользовательский Формат Времени',
 '519' => 'Включить автоматический переход на летнее время?',
@@ -117,16 +117,16 @@ if ( $action eq 'detailedversion' ) { return 1; }
 '566' => '&nbsp;&nbsp;Год (ГГГГ) ',
 '570' => 'MySpace',
 '571' => 'Это ссылка на Ваш MySpace:',
-'572' => 'http://myspace.com/',
+'572' => 'https://myspace.com/',
 '573' => 'Facebook',
 '574' => 'Это ссылка на ID Вашего профиля на Facebook:',
-'575' => 'http://facebook.com/profile.php?id=',
+'575' => 'https://facebook.com/profile.php?id=',
 '576' => 'Twitter',
 '577' => 'Это ваш Тwitter Имя пользователя.',
-'578' => 'http://twitter.com/',
+'578' => 'https://twitter.com/',
 '579' => 'YouTube',
 '580' => 'Это ваше имя пользователя на YouTube.',
-'581' => 'http://www.youtube.com/',
+'581' => 'https://www.youtube.com/',
 '592' => 'URL Вашей личной картинки или имя файла.',
 '598' => 'Это поле должно быть заполнено, если Вы указываете URL Вашего сайта.',
 '599' => 'Тут должен быть полный URL Вашего сайта.',

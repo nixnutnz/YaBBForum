@@ -1,0 +1,42 @@
+
+	To upgrade from any previous 2.6 version
+
+	Make a backup of the entire forum directory and have it readily available
+
+	If you have any modified files at all, ensure you copy those mods to the new file first
+
+	Select the following directories and files and copy to your forum directory
+
+	Admin
+	Help
+	Languages
+	Modules
+	Quick-Guide_26
+	Sources
+	Templates
+	yabbfiles
+
+	AdminIndex.pl
+	index.pl
+	license.txt
+	MANIFEST.txt
+	README.txt
+	Setup.pl < in case you need to run setup again but not likely
+	UPGRADING.txt
+	VERSION.txt
+
+	DO NOT COPY OVER ANY OTHER FILE OR DIRECTORY
+
+	Make sure the 3 .pl files are chmod 0755 (that's executable) and all files/folders are owned by apache for EL
+	or www-data for Debian OS's with group owned by the same or your username
+
+	You should be able to access your upgraded board and recheck all your admin settings
+
+	If you get an error check the logs if it's not displayed on screen and fix whatever is broken
+	if you can't fix it try running Setup.pl
+	otherwise copy back the file with issues and compare the old and new to see what was different
+
+	If you get to the point where you can't get it sorted, rename the forum folder you just upgraded (name.bak) and restore the original folder
+
+	You can get help at https://yabb.nz/support
+

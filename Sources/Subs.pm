@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -17,9 +17,9 @@
 no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$subspmver = 'YaBB 2.6.14 $Revision: 2602 $';
+$subspmver = 'YaBBForum 3.0';
 
 use subs 'exit';
 
@@ -328,6 +328,29 @@ qq~<link rel="stylesheet" href="$yyhtml_root/Templates/Forum/$usestyle.css" type
     $yynavback .=
 qq~$tabsep <span onclick="toTop(0)" class="cursor">$img_txt{'102'}</span> &nbsp; $tabsep~;
 
+### style switcher
+    if (!$temp_switcher_allowed || ($temp_switcher_allowed == 1 && !$iamguest)) {
+
+    if ($templ_switcher) {
+        $yystyleswitch = qq~$maintxt{'tmpchange'}&nbsp;~;
+        $yytempswitcher = qq~
+            <form name="styleswitcher" action="$scripturl" method="post">
+            <input type="hidden" name="redir" value="$testenv" />
+            <select name="template" onchange="submit()">
+        ~;
+        foreach my $curtemplate (sort{ $templateset{$a} cmp $templateset{$b} } keys %templateset) {
+            $yytempswitcher .= qq~<option value="$curtemplate"~;
+            if ( $template eq $curtemplate) { $yytempswitcher .= q~ selected="selected"~;}
+            $yytempswitcher .= qq~>$curtemplate</option>\n~;
+        }
+        $yytempswitcher .= q~
+            </select>
+            </form>
+        ~;
+        }
+    }
+    ###
+
     if ( !$usehead ) { $usehead = q~default~; }
     $yytemplate = "$templatesdir/$usehead/$usehead.html";
     fopen( TEMPLATE, $yytemplate ) or croak("$maintxt{'23'}: $yytemplate");
@@ -367,8 +390,8 @@ qq~$tabsep <span onclick="toTop(0)" class="cursor">$img_txt{'102'}</span> &nbsp;
     # static/dynamic clock
     $yytime = timeformat( $date, 1 );
     my $zone = q{};
-    if ( ($iamguest && $default_tz eq 'UTC') || (${ $uid . $username }{'user_tz'} eq 'UTC') || ( !$default_tz  &&  !${ $uid . $username }{'user_tz'} ) ) {
-        $zone = qq~ $maintxt{'UTC'}~;
+    if ( ($iamguest && $default_tz eq 'Pacific/Auckland') || (${ $uid . $username }{'user_tz'} eq 'Pacific/Auckland') || ( !$default_tz  &&  !${ $uid . $username }{'user_tz'} ) ) {
+        $zone = qq~ $maintxt{'Pacific/Auckland'}~;
     }
     my $toffs = 0;
     if ( $enabletz ) {
@@ -1067,7 +1090,7 @@ qq~<br /><span class="under">$debug_txt{'getpairs'}:</span><br />~;
         }
     }
 
-# URL encoding for web.de http://www.blooberry.com/indexdot/html/topics/urlencoding.htm
+# URL encoding for web.de https://www.blooberry.com/indexdot/html/topics/urlencoding.htm
     $testenv =~ s/\%3B/;/igxsm;
 
     # search must be case insensitive for some servers!
@@ -1613,7 +1636,7 @@ sub WrapChars {
 }
 
 # Out of: Escape.pm, v 3.28 2004/11/05 13:58:31
-# Original Modul at: http://search.cpan.org/~gaas/URI-1.35/URI/Escape.pm
+# Original Modul at: https://search.cpan.org/~gaas/URI-1.35/URI/Escape.pm
 sub uri_escape {    # usage: $safe = uri_escape( $string )
     my $text = shift;
 
@@ -2137,7 +2160,7 @@ sub WriteLog {
 
     # comment out (#) the next line if you have problems with
     # 'Reverse DNS lookup timeout causes slow page loads'
-    # (http://yabbforum.nz?num=1199991357)
+    # (https://yabbforum.nz?num=1199991357)
     # Search Engine identification and display will be turned off
 
     my $user_host =
@@ -2315,7 +2338,7 @@ sub Dereferer {
     if ($yycharset) {$yymycharset = $yycharset;}
     print "Content-Type: text/html\n\n" or croak "$croak{'print'} content-type";
     print
-qq~<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$abbr_lang" lang="$abbr_lang">\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=$yymycharset" />\n<title>-----</title>\n</head>\n<body onload="window.location.href='$INFO{'url'}';">\n<span style="font-family:Arial; font-size:medium">$dereftxt{'1'}</span>\n</body></html>\n~
+qq~<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="$abbr_lang" lang="$abbr_lang">\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=$yymycharset" />\n<title>-----</title>\n</head>\n<body onload="window.location.href='$INFO{'url'}';">\n<span style="font-family:Arial; font-size:medium">$dereftxt{'1'}</span>\n</body></html>\n~
       or croak "$croak{'print'}";
     exit;
 }
@@ -3434,7 +3457,9 @@ sub isempty {
 }
 sub get_shared_meta {
     # 1. Pull in and execute your external meta file natively
-    do './meta.pl';
+    ## the path MUST be correct, use the full path if unsure
+
+    do './meta.pm';
 
     # 2. Trap the print output from that file's subroutine into a string
     my $meta_content;
@@ -3442,7 +3467,7 @@ sub get_shared_meta {
         local *STDOUT;
         open STDOUT, '>', \$meta_content;
 
-        # Call the sub *inside* your meta.pl file
+        # Call the sub *inside* your meta.pm file
         &get_shared_meta;
     }
 

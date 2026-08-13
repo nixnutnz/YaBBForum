@@ -1,4 +1,4 @@
-﻿##############################################################################
+##############################################################################
 # Profile.lng (Profile text definitions)                                     #
 ##############################################################################
 # German/Sie - Translation by Pyragony                                       #
@@ -7,16 +7,16 @@
 ##############################################################################
 # YaBB: Yet another Bulletin Board                                           #
 # Open-Source Community Software for Webmasters                              #
-# Version:      YaBB 2.6.11                                                  #
+# Version:      YaBBForum 3.0                                                  #
 # Packaged:     2. Dezember 2014                                             #
-# Distributed by: http://www.yabbforum.com                                   #
+# Distributed by: https://www.yabbforum.com                                   #
 # ===========================================================================#
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.    #
 # Software by: The YaBB Development Team                                     #
 #              with assistance from the YaBB community.                      #
 ##############################################################################
 
-$germanprofilelngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$germanprofilelngver = 'YaBBForum 3.0 $0 $';
 @germanprofilelngmods = ();
 if(@germanprofilelngmods){
     $germanprofilelngmods = 1;
@@ -97,13 +97,13 @@ if ( $action eq 'detailedversion' ) { return 1; }
 '477' => '<b>Hinweis: Das Größenverhältnis Ihrer Grafik kann unter Umständen angepasst werden.</b>',
 '479' => 'Die Auswahl ändert das Format von Datum und Zeit im gesamten Forum.',
 '480a' => 'Ich nutze mein eigenes Format von Datum und Zeit (im nächsten Feld angeben)',
-'480' => "01/31/01 um 13:15:17",
-'481' => "31.01.01 um 13:15:17",
-'482' => "31.01.2001 um 13:15:17",
-'483' => "Jan 12th, 2001 um 1:15pm",
-'483a' => "12th Jan, 2001 um 1:15pm",
-'484' => "01/31/01 um 1:15pm",
-'485' => "31. Jan um 13:15",
+'480' => '01/31/26 um 13:15:17',
+'481' => '31.01.26 um 13:15:17',
+'482' => '31.01.2026 um 13:15:17',
+'483' => 'Jan 31st, 2026 um 1:15pm',
+'483a' => '31st Jan, 2026 um 1:15pm',
+'484' => '01/31/26 um 1:15pm',
+'485' => '31. Jan um 13:15',
 '486' => 'Zeitformat',
 '486a' => 'oder eigenes Zeitformat',
 '519' => 'Automatische Sommerzeitänderung aktivieren?',
@@ -117,20 +117,20 @@ if ( $action eq 'detailedversion' ) { return 1; }
 '566' => 'Jahr (YYYY)',
 '570' => 'MySpace',
 '571' => 'Dies ist Ihre MySpace-URL.',
-'572' => 'http://myspace.com/',
+'572' => 'https://myspace.com/',
 '573' => 'Facebook',
 '574' => 'Dies ist Ihre Facebook-Profil-ID oder Ihr Benutzername.',
-'575' => 'http://facebook.com/',
+'575' => 'https://facebook.com/',
 '576' => 'Twitter',
 '577' => 'Das ist Ihr Twitter-Mitgliedsname.',
-'578' => 'http://twitter.com/',
+'578' => 'https://twitter.com/',
 '579' => 'YouTube',
 '580' => 'Das ist Ihr YouTube-Mitgliedsname.',
-'581' => 'http://www.youtube.com/',
+'581' => 'https://www.youtube.com/',
 '592' => 'Ihre persönliche Bild-URL oder Bildname.',
 '598' => 'Das muss einbezogen werden, wenn Sie eine URL-ADRESSE unten angeben.',
 '599' => 'Das muss eine ganze URL-ADRESSE sein.',
-'606' => 'Die Signatur wird unter jedem Beitrag und jeder Privatnachricht angezeigt. YaBBC Code kann benutzt werden (Bsp.: <b>[img]http://www.meinesseite.com/meinbild.gif[/img]</b>), um ein Bild in der Signatur anzuzeigen.',
+'606' => 'Die Signatur wird unter jedem Beitrag und jeder Privatnachricht angezeigt. YaBBC Code kann benutzt werden (Bsp.: <b>[img]https://www.meinesseite.com/meinbild.gif[/img]</b>), um ein Bild in der Signatur anzuzeigen.',
 '638' => 'Sie haben Ihre eMail-Adresse geändert. Sie bekommen ein neues Passwort per Mail.',
 '664' => "Max. $MaxSigLen Zeichen. Noch verfügbar: ",
 '664a' => "Max. $MaxAwayLen Zeichen. Noch verfügbar: ",

@@ -3,9 +3,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       2. Dezember 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -15,7 +15,7 @@
 # Released: May 11, 2013, Copyright 2013 Carsten Dalgaard                     # 
 ###############################################################################
 
-$german_dulivepreviewlngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$german_dulivepreviewlngver = 'YaBBForum 3.0 $0 $';
 @german_dulivepreviewlngmods = ();
 if(@german_dulivepreviewlngmods){
     $german_dulivepreviewlngmods = 1;

@@ -3,28 +3,28 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
-# Distributed by: http://www.yabbforum.com                                    #
+# Version:        YaBBForum 3.0                                                 #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
-# Many thanks to Carsten Dalgaard (http://www.carsten-dalgaard.dk/)           #
+# Many thanks to Carsten Dalgaard (https://www.carsten-dalgaard.dk/)           #
 # for his contribution to the YaBB community                                  #
 ###############################################################################
 
-$espanolcontexthelplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$espanolcontexthelplngver = 'YaBBForum 3.0 $0 $';
 
 ### Do not translate uppercase words in sharp brackets [] ##
 
 %contextxt = (
 'clicktip' => "Haga clic para obtener ayuda",
-'url' => "Inserte un enlace \"URL\":<br /><br />Seleccione la URL: [SELECT]http://www.yabbforum.com[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [url]http://www.yabbforum.com[/url]<hr />Inserte un enlace \"Texto\":<br /><br />Seleccione la URL <u>y</u> el texto: [SELECT]http://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Código YaBBC: [BUTTON]<br /><br /><b>Código YaBBC:</b> [url=http://www.yabbforum.com]YaBB Forum[/url]<hr />Las etiquetas [link] YaBBC funcionan de la misma manera que los [url] etiquetas, con la excepción de que el [link] etiqueta (no hay botón de inserción para este tag) se abrirá el enlace se hace clic en la presente ventana, mientras que el [url] se abre el enlace se hace clic en una ventana nueva.",
+'url' => "Inserte un enlace \"URL\":<br /><br />Seleccione la URL: [SELECT]https://www.yabbforum.com[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [url]https://www.yabbforum.com[/url]<hr />Inserte un enlace \"Texto\":<br /><br />Seleccione la URL <u>y</u> el texto: [SELECT]https://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Código YaBBC: [BUTTON]<br /><br /><b>Código YaBBC:</b> [url=https://www.yabbforum.com]YaBB Forum[/url]<hr />Las etiquetas [link] YaBBC funcionan de la misma manera que los [url] etiquetas, con la excepción de que el [link] etiqueta (no hay botón de inserción para este tag) se abrirá el enlace se hace clic en la presente ventana, mientras que el [url] se abre el enlace se hace clic en una ventana nueva.",
 'ftp' => "Inserte un enlace \"FTP\":<br /><br />Seleccione la dirección FTP: [SELECT]ftp://ftpdom[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [ftp]ftp://ftpdom[/ftp]",
-'image' => "Insertar una imagen:<br /><br />Seleccione el directorio de imágenes: [SELECT]http://imagedirectory/image.gif[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [img]http://imagedirectory/image.gif[/img]",
+'image' => "Insertar una imagen:<br /><br />Seleccione el directorio de imágenes: [SELECT]https://imagedirectory/image.gif[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [img]https://imagedirectory/image.gif[/img]",
 'email2' => "Inserte un \"Dirección\" enlace de correo:<br /><br />Seleccione la dirección de correo: [SELECT]myname\@domain.com[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [email]myname\@domain.com[/email]<hr />Inserte un \"texto\" enlace de correo \:<br /><br />Seleccione el correo electrónico <u>y</u> el texto: [SELECT]myname\@domain.com Mail me[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [email=myname\@domain.com]Mail me[/email]",
-'media' => "Inserte un archivo multimedia: <br /><br />Seleccione la URL del archivo multimedia: [SELECT]http://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [media]http://www.your-domain.com/yabbchelp.swf[/media]",
+'media' => "Inserte un archivo multimedia: <br /><br />Seleccione la URL del archivo multimedia: [SELECT]https://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [media]https://www.your-domain.com/yabbchelp.swf[/media]",
 'table' => "Inserte una tabla de una celda vacía:<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [table][tr][td][/td][/tr][/table]<hr />Insertar un texto o la imagen en una tabla de una sola célula:<br /><br />Seleccione el directorio texto o imagen: [SELECT]Hello World[/SELECT]<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [table][tr][td]Hello World[/td][/tr][/table]",
 'tr' => "Insertar una fila de la tabla:<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [tr][/tr]",
 'td' => "Insertar una celda de la tabla:<br /><br />Haga clic en el botón \"[TITLE]\": [BUTTON]<br /><br /><b>Código YaBBC:</b> [td][/td]",

@@ -3,15 +3,15 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
-# Distributed by: http://www.yabbforum.com                                    #
+# Version:        YaBBForum 3.0                                                 #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$profilelngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$profilelngver = 'YaBBForum 3.0 $0 $';
 
 %profile_txt = (
 '2' => 'Administrador',
@@ -81,19 +81,19 @@ $profilelngver = 'YaBB 2.6.11 $Revision: 1611 $';
 '462' => '¡IR!',
 '470' => 'N/A',
 '473' => 'Si subes otra imagen, puede ocurrir que la misma imagen de antes se muestre. En ese caso recarga la página o haz click derecho sobre la imagen y selecciona recargar imágen.',
-'474' => 'Selecciona una o utiliza una direción web (ejemplo: <b>http://www.mypage.com/mypic.gif</b>) para tu imagen. La extensión debe ser <b>gif</b>, <b>png</b>, <b>jpg</b> o <b>jpeg</b> y su tamaño puede ser reajustado.',
+'474' => 'Selecciona una o utiliza una direción web (ejemplo: <b>https://www.mypage.com/mypic.gif</b>) para tu imagen. La extensión debe ser <b>gif</b>, <b>png</b>, <b>jpg</b> o <b>jpeg</b> y su tamaño puede ser reajustado.',
 '475' => "<br><br><br><b>Tengo mi propia imagen:</b>", # use &thinsp; (small space) or your layout will get messed with IE and low monitor resolution
 '476' => '- O selecciona una imágen para subir a nuestro servidor.<br />La imagen debe tener el siguiente formato: <i>.gif</i>, <i>.png</i>, <i>.jpg</i> o <i>.jpeg</i><br />El tamaño máximo permitido es:',
 '477' => 'Nota: Tus imágenes puedes ser redimensionadas.',
 '479' => 'Esta sección establece en que formato verás las fechas que aparecen en el foro.',
 '480a' => 'Usar mi propio formato (puesto abajo)',
-'480' => "01/31/01 $maintxt{'107'} 13:15:17",
-'481' => "31.01.01 $maintxt{'107'} 13:15:17",
-'482' => "31.01.2001 $maintxt{'107'} 13:15:17",
-'483' => 'Jan 12th, 2001, 1:15pm',
-'483a' => "12th Jan, 2001 at 1:15pm",
-'484' => "01/31/01 $maintxt{'107'} 1:15pm",
-'485' => "31. Jan $maintxt{'107'} 13:15",
+'480' => '01/31/26 $maintxt{'107'} 13:15:17',
+'481' => '31.01.26 $maintxt{'107'} 13:15:17',
+'482' => '31.01.2026 $maintxt{'107'} 13:15:17',
+'483' => 'Jan 31st, 2026 $maintxt{'107'} 1:15pm',
+'483a' => '31st Jan, 2026 $maintxt{'107'} 1:15pm',
+'484' => '01/31/26 $maintxt{'107'} 1:15pm',
+'485' => '31. Jan $maintxt{'107'} 13:15',
 '486' => 'Formato de fecha predeterminado',
 '486a' => 'Formato de fecha personalizado',
 '519' => '¿Selección automática del horario de verano?',
@@ -107,16 +107,16 @@ $profilelngver = 'YaBB 2.6.11 $Revision: 1611 $';
 '566' => 'Año (YYYY)',
 '570' => 'MySpace',
 '571' => 'Esta es tu URL de MySpace.',
-'572' => 'http://myspace.com/',
+'572' => 'https://myspace.com/',
 '573' => 'Facebook',
 '574' => 'Este es tu perfil de Facebook.',
-'575' => 'http://facebook.com/profile.php?id=',
+'575' => 'https://facebook.com/profile.php?id=',
 '576' => 'Twitter',
 '577' => 'Esta es su nombre de usuario de Twitter.',
-'578' => 'http://twitter.com/',
+'578' => 'https://twitter.com/',
 '579' => 'YouTube',
 '580' => 'Esta es su nombre de usuario de YouTube.',
-'581' => 'http://www.youtube.com/',
+'581' => 'https://www.youtube.com/',
 '592' => 'Hay caracteres no válidos en la URL de tu imagen personal o en el nombre de la imagen.',
 '598' => 'Debes poner un título si vas a poner la URL del Web abajo.',
 '599' => 'Debe ser una URL completa.',

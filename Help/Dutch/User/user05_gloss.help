@@ -1,11 +1,11 @@
-﻿###############################################################################
+###############################################################################
 # user05_gloss.help                                                           #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11 and higher                                      #
+# Version:        YaBBForum 3.0 and higher                                      #
 # Released:       November 9, 2015                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-and newer YaBB (www.yabbforum.com) - All Rights Reserved.#
 # Software by: The YaBB Development Team                                      #
@@ -120,7 +120,7 @@ $SectionBody1 = qq~YaBB heeft veel beschrijvende termen die verwijzen naar haar 
     <dt><b>Markeer en citeer</b></dt>
     <dd>Dit is een functie waarmee u een gedeelte van een vorige post accentueert en wanneer de Markeer en Citeer knop wordt ingedrukt, het de gemarkeerde tekst invoegt in uw antwoord in uw citaat box. U kunt er een of meer toevoegen in uw antwoord, zelfs van andere voormalige posts.</dd>
     <dt><b>MOD of Modificatie</b></dt>
-    <dd>Een functie die niet is opgenomen in de fundamentele YaBB Forum software-installatie. Wijzigingen kunnen alles omvatten van een eenvoudige wijziging in de programmacode tot een verpakte MOD, die toegevoegd functies wijzigt of het gedrag van uw forum. Wijziging kunnen handmatig worden gedaan met behulp van een teksteditor of met behulp van het BoardMOD-programma, die de veranderingen binnen YaBB scriptbestanden automatisch voor u installeert. Bezoek de <a href="http://www.boardmod.org" target = "_blank">BoardMOD website</a> en FAQ voor meer details. <br /><br /> Vraag alle ondersteuningsvragen over MODs of het BoardMOD-programma op het <a href="http://www.boardmod.org" target = "_blank">BoardMOD Forum</a>.</dd>
+    <dd>Een functie die niet is opgenomen in de fundamentele YaBB Forum software-installatie. Wijzigingen kunnen alles omvatten van een eenvoudige wijziging in de programmacode tot een verpakte MOD, die toegevoegd functies wijzigt of het gedrag van uw forum. Wijziging kunnen handmatig worden gedaan met behulp van een teksteditor of met behulp van het BoardMOD-programma, die de veranderingen binnen YaBB scriptbestanden automatisch voor u installeert. Bezoek de <a href="https://www.boardmod.org" target = "_blank">BoardMOD website</a> en FAQ voor meer details. <br /><br /> Vraag alle ondersteuningsvragen over MODs of het BoardMOD-programma op het <a href="https://www.boardmod.org" target = "_blank">BoardMOD Forum</a>.</dd>
     <dt><b>Moderator</b></dt>
     <dd>Zie 'Board Moderator'.</dd>
     <dt><b>Moderator Groep</b></dt>

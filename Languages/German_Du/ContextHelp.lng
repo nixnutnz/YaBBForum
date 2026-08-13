@@ -7,19 +7,19 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:      YaBB 2.6.11                                                   #
+# Version:      YaBBForum 3.0                                                   #
 # Packaged:     2.Dezember 2014                                               #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by: The YaBB Development Team                                      #
 #              with assistance from the YaBB community.                       #
 ###############################################################################
-# Many thanks to Carsten Dalgaard (http://www.carsten-dalgaard.dk/)           #
+# Many thanks to Carsten Dalgaard (https://www.carsten-dalgaard.dk/)           #
 # for his contribution to the YaBB community                                  #
 ###############################################################################
 
-$german_ducontexthelplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$german_ducontexthelplngver = 'YaBBForum 3.0 $0 $';
 @german_ducontexthelplngmods = ();
 if(@german_ducontexthelplngmods){
     $german_ducontexthelplngmods = 1;
@@ -30,11 +30,11 @@ if ( $action eq 'detailedversion' ) { return 1; }
 
 %contextxt = (
 'clicktip' => "Rechter Mausklick für Hilfe",
-'url' => "Einfügen eines Links:<br /><br />Schreibe Deinen Link und markiere diesen: [SELECT]http://www.yabbforum.com[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url]http://www.yabbforum.com[/url]<hr />Füge einen Link mit \"Text\" hinzu:<br /><br />Schreibe den Link <u>und</u> den Text und markiere das danach: [SELECT]http://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url=http://www.yabbforum.com]YaBB Forum[/url]<hr /><b>Ergebnis:</b> <br />Es wird entweder nur der Link angezeigt, oder wenn Du Link und Text eingegeben hast, nur der Text angezeigt. Beides kann man anklicken, es öffnet sich ein neues Fenster, in dem der angegebene Link geöffnet wird.",
+'url' => "Einfügen eines Links:<br /><br />Schreibe Deinen Link und markiere diesen: [SELECT]https://www.yabbforum.com[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url]https://www.yabbforum.com[/url]<hr />Füge einen Link mit \"Text\" hinzu:<br /><br />Schreibe den Link <u>und</u> den Text und markiere das danach: [SELECT]https://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url=https://www.yabbforum.com]YaBB Forum[/url]<hr /><b>Ergebnis:</b> <br />Es wird entweder nur der Link angezeigt, oder wenn Du Link und Text eingegeben hast, nur der Text angezeigt. Beides kann man anklicken, es öffnet sich ein neues Fenster, in dem der angegebene Link geöffnet wird.",
 'ftp' => "Einfügen eines FTP-Links:<br /><br />Schreibe die FTP-Adresse und markiere diese: [SELECT]ftp://ftpdom[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [ftp]ftp://ftpdom[/ftp]",
-'image' => "Bild einfügen:<br /><br />Schreibe den Link zum Bild: [SELECT]http://imagedirectory/image.gif[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [img]http://imagedirectory/image.gif[/img]",
+'image' => "Bild einfügen:<br /><br />Schreibe den Link zum Bild: [SELECT]https://imagedirectory/image.gif[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [img]https://imagedirectory/image.gif[/img]",
 'email2' => "Füge eine eMail-Adresse ein:<br /><br />Markiere die eMail-Adresse: [SELECT]myname\@domain.com[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [email]myname\@domain.com[/email]<hr />Einfügen eines Textes mit Link zum Mail:<br /><br />Schreibe eine Mailadresse <u>und</u> den Text: [SELECT]meinname\@domain.de Mail me[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [email=myname\@domain.com]Mail me[/email]",
-'media' => "Media-Datei einfügen: <br /><br />Schreibe den Link zu Deiner Media-Datei: [SELECT]http://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [media]http://www.your-domain.com/yabbchelp.swf[/media]",
+'media' => "Media-Datei einfügen: <br /><br />Schreibe den Link zu Deiner Media-Datei: [SELECT]https://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [media]https://www.your-domain.com/yabbchelp.swf[/media]",
 'table' => "Tabelle einfügen:<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [table][tr][td][/td][/tr][/table]<hr />Füge einen Text oder ein Bild in die Tabelle ein:<br /><br />Schreibe einen Text oder einen Link zu einem Bild: [SELECT]Hallo Welt[/SELECT]<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [table][tr][td]Hallo Welt[/td][/tr][/table]",
 'tr' => "Einfügen einer Tabellen-Zeile:<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [tr][/tr]",
 'td' => "Einfügen einer Tabellen-Spalte:<br /><br />Klicke auf den \"[TITLE]\" -Button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [td][/td]",

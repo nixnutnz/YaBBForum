@@ -2,19 +2,19 @@
 # AdminSubList.pm                                                             #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 
-our $VERSION = '2.6.14';
-$adminsublistpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+our $VERSION = '3.0';
+$adminsublistpmver = 'YaBBForum 3.0';
 
 %director = (
 'addboard' => 'ManageBoards.pm&AddBoards',

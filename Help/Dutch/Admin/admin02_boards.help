@@ -1,11 +1,11 @@
-﻿###############################################################################
+###############################################################################
 # admin02_boards.help                                                         #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11 and higher                                      #
+# Version:        YaBBForum 3.0 and higher                                      #
 # Released:       November 9, 2015                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-and newer YaBB (www.yabbforum.com) - All Rights Reserved.#
 # Software by: The YaBB Development Team                                      #
@@ -74,7 +74,7 @@ $SectionBody2 = qq~<p>YaBB geeft fourm Administratoren de gelegenheid meerdere n
     </li>
     <li><b><span class="underline">Board afbeelding</span></b>
         <ul>
-            <li>Hier kunt u een kleine afbeelding toewijzen om dit board te vertegenwoordigen. Kies welke template de board afbeelding op van toepassing zal zijn. (U kunt verschillende board graphics toewijzen voor elke Template u heeft.) Typ vervolgens de volledige URL naar de afbeelding in het URL vakje gebruik makend van het standaard formaat: http://www.domain.com/folder/imagename.jpg. U kunt ook board afbeeldingen uploaden. Deze worden opgeslagen in de "board" map in de Template graphics map. U kunt de grootte van het board afbeelding instellen door te gaan naar Admin Center&#47;Forum Configuratie&#47;Advanced Settings "Afbeeldingen" tab. Toegestane afbeelding format zijn .gif, .jpg, and .png.</li>
+            <li>Hier kunt u een kleine afbeelding toewijzen om dit board te vertegenwoordigen. Kies welke template de board afbeelding op van toepassing zal zijn. (U kunt verschillende board graphics toewijzen voor elke Template u heeft.) Typ vervolgens de volledige URL naar de afbeelding in het URL vakje gebruik makend van het standaard formaat: https://www.domain.com/folder/imagename.jpg. U kunt ook board afbeeldingen uploaden. Deze worden opgeslagen in de "board" map in de Template graphics map. U kunt de grootte van het board afbeelding instellen door te gaan naar Admin Center&#47;Forum Configuratie&#47;Advanced Settings "Afbeeldingen" tab. Toegestane afbeelding format zijn .gif, .jpg, and .png.</li>
         </ul>
     </li>
     <li><b><span class="underline">RSS</span></b>
@@ -231,7 +231,7 @@ $SectionBody3 = qq~<p>Als u van mening bent dat u wijzigingen moet aanbrengen in
     </li>
 	<li><b><span class="underline">Board Afbeelding</span></b> 
         <ul>
-          <li>Hier kunt u een kleine afbeelding toewijzen om dit board weer te geven. Kies welke template de board afbeelding zal worden toegepast. (U kunt verschillende board graphics toewijzen voor elke template die u heeft.) Typ de volledige URL naar de afbeelding in het URL vak door gebruik te maken het standaard formaat: http://www.domain.com/folder/imagename.jpg. U kunt ook Board foto's uploaden. Deze zullen worden opgeslagen in de 'Boards' map in de map met afbeeldingen. U kunt de grootte van de board afbeelding instellen door naar het Admin Center te gaan /Forum configuratie/Geavanceerde instellingen "Afbeeldingen". 50 bij 50 is  in het algemeen een goede maat voor een board foto. Toegestane beeldformaten zijn .gif, .jpg en .png.</li>
+          <li>Hier kunt u een kleine afbeelding toewijzen om dit board weer te geven. Kies welke template de board afbeelding zal worden toegepast. (U kunt verschillende board graphics toewijzen voor elke template die u heeft.) Typ de volledige URL naar de afbeelding in het URL vak door gebruik te maken het standaard formaat: https://www.domain.com/folder/imagename.jpg. U kunt ook Board foto's uploaden. Deze zullen worden opgeslagen in de 'Boards' map in de map met afbeeldingen. U kunt de grootte van de board afbeelding instellen door naar het Admin Center te gaan /Forum configuratie/Geavanceerde instellingen "Afbeeldingen". 50 bij 50 is  in het algemeen een goede maat voor een board foto. Toegestane beeldformaten zijn .gif, .jpg en .png.</li>
         </ul>
           <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> Als u reeds een board afbeelding heeft toegewezen aan een bepaalde template en u wenst de afbeelding te wijzigen, dient u de oude afbeelding eerst te verwijderen.</p>
        </li>

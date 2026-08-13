@@ -1,20 +1,20 @@
 #!/usr/bin/perl --
-# $Id: YaBB Setup $
-# $HeadURL: YaBB $
+# $Id: YaBBForum Setup $
+# $HeadURL: YaBBForum $
 # $Source: /Setup.pl $
 ###############################################################################
 # Setup.pl                                                                    #
 # $Date: 26.07.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 # use strict;
 # use warnings;
@@ -22,11 +22,79 @@ no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
 use Cwd;
+# --- INSERT PREFLIGHT CHECK HERE ---
+BEGIN {
+    my @dirs_to_check  = ('.', 'Variables', 'Members', 'Messages', 'Boards', 'Backups', 'Languages', 'Convert');
+    my @files_to_check = ('Paths.pm');
+    my $errors = 0;
+    my $report = "<br>=== YaBBForum Permissions Pre-Flight Check ===<br><br>";
+
+    # 1. Check Directories (Require 0775 on non-suEXEC)
+    foreach my $dir (@dirs_to_check) {
+        if (-w $dir) {
+            $report .= "<br>[OK]   Writable directory: $dir\n";
+        } else {
+            chmod(0775, $dir); # Attempt to fix
+            if (-w $dir) {
+                $report .= "<br>[OK]   Permissions fixed (775): $dir\n";
+            } else {
+                $report .= "<br>[FAIL] Directory locked: $dir (Requires chmod 775)\n";
+                $errors++;
+            }
+        }
+    }
+
+    # 2. Check Critical Files (Require 0664 on non-suEXEC)
+    foreach my $file (@files_to_check) {
+        if (-e $file) {
+            if (-w $file) {
+                $report .= "<br>[OK]   Writable file: $file\n";
+            } else {
+                chmod(0664, $file); # Attempt to fix
+                if (-w $file) {
+                    $report .= "<br>[OK]   Permissions fixed (664): $file\n";
+                } else {
+                    $report .= "<br>[FAIL] File locked: $file (Requires chmod 664)\n";
+                    $errors++;
+                }
+            }
+        } else {
+            $report .= "<br>[INFO] File does not exist yet: $file (Will be created during setup)\n";
+        }
+    }
+
+    $report .= "\n";
+
+    # 3. Output Error Report ONLY if there are critical failures
+    if ($errors > 0) {
+        # Send text header so browser formats the error cleanly
+    print "Content-type: text/html\n\n\n";
+    print "<!DOCTYPE html><html lang=en><head><title>YaBBForum 3.0 Setup</title>\n";
+    print "</head>\n";
+    print "<body bgcolor=#f8fffa style=\"font-family:sans; font-size:14px; color:#670000;\">\n";
+    print "<center><table width=95% border=0 cellpadding=2 cellspacing=2><tr><td>\n";
+    
+        print $report;
+        print "<br><br>[ERROR] Setup cannot proceed. $errors critical path(s) are not writable.\n";
+        print "<br>You must chmod:\n";
+        print "<br>  - failed directories to 775 recursively\n";
+        print "<br>  - failed files to 664\n";
+        print "<br>Setup aborted.\n\n";
+        print "<br><br>Read <a href=Quick-Guide_26/English/>Quick-Guide_26</a> to find out what to do.\n\n";
+        print "<br><br>If you are hosting with <a href=https://perlhost.nz>PerlHost.nz</a> you can simply wait till 10 minutes before the hour every hour and these will be set for you then come back & reload this page & begin setup.\n\n";
+        exit(1);
+    }
+
+    # If everything passes, $report is discarded, no headers are forced,
+    # and YaBBForum loads smoothly into the installer UI!
+}
+# --- END PREFLIGHT CHECK ---
+
 my $cwd = cwd();
 push @INC, $cwd;
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$setupplver  = 'YaBB 2.6.14 $Revision: 1 $';
+$setupplver  = 'YaBBForum 3.0';
 $yymycharset = 'UTF-8';
 
 # conversion will stop after $max_process_time
@@ -244,7 +312,7 @@ q~Setup Error: You have no access rights to this function. Only user "admin" has
         $tempboardurl = $ENV{HTTP_REFERER};
     }
     elsif ( $ENV{HTTP_HOST} && $ENV{REQUEST_URI} ) {
-        $tempboardurl = qq~http://$ENV{HTTP_HOST}$ENV{REQUEST_URI}~;
+        $tempboardurl = qq~https://$ENV{HTTP_HOST}$ENV{REQUEST_URI}~;
     }
     $lastslash = rindex $tempboardurl, q{/};
     $foundboardurl = substr $tempboardurl, 0, $lastslash;
@@ -472,7 +540,7 @@ function autofill() {
             </td>
         </tr><tr>
             <td class="windowbg2">
-                <div style="float: left; width: 80%; text-align: left; font-size: 11px;">Only click on the insert button if your server needs the absolute path to the YaBB main script</div>
+                <div style="float: left; width: 80%; text-align: left; font-size: 11px;">Only click on the insert button if your server needs the absolute path to the YaBBForum main script</div>
                   <div style="float: left; width: 20%; text-align: right;"><input type="button" onclick="abspathfill('$support_env_path')" value="Insert" style="font-size: 11px;" /></div>
             </td>
             <td class="windowbg2">$support_env_path</td>
@@ -710,15 +778,15 @@ q~Setup Error: You have no access rights to this function. Only user "admin" has
 ###############################################################################
 # Paths.pm                                                                    #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026  YaBB (yabbforum.nz) - All Rights Reserved.    #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026  YaBBForum (yabbforum.nz) - All Rights Reserved.    #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 
 \$lastsaved = "$lastsaved";
@@ -731,8 +799,8 @@ q~Setup Error: You have no access rights to this function. Only user "admin" has
 \$boardsdir = "$boardsdir";                                       # Directory with board data files
 \$datadir = "$datadir";                                           # Directory with messages
 \$memberdir = "$memberdir";                                       # Directory with member files
-\$sourcedir = "$sourcedir";                                       # Directory with YaBB source files
-\$admindir = "$admindir";                                         # Directory with YaBB admin source files
+\$sourcedir = "$sourcedir";                                       # Directory with YaBBForum source files
+\$admindir = "$admindir";                                         # Directory with YaBBForum admin source files
 \$vardir = "$vardir";                                             # Directory with variable files
 \$langdir = "$langdir";                                           # Directory with Language files and folders
 \$helpfile = "$helpfile";                                         # Directory with Help files and folders
@@ -855,7 +923,7 @@ viewprofile
     if ( !-e "$varsdir/flood.txt" ) {
         open $FLOODFILE, '>', "$varsdir/flood.txt"
           || setup_fatal_error( "$maintext_23 $varsdir/flood.txt: ", 1 );
-        print {$FLOODFILE} '255.255.255.255|1119313741'
+        print {$FLOODFILE} '255.255.255.255|1786470606'
           or croak 'cannot print flood.txt';
         close $FLOODFILE or croak 'cannot close flood.txt';
     }
@@ -1061,17 +1129,19 @@ EOF
     if ( !-e "$varsdir/log.txt" ) {
         open $LOGFILE, '>', "$varsdir/log.txt"
           || setup_fatal_error( "$maintext_23 $varsdir/log.txt: ", 1 );
-        print {$LOGFILE} 'admin|1105634411|127.0.0.1|'
+        print {$LOGFILE} 'admin|1786470606|127.0.0.1|'
           or croak 'cannot print log.txt';
         close $LOGFILE or croak 'cannot close log.txt';
     }
 
     if ( !-e "$varsdir/news.txt" ) {
         my $news = <<NEWS;
-We've upgraded to YaBB 2.6.14!
-Visit [url=http://yabbforum.nz]YaBB[/url] today ;)
+We've upgraded to YaBBForum 3.0!
+Visit [url=https://yabbforum.nz]YaBBForum[/url] today ;)
 Signup for free on our forum and benefit from new features!
-Latest info can be found on the [url=http://yabbforum.nz]YaBB Support Community[/url].
+Latest info can be found on the [url=https://yabbforum.nz]YaBBForum Support Community[/url].
+This board is YaBBForum 3.0 with major bug fixes and security features.
+If you like this software get [url=https://securehost.nz]Secure Hosting for this Forum[/url].
 NEWS
         open $NEWSFILE, '>', "$varsdir/news.txt"
           || setup_fatal_error( "$maintext_23 $varsdir/news.txt: ", 1 );
@@ -1168,8 +1238,8 @@ sub checkmodules {
 </form>
 ~;
 
-    $yyim    = 'You are running YaBB 2.6.14 Setup.';
-    $yytitle = 'YaBB 2.6.14 Setup';
+    $yyim    = 'You are running YaBBForum 3.0 Setup.';
+    $yytitle = 'YaBBForum 3.0 Setup';
     SetupTemplate();
     return;
 }
@@ -1208,8 +1278,8 @@ sub SetInstall {
     <table class="border-space pad-cell">
         <tr>
             <td class="windowbg">
-                Here you can set some of the default settings for your new YaBB 2.6.14 forum.<br />
-                After finishing the setup procedure, you should login to your forum and go to your 'Admin Center' -&gt; 'Forum Settings' where you can modify this and other settings.
+                Here you can set some of the default settings for your new YaBBForum 3.0 forum.<br />
+                After finishing the setup procedure, you should login to your forum and go to your UserCP to change password then go to 'Admin Center' -&gt; 'Forum Settings' where you can modify this and other settings starting at Forum Configuration &gt; Forum Settings.
             </td>
         </tr><tr>
             <td class="windowbg2">
@@ -1224,7 +1294,7 @@ sub SetInstall {
                     <label for="webmaster_email">Webmaster E-mail Address</label>
                 </div>
                 <div class="div55">
-                    <input type="text" name="webmaster_email" id="webmaster_email" size="35" value="webmaster\@mysite.com" />
+                    <input type="text" name="webmaster_email" id="webmaster_email" size="35" value="webmaster\@yabb.nz" />
                 </div>
                 <br style="clear:both" />
                 <div class="div45">
@@ -1250,22 +1320,22 @@ sub SetInstall {
                 </div>
                 <div class="div55">
                     <select name="timeselect" id="timeselect" size="1">
-                        <option value="1">01/31/01 at 13:15:17</option>
-                        <option value="5">01/31/01 at 1:15pm</option>
-                        <option value="4" selected="selected">Jan 12th, 2001 at 1:15pm</option>
-                        <option value="8"> 12th Jan, 2001 at 1:15pm</option>
-                        <option value="2">31.01.01 at 13:15:17</option>
-                        <option value="3">31.01.2001 at 13:15:17</option>
+                        <option value="1">01/31/26 at 13:15:17</option>
+                        <option value="2">31.01.26 at 13:15:17</option>
+                        <option value="3" selected="selected">31.01.2026 at 13:15:17</option>
+                        <option value="4">Jan 31st, 2026 at 1:15pm</option>
+                        <option value="5">01/31/26 at 1:15pm</option>
                         <option value="6">31. Jan at 13:15</option>
+                        <option value="7"> 31st Jan, 2026 at 1:15pm</option>
                     </select>
                 </div>
                 <br style="clear:both" />
                 <div class="div45">
-                    Forum Time: (Your actual displayed UTC time). The Forum Time Zone can be changed in the Admin Center.
+                    Forum Time: The Time Zone can be changed in the Admin Center.
                 </div>
                 <div class="div55">
                     <b>~
-      . timeformat( $date, 4 ) . q~</b>
+      . timetostring( int time ). q~</b>
             </div>
             </td>
     </tr><tr>
@@ -1278,15 +1348,15 @@ sub SetInstall {
 </form>
 ~;
 
-    $yyim    = 'You are running YaBB 2.6.14 Setup.';
-    $yytitle = 'YaBB 2.6.14 Setup';
+    $yyim    = 'You are running YaBBForum 3.0 Setup.';
+    $yytitle = 'YaBBForum 3.0 Setup';
     SetupTemplate();
     return;
 }
 
 sub SetInstall2 {
     if ( $action eq 'checkmodules' || $action eq 'setinstall2' ) {
-        $settings_file_version = 'YaBB 2.6.14';
+        $settings_file_version = 'YaBBForum 3.0';
         $yymycharset           = $FORM{'defaultencoding'} || 'UTF-8';
         $maintenance           = 1;
         $rememberbackup        = 0;
@@ -1301,7 +1371,7 @@ sub SetInstall2 {
         $preregspan            = 24;
         $emailpassword         = 0;
         $emailnewpass          = 0;
-        $emailwelcome          = 0;
+        $emailwelcome          = 1;
         $name_cannot_be_userid = 0;
         $lang                  = $FORM{'defaultlanguage'} || 'English';
         $default_template      = 'Forum default';
@@ -1310,10 +1380,10 @@ sub SetInstall2 {
         $smtp_auth_required    = 1;
         $authuser              = q~admin~;
         $authpass              = q~admin~;
-        $webmaster_email = $FORM{'webmaster_email'} || 'webmaster@mysite.com';
+        $webmaster_email = $FORM{'webmaster_email'} || 'webmaster@yabb.nz';
         $mailtype        = 0;
         $maintenancetext =
-'We are currently upgrading our forum. Please check back shortly!';
+'We are backing up our forum. Please check back shortly!';
         $MenuType               = 2;
         $profilebutton          = 1;
         $allow_hide_email       = 1;
@@ -1326,12 +1396,15 @@ sub SetInstall2 {
         $showusertext           = 1;
         $showtopicviewers       = 1;
         $showtopicrepliers      = 1;
-        $showgenderimage        = 1;
+        $hide_signat_for_guests = 1;
+        $showgenderimage = 1;
+        $showuserage = 1;
         $showyabbcbutt          = 1;
         $nestedquotes           = 1;
         $parseflash             = 0;
         $enableclicklog         = 1;
         $showimageinquote       = 0;
+        $enabletopichover = 1;
         $enable_ubbc            = 1;
         $enable_news            = 1;
         $allowpics              = 1;
@@ -1370,7 +1443,7 @@ sub SetInstall2 {
         $timeselected           = $FORM{'timeselect'} || 0;
         $timecorrection         = 0;
         $enabletz               = 1;
-        $default_tz             = 'UTC';
+        $default_tz             = 'Pacific/Auckland';
         $dynamic_clock          = 1;
         $TopAmmount             = 15;
         $maxdisplay             = 20;
@@ -1392,7 +1465,7 @@ sub SetInstall2 {
         $ClickLogTime           = 100;
         $max_log_days_old       = 90;
         $fadertime              = 1000;
-        $defaultusertxt         = 'I Love YaBB 2.6.14!';
+        $defaultusertxt         = 'I Love YaBBForum 3.0!';
         $timeout                = 5;
         $HotTopic               = 10;
         $VeryHotTopic           = 25;
@@ -1414,8 +1487,8 @@ sub SetInstall2 {
         $max_attach_img_width       = 200;
         $max_attach_img_height    = 0;
         $fix_attach_img_size    = 0;
-        $max_brd_img_width      = 50;
-        $max_brd_img_height     = 50;
+        $max_brd_img_width      = 25;
+        $max_brd_img_height     = 25;
         $fix_brd_img_size       = 0;
         $img_greybox            = 1;
         $extendedprofiles       = 0;
@@ -1426,6 +1499,7 @@ sub SetInstall2 {
         $addtab_on              = 1;
         $bm_subcut              = 50;
         $maxadminlog            = 5;
+        $self_del_user = 1;
 
         if ( -e '/bin/gzip' && open GZIP, '|, gzip -f' ) {
             $gzcomp = 1;
@@ -1436,9 +1510,9 @@ sub SetInstall2 {
         }
         $gzforce        = 0;
         $cachebehaviour = 0;
-        $use_flock      = 0;
+        $use_flock      = 1;
         $faketruncation = 0;
-        $debug          = 0;
+        $debug          = 3;
 
         $checkallcaps           = 0;
         $set_subjectMaxLength   = 50;
@@ -1474,26 +1548,34 @@ sub SetInstall2 {
 ###############################################################################
 # Settings.pm                                                                 #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                            #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026  YaBB (yabbforum.nz) - All Rights Reserved.    #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026  YaBBForum (yabbforum.nz) - All Rights Reserved.    #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 
 ########## Board Info ##########
-# Note: these settings must be properly changed for YaBB to work
+# Note: these settings must be properly changed for YaBBForum to work
 
-\$settings_file_version = "$settings_file_version"; # If not equal actual YaBBversion then the updating process is run through
+\$settings_file_version = "$settings_file_version"; # If not equal actual YaBBForum version then the updating process is run through
 \$yymycharset = "$yymycharset";                        # character encoding (usually ISO-8859-1 for older forums)
                                             # or 'UTF-8';
 \%templateset = (
-'Forum default' => "default|default|default|default|default|default|default|",
+'Forum default' => "default|default|default|default|default|default|default|2|0|0",
+'Gold' => "gold|gold|default|gold|gold|gold|gold|2|0|0",
+'Purple' => "purple|purple|default|purple|purple|purple|purple|2|0|0",
+'Fall' => "new_fall|new_fall|default|new_fall|new_fall|new_fall|new_fall|2|0|0",
 );                                                  # Forum templates settings
+
+### style switcher
+\$templ_switcher = "1";                            # Set to 1 to display the template switcher dropdown field and allow a quick style switch
+\$temp_switcher_allowed = 0;                       # minimum user level for show Style Switcher: 0 = all, 1 = only members
+###
 
 \$maintenance = $maintenance;                       # Set to 1 to enable Maintenance mode
 \$rememberbackup = $rememberbackup;                 # seconds past since last backup until alert is displayed
@@ -1545,14 +1627,14 @@ sub SetInstall2 {
 
 ########## MemberGroups ##########
 
-\$Group{'Administrator'} = 'Forum Administrator|5|staradmin.png|#FF0000|0|0|0|0|0|0|0';
-\$Group{'Global Moderator'} = 'Global Moderator|5|stargmod.png|#0000FF|0|0|0|0|0|0|0';
-\$Group{'Mid Moderator'} = 'Forum Moderator|5|starfmod.png|#008080|0|0|0|0|0|0|0';
-\$Group{'Moderator'} = 'Board Moderator|5|starmod.png|#008000|0|0|0|0|0|0|0';
-\$Post{'500'} = "God Member|5|starsilver.png||0|0|0|0|0|0";
-\$Post{'250'} = "Senior Member|4|stargold.png||0|0|0|0|0|0";
-\$Post{'100'} = "Full Member|3|starblue.png||0|0|0|0|0|0";
-\$Post{'50'} = "Junior Member|2|stargold.png||0|0|0|0|0|0";
+\$Group{'Administrator'} = 'Forum Administrator|1|staradmin.png|#FF0000|0|0|0|0|0|0|0';
+\$Group{'Global Moderator'} = 'Global Moderator|1|stargmod.png|#0000FF|0|0|0|0|0|0|0';
+\$Group{'Mid Moderator'} = 'Forum Moderator|1|starfmod.png|#008080|0|0|0|0|0|0|0';
+\$Group{'Moderator'} = 'Board Moderator|1|starmod.png|#008000|0|0|0|0|0|0|0';
+\$Post{'500'} = "Master Member|1|starsilver.png||0|0|0|0|0|0";
+\$Post{'250'} = "Senior Member|1|stargold.png||0|0|0|0|0|0";
+\$Post{'100'} = "Full Member|1|starblue.png||0|0|0|0|0|0";
+\$Post{'50'} = "Junior Member|1|stargold.png||0|0|0|0|0|0";
 \$Post{'-1'} = "New Member|1|stargold.png||0|0|0|0|0|0";
 
 ########## Layout ##########
@@ -1732,7 +1814,7 @@ sub SetInstall2 {
 \$cachebehaviour = $cachebehaviour;                 # Browser Cache Control: 0 = No Cache must revalidate, 1 = Allow Caching
 \$use_flock = $use_flock;                           # Set to 0 if your server doesn't support file locking,
                                                     # 1 for Unix/Linux and WinNT, and 2 for Windows 95/98/ME
-\$faketruncation = $faketruncation;                 # Enable this option only if YaBB fails with the error:
+\$faketruncation = $faketruncation;                 # Enable this option only if YaBBForum fails with the error:
                                                     # "truncate() function not supported on this platform."
                                                     # 0 to disable, 1 to enable.
 \$debug = $debug;                                   # If set to 1 debug info is added to the template
@@ -1767,7 +1849,7 @@ sub SetInstall2 {
 \$new_member_notification_mail = "\Q$new_member_notification_mail\E";   # Your "New Member Notification"-email address.
 
 \$sendtopicmail = 2;                              # Set to 0 for send NO topic email to friend
-                                                  # Set to 1 to send topic email to friend via YaBB
+                                                  # Set to 1 to send topic email to friend via YaBBForum
                                                   # Set to 2 to send topic email to friend via user program
                                                   # Set to 3 to let user decide between 1 and 2
 
@@ -1875,7 +1957,7 @@ sub SetInstall2 {
 ########## Advanced Tabs ##########
 
 \$addtab_on = $addtab_on;                         # show advanced tabs on Forum (For admin only.)
-\@AdvancedTabs = qw(home help search ml admin revalidatesession login register guestpm mycenter logout eventcal birthdaylist ); # Advanced Tabs order and infos
+\@AdvancedTabs = ("home","help","search","ml","admin","revalidatesession","login","register","guestpm","mycenter","logout","eventcal","birthdaylist","credits|./Quick-Guide_26/English/info/credits.html|0|0|0|0|"); # Advanced Tabs order and infos
 
 ########## Smilies ##########
 
@@ -1900,7 +1982,7 @@ sub SetInstall2 {
 ###############################################################################
 
 \$regcheck = 1;                             # Set to 1 if you want to enable automatic flood protection enabled
-\$codemaxchars = 4;                         # Set max length of validation code (15 is max)
+\$codemaxchars = 2;                         # Set max length of validation code (15 is max)
 \$rgb_foreground = "\#0000EE";              # Set hex RGB value for validation image foreground color
 \$rgb_shade = "\#999999";                   # Set hex RGB value for validation image shade color
 \$rgb_background = "\#FFFFFF";              # Set hex RGB value for validation image background color
@@ -1981,6 +2063,7 @@ EOF
         ${ $uid . 'admin' }{'email'}      = $webmaster_email;
         ${ $uid . 'admin' }{'regdate'}    = timetostring($date);
         ${ $uid . 'admin' }{'regtime'}    = $date;
+#        ${ $uid . 'admin' }{'regtime'}    = timetostring( int time );
         ${ $uid . 'admin' }{'timeselect'} = $timeselected;
         ${ $uid . 'admin' }{'language'}   = $lang;
         UserAccount( 'admin', 'update' );
@@ -1995,7 +2078,7 @@ EOF
 sub tempstarter {
     return if !-e "$vardir/Settings.pm";
 
-    $YaBBversion = 'YaBB 2.6.14';
+    $YaBBversion = 'YaBBForum 3.0';
 
     # Make sure the module path is present
     push @INC, "$boarddir/Modules";
@@ -2059,6 +2142,7 @@ sub CheckInstall {
         else { $brd_created .= qq~$brdname.txt, ~; }
 
     }
+
     $brd_missing =~ s/, $//sm;
     $brd_created =~ s/, $//sm;
     my $brdprint = q{};
@@ -2068,7 +2152,7 @@ sub CheckInstall {
           split /[|]/xsm, $boardstot;
         if ( $brdname eq 'general' ) {
             $brdprint .=
-"general|1|1|$firstmstime|admin|$firstmstime|0|Welcome to your new YaBB 2.6.14 forum!|xx|0|\n"
+"general|1|1|$firstmstime|admin|$firstmstime|0|README FIRST!|xx|0|\n"
               or croak 'cannot print FORUMTOTALS';
         }
         else { $brdprint .= qq~$boardstot\n~; }
@@ -2081,7 +2165,7 @@ sub CheckInstall {
     open $FIRSTMS, '>', "$datadir/$firstmstime.txt"
       or croak "cannot open $datadir/$firstmstime.txt";
     print {$FIRSTMS}
-qq~Welcome to your New YaBB 2.6.14 Forum!|Administrator|webmaster@mysite.com|$firstmstime|admin|xx|0|127.0.0.1|Welcome to your new YaBB 2.6.14 forum.<br /><br />The YaBB team would like to thank you for choosing Yet another Bulletin Board for your forum needs. We pride ourselves on the cost (FREE), the features, and the security. Visit http://yabbforum.nz to view the latest development information, read YaBB news, and participate in community discussions.<br /><br />Make sure you login to your new forum as an administrator and visit the Admin Center. From there, you can maintain your forum. You'll want to look at all of the settings, membergroups, categories/boards, and security options to make sure they are set properly according to your needs.||||\n~;
+qq~README FIRST!|Administrator|webmaster@yabb.nz|$firstmstime|admin|xx|0|127.0.0.1|Welcome to your new YaBBForum 3.0 forum.<br /><br />The YaBBForum team would like to thank you for choosing Yet another Bulletin Board for your forum needs. We pride ourselves on the cost (FREE), the features, and the security. Visit https://yabbforum.nz to view the latest development information, read YaBBForum news, and participate in community discussions.<br /><br />Once you've finished with this message go to your UserCP &gt; Profile &gt; Edit Profile to change password, then go to 'Admin Center' where you can modify all settings starting at Forum Configuration &gt; Forum Settings.<br /><br />||||\n~;
     close $FIRSTMS or croak "cannot close $datadir/$firstmstime.txt";
     require Sources::DateTime;
     $msgdat = timeformat( $firstmstime, 1, 'rfc' );
@@ -2102,7 +2186,7 @@ qq~Welcome to your New YaBB 2.6.14 Forum!|Administrator|webmaster@mysite.com|$fi
 
     open $FIRSTBRD, '>>', "$boardsdir/general.txt";
     print {$FIRSTBRD}
-qq~$firstmstime|Welcome to your New YaBB 2.6 Forum!|Administrator|$webmaster_email|$firstmstime|0|admin|xx|0\n~;
+qq~$firstmstime|README FIRST!|Administrator|$webmaster_email|$firstmstime|0|admin|xx|0\n~;
     close $FIRSTBRD or croak "cannot close general.txt";
 
     $mem_missing = q{};
@@ -2348,7 +2432,7 @@ qq~$firstmstime|Welcome to your New YaBB 2.6 Forum!|Administrator|$webmaster_ema
         </tr><tr>
             <td class="windowbg center"><img src="$imagesdir/check.png" alt="" /></td>
             <td class="windowbg2">
-                Click on 'Continue' and go to your <i>Admin Center - Forum Settings</i> to set the options for your YaBB 2.6.14 forum.<br />Or to convert a 1x or 2x Forum to 2.6.14
+                Click on 'Continue' and go to your <i>Admin Center - Forum Settings</i> to set the options for your YaBBForum 3.0 forum.<br />Or to convert a 1x or 2x Forum to 3.0
             </td>
         </tr>~;
     }
@@ -2375,8 +2459,8 @@ qq~$firstmstime|Welcome to your New YaBB 2.6 Forum!|Administrator|$webmaster_ema
       </table>
 </div>
       ~;
-    $yyim    = 'You are running YaBB 2.6.14 Setup.';
-    $yytitle = 'YaBB 2.6.14 Setup';
+    $yyim    = 'You are running YaBBForum 3.0 Setup.';
+    $yytitle = 'YaBBForum 3.0 Setup';
     SetupTemplate();
     return;
 }
@@ -2437,8 +2521,8 @@ sub setup_fatal_error {
 </table>
 <p style="text-align:center"><a href="javascript:history.go(-1)">Back</a></p>
 ~;
-    $yyim    = "YaBB 2.6.14 Setup Error.";
-    $yytitle = "YaBB 2.6.14 Setup Error.";
+    $yyim    = "YaBBForum 3.0 Setup Error.";
+    $yytitle = "YaBBForum 3.0 Setup Error.";
 
     if ( !-e "$vardir/Settings.pm" ) { SimpleOutput(); }
 
@@ -2455,7 +2539,7 @@ sub SimpleOutput {
 <html lang='en-US'>
 <head>
     <meta charset="utf-8">
-    <title>YaBB 2.6.14 Setup</title>
+    <title>YaBBForum 3.0 Setup</title>
     <style type="text/css">
         html, body {color:#000; font-family:Verdana, Helvetica, Arial, Sans-Serif; font-size:13px; background-color:#eee}
         div#folderfind { margin:1em auto; padding:0 1em}
@@ -2577,7 +2661,7 @@ qq~<link rel="stylesheet" href="$yyhtml_root/Templates/Forum/$usestyle.css" type
     }
     if ( $yycopyin == 0 ) {
         $output =
-qq~<h1 style="text-align:center"><b>Sorry, the copyright tag &\x23123;yabb copyright&\x23125; must be in the template.<br />Please notify this forum&\x2339;s administrator that this site is using an ILLEGAL copy of YaBB!</b></h1>~;
+qq~<h1 style="text-align:center"><b>Sorry, the copyright tag &\x23123;yabb copyright&\x23125; must be in the template.<br />Please notify this forum&\x2339;s administrator that this site is using an ILLEGAL copy of YaBBForum!</b></h1>~;
     }
     if ( fileno GZIP ) {
         $OUTPUT_AUTOFLUSH = 1;
@@ -2629,7 +2713,7 @@ sub FoundSetupLock {
     if ( -e "$vardir/Converter.lock" ) {
         $conv = q{};
         $conv2 =
-qq~The 1x to 2.6.14 Converter has already been run.<br />To run the Converter again, remove the file "$vardir/Converter.lock," then re-visit this page.~;
+qq~The 1x to 3.0 Converter has already been run.<br />To run the Converter again, remove the file "$vardir/Converter.lock," then re-visit this page.~;
 
     }
     else {
@@ -2658,7 +2742,7 @@ qq~The 2x Conversion Utility has already been run.<br />To run Utility again, re
     <table class="tabtitle">
         <tr>
             <td style="padding-left:1%; text-shadow: 1px 1px 1px #2d2d2d;">
-                YaBB 2.6.14 Setup
+                YaBBForum 3.0 Setup
             </td>
         </tr>
     </table>
@@ -2689,8 +2773,8 @@ qq~The 2x Conversion Utility has already been run.<br />To run Utility again, re
 </div>
       ~;
 
-    $yyim    = 'YaBB 2.6.14 Setup has already been run.';
-    $yytitle = 'YaBB 2.6.14 Setup';
+    $yyim    = 'YaBBForum 3.0 Setup has already been run.';
+    $yytitle = 'YaBBForum 3.0 Setup';
     template();
     return;
 }

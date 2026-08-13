@@ -5,18 +5,18 @@
 # Open-Source Community Software for Webmasters                               #
 # Version:        YaBB 2.6.1                                                  #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2015 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
-#     Локализация: Васильев Д.В. (http://www.mysopromat.ru)                   #
+#     Локализация: Васильев Д.В. (https://www.mysopromat.ru)                   #
 #           $Date: 2009/04/22 03:04:56 $                                      #
 #   Copyright (c): Васильев Д.В. 2005                                         #
 ###############################################################################
 
-$russianpostlngver = 'YaBB 2.6.11 $Revision: 1416 $';
+$russianpostlngver = 'YaBBForum 3.0 $0 $';
 @russianpostlngmods = ();
 if(@russianpostlngmods){
     $russianpostlngmods = 1;

@@ -3,9 +3,9 @@
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -15,9 +15,9 @@
 # Michael Prager. Last modification by him: 15.11.07                          #
 # Added to the YaBB default code on 07. September 2008                        #
 ###############################################################################
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$extendedprofilespmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$extendedprofilespmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('ExtendedProfiles');
@@ -92,7 +92,7 @@ sub ext_get {
 
         }
         elsif ( $field{'type'} eq 'url' && $value ne q{} ) {
-            if ( $value !~ m{\Ahttp://}sm ) { $value = "http://$value"; }
+            if ( $value !~ m{\Ahttps://}sm ) { $value = "https://$value"; }
 
         }
         elsif ( $field{'type'} eq 'image' && $value ne q{} ) {
@@ -116,7 +116,7 @@ sub ext_get {
                 $height = q~ height="~ . ( $options[1] + 0 ) . q~"~;
             }
             else { $height = q{}; }
-            if ( $value !~ m{\Ahttp://}sm ) { $value = "http://$value"; }
+            if ( $value !~ m{\Ahttps://}sm ) { $value = "https://$value"; }
             $value = qq~<img src="$value" class="vtop"$width$height alt=q{} />~;
         }
     }
@@ -770,7 +770,7 @@ qq~ $profile_txt{'565'} <input type="text" name="ext_$id\_day" id="ext_$id\_day"
 
     }
     elsif ( $field{'type'} eq 'image' ) {
-        if ( $value eq q{} ) { $value = 'http://'; }
+        if ( $value eq q{} ) { $value = 'https://'; }
         $output .=
             $template1
           . qq~<input type="text" name="ext_$id" id="ext_$id" maxlength="$ext_max_image_length" size="50" value="$value" />~
@@ -1056,7 +1056,7 @@ sub ext_validate_submition {
             }
             elsif ($field{'type'} eq 'image'
                 && $value ne q{}
-                && $value ne 'http://' )
+                && $value ne 'https://' )
             {
                 $value = substr $value, 0, $ext_max_image_length;
                 @options = split /\^/xsm, $field{'options'};
@@ -1113,7 +1113,7 @@ sub ext_validate_submition {
                 }
             }
             elsif ( $field{'type'} eq 'image' ) {
-                if ( $newprofile{ 'ext_' . $id } eq 'http://' ) {
+                if ( $newprofile{ 'ext_' . $id } eq 'https://' ) {
                     $newprofile{ 'ext_' . $id } = q{};
                 }
             }

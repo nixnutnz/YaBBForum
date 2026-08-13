@@ -3,9 +3,9 @@
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -15,9 +15,9 @@
 # Michael Prager. Last modification by him: 15.11.07                          #
 # Added to the YaBB default code on 07. September 2008                        #
 ###############################################################################
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$settings_extendedprofilespmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$settings_extendedprofilespmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('ExtendedProfiles');
@@ -89,7 +89,7 @@ sub ext_get {
             else                      { $value = qq~$ext_spacer_hr~; }
         }
         elsif ( $field{'type'} eq 'url' && $value ne q{} ) {
-            if ( $value !~ m{\Ahttp://}sm ) { $value = "http://$value"; }
+            if ( $value !~ m{\Ahttps://}sm ) { $value = "https://$value"; }
         }
         elsif ( $field{'type'} eq 'image' && $value ne q{} ) {
             @options = split /\^/xsm, $field{'options'};
@@ -112,7 +112,7 @@ sub ext_get {
                 $height = q~ height="~ . ( $options[1] + 0 ) . q~"~;
             }
             else { $height = q{}; }
-            if ( $value !~ m{\Ahttp://}sm ) { $value = "http://$value"; }
+            if ( $value !~ m{\Ahttps://}sm ) { $value = "https://$value"; }
             $value = qq~<img src="$value" class="vtop"$width$height alt=q{} />~;
         }
     }

@@ -5,7 +5,7 @@
 # Open-Source Community Software for Webmasters                               #
 # Version:        YaBB 2.6.1                                                  #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2015 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -15,7 +15,7 @@
 # translated by Elexio (elexio@yandex.ru)                                     #
 ###############################################################################
 
-$russianmainlngver = 'YaBB 2.6.11 $Revision: 1465 $';
+$russianmainlngver = 'YaBBForum 3.0 $0465 $';
 @russianmainlngmods = ();
 if(@russianmainlngmods){
     $russianmainlngmods = 1;
@@ -294,7 +294,7 @@ $forwardedpm = qq~Это предупреждение было послано п
 );
 
 #timetostring($date);
-#$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext">$mbname</a> &#187; Powered by <a href="http://www.yabbforum.com" target="_blank">$YaBBversion</a>!<br />\n<a href="http://www.yabbforum.com" target="_blank">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.~;
+#$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext">$mbname</a> &#187; Powered by <a href="https://www.yabbforum.com" target="_blank">$YaBBversion</a>!<br />\n<a href="https://www.yabbforum.com" target="_blank">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.~;
 
 
 1;

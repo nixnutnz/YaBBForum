@@ -4,18 +4,18 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$membergroupspmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$membergroupspmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 $admin_images = "$yyhtml_root/Templates/Admin/default";
@@ -347,7 +347,7 @@ sub editAddGroup {
         $stara[8] = q{ selected="selected"};
     }
     my $starurl =
-        ( $memstats[2] !~ m{http://}xsm ? "$imagesdir/" : q{} )
+        ( $memstats[2] !~ m{https://}xsm ? "$imagesdir/" : q{} )
       . ( $memstats[2]                  ? $memstats[2]      : 'blank.gif' );
 
     $memstats[3] =~ s/\#//gxsm;

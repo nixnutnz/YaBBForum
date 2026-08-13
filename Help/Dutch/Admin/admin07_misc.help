@@ -1,11 +1,11 @@
-﻿###############################################################################
+###############################################################################
 # admin07_misc.help                                                           #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11 and higher                                      #
+# Version:        YaBBForum 3.0 and higher                                      #
 # Released:       November 9, 2015                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-and newer YaBB (www.yabbforum.com) - All Rights Reserved.#
 # Software by: The YaBB Development Team                                      #
@@ -91,7 +91,7 @@ $SectionBody3 = q~<p>Sociale Bladwijzers staat leden en bezoekers toe om gemakke
         <ul>
             <li><em>Titel</em>: de tekst die wordt weergegeven wanneer een gebruiker de muis-over de bladwijzer pictogram beweegt.</li>
             <li><em>Afbeelding</em>: upload het pictogram voor de nieuwe bladwijzer.</li>
-            <li><em>URL</em>: De URL van de Sociale Bookmark website. (Voor Google ziet de URL er uit als "http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=<span style="background-color:yellow">{url}</span>&amp;title=<span style="background-color:yellow">{title}</span>"</li>
+            <li><em>URL</em>: De URL van de Sociale Bookmark website. (Voor Google ziet de URL er uit als "https://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=<span style="background-color:yellow">{url}</span>&amp;title=<span style="background-color:yellow">{title}</span>"</li>
             <li><em>Order</em>: Als u wilt dat de nieuwe bladwijzer wordt weergegeven tussen twee eerdere Bladwijzers, wijs de nieuwe bladwijzer een nummer toe tussen degenen die aan de andere Bladwijzers zijn toegewezen. (Bijvoorbeeld, je wilt je nieuwe Bladwijzer laten verschijnen net voor Google [40], wijs '39' toe als de opdracht marker voor uw nieuwe bladwijzer.)</li>
         </ul>
     </li>

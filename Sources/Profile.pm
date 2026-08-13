@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -17,9 +17,9 @@
 no warnings qw(uninitialized once redefine);
 use English qw(-no_match_vars);
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$profilepmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$profilepmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('Profile');
@@ -2003,7 +2003,7 @@ sub ModifyProfileContacts2 {
     ${ $uid . $user }{'webtitle'} = $member{'webtitle'};
     ${ $uid . $user }{'weburl'}   = (
         ( $member{'weburl'} && $member{'weburl'} !~ m{\Ahttps?://}sm )
-        ? 'http://'
+        ? 'https://'
         : q{}
     ) . $member{'weburl'};
     ${ $uid . $user }{'offlinestatus'} = $member{'offlinestatus'};
@@ -2701,7 +2701,7 @@ sub ViewProfile {
 
     # Convert forum start date to string, if there is no date set,
     # Defaults to 1st Jan, 2005
-    $forumstart = $forumstart ? stringtotime($forumstart) : '1104537600';
+    $forumstart = $forumstart ? stringtotime($forumstart) : '1786470606';
 
     if ( ${ $uid . $user }{'regtime'} ) {
         $dr = timeformat( ${ $uid . $user }{'regtime'},0,0,0,1 );
@@ -2833,7 +2833,7 @@ qq~<img src="$facesurl/${$uid.$user}{'userpic'}" id="avatar_img_resize" alt="" s
                         </div>
                         <div class="contactright">
                         <img src="$imagesdir/$my_myspace" alt="" />
-                        <a href="http://www.myspace.com/${$uid.$user}{'myspace'}" target="_blank">$profile_txt{'570'} ${$uid.$user}{'realname'}</a>
+                        <a href="https://www.myspace.com/${$uid.$user}{'myspace'}" target="_blank">$profile_txt{'570'} ${$uid.$user}{'realname'}</a>
                         </div>~;
     }
     if ( ${ $uid . $user }{'facebook'} ) {
@@ -2843,7 +2843,7 @@ qq~<img src="$facesurl/${$uid.$user}{'userpic'}" id="avatar_img_resize" alt="" s
                         </div>
                         <div class="contactright">
                         <img src="$imagesdir/$my_facebook" alt="" />
-                        <a href="http://www.facebook.com/~
+                        <a href="https://www.facebook.com/~
           . (
             ${ $uid . $user }{'facebook'} !~ /\D/xsm ? 'profile.php?id=' : q{} )
           . qq~${$uid.$user}{'facebook'}" target="_blank"> ${$uid.$user}{'facebook'}</a>
@@ -2856,7 +2856,7 @@ qq~<img src="$facesurl/${$uid.$user}{'userpic'}" id="avatar_img_resize" alt="" s
                         </div>
                         <div class="contactright">
                         <img src="$imagesdir/$my_twitter" alt="" />
-                        <a href="http://twitter.com/${$uid.$user}{'twitter'}" target="_blank">$profile_txt{'576'} ${$uid.$user}{'realname'}</a>
+                        <a href="https://twitter.com/${$uid.$user}{'twitter'}" target="_blank">$profile_txt{'576'} ${$uid.$user}{'realname'}</a>
                         </div>~;
     }
     if ( ${ $uid . $user }{'youtube'} ) {
@@ -2866,7 +2866,7 @@ qq~<img src="$facesurl/${$uid.$user}{'userpic'}" id="avatar_img_resize" alt="" s
                         </div>
                         <div class="contactright">
                         <img src="$imagesdir/$my_youtube" alt="" />
-                        <a href="http://www.youtube.com/${$uid.$user}{'youtube'}" target="_blank">$profile_txt{'579'} ${$uid.$user}{'realname'}</a>
+                        <a href="https://www.youtube.com/${$uid.$user}{'youtube'}" target="_blank">$profile_txt{'579'} ${$uid.$user}{'realname'}</a>
                         </div>~;
     }
     if (   !${ $uid . $user }{'hidemail'}

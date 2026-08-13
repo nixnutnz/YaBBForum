@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -17,9 +17,9 @@
 #no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
 use Time::Local;
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$eventcalpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$eventcalpmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('EventCal');
@@ -435,16 +435,6 @@ qq~<script src="$yyhtml_root/ubbc.js" type="text/javascript"></script>~;
             $mycalout_cthelp .= postbox();
         }
 
-        # SpellChecker start
-        if ($enable_spell_check) {
-            $yyinlinestyle .= googiea();
-            $userdefaultlang = ( split /-/xsm, $abbr_lang )[0];
-            $userdefaultlang ||= 'en';
-            $mycalout_googie = googie($userdefaultlang);
-        }
-
-        # SpellChecker end
-
         if (
             !$removenormalsmilies
             && (   !${ $uid . $username }{'hide_smilies_row'}
@@ -631,7 +621,6 @@ $mycalout_addevent
     $mycalout_post =~ s/{yabb caliconimg}/$cal_icon_bg{$calicon}/gsm;
     $mycalout_post =~ s/{yabb mycalout_cthelp}/$mycalout_cthelp/sm;
     $mycalout_post =~ s/{yabb mycalout_post2}/$mycalout_post2/sm;
-    $mycalout_post =~ s/{yabb mycalout_googie}/$mycalout_googie/sm;
     $mycalout_post =~ s/{yabb mycalout_smilies}/$mycalout_smilies/sm;
     $mycalout_post =~ s/{yabb mycalout_post3}/$mycalout_post3/sm;
     $mycalout_post =~ s/{yabb mycalout_chars}/$mycalout_chars/sm;

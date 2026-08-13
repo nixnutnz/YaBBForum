@@ -3,16 +3,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$backuplngver = 'YaBB 2.6.14 $Revision: 2601 $';
+$backuplngver = 'YaBBForum 3.0';
 
 $script_root = $ENV{'SCRIPT_FILENAME'};
 if( ! $script_root ) {
@@ -186,7 +186,7 @@ But, you can visit LINK to manually download the backup FILENAME.
 The system provided the following info related to the sending error:
 "SYSTEMINFO"
 
-You must have MIME::Lite installed on your server to get backups by e-mail; you may also need other modules (see the info above). Ask your server administrator to install the module(s) on your server.  You can find further help on installing modules at: http://codex.yabbforum.nz/YaBB.pl?num=1225217016
+You must have MIME::Lite installed on your server to get backups by e-mail; you may also need other modules (see the info above). Ask your server administrator to install the module(s) on your server.  You can find further help on installing modules at: https://codex.yabbforum.nz/YaBB.pl?num=1225217016
 
 Thanks for using YaBB!~;
 

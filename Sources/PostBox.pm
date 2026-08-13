@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -15,9 +15,9 @@
 #use warnings;
 #no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$postboxpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$postboxpmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 get_micon();
@@ -75,13 +75,25 @@ sub postbox {
             <div style="float:right; width:${mods_w}px">
             $mods
             </div>
+
             <div style="float:left; width:${boxlist1_w}px">
             $boxlist1
-            <br /></div>
+            </div>
+
             <div style="float:left; width:${textdecor_w}px">
             $textdecor
+
+            <div style="float:left; width:${boxlist1_w}px">
+            $txtalgn
             </div>
-            <div style="float:left; text-align:center; width:${font_w}px">
+
+            <div style="float:left; width:${boxlist1_w}px">
+                <span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/palette1.png" class="cursor vtop" onmouseover='contextTip(event, this.alt);' onmouseout='contextTip(event, this.alt);' oncontextmenu='if(!showcontexthelp(this.src, this.alt)) return false;' onclick="window.open('$scripturl?action=palette;task=post', '', 'height=308,width=302,menubar=no,toolbar=no,scrollbars=no')" alt="$post_txt{'palette'}" /></span>
+            </div>
+
+            </div>
+
+            <div style="float:left; width:${boxlist1_w}px">
             <select name="fontface" id="fontface" onchange="if(this.options[this.selectedIndex].value) fontfce(this.options[this.selectedIndex].value);">
                 <option value="Verdana">Verdana</option>
                 <option value="">-\\-\\-\\-\\-\\-\\-\\-\\-</option>
@@ -115,7 +127,7 @@ sub postbox {
         $box .= qq~
 $fntopts
             </select>
-            </div>
+
             <script type="text/javascript" src="$yyhtml_root/postbox.js"></script>
             <script type="text/javascript">
                 var thistask = 'post';
@@ -134,7 +146,7 @@ $fntopts
                 if(thistask == "templ") previewColor(newcolor);
             }
             </script>
-            <div style="float:left; height:22px; width:${fntcolor_w}px">
+            <div style="float:left; width:${boxlist1_w}px">
                 <div class="palettebox" style="float:left">
                     <span class="deftpal" style="background-color: #000000;" onclick="ConvShowcolor('#000000')">&nbsp;</span>
                     <span class="deftpal" style="background-color: #333333;" onclick="ConvShowcolor('#333333')">&nbsp;</span>
@@ -149,13 +161,9 @@ $fntopts
                     <span id="defaultpal5" class="deftpal" style="background-color: $pallist[4];" onclick="ConvShowcolor(this.style.backgroundColor)">&nbsp;</span>
                     <span id="defaultpal6" class="deftpal" style="background-color: $pallist[5];" onclick="ConvShowcolor(this.style.backgroundColor)">&nbsp;</span>
                  </div>
-            </div>
-            <div style="float:left; height:22px; padding-left: 1px; padding-right: 1px; width:23px;">
-                <span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/palette1.png" class="cursor vtop" onmouseover='contextTip(event, this.alt);' onmouseout='contextTip(event, this.alt);' oncontextmenu='if(!showcontexthelp(this.src, this.alt)) return false;' onclick="window.open('$scripturl?action=palette;task=post', '', 'height=308,width=302,menubar=no,toolbar=no,scrollbars=no')" alt="$post_txt{'palette'}" /></span>
-            </div>
-            <div style="float:left; width:${txtalgn_w}px">
-            $txtalgn
-            </div>
+</div>
+           </div>
+
         </div>
             ~;
 
@@ -396,36 +404,6 @@ sub postbox3 {
 
     $box .= q~</script>~;
     return $box;
-}
-
-sub googiea {
-    $googiea =
-qq~<link rel="stylesheet" href="$yyhtml_root/googiespell/googiespell.css" type="text/css" />
-<script type="text/javascript" src="$yyhtml_root/googiespell/googiespell.js"></script>
-<script type="text/javascript" src="$yyhtml_root/googiespell/cookiesupport.js"></script>~;
-    if ( !$img_greybox || $action eq 'guestpm' ) {
-        $googiea .= qq~\n<script type="text/javascript" src="$yyhtml_root/AJS.js"></script>~;
-    }
-    return $googiea;
-}
-
-sub googie {
-    my ($userdefaultlang) = @_;
-    $googie = qq~
-            <script type="text/javascript">
-            GOOGIE_DEFAULT_LANG = '$userdefaultlang';
-            var googie1 = new GoogieSpell("$yyhtml_root/googiespell/", "$boardurl/Sources/SpellChecker.$yyext?lang=");
-            googie1.lang_chck_spell = '$spell_check{'chck_spell'}';
-            googie1.lang_revert = '$spell_check{'revert'}';
-            googie1.lang_close = '$spell_check{'close'}';
-            googie1.lang_rsm_edt = '$spell_check{'rsm_edt'}';
-            googie1.lang_no_error_found = '$spell_check{'no_error_found'}';
-            googie1.lang_no_suggestions = '$spell_check{'no_suggestions'}';
-            googie1.setSpellContainer("spell_container");
-            googie1.decorateTextarea("message");
-            </script>~;
-
-    return $googie;
 }
 
 sub smilies_list {

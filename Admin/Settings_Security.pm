@@ -2,20 +2,20 @@
 # Settings_Security.pm                                                        #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 # use strict;
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$settings_securitypmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$settings_securitypmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('Sessions');

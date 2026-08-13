@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -16,9 +16,9 @@
 # use warnings;
 no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$guardianpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$guardianpmver = 'YaBBForum 3.0';
 
 $not_from   = qq~$webmaster_email~;
 $not_to     = qq~$webmaster_email~;
@@ -650,7 +650,7 @@ sub update_htaccess {
     fclose(HTA);
 
 # header to determine only who has access to the main script, not the admin script
-    $htheader = q~<Files YaBB*>~;
+    $htheader = q~<Files index*>~;
     $htfooter = q~</Files>~;
     $start    = 0;
     foreach (@htlines) {
@@ -674,6 +674,12 @@ sub update_htaccess {
         if ($value) {
             print {HTA} "\n$htheader\n" or croak "$croak{'print'} HTA";
             push @denies, $value;
+
+            # --- START PATCH: Remove all duplicate IPs ---
+            my %seen;
+            @denies = grep { $_ ne q{} && !$seen{$_}++ } @denies;
+            # --- END PATCH ---
+
             foreach (@denies) {
                 print {HTA} "Deny from $_\n"
                       or croak "$croak{'print'} HTA";

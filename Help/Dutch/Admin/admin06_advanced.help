@@ -1,11 +1,11 @@
-﻿###############################################################################
+###############################################################################
 # admin06_advanced.help                                                       #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11 and higher                                      #
+# Version:        YaBBForum 3.0 and higher                                      #
 # Released:       November 9, 2015                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-and newer YaBB (www.yabbforum.com) - All Rights Reserved.#
 # Software by: The YaBB Development Team                                      #
@@ -22,7 +22,7 @@ $SectionBody1 = q~<p>YaBB geeft u de mogelijkheid om permalinks in te stellen (z
 <ul>
     <li><b>Permalinks</b>
         <br />Voor het gebruik van permalinks, moet uw forum op een server zijn die "FollowSymLinks" en "RedirectMatch" of "RewriteEngine" toestaat in een .htaccess bestand of als een server instelling. Neem contact op met uw hosting service om te zien of deze server niveau functies voor u beschikbaar zijn.
-        <br />Als deze functies beschikbaar zijn: <a href="http://www.yabbforum.com/codex/YaBB.pl?num=1191988956" target="_blank">Opzetten van Permalinks</a> heeft instructies over het instellen van dat deel van permalinks.
+        <br />Als deze functies beschikbaar zijn: <a href="https://www.yabbforum.com/codex/YaBB.pl?num=1191988956" target="_blank">Opzetten van Permalinks</a> heeft instructies over het instellen van dat deel van permalinks.
         <br />Zodra de server niveau-instellingen zijn ingesteld, kunt u Permalinks binnen YaBB activerenen vertellen <strong>hoe</strong> u de nieuwe permalink maakt URI's door het invoeren van de naam van de  'virtuele URI' map die in de "RedirectMatch" of "RewriteRule" of in het .htaccess bestand is.
     </li>
     <li><b>RSS</b>

@@ -3,16 +3,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$profilelngver = 'YaBB 2.6.14 $Revision: 2601 $';
+$profilelngver = 'YaBBForum 3.0';
 
 %profile_txt = (
 '2' => 'Admin',
@@ -88,13 +88,13 @@ $profilelngver = 'YaBB 2.6.14 $Revision: 2601 $';
 '477' => '<b>Note: Your images may be resized.</b>',
 '479' => 'This selection will make dates throughout this Forum display in this format.',
 '480a' => 'Use my own time format (set below)',
-'480' => "01/31/01 at 13:15:17",
-'481' => "31.01.01 at 13:15:17",
-'482' => "31.01.2001 at 13:15:17",
-'483' => "Jan 12th, 2001 at 1:15pm",
-'483a' => "12th Jan, 2001 at 1:15pm",
-'484' => "01/31/01 at 1:15pm",
-'485' => "31. Jan 2001 at 13:15",
+'480' => '01/31/26 at 13:15:17',
+'481' => '31.01.26 at 13:15:17',
+'482' => '31.01.2026 at 13:15:17',
+'483' => 'Jan 31st, 2026 at 1:15pm',
+'483a' => '31st Jan, 2026 at 1:15pm',
+'484' => '01/31/26 at 1:15pm',
+'485' => '31. Jan at 13:15',
 '486' => 'Time Format',
 '486a' => 'Or Custom Time Format',
 '519' => 'Enable automatic Daylight Savings Time change?',
@@ -108,16 +108,16 @@ $profilelngver = 'YaBB 2.6.14 $Revision: 2601 $';
 '566' => 'Year (YYYY)',
 '570' => 'MySpace',
 '571' => 'This is your MySpace URL.',
-'572' => 'http://myspace.com/',
+'572' => 'https://myspace.com/',
 '573' => 'Facebook',
 '574' => 'This is your Facebook profile ID number or your username.',
-'575' => 'http://facebook.com/',
+'575' => 'https://facebook.com/',
 '576' => 'Twitter',
 '577' => 'This is your Twitter username.',
-'578' => 'http://twitter.com/',
+'578' => 'https://twitter.com/',
 '579' => 'YouTube',
 '580' => 'This is your YouTube username.',
-'581' => 'http://www.youtube.com/',
+'581' => 'https://www.youtube.com/',
 '592' => 'your personal userpic url or picture name.',
 '598' => 'This must be included if you specify a URL below.',
 '599' => 'This must be a complete URL.',

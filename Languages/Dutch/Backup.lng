@@ -1,4 +1,4 @@
-﻿###############################################################################
+###############################################################################
 # Backup.lng                                                                  #
 ###############################################################################
 # Dutch/Nederlands - Translation by Pieszyce                                  #
@@ -6,16 +6,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:      YaBB 2.6.11                                                   #
+# Version:      YaBBForum 3.0                                                   #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by: The YaBB Development Team                                      #
 #              with assistance from the YaBB community.                       #
 ###############################################################################
 
-$dutchbackuplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$dutchbackuplngver = 'YaBBForum 3.0 $0 $';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 $script_root = $ENV{'SCRIPT_FILENAME'};
@@ -190,7 +190,7 @@ Maar, u kunt LINK bezoeken om de backup handmatig te downloaden FILENAME.
 Het systeem verstrekt de volgende info in verband met de verzonden fout:
 "SYSTEMINFO"
 
-U moet MIME::Lite geinstalleerd hebben op uw server om backups via email te kunnen ontvangen; mogelijk heeft u ook andere modules nodig (Zie de bovenstaande info). Vraag uw serverbeheerder om de modules op uw server te installeren. U vindt meer informatie over het installeren van modules op: http://codex.yabbforum.com/YaBB.pl?num=1225217016
+U moet MIME::Lite geinstalleerd hebben op uw server om backups via email te kunnen ontvangen; mogelijk heeft u ook andere modules nodig (Zie de bovenstaande info). Vraag uw serverbeheerder om de modules op uw server te installeren. U vindt meer informatie over het installeren van modules op: https://codex.yabbforum.com/YaBB.pl?num=1225217016
 
 Bedankt voor het gebruik van YaBB!~;
 

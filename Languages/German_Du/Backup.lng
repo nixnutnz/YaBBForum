@@ -7,16 +7,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:      YaBB 2.6.11                                                   #
+# Version:      YaBBForum 3.0                                                   #
 # Packaged:     2. Dezember 2014                                              #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by: The YaBB Development Team                                      #
 #              with assistance from the YaBB community.                       #
 ###############################################################################
 
-$german_dubackuplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$german_dubackuplngver = 'YaBBForum 3.0 $0 $';
 @german_dubackuplngmods = ();
 if(@german_dubackuplngmods){
     $german_dubackuplngmods = 1;
@@ -195,7 +195,7 @@ Du kannst aber diesen Link LINK aufrufen, um die Backup Datei FILENAME herunterz
 Die vom System in Bezug auf den fehlerhaften eMail Versand festgestellten Informationen sind folgende:
 "SYSTEMINFO"
 
-Es ist erforderlich, dass das Modul MIME::Lite auf dem von Dir verwendeten Server installiert ist, um Backups per eMail zu erhalten. Möglicherweise betrifft dies auch noch weitere Module (Beachte die Information oberhalb). Frage den Server Administrator oder Deinen Internet-Service-Provider (ISP) ob es möglich ist, die für den eMail Versand benötigten Module auf dem Server zu installieren. Weitere Hilfe zum Installieren von Modulen findest Du hier: http://codex.yabbforum.com/YaBB.pl?num=1225217016
+Es ist erforderlich, dass das Modul MIME::Lite auf dem von Dir verwendeten Server installiert ist, um Backups per eMail zu erhalten. Möglicherweise betrifft dies auch noch weitere Module (Beachte die Information oberhalb). Frage den Server Administrator oder Deinen Internet-Service-Provider (ISP) ob es möglich ist, die für den eMail Versand benötigten Module auf dem Server zu installieren. Weitere Hilfe zum Installieren von Modulen findest Du hier: https://codex.yabbforum.com/YaBB.pl?num=1225217016
 
 Danke, dass Du YaBB benutzt!~;
 

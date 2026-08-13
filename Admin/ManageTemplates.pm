@@ -2,20 +2,20 @@
 # ManageTemplates.pm                                                          #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
-# =========================================================================== #
+# Distributed by: https://yabbforum.nz                                    #
+#  #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$managetemplatespmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$managetemplatespmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('Templates');
@@ -427,6 +427,12 @@ qq~<input type="text" name="search" size="16" id="search1" value="$img_txt{'182'
     $fulltemplate =~ s/(\{|<)yabb searchformend(}|>)/<\/form>/gsm;
     $fulltemplate =~ s/(\{|<)yabb im(}|>)/$tempuim/gsm;
     $fulltemplate =~ s/(\{|<)yabb time(}|>)/$temptime/gsm;
+
+    ### style switcher
+    $fulltemplate =~ s/({|<)yabb styleswitch(}|>)/$yystyleswitch/gsm;
+    $fulltemplate =~ s/({|<)yabb tempswitcher(}|>)/$yytempswitcher/gsm;
+    ###
+
     $fulltemplate =~ s/(\{|<)yabb langChooser(}|>)//gsm;
     $fulltemplate =~ s/(\{|<)yabb menu(}|>)/$temp21menu/gsm;
     $fulltemplate =~ s/(\{|<)yabb tabmenu(}|>)/$tempmenu/gsm;
@@ -2191,8 +2197,8 @@ skydobject.initialize()
     </tr>~;
 
     $viewstylestart =
-q~<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{yabb xml_lang}" lang="{yabb xml_lang}">
+q~<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="{yabb xml_lang}" lang="{yabb xml_lang}">
 <head>
 <title>Test Styles</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

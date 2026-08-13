@@ -1,11 +1,11 @@
-﻿###############################################################################
+###############################################################################
 # admin05_templates.help                                                      #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11 and higher                                      #
+# Version:        YaBBForum 3.0 and higher                                      #
 # Released:       November 9, 2015                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-and newer YaBB (www.yabbforum.com) - All Rights Reserved.#
 # Software by: The YaBB Development Team                                      #
@@ -30,7 +30,7 @@ $SectionBody2 = qq~<p>In het maken van YaBB 2.2, hebben we een revisie gedaan aa
     <br />Dit zijn enkele functies in YaBB 2.2 die natuurlijk wat aanpassing nodig hadden op het admin-niveau. Deze toevoegingen zijn als volgt.</p>
 <ul>
     <li><b>RSS</b>
-        <br />Iedereen kan nu gebruik maken van RSS (Really Simple Syndication, zie <a href="http://en.wikipedia.org/wiki/RSS" title="RSS on Wikipedia" target="_blank"> dit artikel in Wikipedia </ a >) om het laatste nieuws van je forum te trekken in een extern document of naar een browser.
+        <br />Iedereen kan nu gebruik maken van RSS (Really Simple Syndication, zie <a href="https://en.wikipedia.org/wiki/RSS" title="RSS on Wikipedia" target="_blank"> dit artikel in Wikipedia </ a >) om het laatste nieuws van je forum te trekken in een extern document of naar een browser.
     </li>
     <li><b>Permalinks</b>
         <br />Om forum URI's een beetje meer 'normaal' te laten lijken, kunt u uw forum instellen om permalinks te gebruiken.
@@ -47,7 +47,7 @@ $SectionBody2 = qq~<p>In het maken van YaBB 2.2, hebben we een revisie gedaan aa
         <br />Stel uw voorkeur spam regels in om een waarschuwing te activeren (en eventueel een verbod) op basis van ongewenste post inhoud, specificeer bepaalde omstandigheden van het detachering proces en houd Viagra verkopers weg.
     </li>
     <li><b>Captcha</b>
-        <br />Om het een beetje moeilijker te maken voor kwaadaardige bots uw forum te betreden, gebruik de captcha (visuele bevestiging, zie <a href="http://en.wikipedia.org/wiki/Captcha" title="Captcha in Wikipedia" target="_blank">this article in Wikipedia</a>, maar wees voorzichtig, het is mogelijk dat sommige menselijke gebruikers het moeilijk vinden om te gebruiken.
+        <br />Om het een beetje moeilijker te maken voor kwaadaardige bots uw forum te betreden, gebruik de captcha (visuele bevestiging, zie <a href="https://en.wikipedia.org/wiki/Captcha" title="Captcha in Wikipedia" target="_blank">this article in Wikipedia</a>, maar wees voorzichtig, het is mogelijk dat sommige menselijke gebruikers het moeilijk vinden om te gebruiken.
     </li>
     <li><b>Broadcast berichten</b>
         <br />Communiceer met uw forum medewerkers met Broadcast berichten en stuur berichten op groepsniveau (moderatoren, moderator groepen, forum moderatoren, globale moderatoren en admins).
@@ -143,7 +143,7 @@ $SectionBody4 = qq~<p>Dit zijn een aantal compleet nieuwe functies in YaBB 2.5.2
                 <br />Een van de meest populaire van de YaBB’s anti-spam maatregelen, SpamFruits vereist dat de registrant de juiste afbeelding selecteert.
             </li>
             <li><b>Anti-Spam Vraag</b>
-                <br />Dit zorgt er voor dat de registrant een willekeurige vraag moet beantwoorden uit een databank met vragen die de Admin de mogelijkheid geeft hen te bewerken. Dit is een afschrikmiddel tegen Spam registraties. Meer anti-spam maatregelen kunnen gevonden worden  op: <a href="http://www.boardmod.org/yabb2/YaBB.pl?catselect=mods_y2" target="_blank">www.boardmod.org/yabb2/YaBB.pl?catselect=mods_y2</a>
+                <br />Dit zorgt er voor dat de registrant een willekeurige vraag moet beantwoorden uit een databank met vragen die de Admin de mogelijkheid geeft hen te bewerken. Dit is een afschrikmiddel tegen Spam registraties. Meer anti-spam maatregelen kunnen gevonden worden  op: <a href="https://www.boardmod.org/yabb2/YaBB.pl?catselect=mods_y2" target="_blank">www.boardmod.org/yabb2/YaBB.pl?catselect=mods_y2</a>
             </li>
             <li><b>Minimum aantal posts een lid moet hebben voordat links en afbeeldingen geplaatst kunnen worden</b>
                 <br />De Admin kan het minimum aantal posten instellen dat nodig is om links en/of afbeeldingen in berichten, handtekeningen en gebruikersprofielen te plaatsen Dit is om te voorkomen dat spammers registreren en onmiddellijk links en afbeeldingen posten.
@@ -231,7 +231,7 @@ $SectionBody5 = qq~<p>Dit zijn een aantal compleet nieuwe functies tot YaBB 2.6.
 $SectionSub6 = "Licentie_-_YaBB_Publieke_Licentie_(YPL)";
 $SectionBody6 = qq~
 <h2>YaBB Publieke Licentie (YPL)</h2>
-<p>Hieronder is de licentie die YaBB voor de software heeft aangenomen. Het verklaart uw verlengde rechten en beperkingen van de YaBB forum software. Wij vragen in feite dat u het copyright intact laat en ten allen tijde zichtbaar aan de onderkant van uw forum op alle pagina’s. Als u de volgende licentie wilt breken of verwijderen van de auteursrechten, kunt u een onderzoek doen door een bezoek te brengen aan de volgende URL: <a href="http://www.yabbforum.com/licenses.php">http://www.yabbforum.com/licenses.php</a>.</p>
+<p>Hieronder is de licentie die YaBB voor de software heeft aangenomen. Het verklaart uw verlengde rechten en beperkingen van de YaBB forum software. Wij vragen in feite dat u het copyright intact laat en ten allen tijde zichtbaar aan de onderkant van uw forum op alle pagina’s. Als u de volgende licentie wilt breken of verwijderen van de auteursrechten, kunt u een onderzoek doen door een bezoek te brengen aan de volgende URL: <a href="https://www.yabbforum.com/licenses.php">https://www.yabbforum.com/licenses.php</a>.</p>
 <ul>
     <li><b>Version 1.0</b>, Aangenomen Op 17 april 2001</li>
     <li><b>Version 2.0</b>, Aangenomen Op 13 april 2004</li>

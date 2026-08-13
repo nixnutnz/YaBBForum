@@ -1,20 +1,20 @@
 /*
 Last Modified: 29/04/07 18:44:48
 YaBB Modified: 05/1/2106
-//YaBB 2.6.14 $Revision: 1611 $
+//YaBBForum 3.0 $0 $
 
 AJS JavaScript library
     A very small library with a lot of functionality
 AUTHOR
-    4mir Salihefendic (http://amix.dk) - amix@amix.dk
+    4mir Salihefendic (https://amix.dk) - amix@amix.dk
 LICENSE
     Copyright (c) 2006 Amir Salihefendic. All rights reserved.
     Copyright (c) 2005 Bob Ippolito. All rights reserved.
-    http://www.opensource.org/licenses/mit-license.php
+    https://www.opensource.org/licenses/mit-license.php
 VERSION
     4.0
 SITE
-    http://orangoo.com/AmiNation/AJS
+    https://orangoo.com/AmiNation/AJS
 **/
 if(!AJS) {
 var AJS = {
@@ -614,7 +614,7 @@ var AJS = {
             type = "POST";
         var req = AJS.getXMLHttpRequest();
 
-        if(url.indexOf("http://") == -1) {
+        if(url.indexOf("https://") == -1) {
             if(AJS.BASE_URL != '') {
                 if(AJS.BASE_URL.lastIndexOf('/') != AJS.BASE_URL.length-1)
                     AJS.BASE_URL += '/';
@@ -793,7 +793,7 @@ var AJS = {
     },
 
     getScrollTop: function() {
-        //From: http://www.quirksmode.org/js/doctypes.html
+        //From: https://www.quirksmode.org/js/doctypes.html
         var t;
         if (document.documentElement && document.documentElement.scrollTop)
                 t = document.documentElement.scrollTop;

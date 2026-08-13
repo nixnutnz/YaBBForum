@@ -2,21 +2,21 @@
 # NewSettings.pm                                                              #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 # use strict;
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$newsettingspmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$newsettingspmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 # Figure out what tabset to use, depending on the page= parameter.
@@ -472,19 +472,19 @@ sub SaveSettingsTo {
 ###############################################################################
 # Settings.pm                                                                 #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026  YaBB (yabbforum.nz) - All Rights Reserved.    #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026  YaBBForum (yabbforum.nz) - All Rights Reserved.    #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 
 ########## Board Info ##########
-# Note: these settings must be properly changed for YaBB to work
+# Note: these settings must be properly changed for YaBBForum to work
 
 \$settings_file_version = "$YaBBversion";
 # If not equal actual YaBBversion then the updating process is run through
@@ -533,6 +533,11 @@ sub SaveSettingsTo {
 \$nomailspammer = $nomailspammer;           # 1: send deleted account email
 \$lang = "\Q$lang\E";                       # Default Forum Language
 \$default_template = "\Q$default_template\E";   # Default Forum Template
+
+### style switcher
+\$templ_switcher = "$templ_switcher";           # Set to 1 to display the template switcher dropdown field and allow a quick style switch
+\$temp_switcher_allowed = $temp_switcher_allowed;   # minimum user level for show Style Switcher: 0 = all, 1 = only members
+###
 
 \$mailprog = "\Q$mailprog\E";               # Location of your sendmail program
 \$smtp_server = "\Q$smtp_server\E";         # Address of your SMTP-Server (for Net::SMTP::TLS, specify the port number with a ":<portnumber>" at the end)
@@ -594,7 +599,6 @@ $member_groups
 
 ########## Feature Settings ##########
 
-\$enable_spell_check = $enable_spell_check; # Set to 1 if you want to enable SpellChecker. By doing this you agree to the terms of license under which googiespell runs. See: /yabbfiles/googiespell/GPL.txt and http://creativecommons.org/licenses/by-nc-sa/3.0/
 \$enable_ubbc = $enable_ubbc;               # Set to 1 if you want to enable UBBC (Uniform Bulletin Board Code)
 \$enable_news = $enable_news;               # Set to 1 to turn news on, or 0 to set news off
 \$allowpics = $allowpics;                   # set to 1 to allow members to choose avatars in their profile
@@ -771,7 +775,7 @@ $ext_prof_fields
 \$cachebehaviour = $cachebehaviour;     # Browser Cache Control: 0 = No Cache must revalidate, 1 = Allow Caching
 \$use_flock = $use_flock;           # Set to 0 if your server doesn't support file locking, 1 for Unix/Linux and WinNT and 2 for Windows 95/98/ME
 
-\$faketruncation = $faketruncation;     # Enable this option only if YaBB fails with the error:
+\$faketruncation = $faketruncation;     # Enable this option only if YaBBForum fails with the error:
                             # "truncate() function not supported on this platform."
                             # 0 to disable, 1 to enable.
 
@@ -814,7 +818,7 @@ $ext_prof_fields
 \$new_member_notification_mail = "\Q$new_member_notification_mail\E";   # Your "New Member Notification"-email address.
 
 \$sendtopicmail = $sendtopicmail;       # Set to 0 for send NO topic email to friend
-                            # Set to 1 to send topic email to friend via YaBB
+                            # Set to 1 to send topic email to friend via YaBBForum
                             # Set to 2 to send topic email to friend via user program
                             # Set to 3 to let user decide between 1 and 2
 
@@ -906,7 +910,7 @@ $ext_prof_fields
 \$accept_permalink = $accept_permalink;     # Set to 1 to have the board accept permalink alike environment strings
 \$symlink = "\Q$symlink\E";         # The part defined in .htaccess redirection rules that is between domainname and permalink
 \$perm_spacer = "\Q$perm_spacer\E";     # The character used in the permalink output file that replaces the space.
-\$perm_domain = "\Q$perm_domain\E";     # The full domainname (no http://) where the .haccess redirect is set on.
+\$perm_domain = "\Q$perm_domain\E";     # The full domainname (no https://) where the .haccess redirect is set on.
 
 ########## bypass post for locked thread ##########
 

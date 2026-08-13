@@ -4,18 +4,18 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$loadpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$loadpmver = 'YaBBForum 3.0';
 
 sub LoadBoardControl {
     $binboard = q{};
@@ -505,31 +505,31 @@ sub LoadUserDisplay {
 
     ${ $uid . $user }{'myspace'} =
       ${ $uid . $user }{'myspace'}
-      ? qq~<a href="http://www.myspace.com/${$uid.$user}{'myspace'}" target="_blank">$myspaceimg</a>~
+      ? qq~<a href="https://www.myspace.com/${$uid.$user}{'myspace'}" target="_blank">$myspaceimg</a>~
       : q{};
 
     ${ $uid . $user }{'facebook'} =
       ${ $uid . $user }{'facebook'}
-      ? q~<a href="http://www.facebook.com/~
+      ? q~<a href="https://www.facebook.com/~
       . ( ${ $uid . $user }{'facebook'} !~ /\D/xsm ? 'profile.php?id=' : q{} )
       . qq~${$uid.$user}{'facebook'}" target="_blank">$facebookimg</a>~
       : q{};
 
     ${ $uid . $user }{'twitter'} =
       ${ $uid . $user }{'twitter'}
-      ? qq~<a href="http://twitter.com/${$uid.$user}{'twitter'}" target="_blank">$twitterimg</a>~
+      ? qq~<a href="https://twitter.com/${$uid.$user}{'twitter'}" target="_blank">$twitterimg</a>~
       : q{};
 
     ${ $uid . $user }{'youtube'} =
       ${ $uid . $user }{'youtube'}
-      ? qq~<a href="http://www.youtube.com/${$uid.$user}{'youtube'}" target="_blank">$youtubeimg</a>~
+      ? qq~<a href="https://www.youtube.com/${$uid.$user}{'youtube'}" target="_blank">$youtubeimg</a>~
       : q{};
 
     ${ $uid . $user }{'gtalk'} = ${ $uid . $user }{'gtalk'} ? $gtalkimg : q{};
 
     $yimon{$user} =
       $yimon{$user}
-      ? qq~<img src="http://opi.yahoo.com/online?u=${$uid.$user}{'yim'}&#38;m=g&#38;t=0" alt="" />~
+      ? qq~<img src="https://opi.yahoo.com/online?u=${$uid.$user}{'yim'}&#38;m=g&#38;t=0" alt="" />~
       : q{};
 
     if ( $showgenderimage && ${ $uid . $user }{'gender'} ) {
@@ -1113,17 +1113,48 @@ sub WhatTemplate {
         }
     }
     if ( !$found ) { $template = 'Forum default'; }
-    if ( ${ $uid . $username }{'template'} ne q{} ) {
-        if ( !exists $templateset{ ${ $uid . $username }{'template'} } ) {
-            ${ $uid . $username }{'template'} = 'Forum default';
-            UserAccount( $username, 'update' );
-        }
-        while ( ( $curtemplate, $value ) = each %templateset ) {
-            if ( $curtemplate eq ${ $uid . $username }{'template'} ) {
-                $template = $curtemplate;
+
+#<search for>
+#    if ( ${ $uid . $username }{'template'} ne q{} ) {
+#        if ( !exists $templateset{ ${ $uid . $username }{'template'} } ) {
+#            ${ $uid . $username }{'template'} = 'Forum default';
+#            UserAccount( $username, 'update' );
+#        }
+#        while ( ( $curtemplate, $value ) = each %templateset ) {
+#            if ( $curtemplate eq ${ $uid . $username }{'template'} ) {
+#                $template = $curtemplate;
+#            }
+#        }
+#    }
+#</search for>
+
+#<replace>
+    if (${ $uid . $username }{'template'} ne q{} || $yyCookies{'yabb2template'} ne q{} || $FORM{'template'} ne q{}) {
+        while (($curtemplate, $value) = each(%templateset)) {
+            if ($FORM{'template'} && $curtemplate eq $FORM{'template'}) {
+                if ( $sessionvalid && !$iamguest ) {
+                    ${ $uid . $username }{'template'} = $FORM{'template'};
+                    UserAccount($username, 'update');
+                }
+                else {
+                    if ($pathval eq q{}) { $pathval = qq~/~; }
+                    $yySetCookies1 = write_cookie(
+                        -name    => 'yabb2template',
+                        -value   => $FORM{'template'},
+                        -path    => $pathval,
+                        -expires => "Sunday, 17-Jan-2038 00:00:00 GMT");
+                }
+                my $redir = $FORM{'redir'} ? "?$FORM{'redir'}" : $iamguest ? '?' : q{};
+                $redir =~ s/search2/search/gxsm;
+                $yySetLocation = qq~$scripturl$redir~;
+                redirectexit();
             }
+            elsif ($iamguest && $curtemplate eq $yyCookies{'yabb2template'}) { $template = $curtemplate; }
+            elsif ($curtemplate eq ${ $uid . $username }{'template'}) { $template = $curtemplate; }
         }
     }
+#</replace>
+
     (
         $usestyle,       $useimages,  $usehead,     $useboard,
         $usemessage,     $usedisplay, $usemycenter, $UseMenuType,
@@ -1314,7 +1345,7 @@ sub update_IMS {
 
     fopen( UPDATE_IMS, ">$memberdir/$builduser.ims", 1 )
       or fatal_error( 'cannot_open', "$memberdir/$builduser.ims", 1 );
-    print {UPDATE_IMS} qq~### UserIMS YaBB 2.6.14 Version ###\n\n~
+    print {UPDATE_IMS} qq~### UserIMS YaBBForum 3.0 Version ###\n\n~
       or croak "$croak{'print'} update IMS";
     for my $cnt ( 0 .. $#tag ) {
         print {UPDATE_IMS} qq~'$tag[$cnt]',"${$builduser}{$tag[$cnt]}"\n~

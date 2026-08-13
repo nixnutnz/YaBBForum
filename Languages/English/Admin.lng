@@ -1,18 +1,18 @@
 ###############################################################################
 # Admin.lng (Administrative text definitions)                                 #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 
-$adminlngver = 'YaBB 2.6.14 $Revision: 1654 $';
+$adminlngver = 'YaBBForum 3.0';
 
 @days = ('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
 @months = ('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec');
@@ -41,7 +41,7 @@ $abbr_lang = 'en-us';
 '23' => 'Permalink Domain',
 '24' => 'Permalink Settings',
 '25' => 'Permalink Symlink URL part (omit leading slash and include trailing slash (e.g. articles/))',
-'26' => 'This is the part of the URL between your domain name and the Permalink Symlink URL part<br />(e.g. http://www.yourdomain.com/<b>articles/</b>news/this-is-the-title)',
+'26' => 'This is the part of the URL between your domain name and the Permalink Symlink URL part<br />(e.g. https://www.yourdomain.com/<b>articles/</b>news/this-is-the-title)',
 '31' => 'Remove',
 '32' => 'Go',
 '39' => 'Password incorrect',
@@ -67,7 +67,7 @@ $abbr_lang = 'en-us';
 '61a' => 'Category ID:',
 '61b' => '<span class="small">enter any alphanumeric name you wish with no spaces</span>',
 '62' => 'Description',
-'62a' => 'If this is to be an external board link, the first line of the description should be the title of the Name link, or if using an image as the link the first line should use the HTML &lt;img&gt; tag. e.g. &lt;img src="http://yoursite.com/yourimage.jpg" alt="Your Image Title" /&gt;',
+'62a' => 'If this is to be an external board link, the first line of the description should be the title of the Name link, or if using an image as the link the first line should use the HTML &lt;img&gt; tag. e.g. &lt;img src="https://yoursite.com/yourimage.jpg" alt="Your Image Title" /&gt;',
 '63' => 'Moderators',
 '63d' => 'Board Moderators',
 '63a' => 'Copy',
@@ -103,7 +103,7 @@ $abbr_lang = 'en-us';
 '66' => 'Click here to view the relevant Help section',
 '67' => 'Maintenance Settings',
 '68' => 'Name',
-'68a' => q~If this is to be an external board link, the name should be in the format of 'http://boardlink.com'~,
+'68a' => q~If this is to be an external board link, the name should be in the format of 'https://boardlink.com'~,
 '70' => 'Subject',
 '72' => 'Message',
 '87' => 'Main Group',
@@ -221,8 +221,6 @@ $abbr_lang = 'en-us';
 '374' => 'Maximum Topics displayed per page in the Message Index',
 '375' => 'Maximum number of messages displayed per page of a Topic',
 '376' => 'Number of days after a post is made that it will no longer show as "new" in either the Board view or Message view.',
-'377' => q~Enable Spell Checking?<br /><span class="small">This spell checker relies on external websites belonging to GoogieSpell. You must take into consideration firewall settings and content blockers in using this feature.</span><br /><b><u>License:</u></b><br />The scripts in /yabbfiles/googiespell are dual licensed. One is for free software ("open source") the other is for proprietary software.<br />The free license is <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 license</a>. Under this license you can only use GoogieSpell with/in free software (i.e. software where the source is released). You cannot use GoogieSpell with proprietary software even if you do not distribute your software.<br />For more details see <a href="http://orangoo.com/labs/GoogieSpell/Buy_License/" target="_blank">orangoo.com/labs/GoogieSpell/Buy_License/</a>.~,
-'377a' => 'If you see this message, some required Perl modules were not found.<br />If an error message like "Can&#39;t locate ..." is shown, then this module is not installed on your server.<br /><br />',
 '377b' => 'Installed',
 '377c' => '<br />To use SpellChecker, you must have installed all of these modules on your server. Ask your server host to install them for you.<br />Please install:<br />- Bundle::LWP (for LWP::UserAgent and HTTP::Request::Common)<br />- Crypt::SSLeay',
 '378' => 'Enable Bulletin Board Code?',
@@ -286,19 +284,19 @@ $abbr_lang = 'en-us';
 '479b' => 'Disable "greybox"',
 '479c' => 'Enable "greybox" with one image per box',
 '479d' => 'Enable "greybox" + all Attachment images in one box',
-'480' => '01/31/01 at 13:15:17',
-'481' => '31.01.01 at 13:15:17',
-'482' => '31.01.2001 at 13:15:17',
-'483' => 'Jan 12th, 2001 at 1:15pm',
-'483a' => '12th Jan, 2001 at 1:15pm',
-'484' => '01/31/01 at 1:15pm',
+'480' => '01/31/26 at 13:15:17',
+'481' => '31.01.26 at 13:15:17',
+'482' => '31.01.2026 at 13:15:17',
+'483' => 'Jan 31st, 2026 at 1:15pm',
+'483a' => '31st Jan, 2026 at 1:15pm',
+'484' => '01/31/26 at 1:15pm',
 '485' => '31. Jan at 13:15',
 '486' => 'Time Format',
 '487' => 'Time Offset must be between -23.5 and 23.5.',
 '488' => 'Total Members:',
 '489' => 'Total Posts:',
 '490' => 'Total Topics:',
-'493' => 'YaBB Current Version',
+'493' => 'YaBBForum Current Version',
 '494' => 'User&#39;s Version',
 '495' => 'YaBB File',
 '496' => 'YaBB Package',
@@ -593,7 +591,7 @@ $abbr_lang = 'en-us';
 );
 
 %floodtxt = (
-'1' => 'YaBB Security Center:',
+'1' => 'YaBBForum Security Center:',
 '2' => 'Activate validation code (CAPTCHA) on registration and forgot password?',
 '3' => 'Activate validation code (CAPTCHA) for Guest posting, Guest contact Admin by Broadcast Message, Guest sending Alert Moderator message, Guest sending a topic and Guest adding event to Calendar?',
 '5' => 'Maximum number of messages returned for Recent Posts on forum and/or by user?<br /> <span class="small">-1 will disable Recent Posts</span>',
@@ -650,7 +648,7 @@ $abbr_lang = 'en-us';
 '15' => 'Are you sure you want to delete the selected errors(s)?',
 '16' => 'Viewing All',
 '17' => 'Errors',
-'18' => 'This page will give you a summary of all errors that have occurred, from the smallest error like a wrong password, to all attempts to bypass, thwart or break YaBB Security features.<br /><br />Below you will see detailed information on the error including the time when the error happened, the user who caused the error, the address (URL) of the error and the error itself, along with the ability to look up an IP and ban the IP of the user if needed.',
+'18' => 'This page will give you a summary of all errors that have occurred, from the smallest error like a wrong password, to all attempts to bypass, thwart or break YaBBForum Security features.<br /><br />Below you will see detailed information on the error including the time when the error happened, the user who caused the error, the address (URL) of the error and the error itself, along with the ability to look up an IP and ban the IP of the user if needed.',
 '19' => 'There are no new errors since you last cleaned the error log.',
 '20' => 'Clean Error Log',
 '21' => 'Error #',
@@ -668,15 +666,15 @@ $abbr_lang = 'en-us';
 );
 
 %admintxt = (
-'1' => qq~Welcome to your '$mbname' Administration Center~,
-'2' => 'This is your &#39;YaBB Admin Center&#39;. You can modify your forum preferences, edit your template and run maintenance on your forum from here. Please be careful with these functions.<br /><br />Please read the Quick-Guide or refer to the info in the Help section of your forum before you contact any form of support. If you need further help you may find answers to your problems on the YaBB Support Codex or the YaBB Chat and Support Community forum.<br /><br />We thank you for using YaBB.',
+'1' => qq~'$mbname' Administration Center~,
+'2' => 'You can modify your forum preferences, edit your templates and run maintenance on your forum from here. Ensure you are familiar with these functions before implementing some of them.<br /><br />Read the Quick-Guide or refer to the info in the Help section of your forum before you contact any form of support. If you need further help you may find answers to your problems on the <a href="https://yabb.nz">YaBBForum Chat and Support Community forum</a>.<br /><br />Tap or Click on the black Category bars above (mobiles) or to the left (desktop) to open/close that section. You can edit/remove this message in Languages/English/Admin.lng line 672. Thank you for using YaBBForum.',
 '3' => 'Version Information',
-'4' => 'What&#39;s new at YaBB?',
+'4' => 'Version Information',
 '5' => 'Last Logins:',
 '6' => 'Credits',
-'7' => 'Setup and Converter Back-up files',
-'8' => 'When you have tested your forum and made sure everything has been converted correctly, you can remove the Setup Utility and your old YaBB back-up files in the Converter folders (if any exist). This will also delete the conversion programs so they cannot be run again.',
-'9' => 'Delete old Back-up files, setup, and conversion utilities',
+'7' => 'Setup and Back-up files',
+'8' => 'When you have tested your forum and made sure everything has been updated correctly, you can remove the Setup Utility and your old YaBB back-up files in the Converter folders (if any exist).',
+'9' => 'Delete old Back-up files, setup, and update utilities',
 '10' => 'Old Back-up files deleted',
 '11' => 'Detailed Version Check',
 '15' => 'Return to',
@@ -701,7 +699,7 @@ $abbr_lang = 'en-us';
 '33' => 'Return to Admin Center',
 '34' => 'Clicking will collapse',
 '35' => 'View Help Files',
-'36' => 'Visit YaBBforum.nz',
+'36' => '<font color="yellow">Donate to YaBBForum</font>',
 '37' => 'Reverse Results:',
 '38' => 'Del',
 '39' => 'Average Posts per Member:',
@@ -831,7 +829,7 @@ $abbr_lang = 'en-us';
 
 'a9_title' => 'BoardMod Mods',
 'a9_label' => 'BoardMod Mods Section',
-'conv' => 'To convert 1x or 2x files to 2.6.14',
+'conv' => 'To convert 1x or 2x files to 3.0',
 'conv2' => qq~<b><a href="$boardurl/Setup.pl?set=1">Go to Setup/Convert</a></b>~,
 'bookmarks' => 'Social Bookmarks', # Social Bookmarks
 'bookmarks1' => 'Social Bookmark Settings', # Social Bookmarks
@@ -1218,7 +1216,7 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 '6' => 'Installed Mods',
 '7' => 'View a list of all Installed Mods',
 '8' => 'No mods are currently installed. You can get new mods at',
-'9' => 'BoardMod',
+'9' => 'To be advised',
 );
 
 %smtp_txt = (
@@ -1332,16 +1330,16 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 
 %modulecheck = (
 '1' => 'Module Check',
-'2' => 'Checks if all Perl modules used by YaBB are properly installed.',
+'2' => 'Checks if all Perl modules used by YaBBForum are properly installed.',
 '3' => 'Name of the Module',
 '4' => 'Info',
 '5' => 'Information provided by the system:',
 '6' => 'Installed',
 '7' => 'Some modules are not installed on your server.',
-'8' => q~<b>If you really need them (read the Info), your first choice should be to ask your server host to install the needed modules for you.<br /><br />If you host your own server, or if your host will not install the module for you, see <a href="http://yabbforum.nz/cgi-bin/codex/YaBB.pl?num=1225217016" target="_blank"><b>this post in the <i>YaBB Codex</i> for help</b></a>.</b>~,
-'Digest::MD5' => 'Used for password encryption.<br />This module is essential. Without it, YaBB will not work.',
+'8' => q~<b>If you really need them (read the Info), your first choice should be to ask your server host to install the needed modules for you.<br /><br />If your host will not install the module for you, go to <a href="https://perlhost.nz/" target="_blank"><b>Perlhost.nz</b></a> who specialise in Perl & especially YaBBForum hosting.</b>~,
+'Digest::MD5' => 'Used for password encryption.<br />This module is essential. Without it, YaBBForum will not work.',
 'Time::HiRes' => 'Used for the benchmarking time if debug is enabled.<br />If this module in not installed, the benchmarking time will be displayed in full seconds and not in high resolution seconds. Otherwise you do not need this module.',
-'Time::Local' => 'Used to convert time strings into timestamps.<br />This module is essential. Without it, YaBB will not always work.',
+'Time::Local' => 'Used to convert time strings into timestamps.<br />This module is essential. Without it, YaBBForum will not always work.',
 'File::Find' => 'Used for avatar and attachment upload.<br />If this module is not installed and these features are enabled, you will get an error messages when you try to upload. Otherwise you do not need this module.',
 'CGI' => 'Used for avatar and attachment upload.<br />If this module is not installed and these features are enabled, you will get an error messages when you try to upload. Otherwise you do not need this module.',
 'Net::SMTP' => 'Used to send e-mails via SMTP.<br />This module is only needed if you want to send your e-mails via Net::SMTP. Otherwise you do not need this module.',
@@ -1360,11 +1358,11 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 'bytes' => 'Used to send e-mails via "YaBB SMTP Engine".<br />This module is only needed if you want to send your e-mails via the "YaBB SMTP Engine". Otherwise you do not need this module.',
 'integer' => 'Used to send e-mails via "YaBB SMTP Engine".<br />This module is only needed if you want to send your e-mails via the "YaBB SMTP Engine". Otherwise you do not need this module.',
 'DateTime::TimeZone' => q~Used to get user and forum Time Zone offsets based on the user's actual time zone.<br />This module is needed if you want to have forum/user timezones set to anything other than UTC.<br /><span class="important">This Module needs to be kept current as it contains time sensitive Time Zone data.~,
-'DateTime::TimeZone2' => q~<br /><span class="important">This Module needs to be kept current as it contains time sensitive Time Zone data. Check with your server host to make sure this Module is being kept current.</span><br /><b>Your version</b>:~,
+'DateTime::TimeZone2' => q~<br />Your version:~,
 'URI::Escape' => q~Used by Post/Message Preview function.<br />This module is essential. Without it, the Preview function will not work.~,
 'perlver' => 'Your Perl Version',
 'Net::DNS' => 'Used by the improved e-mail checker. If this module is not installed, you cannot enable the improved e-mail checker.',
-'Mail::CheckUser' => 'Used by the improved e-mail checker. This module should have been installed with YaBB.',
+'Mail::CheckUser' => 'Used by the improved e-mail checker. This module should have been installed with YaBBForum.',
 );
 
 %settings_txt = (
@@ -1526,8 +1524,13 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 );
 
 timetostring($date);
-$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="http://yabbforum.nz"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="http://yabbforum.nz">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.</span>~;
+$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="https://yabbforum.nz"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="https://yabbforum.nz">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.</span>~;
 $iFrameSupport = 'Sorry, to see the latest news, you must use a browser that supports iframes';
 $rna = 'Remote Server not available.';
+
+### style switcher
+$admin_txt{'813a'} = 'Enable Style Switcher Dropdown Field?<br /><span class="small">If enabled, you have a option to quick select and changing the forum layout if other templates or css stylesheets available.</span>';
+$admin_txt{'813b'} = 'Select the membergroups allowed to use the Style Switcher?</span>';
+###
 
 1;

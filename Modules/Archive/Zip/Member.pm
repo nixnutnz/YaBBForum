@@ -202,7 +202,7 @@ sub _mapPermissionsFromUnix {
 #
 # This was taken from Info-ZIP group's portable UnZip
 # zipfile-extraction program, version 5.50.
-# http://www.info-zip.org/pub/infozip/
+# https://www.info-zip.org/pub/infozip/
 #
 # See the mapattr() function in unix/unix.c
 # See the attribute format constants in unzpriv.h

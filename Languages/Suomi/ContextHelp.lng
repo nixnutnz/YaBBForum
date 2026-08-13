@@ -3,19 +3,19 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
-# Many thanks to Carsten Dalgaard (http://www.carsten-dalgaard.dk/)           #
+# Many thanks to Carsten Dalgaard (https://www.carsten-dalgaard.dk/)           #
 # for his contribution to the YaBB community                                  #
 ###############################################################################
 
-$suomicontexthelplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$suomicontexthelplngver = 'YaBBForum 3.0 $0 $';
 @suomicontexthelplngmods = ();
 if(@suomicontexthelplngmods){
     $suomicontexthelplngmods = 1;
@@ -26,11 +26,11 @@ if ( $action eq 'detailedversion' ) { return 1; }
 
 %contextxt = (
 'clicktip' => "Ohje oikean napautuksella",
-'url' => "Lis‰‰ \"URL\"-linkki:<br /><br />Valitse URL: [SELECT]http://www.yabbforum.com[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [url]http://www.yabbforum.com[/url]<hr />Lis‰‰ \"Teksti\"-linkki:<br /><br />Valitse URL <u>ja</u> teksti: [SELECT]http://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [url=http://www.yabbforum.com]YaBB Forum[/url]<hr />[link] YaBBC-tagi toimii samalla tavalla kuin [url]-tagi, sill‰ poikkeuksella, ett‰ [link]-tagi (ei ole lis‰yspainiketta t‰lle tagille) avaa napautetun linkin nykyisess‰ ikkunassa, ja [url]-tagi taas avaa napautetun linkin uudessa ikkunassa.",
+'url' => "Lis‰‰ \"URL\"-linkki:<br /><br />Valitse URL: [SELECT]https://www.yabbforum.com[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [url]https://www.yabbforum.com[/url]<hr />Lis‰‰ \"Teksti\"-linkki:<br /><br />Valitse URL <u>ja</u> teksti: [SELECT]https://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [url=https://www.yabbforum.com]YaBB Forum[/url]<hr />[link] YaBBC-tagi toimii samalla tavalla kuin [url]-tagi, sill‰ poikkeuksella, ett‰ [link]-tagi (ei ole lis‰yspainiketta t‰lle tagille) avaa napautetun linkin nykyisess‰ ikkunassa, ja [url]-tagi taas avaa napautetun linkin uudessa ikkunassa.",
 'ftp' => "Lis‰‰ \"FTP\"-linkki:<br /><br />Valitse FTP-osoite: [SELECT]ftp://ftpdom[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [ftp]ftp://ftpdom[/ftp]",
-'image' => "Lis‰‰ kuva:<br /><br />Valitse kuvahakemisto: [SELECT]http://imagedirectory/image.gif[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [img]http://imagedirectory/image.gif[/img]",
+'image' => "Lis‰‰ kuva:<br /><br />Valitse kuvahakemisto: [SELECT]https://imagedirectory/image.gif[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [img]https://imagedirectory/image.gif[/img]",
 'email2' => "Lis‰‰ \"S‰hkˆpostiosoite\"-linkki:<br /><br />Valitse s‰hkˆpostiosoite: [SELECT]myname\@domain.com[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [email]myname\@domain.com[/email]<hr />Lis‰‰ \"Teksti\"-postilinkki:<br /><br />Valitse postiosoite <u>ja</u> teksti: [SELECT]myname\@domain.com Kirjoita minulle[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [email=myname\@domain.com]Kirjoita minulle[/email]",
-'media' => "Lis‰‰ mediatiedosto: <br /><br />Valitse URL mediatiedostoon: [SELECT]http://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [media]http://www.your-domain.com/yabbchelp.swf[/media]",
+'media' => "Lis‰‰ mediatiedosto: <br /><br />Valitse URL mediatiedostoon: [SELECT]https://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [media]https://www.your-domain.com/yabbchelp.swf[/media]",
 'table' => "Lis‰‰ tyhj‰ yhden solun taulukko:<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [table][tr][td][/td][/tr][/table]<hr />Liit‰ teksti tai kuva yhden solun taulukkoon:<br /><br />Valitse teksti- tai kuvahakemisto: [SELECT]Terve maailma[/SELECT]<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [table][tr][td]Terve maailma[/td][/tr][/table]",
 'tr' => "Lis‰‰ taulukkorivi:<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [tr][/tr]",
 'td' => "Lis‰‰ taulukkosolu:<br /><br />Napauta \"[TITLE]\"-painiketta: [BUTTON]<br /><br /><b>YaBBC-koodi:</b> [td][/td]",

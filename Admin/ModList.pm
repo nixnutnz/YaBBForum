@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -14,9 +14,9 @@
 ###############################################################################
 # use strict;
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$modlistpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$modlistpmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 sub ListMods {
@@ -34,6 +34,10 @@ sub ListMods {
     # You could use "$SuperMod_CoolThings"
 
 ### BOARDMOD ANCHOR ###
+
+    $styleswitch = q~Style Switcher for YaBBForum 3.0|Thomas Mueller (ThM) Andi Kanzler &amp; Carsten|This mod allows a quick design change by using multiple template stylesheet in combination with a simple dropdown box. The last setting is save by a cookie. You can enable or disable these options and select to allow membergroups to use the Style Switcher in your admin center. This mod based on the AK108 YaBB 2.1 set template in url add-on. Thanks to him!|1.8|Jan 13, 2015~;
+    push @installed_mods, $styleswitch;
+
 ### END BOARDMOD ANCHOR ###
     our ( $yymain, %mod_list, $imagesdir, $yytitle );
     my ( $action_area,  $mod_text_list, $full_description );
@@ -50,7 +54,7 @@ sub ListMods {
         </tr><tr>
             <td class="windowbg2">
                 <div class="pad-more">
-                    $mod_list{'8'} <a href="http://www.boardmod.org" target="_blank">$mod_list{'9'}</a>
+                    $mod_list{'8'} <a href="https://www.boardmod.org" target="_blank">$mod_list{'9'}</a>
                 </div>
             </td>
         </tr>

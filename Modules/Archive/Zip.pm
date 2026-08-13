@@ -1993,7 +1993,7 @@ due to back-compatibility issues.
 
 Bugs should be reported via the CPAN bug tracker
 
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Archive-Zip>
+L<https://rt.cpan.org/NoAuth/ReportBug.html?Queue=Archive-Zip>
 
 For other issues contact the maintainer
 
@@ -2023,7 +2023,7 @@ it under the same terms as Perl itself.
 L<Compress::Zlib>, L<Archive::Tar>, L<Archive::Extract>
 
 There is a Japanese translation of this
-document at L<http://www.memb.jp/~deq/perl/doc-ja/Archive-Zip.html>
+document at L<https://www.memb.jp/~deq/perl/doc-ja/Archive-Zip.html>
 that was done by DEQ E<lt>deq@oct.zaq.ne.jpE<gt> . Thanks! 
 
 =cut

@@ -1,2 +1,3 @@
-amazon	Amazon
+credits	Credits
 
+donate	Donate

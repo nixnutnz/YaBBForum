@@ -3,16 +3,16 @@
 //##############################################################################
 //# YaBB: Yet another Bulletin Board                                           #
 //# Open-Source Community Software for Webmasters                              #
-//# Version:        YaBB 2.6.14                                                #
+//# Version:        YaBBForum 3.0                                                #
 //# Packaged:       July 26, 2026                                            #
-//# Distributed by: http://yabbforum.nz                                   #
+//# Distributed by: https://yabbforum.nz                                   #
 //# ===========================================================================#
 //# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.    #
 //# Software by:  The YaBB Development Team                                    #
 //#               with assistance from the YaBB community.                     #
 //##############################################################################
 
-//YaBB 2.6.14 $Revision: 1611 $
+//YaBBForum 3.0 $0 $
 
 // DocClick object for registering multiple document.onclick events
 var DocClick = new Array();
@@ -488,7 +488,7 @@ function resize_brd_images(img) {
 * Based upon uni-directional fading code from:
 * Fading Scroller- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
 * This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+* Visit Dynamic Drive at https://www.dynamicdrive.com/ for full source code
 ***********************************************/
 
 var DOM2 = document.getElementById;

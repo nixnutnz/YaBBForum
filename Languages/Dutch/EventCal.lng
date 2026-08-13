@@ -1,4 +1,4 @@
-﻿###############################################################################
+###############################################################################
 # EventCal.lng                                                                #
 ###############################################################################
 # Dutch/Nederlands - Translation by Pieszyce                                  #
@@ -6,18 +6,18 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #             with assistance from the YaBB community.                        #
-# Mod created by XTC: http://www.yabbserver.com                               #
+# Mod created by XTC: https://www.yabbserver.com                               #
 #                and added to YaBB core in Version 2.5.4 /Version 3.0         #
 ###############################################################################
 
-$dutcheventcallngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$dutcheventcallngver = 'YaBBForum 3.0 $0 $';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 ### Event Calendar ###

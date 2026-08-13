@@ -4,15 +4,15 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
-# Many thanks to AK108 (http://fkp.jkcsi.com/)                                #
+# Many thanks to AK108 (https://fkp.jkcsi.com/)                                #
 # for his contribution to the YaBB community                                  #
 ###############################################################################
 # use strict;
@@ -20,9 +20,9 @@
 # no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
 use English '-no_match_vars';
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$backuppmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$backuppmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 # Add in support for Archive::Tar in the Modules directory and binaries in different places
@@ -729,7 +729,7 @@ sub runbackup {
         'mes'  => $datadir,
         'temp' => "$boarddir/Templates|$htmldir/Templates",
         'var'  => $vardir,
-        'html' => "!$htmldir|$htmldir/Bookmarks|$htmldir/Buttons|$htmldir/EventIcons|$htmldir/googiespell|$htmldir/greybox|$htmldir/ModImages|$htmldir/shjs|$htmldir/Smilies",
+        'html' => "!$htmldir|$htmldir/Bookmarks|$htmldir/Buttons|$htmldir/EventIcons|$htmldir/greybox|$htmldir/ModImages|$htmldir/shjs|$htmldir/Smilies",
         'upld' => "$htmldir/Attachments|$htmldir/PMAttachments|$htmldir/avatars",
     );
 
@@ -1030,7 +1030,7 @@ sub CheckPath {
     return;
 }
 
-# Thanks to BBQ at PerlMonks for the basis of this routine: http://www.perlmonks.org/?node_id=9277
+# Thanks to BBQ at PerlMonks for the basis of this routine: https://www.perlmonks.org/?node_id=9277
 sub downloadbackup {
     chdir($backupdir)
       || fatal_error( q{}, "$backup_txt{44} $backupdir", 1 );

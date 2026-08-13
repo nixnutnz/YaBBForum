@@ -3,15 +3,15 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
-# Distributed by: http://www.yabbforum.com                                    #
+# Version:        YaBBForum 3.0                                                 #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2015 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$backuplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$backuplngver = 'YaBBForum 3.0 $0 $';
 
 $script_root = $ENV{'SCRIPT_FILENAME'};
 if( ! $script_root ) {
@@ -185,7 +185,7 @@ Pero puedes visitar LINK para bajar la copia de seguridad FILENAME.
 Información proporcionado por el sistema en relación al problema de envío:
 "SYSTEMINFO"
 
-Necesitas MIME::Lite , y posiblemente otros módulos (mira la información que aparece más abajo), instalado en tu servidor para poder recibir las copias de seguridad por email. Pide a tu administrador que te instale los módulos en el servidor. Puedes encontrar más información sobre la instalación de los módulos aquí: http://codex.yabbforum.com/YaBB.pl?num=1225217016
+Necesitas MIME::Lite , y posiblemente otros módulos (mira la información que aparece más abajo), instalado en tu servidor para poder recibir las copias de seguridad por email. Pide a tu administrador que te instale los módulos en el servidor. Puedes encontrar más información sobre la instalación de los módulos aquí: https://codex.yabbforum.com/YaBB.pl?num=1225217016
 
 Gracias por usar YaBB!~;
 

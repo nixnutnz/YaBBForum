@@ -66,7 +66,7 @@ $Net_DNS_Resolver = undef;
 # if true then enable debug mode
 $Debug = 0;
 # Wildcard gTLD always denote bogus domains
-# (http://www.imperialviolet.org/dnsfix.html)
+# (https://www.imperialviolet.org/dnsfix.html)
 ## gTLD Wildcard IPs
 $NXDOMAIN = {
   # com/net
@@ -784,7 +784,7 @@ Ilya Martynov B<ilya@martynov.org>
 Rob Brown B<bbb@cpan.org>
 
 Module maintained at Source Forge (
-http://sourceforge.net/projects/mail-checkuser/
+https://sourceforge.net/projects/mail-checkuser/
 ).
 
 =head1 COPYRIGHT

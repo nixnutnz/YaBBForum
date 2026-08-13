@@ -30,6 +30,7 @@ e.com/licenses.php.
     Version 2.6.12, Adopted On January 5, 2016
     Version 2.6.12.01, Adopted On July 18, 2026
     Version 2.6.12.02, Adopted On July 21, 2026
+    Version 3.0, Adopted On August 13, 2026
 
     
 Definitions

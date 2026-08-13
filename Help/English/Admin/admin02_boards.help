@@ -59,7 +59,7 @@ $SectionBody2 = q~<p>YaBB gives Forum Administrators the ability to add multiple
     </li>
     <li><b><span class="underline">Board Picture</span></b>
         <ul>
-            <li>Here you can assign a small image to represent this board. Choose which template the board picture will apply to. (You can assign different board graphics for each template you have.) Then type the complete URL to the image into the URL box using the standard format: http://www.domain.com/folder/imagename.jpg. You can also upload board pictures. These will be stored in the 'Boards' folder in the template graphics folder. You can set the size of the board graphic by going to Admin Center&#47;Forum Configuration&#47;Advanced Settings &#8220;Images&#8221; tab. 50 by 50 is generally a good size for board picture. Allowed image formats are .gif, .jpg, and .png.</li>
+            <li>Here you can assign a small image to represent this board. Choose which template the board picture will apply to. (You can assign different board graphics for each template you have.) Then type the complete URL to the image into the URL box using the standard format: https://www.domain.com/folder/imagename.jpg. You can also upload board pictures. These will be stored in the 'Boards' folder in the template graphics folder. You can set the size of the board graphic by going to Admin Center&#47;Forum Configuration&#47;Advanced Settings &#8220;Images&#8221; tab. 50 by 50 is generally a good size for board picture. Allowed image formats are .gif, .jpg, and .png.</li>
         </ul>
     </li>
     <li><b><span class="underline">RSS</span></b>
@@ -216,7 +216,7 @@ $SectionBody3 = q~<p>If you need to make changes to any of the boards you have c
     </li>
     <li><b><span class="underline">Board Picture</span></b>
         <ul>
-            <li>Here you can assign a small image to represent this board. Choose which template the board picture will apply to. (You can assign different board graphics for each template you have.) Then type the complete URL to the image into the URL box using the standard format: http://www.domain.com/folder/imagename.jpg. You can also upload board pictures. These will be stored in the 'Boards' folder in the template graphics folder. You can set the size of the board graphic by going to Admin Center&#47;Forum Configuration&#47;Advanced Settings &#8220;Images&#8221; tab. 50 by 50 is generally a good size for board picture. Allowed image formats are .gif, .jpg, and .png.</li>
+            <li>Here you can assign a small image to represent this board. Choose which template the board picture will apply to. (You can assign different board graphics for each template you have.) Then type the complete URL to the image into the URL box using the standard format: https://www.domain.com/folder/imagename.jpg. You can also upload board pictures. These will be stored in the 'Boards' folder in the template graphics folder. You can set the size of the board graphic by going to Admin Center&#47;Forum Configuration&#47;Advanced Settings &#8220;Images&#8221; tab. 50 by 50 is generally a good size for board picture. Allowed image formats are .gif, .jpg, and .png.</li>
         </ul>
        <p class="help_attn"><b><span class="underline">Administrator Tip:</span></b> If you already have a board picture assigned to a particular template and wish to change the picture, delete the old picture first.</p>
     </li>

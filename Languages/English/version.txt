@@ -1,1 +1,1 @@
-YaBB 2.6.14
+YaBBForum 3.0

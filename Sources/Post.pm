@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -16,9 +16,9 @@
 # use warnings;
 # no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$postpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$postpmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('Post');
@@ -944,16 +944,6 @@ qq~<input type="hidden" value="$thestatus" name="topicstatus" />~;
             $my_ubbc = postbox();
         }
 
-        # SpellChecker start
-        if ($enable_spell_check) {
-            $yyinlinestyle .= googiea();
-            $userdefaultlang = ( split /-/xsm, $abbr_lang )[0];
-            $userdefaultlang ||= 'en';
-            $my_googie = googie($userdefaultlang);
-        }
-
-        # SpellChecker end
-
         if ( $showadded == 2 || $showsmdir == 2 ) {
             $mypost_smilie_array_top = q~
             <script type="text/javascript">
@@ -1224,7 +1214,6 @@ qq~<input type="hidden" value="$thestatus" name="topicstatus" />~;
         $my_postsection =~ s/{yabb my_rem_smilies}/$my_rem_smilies/sm;
         $my_postsection =~ s/{yabb my_ubbc}/$my_ubbc/sm;
         $my_postsection =~ s/{yabb my_postsec_b}/$my_postsec_b/sm;
-        $my_postsection =~ s/{yabb my_googie}/$my_googie/sm;
         $my_postsection =~ s/{yabb mypost_smilie_array}/$mypost_smilie_array/sm;
         $my_postsection =~ s/{yabb my_post_feata}/$my_post_feata/sm;
         $my_postsection =~ s/{yabb my_post_smilies}/$my_post_smilies/sm;
@@ -1248,10 +1237,6 @@ qq~<input type="hidden" value="$thestatus" name="topicstatus" />~;
         $my_spdpost = speedpost();
     }
 
-    if ( !$yyinlinestyle =~ /cookiesupport\.js/xsm ) {
-        $yyinlinestyle .=
-qq~<script type="text/javascript" src="$yyhtml_root/googiespell/cookiesupport.js"></script>~;
-    }
 
     if (   $postid ne 'Poll'
         && $post ne 'imsend'

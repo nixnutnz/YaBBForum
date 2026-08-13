@@ -1,14 +1,14 @@
 /*--------------------------------------------------------*/
-/*                      YaBB 2016                         */
+/*                      YaBBForum 2026                         */
 /*--------------------------------------------------------*/
-/*   Created by: YaBB http://yabbforum.nz            */
+/*   Created by: YaBBForum https://yabbforum.nz            */
 /*--------------------------------------------------------*/
 /*    You may adapt elements of this CSS in your own      */
 /*    projects, but please give credit to yabbforum.nz.  */
 /*--------------------------------------------------------*/
-/*   This is the css file for YaBB 2.6.14 Admin Center    */
+/*   This is the css file for YaBBForum 3.0 Admin Center    */
 /*--------------------------------------------------------*/
-/* $Revision: 1560 $ */
+/* */
 
 
 /* General layout */
@@ -286,7 +286,7 @@ table.left {
     left: 210px;
     position: absolute;
     top: 60px;
-    width: 75%;
+    width: 85%;
     z-index: 10;
 }
 
@@ -297,7 +297,7 @@ table.left {
     left: 0;
     position: absolute;
     top: 105px;
-    width: 175px;
+    width: 170px;
     z-index: 3;
 }
 
@@ -313,7 +313,7 @@ table.left {
     padding: 2px 2px 2px 5px;
     text-decoration: none;
     text-transform: capitalize;
-    width: 170px;
+    width: 160px;
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
@@ -713,3 +713,143 @@ table.border td { border: #a7b8cc thin solid; }
     color: #000;
     background-color: #CCC;
 }
+/* Desktop default: offset #ql so it starts after the logo width */
+#ql {
+    background: #4378ae;
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+    height: 31px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto; /* Allow auto width so left padding offsets it properly */
+    left: 175px; /* Matches #menu width / logo width */
+    z-index: 1;
+}
+
+/* Align links within #ql to center or left */
+#ql table {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+#ql td {
+    height: 29px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* 1. Scale down logo on top-left */
+    img#adminlogo {
+        position: relative !important;
+        display: inline-block !important;
+        max-width: 100px !important;
+        height: auto !important;
+        float: left !important;
+        margin: 2px 5px 5px 2px !important;
+    }
+    
+body { background: #dfe4e9 repeat-y; }
+
+    /* 2. Top Bar (#ql) - Inline button pills */
+    #ql {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: auto !important;
+        width: auto !important;
+        height: auto !important;
+        min-height: 0 !important;
+        background: transparent !important;
+        padding: 2px 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        clear: none !important;
+    }
+
+    #ql table, #ql tr, #ql tbody {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: flex-start !important;
+        gap: 3px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+    }
+
+    #ql td {
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    #ql td:not(.center) {
+        display: none !important;
+    }
+
+    #ql td.center a {
+        display: inline-block !important;
+        background-color: #4378ae !important;
+        color: #fff !important;
+        padding: 10px 10px !important;
+        font-size: 14px !important;
+        border-radius: 3px !important;
+    }
+
+    /* 3. Side Menu Container */
+    #menu {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 90% !important;
+        margin: 5px 0 10px 0 !important;
+        clear: both !important;
+    }
+
+    /* Slim, touch-friendly category headers */
+    #menu h3 {
+        width: 90% !important;
+        box-sizing: border-box !important;
+        margin: 4px 0 2px 0 !important;
+        padding: 8px 8px !important;
+        font-size: 14px !important;
+        cursor: pointer !important;
+        border-radius: 3px !important;
+    }
+
+    /* Target open menu lists WITHOUT using !important on 'display' 
+       so JS toggleList() inline 'display: none' works on tap */
+    #menu ul {
+        gap: 2px;
+        padding: 2px 0;
+    }
+
+    /* Allow items to layout cleanly when visible */
+    #menu li {
+        width: 90% !important;
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        margin: 1px 0 !important;
+    }
+
+    #menu li a {
+        display: block !important;
+        text-align: left !important;
+        box-sizing: border-box !important;
+        padding: 5px 8px !important;
+        font-size: 12px !important;
+    }
+
+    /* 4. Main Body Content starts immediately below menu */
+    #content {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        margin-top: 5px !important;
+        padding: 0 4px !important;
+        box-sizing: border-box !important;
+        clear: both !important;
+    }
+}
+
+

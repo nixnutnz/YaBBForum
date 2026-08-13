@@ -3,16 +3,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$suomibackuplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$suomibackuplngver = 'YaBBForum 3.0 $0 $';
 @suomibackuplngmods = ();
 if(@suomibackuplngmods){
     $suomibackuplngmods = 1;
@@ -191,7 +191,7 @@ Voit ladata varmuuskopion FILENAME osoitteesta LINK .
 Virheeseen liittyviä järjestelmätietoja näet täältä:
 "SYSTEMINFO"
 
-MIME::Lite -moduulin tulee ola asennettuna palvelimelle jotta varmuuskopioiden lähettäminen liitetiedostoina onnistuu. Pyydä palvelinylläpitäjääsi asentamaan tarvittavat moduulit. Lisätietoja tarvittavista moduuleista saat osoitteesta http://codex.yabbforum.com/YaBB.pl?num=1225217016
+MIME::Lite -moduulin tulee ola asennettuna palvelimelle jotta varmuuskopioiden lähettäminen liitetiedostoina onnistuu. Pyydä palvelinylläpitäjääsi asentamaan tarvittavat moduulit. Lisätietoja tarvittavista moduuleista saat osoitteesta https://codex.yabbforum.com/YaBB.pl?num=1225217016
 
 Kiitos, että käytät YaBB:tä!~;
 

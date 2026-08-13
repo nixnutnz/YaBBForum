@@ -76,7 +76,7 @@ $SectionBody3 = q~<p>Social Bookmarks allows members and visitors to easily shar
         <ul>
             <li><em>Title</em>: the text that will show when a user mouses-over the Bookmark icon.</li>
             <li><em>Image</em>: upload the icon for the new Bookmark.</li>
-            <li><em>URL</em>: The URL of the Social Bookmark site. (For Google the URL looks like &#8220;http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=<span style="background-color:yellow">{url}</span>&amp;title=<span style="background-color:yellow">{title}</span>&#8221;</li>
+            <li><em>URL</em>: The URL of the Social Bookmark site. (For Google the URL looks like &#8220;https://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=<span style="background-color:yellow">{url}</span>&amp;title=<span style="background-color:yellow">{title}</span>&#8221;</li>
             <li><em>Order</em>: If you want the new Bookmark to be displayed between two previous Bookmarks, assign the new Bookmark a number between the ones assigned to the other Bookmarks. (For example, you want you new Bookmark to appear just before Google [40], assign '39' as the order marker for your new Bookmark.)</li>
         </ul>
     </li>

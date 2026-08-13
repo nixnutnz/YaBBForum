@@ -2,23 +2,23 @@
 # Admin.pm                                                                    #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 use CGI::Carp qw(fatalsToBrowser);
 use CGI qw(:standard);
 use English qw(-no_match_vars);
 use Time::Local;
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$adminpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$adminpmver = 'YaBBForum 3.0';
 LoadLanguage('Credits');
 
 get_template('AdminCentre');
@@ -837,13 +837,6 @@ qq~<br /><span style="font-size: 12px; background-color: #FFFF33;"><b>$load_txt{
                 <td class="windowbg2" colspan="2">
                     <script src="$versionchk" type="text/javascript"></script>
                     $versiontxt{'4'} <b>$YaBBversion</b><br />
-                    <script type="text/javascript">
-                        if (typeof STABLE === "undefined" || STABLE === null) {
-                            document.write("$versiontxt{'5'} <b>$rna</b><br />$versiontxt{'7'} <b>$rna</b>");
-                        } else {
-                            document.write("$versiontxt{'5'} <b>"+STABLE+"</b><br />$versiontxt{'7'} <b>"+BETA+"</b>");
-                        }
-                    </script>
                 </td>
             </tr><tr>
                 <td class="catbg center"><b>$admin_txt{'495'}</b><br /></td>

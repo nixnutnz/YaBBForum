@@ -2,23 +2,23 @@
 # ModuleChecker.pm                                                            #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 use strict;
 #use warnings;
 use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-our $modulecheckerpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+our $modulecheckerpmver = 'YaBBForum 3.0';
 our ( $action, $yymain, %modulecheck );
 if ( $action eq 'detailedversion' ) { return 1; }
 
@@ -29,7 +29,7 @@ if ( !$script_root ) {
 
 my ( $checker_output, $i );
 
-my @modules = qw(Digest::MD5 Time::HiRes Time::Local DateTime DateTime::TimeZone File::Find CGI Net::SMTP Net::SMTP::TLS Net::DNS Mail::CheckUser Compress::Zlib IO::Compress::Bzip2 Archive::Tar Archive::Zip MIME::Lite LWP::UserAgent HTTP::Request::Common Crypt::SSLeay IO::Socket::INET Digest::HMAC_MD5 Carp bytes integer English URI::Escape);
+my @modules = qw(Digest::MD5 Time::HiRes Time::Local DateTime DateTime::TimeZone File::Find CGI Net::SMTP Net::SMTP::TLS Net::DNS Mail::CheckUser Compress::Zlib IO::Compress::Bzip2 JSON::PP Archive::Tar Archive::Zip MIME::Lite LWP::UserAgent HTTP::Request::Common IO::Socket::SSL IO::Socket::INET Digest::HMAC_MD5 Carp bytes integer English URI::Escape);
 
 @modules = sort @modules;
 
@@ -107,7 +107,7 @@ if ( $script_root !~ /ModuleChecker[.]\w+$/xsm ) {
       )
       . qq~<tr>
                     <td class="catbg center"><b>$modulecheck{'3'}</b></td>
-                    <td class="catbg center" colspan="2"><b>$modulecheck{'4'}</b></td>
+                    <td class="catbg center" colspan="2" width="50%"><b>$modulecheck{'4'}</b></td>
                 </tr>
             $checker_output
             </table>

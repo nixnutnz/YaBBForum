@@ -3,15 +3,15 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
-## Distributed by: http://www.yabbforum.com                                   #
+# Version:        YaBBForum 3.0                                                 #
+## Distributed by: https://www.yabbforum.com                                   #
 # =========================================================================== #
 # Copyright (c) 2000-2015 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$menulngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$menulngver = 'YaBBForum 3.0 $0 $';
 
 $yycharset = 'UTF-8';
 $abbr_lang = 'es-es';
@@ -41,7 +41,7 @@ $abbr_lang = 'es-es';
 '23' => 'Permalink Dominio',
 '24' => 'Permalink Opciones',
 '25' => 'Permalink Symlink parte de url (no hay barra principal y con una barra final (ej. artículos/))',
-'26' => 'Esta es la parte de la URL entre tu dominio y la parte URL del permalink<br />(ej. http://www.tudominio.com/<b>artículos/</b>noticias/este-es-el-título)',
+'26' => 'Esta es la parte de la URL entre tu dominio y la parte URL del permalink<br />(ej. https://www.tudominio.com/<b>artículos/</b>noticias/este-es-el-título)',
 '31' => 'Borrar',
 '32' => 'Ir',
 '39' => 'Contraseña incorrecta',
@@ -67,7 +67,7 @@ $abbr_lang = 'es-es';
 '61a' => 'ID Categoría',
 '61b' => '<span class="small">introducir cualquier nombre alfanumérico que desee sin espacios</span>',
 '62' => 'Descripción',
-'62a' => 'Si esto es ser un enlace externo a bordo, la primera línea de la descripción debe ser el título del enlace de nombre, o si se utiliza una imagen como enlace de la primera línea debe utilizar el código HTML & lt; img & gt; etiqueta. por ejemplo &lt;img src = "http://yoursite.com/yourimage.jpg" alt = "Su Título de imagen" /&gt;',
+'62a' => 'Si esto es ser un enlace externo a bordo, la primera línea de la descripción debe ser el título del enlace de nombre, o si se utiliza una imagen como enlace de la primera línea debe utilizar el código HTML & lt; img & gt; etiqueta. por ejemplo &lt;img src = "https://yoursite.com/yourimage.jpg" alt = "Su Título de imagen" /&gt;',
 '63' => 'Moderadores',
 '63a' => 'Copiar',
 '63b' => 'Pegar',
@@ -103,7 +103,7 @@ $abbr_lang = 'es-es';
 '66' => 'Click aquí para ir a la sección de ayuda relevante',
 '67' => 'Configuración de Mantenimiento',
 '68' => 'Nombre',
-'68a' => q~Si esto es ser un enlace externo a bordo, el nombre debe estar en el formato de 'http://boardlink.com'~,
+'68a' => q~Si esto es ser un enlace externo a bordo, el nombre debe estar en el formato de 'https://boardlink.com'~,
 '70' => 'Asunto',
 '72' => 'Mensaje',
 '87' => 'Grupo Principal',
@@ -221,8 +221,6 @@ $abbr_lang = 'es-es';
 '374' => 'Máximo número de temas para ver en el índice de mensajes',
 '375' => 'Máximo número de mensajes para mostrar en un Tema',
 '376' => 'Número de días para que un mensaje deje de aparecer como "new"',
-'377' => '¿Activar corrector ortográfico?<br /><span class="small">Este corrector es de páginas externas como Google. Debes revisar el firewall y los bloqueadores de contenido si quieres usar esta opción.</span><br /><b><u>Licencia:</u></b><br />Los scripts en /yabbfiles/googiespell son de licencia dual. Una es gratis ("open source") y la otra del propietario del software.<br />La licencia gratis es <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">El GPL</a>. Bajo esta licencia sólo puedes usar GoogieSpell con software libre (por ej. software donde la fuente no está liberado). No puedes usar GoogieSpell con software propietario incluso si no distribuyes el software<br />For more details see <a href="http://orangoo.com/labs/GoogieSpell/License/" target="_blank">http://orangoo.com/labs/GoogieSpell/License/</a>.',
-'377a' => 'Si ves este mensaje, lo módulos requeridos no están instalados en tu servidor.<br />Si se muestra cualquier error como "No se puede localizar..."entonces ese modulo no está instalado en tu servidor.<br /><br />',
 '377b' => 'Instalado',
 '377c' => '<br />Si quieres usar el corrector ortográfico debe tener instalados todos estos módulos en tu servidor. Contacta con el administrador de tu servidor para que te los instale.<br />Por favor, instala:<br />- Bundle::LWP (for LWP::UserAgent and HTTP::Request::Common)<br />- Crypt::SSLeay',
 '378' => '¿Permitir Bulletin Board Code?',
@@ -286,12 +284,12 @@ $abbr_lang = 'es-es';
 'brd_pic_w' => 'Junta Imagen ancho de la pantalla (0 = sin límte)',
 'brd_pic_h' => 'Junta Imagen altura de visualización de imágenes (0 = sin límte)',
 'brd_pic' => 'Desactivar el Smart tamaño de imagen característica de Fotos de la Junta? <span class ="small"> <br /> Si se marca, la imagen inteligente redimensionar función está desactivada y el tamaño de la imagen se ajusta exactamente a los valores anteriores. Esta <i> puede </ i> deformar las imágenes. Si uno de los valores es 0, la imagen se proporcionalmente a escala en el otro valor. Si ambos son 0, la imagen se muestra en su tamaño original sin ningún tipo de cambio de tamaño. </span>',
-'480' => '01/31/01 las 13:15:17',
-'481' => '31.01.01 las 13:15:17',
-'482' => '31.01.2001 las 13:15:17',
-'483' => 'Jan 12th, 2001, 1:15pm',
-'483a' => '12th Jan, 2001 las 1:15pm',
-'484' => '01/31/01 las 1:15pm',
+'480' => '01/31/26 las 13:15:17',
+'481' => '31.01.26 las 13:15:17',
+'482' => '31.01.2026 las 13:15:17',
+'483' => 'Jan 31st, 2026 las 1:15pm',
+'483a' => '31st Jan, 2026 las 1:15pm',
+'484' => '01/31/26 las 1:15pm',
 '485' => '31. Jan las 13:15',
 '486' => 'Formato de Fecha',
 '487' => 'La compensación tiene que ser entre -23.5 y 23.5!',
@@ -1128,7 +1126,7 @@ $abbr_lang = 'es-es';
 %versiontxt = (
 '1' => '¡O bien tu navegador no soporta Javascript o bien necesitas habilitarlo para que el versioncheck funcione!',
 '2' => '<b><font color="red">¡Hay una versión estable disponible!</font></b><br />Por si quieres descargarla ',
-'3' => ', Por favor, ve a<a href="http://www.yabbforum.com/downloads.php" target="_blank">http://www.yabbforum.com/downloads.php</a>.',
+'3' => ', Por favor, ve a<a href="https://www.yabbforum.com/downloads.php" target="_blank">https://www.yabbforum.com/downloads.php</a>.',
 '4' => 'TU versión:',
 '5' => 'Última versión ESTABLE:',
 '6' => 'Tienes instalada la última versión estable.',
@@ -1347,7 +1345,7 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 '5' => 'Información facilitada por el sistema:',
 '6' => 'Instalado',
 '7' => 'Algunos módulos no están instalados en tu servidor.',
-'8' => '<b>Si realmente los necesitas (lee la Info), tu primera opción debe ser pedir a quien hospede tu servidor que instale los módulos necesarios!<br /><br />Si hospedas tu propio servidor, o si la empresa que te da hospedaje no te instala el módulo, entonces mira <a href="http://codex.yabbforum.com/YaBB.pl?num=1225217016" target="_blank"><b>este mensaje es el <i>YaBB Codex</i> para ayuda</b></a>.</b>',
+'8' => '<b>Si realmente los necesitas (lee la Info), tu primera opción debe ser pedir a quien hospede tu servidor que instale los módulos necesarios!<br /><br />Si hospedas tu propio servidor, o si la empresa que te da hospedaje no te instala el módulo, entonces mira <a href="https://codex.yabbforum.com/YaBB.pl?num=1225217016" target="_blank"><b>este mensaje es el <i>YaBB Codex</i> para ayuda</b></a>.</b>',
 'Digest::MD5' => 'Usado para la encriptación de la contraseña.<br />¡Este módulo es esencial! Sin él, el foro no funcionará.',
 'Time::HiRes' => 'Usado por el tiempo de chequeo si el depurador de errores está habilitado.<br />Si este módulo no está instalado el tiempo de ejecución se mostrará en segundos y sin alta resolución. Si no es importante para tí, no necesitas este módulo.',
 'Time::Local' => 'Usado para convertir cadenas de tiempo en marcas de tiempo.<br />¡Este módulo es imprescindible! ¡Sin él, el foro no funcionará!',
@@ -1535,7 +1533,7 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 );
 
 timetostring($date);
-$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="http://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="http://www.yabbforum.com">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.</span>~;
+$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="https://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="https://www.yabbforum.com">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.</span>~;
 
 $iFrameSupport = 'Lo sentimos pero para ver las últimas noticias necesitas un navegador que soporte iframes';
 $rna = '¡Servidor Remoto no disponible!';

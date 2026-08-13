@@ -3,16 +3,16 @@
 //##############################################################################
 //# YaBB: Yet another Bulletin Board                                           #
 //# Open-Source Community Software for Webmasters                              #
-//# Version:        YaBB 2.6.14                                                #
+//# Version:        YaBBForum 3.0                                                #
 //# Packaged:       July 26, 2026                                            #
-//# Distributed by: http://yabbforum.nz                                   #
+//# Distributed by: https://yabbforum.nz                                   #
 //# ===========================================================================#
 //# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.    #
 //# Software by:  The YaBB Development Team                                    #
 //#               with assistance from the YaBB community.                     #
 //##############################################################################
 
-//YaBB 2.6.14 $Revision: 1611 $
+//YaBBForum 3.0 $0 $
 
 var xmlHttp = null;
 var browser = '';

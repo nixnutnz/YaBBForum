@@ -1,6 +1,6 @@
-﻿###############################################################################
+###############################################################################
 #EventCal.lng                                                                 #
-#By XTC: http://www.yabbserver.com                                            #
+#By XTC: https://www.yabbserver.com                                            #
 ###############################################################################
 #German/Du - Translation by Pyragony                                          #
 #and other members of the YaBB community                                      #
@@ -8,16 +8,16 @@
 ###############################################################################
 #YaBB: Yet another Bulletin Board                                             #
 #Open-Source Community Software for Webmasters                                #
-#Version:       YaBB 2.6.11                                                   #
+#Version:       YaBBForum 3.0                                                   #
 #Packaged:      2. Dezember 2014                                              #
-#Distributed by: http://www.yabbforum.com                                     #
+#Distributed by: https://www.yabbforum.com                                     #
 #=============================================================================#
 #Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.      #
 #Software by: The YaBB Development Team                                       #
 #             with assistance from the YaBB community.                        #
 ###############################################################################
 
-$german_dueventcallngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$german_dueventcallngver = 'YaBBForum 3.0 $0 $';
 @german_dueventcallngmods = ();
 if(@german_dueventcallngmods){
     $german_dueventcallngmods = 1;

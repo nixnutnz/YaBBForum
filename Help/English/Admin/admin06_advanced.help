@@ -7,7 +7,7 @@ $SectionBody1 = q~<p>YaBB gives you the ability to set up permalinks (search eng
 <ul>
     <li><b>Permalinks</b>
         <br />To use permalinks, your forum must be on a server that allows "FollowSymLinks" and "RedirectMatch" or "RewriteEngine" in either an .htaccess file or as a server setting. Check with your hosting service to see if these server level functions are available to you.
-        <br />If those functions are available: <a href="http://yabbforum.nz/codex/YaBB.pl?num=1191988956" target="_blank">Setting up Permalinks</a> has instructions on how to set up that part of permalinks.
+        <br />If those functions are available: <a href="https://yabbforum.nz/codex/YaBB.pl?num=1191988956" target="_blank">Setting up Permalinks</a> has instructions on how to set up that part of permalinks.
         <br />Once the server level settings are set, you can activate Permalinks within YaBB and tell <strong>it</strong> how to create the new permalink URIs by inputting the name of the 'virtual URI' folder that's in the "RedirectMatch" or "RewriteRule" in the .htaccess file.
     </li>
     <li><b>RSS</b>

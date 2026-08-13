@@ -1,38 +1,42 @@
 #!/usr/bin/perl --
-# $Id: YaBB AdminIndex$
+# $Id: YaBBForum AdminIndex$
 # $HeadURL: YaBB $
 # $Source: /AdminIndex.pl $
 ###############################################################################
 # AdminIndex.pl                                                               #
 # $Date: 26.7.26 $                                                           #
 ###############################################################################
-# YaBB: Yet another Bulletin Board                                            #
+# YaBBForum: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
-# Software by:  The YaBB Development Team                                     #
-#               with assistance from the YaBB community.                      #
+# Copyright (c) 2000-2026 YaBBForum (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBBForum Development Team                                     #
+#               with assistance from the YaBBForum community.                      #
 ###############################################################################
 no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
 
-my $current_version = "v2.6.14";
-my $github_repo     = "nixnutnz/yabb-2.6-legacy"; # e.g., "yabbforum/yabb26"
-my $cache_file      = "$vardir/github_update_cache.txt"; # Path to cache file
+# --- Master Version & Config ---
+our $VERSION        = '3.0';
+
+my $github_user     = "nixnutnz";
+my $github_repo     = "YaBBForum"; # Just the repository name
+my $cache_file      = "$vardir/github_update_cache.txt";
 my $cache_ttl       = 86400; # 24 hours in seconds
 
-our $VERSION = '2.6.14';
+# --- Dynamic Variables (derived from $VERSION) ---
+my $current_version = "v$VERSION";
+$YaBBversion        = "YaBBForum $VERSION";
+$adminindexplver = "YaBBForum $VERSION";
 
 use version;
 
-### Version Info ###
-$YaBBversion     = 'YaBB 2.6.14';
-$adminindexplver = 'YaBB 2.6.14 $Revision: 2601 $';
 
+if ( $action eq 'detailedversion' ) { return 1; }
 $yyexec      = 'index';
 $script_root = $ENV{'SCRIPT_FILENAME'};
 if ( !$script_root ) {
@@ -86,10 +90,11 @@ if ( !$maintenance && -e "$vardir/maintenance.lock" ) { $maintenance = 2; }
 # some maintenance stuff will stop after $max_process_time
 # in seconds, than the browser will call the script again
 # until all is done. Don't put it too high or you will run
-# into server or browser timeout.
-$max_process_time = 20;
+# into server or browser timeout. was 20
+$max_process_time = 15;
 
 $action = $INFO{'action'};
+
 local $SIG{__WARN__} = sub { fatal_error( 'error_occurred', "@_" ); };
 eval { yymain(); };
 if ($@) { fatal_error( 'untrapped', ":<br />$@" ); }
@@ -341,7 +346,7 @@ qq~<link rel="stylesheet" href="$yyhtml_root/Templates/Admin/$admin_template.css
     $topmenu_two = qq~<a href="$adminurl">$admintxt{'33'}</a>~;
     $topmenu_tree =
       qq~<a href="$scripturl?action=help;section=admin">$admintxt{'35'}</a>~;
-    $topmenu_four = qq~<a href="http://yabbforum.nz" target="_blank">$admintxt{'36'}</a>~;
+    $topmenu_four = qq~<a href="https://yabbforum.nz/#donate" target="_blank">$admintxt{'36'}</a>~;
 
     if ($maintenance && $action ne 'detailedversion') {
         $yyadmin_alert .=
@@ -427,58 +432,100 @@ sub check_github_updates {
     # Ensure we use YaBB's global $vardir, or fall back to 'Variables'
     my $target_dir = $vardir || 'Variables';
     my $cache_file = "$target_dir/github_update_cache.txt";
-    my $cache_ttl  = 86400; # 24 hours
+    my $cache_ttl  = 86400; # 24 hours in seconds
 
     # 1. Read from cache if it exists and is less than 24h old
     if (-e $cache_file && (time() - (stat($cache_file))[9]) < $cache_ttl) {
         if (open(my $fh, '<', $cache_file)) {
             my $cached_html = do { local $/; <$fh> };
             close($fh);
-            return $cached_html;
+            return $cached_html if $cached_html;
         }
     }
 
-    # 2. Query GitHub API
-    my $ua = LWP::UserAgent->new(timeout => 5);
-    $ua->agent("YaBB-UpdateChecker/$current_version");
-
-    my $url = "https://api.github.com/repos/$github_repo/releases/latest";
-    my $response = $ua->get($url);
-
     my $output_html = '';
+    my $ua = LWP::UserAgent->new(timeout => 5);
+    $ua->agent("YaBBForum-UpdateChecker/$VERSION");
+
+    # 2. Query GitHub Releases API for Official Tagged Releases
+    my $release_url = "https://api.github.com/repos/$github_user/$github_repo/releases/latest";
+    my $response    = $ua->get($release_url);
 
     if ($response->is_success) {
         my $data = eval { decode_json($response->decoded_content) };
-if ($data && $data->{tag_name}) {
-    my $latest_tag  = $data->{tag_name};
-    my $release_url = $data->{html_url};
+        if ($data && $data->{tag_name}) {
+            my $latest_tag   = $data->{tag_name};
+            my $release_page = $data->{html_url};
+            my $zipball_url  = $data->{zipball_url} || "https://github.com/$github_user/$github_repo/archive/refs/tags/$latest_tag.zip";
+            my $changelog    = $data->{body} || "No release notes provided.";
 
-    # Strip the leading 'v' so version->parse can read it cleanly
-    (my $v_latest  = $latest_tag)      =~ s/^v//i;
-    (my $v_current = $current_version) =~ s/^v//i;
+            $changelog =~ s/\r?\n/<br \/>/g;
 
-    # ONLY show the notice if GitHub has a HIGHER version than what is installed
-    eval {
-        if (version->parse($v_latest) > version->parse($v_current)) {
-            $output_html = qq{<div class="notice" style="background:#fff3cd; color:#856404; padding:10px; border:1px solid #ffeeba; margin-bottom:15px; text-align:center;">
-                <strong>Update Available!</strong> YaBB $latest_tag is available on GitHub.
-                <a href="$release_url" target="_blank" style="color:#856404; text-decoration:underline;">View Release & Download</a>
-            </div>};
+# --- NEW CODE ---
+(my $v_latest_str  = $latest_tag)      =~ s/^v//i;
+(my $v_current_str = $current_version) =~ s/^v//i;
+
+# Parse into version objects safely
+my $v_latest  = eval { version->parse($v_latest_str) };
+my $v_current = eval { version->parse($v_current_str) };
+
+# Only show update notice if the GitHub release is strictly GREATER than current version
+if ($v_latest && $v_current && $v_latest > $v_current) {
+                $output_html .= qq{
+                    <div style="background:#fff3cd; color:#856404; padding:12px; border:1px solid #ffeeba; margin-bottom:12px; border-radius:4px; text-align:left;">
+                        <strong>🚀 YaBBForum New Release Available! ($latest_tag)</strong><br /><br />
+                        <div style="background:#fff; border:1px solid #e0e0e0; padding:8px; font-size:11px; max-height:100px; overflow-y:auto; margin-bottom:10px; color:#333;">
+                            <b>Changelog:</b><br />$changelog
+                        </div>
+                        <a href="$zipball_url" style="background:#28a745; color:#fff; padding:5px 10px; text-decoration:none; border-radius:3px; font-weight:bold; display:inline-block; margin-right:5px;">⬇️ Download Release Zip</a>
+                        <a href="$release_page" target="_blank" style="color:#856404; text-decoration:underline;">View on GitHub</a>
+                    </div>
+                };
+            }
         }
-    };
-}
+    }
 
-    # 3. Save to cache (with error logging if write fails)
+    # 3. Query GitHub Commits API for Recent Code Changes / Updated Files
+    my $commits_url = "https://api.github.com/repos/$github_user/$github_repo/commits?per_page=1";
+    my $commit_resp = $ua->get($commits_url);
+
+    if ($commit_resp->is_success) {
+        my $commits = eval { decode_json($commit_resp->decoded_content) };
+        if ($commits && ref($commits) eq 'ARRAY' && scalar(@$commits) > 0) {
+            my $last_commit  = $commits->[0];
+            my $commit_msg   = $last_commit->{commit}->{message} || 'No commit message';
+            my $commit_date  = substr($last_commit->{commit}->{committer}->{date}, 0, 10);
+            my $commit_web   = $last_commit->{html_url};
+            my $repo_zip_url = "https://github.com/$github_user/$github_repo/archive/refs/heads/main.zip";
+
+            # Keep only the first line of the commit message for display
+            $commit_msg =~ s/\n.*//s;
+
+            $output_html .= qq{
+                <div style="background:#d1ecf1; color:#0c5460; padding:12px; border:1px solid #bee5eb; margin-bottom:12px; border-radius:4px; text-align:left;">
+                    <strong>📂 Latest Main Branch Commit ($commit_date):</strong><br />
+                    <i>"$commit_msg"</i><br /><br />
+                    <a href="$repo_zip_url" style="background:#17a2b8; color:#fff; padding:5px 10px; text-decoration:none; border-radius:3px; font-weight:bold; display:inline-block; margin-right:5px;">⬇️ Download Source Tree (.zip)</a>
+                    <a href="$commit_web" target="_blank" style="color:#0c5460; text-decoration:underline;">View Commit Details</a>
+                </div>
+            };
+        }
+    }
+
+    # 4. Fallback if board is up-to-date and no release banner was generated
+    if (!$output_html) {
+        $output_html = qq{
+            <div style="background:#d4edda; color:#155724; padding:10px; border:1px solid #c3e6cb; border-radius:4px; text-align:center;">
+                ✅ <b>YaBBForum $current_version</b> is fully up to date!
+            </div>
+        };
+    }
+
+    # 5. Save combined HTML output to cache file
     if (open(my $fh, '>', $cache_file)) {
         print $fh $output_html;
         close($fh);
-    } else {
-        # Log to web server error log so you can see where it attempted to write
-        warn "YaBB Update Checker: Failed to write to $cache_file - Reason: $!";
     }
 
     return $output_html;
-}
-
-
 }

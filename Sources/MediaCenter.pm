@@ -4,17 +4,17 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$mediacenterpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$mediacenterpmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 sub embed {
@@ -105,7 +105,7 @@ qq~ $maintxt{'42'} <a href="$scripturl?action=register">$img{'register'}</a> !!~
         elsif ( $media_url =~ m/[\/\.]myspace.*videoid=/ixsm ) {
             $media_url =~ /videoid=(\d+)/xsm;
             $media_url =
-qq~http://mediaservices.myspace.com/services/media/embed.aspx/m=$1,t=1,mt=video~;
+qq~https://mediaservices.myspace.com/services/media/embed.aspx/m=$1,t=1,mt=video~;
             $video         = $embed_flash;
             $controlheight = 42;
 
@@ -147,7 +147,7 @@ qq~http://mediaservices.myspace.com/services/media/embed.aspx/m=$1,t=1,mt=video~
             ( undef, $temp ) = split /video\//xsm, $media_url;
             ( $videoid, undef ) = split /\//xsm, $temp;
             $media_url =
-qq~http://www.clipfish.de/cfng/flash/clipfish_player_3.swf?as=0&vid=$videoid&r=1&angebot=extern&c=990000~;
+qq~https://www.clipfish.de/cfng/flash/clipfish_player_3.swf?as=0&vid=$videoid&r=1&angebot=extern&c=990000~;
             $video         = $embed_flash;
             $controlheight = 36;
 
@@ -162,7 +162,7 @@ qq~http://www.clipfish.de/cfng/flash/clipfish_player_3.swf?as=0&vid=$videoid&r=1
             ( undef, undef, $temp ) = split /\//xsm, $temp;
             ( $mid, undef ) = split /\./xsm, $temp;
             $media_url =
-              qq~http://www.gametrailers.com/remote_wrap.php?umid=$mid~;
+              qq~https://www.gametrailers.com/remote_wrap.php?umid=$mid~;
             $video         = $embed_flash;
             $controlheight = 36;
 
@@ -175,7 +175,7 @@ qq~http://www.clipfish.de/cfng/flash/clipfish_player_3.swf?as=0&vid=$videoid&r=1
             ( $mid, undef ) = split /\./xsm, $temp;
             ( undef, undef, $mid ) = split /\//xsm, $temp;
             $media_url =
-              qq~http://www.gametrailers.com/remote_wrap.php?umid=$mid~;
+              qq~https://www.gametrailers.com/remote_wrap.php?umid=$mid~;
             $video         = $embed_flash;
             $controlheight = 36;
 
@@ -188,7 +188,7 @@ qq~http://www.clipfish.de/cfng/flash/clipfish_player_3.swf?as=0&vid=$videoid&r=1
             ( undef, $temp ) = split /\//xsm, $temp;
             ( $mid, undef ) = split /\./xsm, $temp;
             $media_url =
-              qq~http://www.gametrailers.com/remote_wrap.php?mid=$mid~;
+              qq~https://www.gametrailers.com/remote_wrap.php?mid=$mid~;
             $video         = $embed_flash;
             $controlheight = 36;
 
@@ -199,7 +199,7 @@ qq~http://www.clipfish.de/cfng/flash/clipfish_player_3.swf?as=0&vid=$videoid&r=1
             ( $mid, undef ) = split /\./xsm, $temp;
             ( undef, undef, $mid ) = split /\//xsm, $temp;
             $media_url =
-              qq~http://www.gametrailers.com/remote_wrap.php?mid=$mid~;
+              qq~https://www.gametrailers.com/remote_wrap.php?mid=$mid~;
             $video         = $embed_flash;
             $controlheight = 36;
 
@@ -304,42 +304,42 @@ sub flashconvert {
 
 ## Windows Media Player 6.4 Video
 $embed_wmv6 = q~
-    <object id='mediaPlayer' width="_width_" height="_height_" classid='CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95' codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701' standby='Loading Microsoft Windows Media Player 6.4 components...' type='application/x-oleobject'>
+    <object id='mediaPlayer' width="_width_" height="_height_" classid='CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95' codebase='https://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701' standby='Loading Microsoft Windows Media Player 6.4 components...' type='application/x-oleobject'>
         <param name='fileName' value="_media_" />
         <param name='autoStart' value="_autostart_" />
         <param name='showControls' value="_controls_" />
         <param name='loop' value="_loop_" />
-        <embed type='application/x-mplayer2' pluginspage='http://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="_width_" height="_height_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
+        <embed type='application/x-mplayer2' pluginspage='https://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="_width_" height="_height_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
     </object>~;
 
 ## Windows Media Player 6.4 Audio
 $embed_wma6 = q~
-    <object id='mediaPlayer' width="_controlwidth_" height="_controlheight_" classid='CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95' codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701' standby='Loading Microsoft Windows Media Player 6.4 components...' type='application/x-oleobject'>
+    <object id='mediaPlayer' width="_controlwidth_" height="_controlheight_" classid='CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95' codebase='https://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701' standby='Loading Microsoft Windows Media Player 6.4 components...' type='application/x-oleobject'>
         <param name='fileName' value="_media_" />
         <param name='autoStart' value="_autostart_" />
         <param name='showControls' value="_controls_" />
         <param name='loop' value="_loop_" />
-        <embed type='application/x-mplayer2' pluginspage='http://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="320" height="_controlheight_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
+        <embed type='application/x-mplayer2' pluginspage='https://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="320" height="_controlheight_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
     </object>~;
 
 ## Windows Media Player 7,9 or 10 Video
 $embed_wmv10 = q~
-    <object id='mediaPlayer' width="_width_" height="_height_" classid='CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6' codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112' standby='Loading Microsoft Windows Media Player 7, 9 or 10 components...' type='application/x-oleobject'>
+    <object id='mediaPlayer' width="_width_" height="_height_" classid='CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6' codebase='https://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112' standby='Loading Microsoft Windows Media Player 7, 9 or 10 components...' type='application/x-oleobject'>
         <param name='fileName' value="_media_" />
         <param name='autoStart' value="_autostart_" />
         <param name='showControls' value="_controls_" />
         <param name='loop' value="_loop_" />
-        <embed type='application/x-mplayer2' pluginspage='http://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="_width_" height="_height_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
+        <embed type='application/x-mplayer2' pluginspage='https://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="_width_" height="_height_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
     </object>~;
 
 ## Windows Media Player 7,9 or 10 Audio
 $embed_wma10 = q~
-    <object id='mediaPlayer' width="_controlwidth_" height="_controlheight_" classid='CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6' codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112' standby='Loading Microsoft Windows Media Player components...' type='application/x-oleobject'>
+    <object id='mediaPlayer' width="_controlwidth_" height="_controlheight_" classid='CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6' codebase='https://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112' standby='Loading Microsoft Windows Media Player components...' type='application/x-oleobject'>
         <param name='fileName' value="_media_" />
         <param name='autoStart' value="_autostart_" />
         <param name='showControls' value="_controls_" />
         <param name='loop' value="_loop_" />
-        <embed type='application/x-mplayer2' pluginspage='http://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="320" height="_controlheight_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
+        <embed type='application/x-mplayer2' pluginspage='https://microsoft.com/windows/mediaplayer/en/download/' id='mediaPlayer' name='mediaPlayer' displaysize='4' autosize='-1' TransparantAtStart='true' bgcolor='darkblue' showcontrols="_controls_" showtracker='-1' showdisplay='0' showstatusbar='-1' videoborder3d='-1' width="320" height="_controlheight_" src="_media_" autostart="_autostart_" designtimesp='5311' loop="_loop_" />
     </object>~;
 
 $embed_ra = q~
@@ -356,26 +356,26 @@ $embed_ra = q~
 
 $embed_qt = q~
     <object width="_width_" height="_height_">
-        <param name="codebase" value="http://www.apple.com/qtactivex/qtplugin.cab" />
+        <param name="codebase" value="https://www.apple.com/qtactivex/qtplugin.cab" />
         <param name="classid" value="CLSID:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" />
         <param name='src' value="_media_" />
         <param name='autoplay' value="_autostart_" />
         <param name='controller' value="_controls_" />
         <param name='loop' value="_loop_" />
         <param name="type" value="video/quicktime">
-        <embed src="_media_" width="_width_" height="_height_" autoplay="_autostart_" controller="true" loop="_loop_" type="video/quicktime" pluginspage='http://www.apple.com/quicktime/download/' />
+        <embed src="_media_" width="_width_" height="_height_" autoplay="_autostart_" controller="true" loop="_loop_" type="video/quicktime" pluginspage='https://www.apple.com/quicktime/download/' />
     </object>
 ~;
 
 $embed_flash = q~
     <object width="_width_" height="_height_" type="video/flash">
-        <param name="codebase" value="http://active.macromedia.com/flash7/cabs/swflash.cab#version=9,0,0,0" />
+        <param name="codebase" value="https://active.macromedia.com/flash7/cabs/swflash.cab#version=9,0,0,0" />
         <param name="classid" value="CLSID:D27CDB6E-AE6D-11cf-96B8-444553540000" />
         <param name="movie" value="_media_" />
         <param name="loop" value="_loop_" />
         <param name="quality" value="high" />
         <param name="background-color" value="#FFFFFF" />
-        <embed src="_media_" width="_width_" height="_height_" loop="_loop_" bgcolor="#FFFFFF" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" />
+        <embed src="_media_" width="_width_" height="_height_" loop="_loop_" bgcolor="#FFFFFF" quality="high" pluginspage="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" />
     </object>
 ~;
 
@@ -403,7 +403,7 @@ $embed_flv = qq~
     <embed src="$yyhtml_root/mediaplayer.swf" allowfullscreen="true" allowscriptaccess="always" width="_width_" height="_height_" flashvars="&file=_media_&height=_height_&width=_width_&autostart=_autostart_" />~;
 
 $iframe_thenutz = q~
-    <script type="text/javascript">var host=document.location;document.write("<iframe src='http://www.thenutz.tv/embed.php?video_id=_media_&host=" + host + "' frameborder='0' height='326' width='400' scrolling='No'></iframe>");</script>
+    <script type="text/javascript">var host=document.location;document.write("<iframe src='https://www.thenutz.tv/embed.php?video_id=_media_&host=" + host + "' frameborder='0' height='326' width='400' scrolling='No'></iframe>");</script>
 ~;
 
 1;

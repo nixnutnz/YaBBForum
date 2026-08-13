@@ -3533,7 +3533,7 @@ In order to read the docmentation please use
 
 from the command line or visit
 
-  http://search.cpan.org/search?query=MIME%3A%3ALite&mode=all
+  https://search.cpan.org/search?query=MIME%3A%3ALite&mode=all
 
 for a list of all MIME::Lite related materials including the
 documentation in HTML of all of the released versions of
@@ -3640,9 +3640,9 @@ indigestion in humans if taken internally.
 =head1 AUTHOR
 
 Eryq (F<eryq@zeegee.com>).
-President, ZeeGee Software Inc. (F<http://www.zeegee.com>).
+President, ZeeGee Software Inc. (F<https://www.zeegee.com>).
 
-Go to F<http://www.cpan.org> for the latest downloads
+Go to F<https://www.cpan.org> for the latest downloads
 and on-line documentation for this module.  Enjoy.
 
 Patches And Maintenance by Yves Orton and many others.

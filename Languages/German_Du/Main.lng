@@ -7,16 +7,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:      YaBB 2.6.11                                                   #
+# Version:      YaBBForum 3.0                                                   #
 # Packaged:     21. Dezember 2014                                             #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by: The YaBB Development Team                                      #
 #              with assistance from the YaBB community.                       #
 ###############################################################################
 
-$german_dumainlngver = 'YaBB 2.6.11 $Revision: 1617 $';
+$german_dumainlngver = 'YaBBForum 3.0 $0 $';
 @german_dumainlngmods = ();
 if(@german_dumainlngmods){
     $german_dumainlngmods = 1;
@@ -301,6 +301,6 @@ $forwardedpm = qq~Diese Alarmierung wurde als eMail weitergeleitet~;
 'print' => 'Kann nicht drucken',
 );
 timetostring($date);
-$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext">$mbname</a> &#187; Powered by <a href="http://www.yabbforum.com" target="_blank">$YaBBversion</a>!<br />\n<a href="http://www.yabbforum.com" target="_blank">YaBB Forum Software</a> &copy; 2000-$year. Alle Rechte vorbehalten.~;
+$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext">$mbname</a> &#187; Powered by <a href="https://www.yabbforum.com" target="_blank">$YaBBversion</a>!<br />\n<a href="https://www.yabbforum.com" target="_blank">YaBB Forum Software</a> &copy; 2000-$year. Alle Rechte vorbehalten.~;
 
 1;

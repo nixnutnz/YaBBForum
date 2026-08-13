@@ -112,7 +112,7 @@ __END__
 
 This module is maintained by the Perl Email Project
 
-L<http://emailproject.perl.org/wiki/Email::Date::Format>
+L<https://emailproject.perl.org/wiki/Email::Date::Format>
 
 =head1 AUTHOR
 

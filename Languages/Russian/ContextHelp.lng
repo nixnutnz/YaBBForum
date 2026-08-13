@@ -5,20 +5,20 @@
 # Open-Source Community Software for Webmasters                               #
 # Version:        YaBB 2.6.1                                                  #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2015 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
-# Many thanks to Carsten Dalgaard (http://www.carsten-dalgaard.dk/)           #
+# Many thanks to Carsten Dalgaard (https://www.carsten-dalgaard.dk/)           #
 # for his contribution to the YaBB community                                  #
 ###############################################################################
 #                                                                             #
 # translated by Elexio (elexio@yandex.ru)                                     #
 ###############################################################################
 
-$russiancontexthelplngver = 'YaBB 2.6.11 $Revision: 1416 $';
+$russiancontexthelplngver = 'YaBBForum 3.0 $0 $';
 @russiancontexthelplngmods = ();
 if(@russiancontexthelplngmods){
     $russiancontexthelplngmods = 1;
@@ -29,11 +29,11 @@ if ( $action eq 'detailedversion' ) { return 1; }
 
 %contextxt = (
 'clicktip' => "Правый Клик для справки",
-'url' => "Вставить \"URL\" Ссылку.<br /><br />Выделите URL: [SELECT]http://www.yabbforum.com[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\": [BUTTON]<br /><br /><b>YaBBC Code:</b> [url]http://www.yabbforum.com[/url]<hr />Вставить \"URL\" Ссылку с Текстом.<br /><br />Выделите URL и текст: [SELECT]http://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\": [BUTTON]<br /><br /><b>YaBBC Code:</b> [url=http://www.yabbforum.com]YaBB Forum[/url]<hr />Тег [link] работает так же как и тег [url], за исключением того, что [link] (для него нет отдельной кнопки вставки) откроет нажатую ссылку в существующем окне, в то время как [url] откроет эту ссылку в новом окне.",
+'url' => "Вставить \"URL\" Ссылку.<br /><br />Выделите URL: [SELECT]https://www.yabbforum.com[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\": [BUTTON]<br /><br /><b>YaBBC Code:</b> [url]https://www.yabbforum.com[/url]<hr />Вставить \"URL\" Ссылку с Текстом.<br /><br />Выделите URL и текст: [SELECT]https://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\": [BUTTON]<br /><br /><b>YaBBC Code:</b> [url=https://www.yabbforum.com]YaBB Forum[/url]<hr />Тег [link] работает так же как и тег [url], за исключением того, что [link] (для него нет отдельной кнопки вставки) откроет нажатую ссылку в существующем окне, в то время как [url] откроет эту ссылку в новом окне.",
 'ftp' => "Вставить \"FTP\" Ссылку.<br /><br />Выделите FTP адрес: [SELECT]ftp://ftpdom[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\": [BUTTON]<br /><br /><b>YaBBC Code:</b> [ftp]ftp://ftpdom[/ftp]",
-'image' => "Вставить Изображение.<br /><br />Укажите путь к Изображению: [SELECT]http://imagedirectory/image.gif[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\": [BUTTON]<br /><br /><b>YaBBC Code:</b> [img]http://imagedirectory/image.gif[/img]",
+'image' => "Вставить Изображение.<br /><br />Укажите путь к Изображению: [SELECT]https://imagedirectory/image.gif[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\": [BUTTON]<br /><br /><b>YaBBC Code:</b> [img]https://imagedirectory/image.gif[/img]",
 'email2' => "Вставить e-mail адрес.<br /><br />Выделите e-mail адрес: [SELECT]myname\@domain.com[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\" : [BUTTON]<br /><br /><b>YaBBC Code:</b> [email]myname\@domain.com[/email]<hr />Вставить e-mail адрес с текстом.<br /><br />Выделите e-mail адрес и текст: [SELECT]myname\@domain.com Mail me[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\" : [BUTTON]<br /><br /><b>YaBBC Code:</b> [email=myname\@domain.com]Mail me[/email]",
-'media' => "Вставить Медиа файл. <br /><br />Выделите URL к Media файлу [SELECT]http://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\" : [BUTTON]<br /><br /><b>YaBBC Code:</b> [media]http://www.your-domain.com/yabbchelp.swf[/media]",
+'media' => "Вставить Медиа файл. <br /><br />Выделите URL к Media файлу [SELECT]https://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\" : [BUTTON]<br /><br /><b>YaBBC Code:</b> [media]https://www.your-domain.com/yabbchelp.swf[/media]",
 'table' => "Вставить пустую таблицу из одной ячейки.<br /><br />Нажмите на значок \"[TITLE]\" : [BUTTON]<br /><br /><b>YaBBC Code:</b> [table][tr][td][/td][/tr][/table]<hr />Вложить текст или изображение в ячейку.<br /><br />Выделите текст или изображение: [SELECT]Hello World[/SELECT]<br /><br />Нажмите на значок \"[TITLE]\" : [BUTTON]<br /><br /><b>YaBBC Code:</b> [table][tr][td]Hello World[/td][/tr][/table]",
 'tr' => "Добавить строку в таблице.<br /><br />Нажмите на \"[TITLE]\" button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [tr][/tr]",
 'td' => "Добавить столбец в таблице.<br /><br />Нажмите на \"[TITLE]\" button: [BUTTON]<br /><br /><b>YaBBC Code:</b> [td][/td]",

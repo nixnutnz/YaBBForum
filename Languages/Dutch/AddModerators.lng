@@ -1,4 +1,4 @@
-﻿###############################################################################
+###############################################################################
 # AddModerators.lng                                                           #
 ###############################################################################
 #  Dutch/Nederlands - Translation by Pieszyce                                 #
@@ -6,9 +6,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -18,7 +18,7 @@
 # Released: January 28, 2013, Copyright 2013 Carsten Dalgaard                 # 
 ###############################################################################
 
-$dutchaddmoderatorslngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$dutchaddmoderatorslngver = 'YaBBForum 3.0 $0 $';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 %addmod_txt = (

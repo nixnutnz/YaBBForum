@@ -1,41 +1,42 @@
 /*--------------------------------------------------------*/
-/*           YaBB 2016                                    */
+/*           YaBB 2026                                    */
 /*--------------------------------------------------------*/
-/*   Created by: YaBB http://yabbforum.nz            */
+/*   Created by: YaBB https://yabbforum.nz            */
 /*--------------------------------------------------------*/
 /*  You may adapt elements of this CSS in your own        */
 /*  projects, but please give credit to yabbforum.nz.    */
 /*--------------------------------------------------------*/
-/*  This is the css file for YaBB 2.6.14 default Template */
+/*  This is the css file for YaBBForum 3.0 default Template */
 /*--------------------------------------------------------*/
-/* $Revision: 1613 $                                      */
+/*                                      */
 
 body {
     background-color: #eee;
     font: 12px Verdana, Helvetica, Arial, Sans-Serif;
     margin: 0;
     padding: 0;
-    min-width: 770px;
+    min-width: 70px;
 }
 
+/* on standard browsers this should be equivalent to 12px type.*/
+
+}
 a {
     color: #3b5998;
     font-weight: 400;
     text-decoration: none;
 }
-
 a:visited {
     color: #3b5998;
     font-weight: 400;
 }
-
 a:hover {
     color: #2d2d2d;
     text-decoration: underline;
 }
-
-a:focus, input:focus, textarea:focus, select:focus { outline: 0 none; }
-
+a:focus, input:focus, textarea:focus, select:focus {
+	outline: 0 none;
+}
 #header {
     font: 12px Verdana, Helvetica, Sans-Serif;
     color: #eee;
@@ -51,12 +52,10 @@ form {
     margin: 0;
     padding: 0;
 }
-
 img {
     border: 0 none;
     vertical-align: middle;
 }
-
 input {
     background-color: #eee;
     border: 1px solid #b1bdc9;
@@ -68,13 +67,11 @@ input {
     border-radius: 5px;
     padding: 5px;
 }
-
 sup {
     vertical-align: baseline;
     position: relative;
     top: -0.4em;
 }
-
 .button, input[type="submit"], input[type="reset"], input[type="button"] {
     background-color: #eee;
     border: 1px solid #c6c6c6;
@@ -2073,3 +2070,261 @@ span.newlinks_c {
 .important {
     color: #ff0000; font-weight: 700;
 }
+
+/* ========================================================= */
+/* YaBB Mobile Table & Header Reset                         */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+    /* 1. Prevent screen overflow & trailing whitespace */
+    #maincontainer, #container, .yabb_main, table {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 2. Top Utility Bar - Stacked Rows for Mobile */
+    table.menutop {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 4px 0 !important;
+    }
+
+    table.menutop tr {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    table.menutop td {
+        display: inline-block !important;
+        font-size: 9px !important;
+        padding: 2px 4px !important;
+        width: auto !important;
+    }
+
+    #yabbclock {
+        white-space: nowrap !important;
+        font-size: 9px !important;
+    }
+
+    /* 3. Welcome / Login Header Section */
+    #header {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #header tr {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    #header td {
+        display: block !important;
+        width: auto !important;
+        height: auto !important;
+        padding: 2px !important;
+    }
+
+    #header tr:nth-child(2) {
+        font-size: 10px !important;
+    }
+
+    #header img {
+        max-width: 110px !important;
+        height: auto !important;
+        float: right;
+    }
+
+    #header input[type="text"],
+    #header input[type="password"],
+    #header select {
+        width: 75px !important;
+        font-size: 10px !important;
+        padding: 2px !important;
+        display: inline-block !important;
+    }
+
+    #header form {
+        display: inline !important;
+        white-space: nowrap !important;
+    }
+
+    /* 4. Tab Menu & Breadcrumb fixes */
+    .tabmenu a, .mctabmenu a {
+        padding: 4px 5px !important;
+        font-size: 10px !important;
+    }
+
+    /* 5. Main Forum Tables Containment */
+    table.cs_thin, table.fixed, .yabb_main table {
+        table-layout: fixed !important;
+        width: 100% !important;
+    }
+
+    td, th {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    /* 6. Hide utility columns on small screens */
+    .yabb_main td[width="6%"],
+    .yabb_main td[width="8%"],
+    .yabb_main td[width="1%"] {
+        display: none !important;
+    }
+
+    /* 7. Image containment inside posts */
+    .yabb_main img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* ========================================================= */
+    /* Bottom Page / Footer Login Form Mobile Collapse           */
+    /* ========================================================= */
+
+    .borderbox,
+    .select_body,
+    .select_body_qsearch {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    form[name="guestform"] table,
+    form[action*="Login2"] table,
+    .yabb_main form table {
+        width: 100% !important;
+        max-width: 100% !important;
+        table-layout: auto !important;
+    }
+
+    form[name="guestform"] td,
+    form[action*="Login2"] td {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        padding: 4px 2px !important;
+    }
+
+    form[name="guestform"] input[type="text"],
+    form[name="guestform"] input[type="password"],
+    form[action*="Login2"] input[type="text"],
+    form[action*="Login2"] input[type="password"],
+    form[action*="Login2"] select {
+        width: 85% !important;
+        max-width: 220px !important;
+        box-sizing: border-box !important;
+        margin: 2px auto !important;
+    }
+
+    /* Nuclear Mobile Reset for All Bottom Forms & Tables */
+    .yabb_main table,
+    .yabb_main form,
+    .yabb_forumjump,
+    .copyright table {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        table-layout: fixed !important;
+        box-sizing: border-box !important;
+    }
+
+    .yabb_main input[type="text"],
+    .yabb_main input[type="password"],
+    .yabb_main select {
+        max-width: 140px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Base rules for all screens */
+textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 2px auto !important;
+}
+
+/* Mobile-only override for post editor & UBBC toolbar */
+@media screen and (max-width: 600px) {
+    #dragcanvas,
+    .left99,
+    .leftleft {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    textarea#message {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    #dragbgw,
+    #dragbgh {
+        display: none !important;
+    }
+
+    .ubbc-container,
+    .ubbc-container div {
+        width: auto !important;
+        max-width: 100% !important;
+        height: auto !important;
+        float: none !important;
+    }
+
+    .ubbc-container > div {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1px !important;
+    }
+
+    .ubbc-container > div > div {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        max-width: 250px !important;
+        gap: 1px !important;
+    }
+
+    .ubbc-container select {
+        width: 50px !important;
+        margin-bottom: 1px !important;
+        box-sizing: border-box !important;
+    }
+
+    .my_smilies > div {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        max-width: 50px !important;
+        gap: 1px !important;
+    }
+
+    div.left440,
+    div.boxlist1,
+    div.chrwarn {
+        float: left;
+        text-align: left;
+        width: 100%;
+    }
+
+    div.chrsize {
+        float: left;
+        text-align: right;
+        width: 100%;
+    }
+}
+
+

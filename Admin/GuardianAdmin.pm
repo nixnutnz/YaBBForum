@@ -4,18 +4,18 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 use CGI::Carp qw(fatalsToBrowser);
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$guardianadminpmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$guardianadminpmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 LoadLanguage('Guardian');
@@ -417,7 +417,7 @@ sub update_htaccess {
     fclose(HTA);
 
 # header to determine only who has access to the main script, not the admin script
-    $htheader = q~<Files YaBB*>~;
+    $htheader = q~<Files index*>~;
     $htfooter = q~</Files>~;
     $start    = 0;
     foreach (@htlines) {
@@ -441,6 +441,23 @@ sub update_htaccess {
         print {HTA} @htout or croak "$croak{'print'} HTA";
         if (@values) {
             print {HTA} "\n$htheader\n" or croak "$croak{'print'} HTA";
+
+            # --- START ADMIN PATCH: Remove duplicates AND ensure strictly valid IP/IPv6 structures ---
+            my %seen;
+            @values = grep { 
+                $_ ne q{} && 
+                !$seen{$_}++ && 
+                (
+                    # Match valid IPv4 standard (e.g., 1.2.3.4, 192.168.*, or 10.0.0.0/24)
+                    $_ =~ m/^\d{1,3}\.[\d\*]{1,3}\.[\d\*]{1,3}\.[\d\*]{1,3}(\/\d{1,2})?$/ ||
+                    
+                    # Match valid IPv6 characters and structure
+                    ($_ =~ m/^[0-9a-fA-F:]+(\/\d{1,3})?$/ && $_ =~ tr/:// > 1)
+                )
+            } @values;
+            # --- END ADMIN PATCH ---
+
+
             foreach (@values) {
                 chomp $_;
                 if ( $_ ne q{} ) {

@@ -3,7 +3,7 @@
 
 	Make a backup of the entire forum directory and have it readily available
 
-	If you have any modified files at all, ensure you copy those mods to the new file first
+	If you have any modified files at all, ensure you copy those mods to the new file first, I use meld for that
 
 	Select the following directories and files and copy to your forum directory
 
@@ -17,7 +17,7 @@
 	yabbfiles
 
 	AdminIndex.pl
-	index.pl
+	index.pl (delete YaBB.pl if exists)
 	license.txt
 	MANIFEST.txt
 	README.txt
@@ -30,7 +30,7 @@
 	Make sure the 3 .pl files are chmod 0755 (that's executable) and all files/folders are owned by apache for EL
 	or www-data for Debian OS's with group owned by the same or your username
 
-	You should be able to access your upgraded board and recheck all your admin settings
+	You should be able to access your upgraded board and recheck all your admin settings & configure what's new
 
 	If you get an error check the logs if it's not displayed on screen and fix whatever is broken
 	if you can't fix it try running Setup.pl

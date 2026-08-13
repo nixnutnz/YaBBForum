@@ -4,9 +4,9 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.14                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       July 26, 2026                                             #
-# Distributed by: http://yabbforum.nz                                    #
+# Distributed by: https://yabbforum.nz                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
@@ -17,11 +17,11 @@
 # by Andrew Gregory
 # 17 February 2007
 #
-# http://www.scss.com.au/family/andrew/webdesign/msgimg/
+# https://www.scss.com.au/family/andrew/webdesign/msgimg/
 #
 # This work is licensed under the Creative Commons
 # Attribution-NonCommercial-ShareAlike License. To view a copy of this license,
-# visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to
+# visit https://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to
 # Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
 # use strict;
@@ -29,9 +29,9 @@
 no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
 use English '-no_match_vars';
-our $VERSION = '2.6.14';
+our $VERSION = '3.0';
 
-$captchapmver = 'YaBB 2.6.14 $Revision: 2601 $';
+$captchapmver = 'YaBBForum 3.0';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 $OUTPUT_AUTOFLUSH = 1;

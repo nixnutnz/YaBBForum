@@ -1,11 +1,11 @@
-﻿###############################################################################
+###############################################################################
 # user02_profile.help                                                         #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11 and higher                                      #
+# Version:        YaBBForum 3.0 and higher                                      #
 # Released:       November 9, 2015                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-and newer YaBB (www.yabbforum.com) - All Rights Reserved.#
 # Software by: The YaBB Development Team                                      #
@@ -74,17 +74,17 @@ $SectionBody4 = qq~<p>Als u wilt dat andere leden van de YaBB gemeenschap u kunn
 <h4 class="help">Skype or VoIP</h4>
 <p>Als u een Skype of VoIP adres heeft, kunt u het hier invoeren.</p>
 <h4 class="help">MySpace</h4>
-<p>Als u een MySpace pagina heeft, kan u het hier invoeren. Merk op dat u alleen het laatste deel van de URL hoeft te vullen in. Bijvoorbeeld, als uw MySpace pagina 'http://myspace.com/yourname' is, hoeft u alleen in te vullen 'yourname'.</p>
+<p>Als u een MySpace pagina heeft, kan u het hier invoeren. Merk op dat u alleen het laatste deel van de URL hoeft te vullen in. Bijvoorbeeld, als uw MySpace pagina 'https://myspace.com/yourname' is, hoeft u alleen in te vullen 'yourname'.</p>
 <h4 class="help">Twitter</h4>
-<p>Als u een Twitter account heeft, kunt u het hier invoeren. Merk op dat u alleen het laatste deel van de URL hoeft te vullen in. Bijvoorbeeld, als uw Twitter pagina 'http://twitter.com/yourname' is, hoeft u alleen in te vullen 'yourname'.</p>
+<p>Als u een Twitter account heeft, kunt u het hier invoeren. Merk op dat u alleen het laatste deel van de URL hoeft te vullen in. Bijvoorbeeld, als uw Twitter pagina 'https://twitter.com/yourname' is, hoeft u alleen in te vullen 'yourname'.</p>
 <h4 class="help">YouTube</h4>
-<p>Als u een YouTube account heeft, kunt u het hier invoeren. Merk op dat u alleen het laatste deel van de URL hoeft te vullen in. Bijvoorbeeld, als uw YouTube pagina 'http://www.youtube.com/yourname' is, hoeft u alleen in te vullen 'yourname'.</p>
+<p>Als u een YouTube account heeft, kunt u het hier invoeren. Merk op dat u alleen het laatste deel van de URL hoeft te vullen in. Bijvoorbeeld, als uw YouTube pagina 'https://www.youtube.com/yourname' is, hoeft u alleen in te vullen 'yourname'.</p>
 <h4 class="help">Facebook</h4>
-<p>Als u een Facebook account heeft, kunt u het hier invoeren. Merk op dat u  uw profiel-id-nummer of uw gebruikersnaam kunt. Bijvcorbeeld, om uw profiel ID nummer te gebruiken, als uw Facebook URL is 'http://facebook.com/profile.php?id=123456', hoeft u alleen '123456' in te voeren, en uw gebruikersnaam te gebruiken, als uw Facebook URL is 'http://facebook.com/yourname', hoeft u alleen in te vullen 'yourname'.</p>
+<p>Als u een Facebook account heeft, kunt u het hier invoeren. Merk op dat u  uw profiel-id-nummer of uw gebruikersnaam kunt. Bijvcorbeeld, om uw profiel ID nummer te gebruiken, als uw Facebook URL is 'https://facebook.com/profile.php?id=123456', hoeft u alleen '123456' in te voeren, en uw gebruikersnaam te gebruiken, als uw Facebook URL is 'https://facebook.com/yourname', hoeft u alleen in te vullen 'yourname'.</p>
 <h4 class="help">Website Titel</h4>
 <p>Als u een website heeft, kan u hier de titel ervan ingeven. Dit is de tekst waaraan de URL (hieronder) gekoppeld zal wordeno.</p>
 <h4 class="help">Website URL</h4>
-<p>Hier kunt u de URL van uw website ingeven. <b>Nota</b> dit moet een volledige URL zijn. (dus inclusief http://)</p>
+<p>Hier kunt u de URL van uw website ingeven. <b>Nota</b> dit moet een volledige URL zijn. (dus inclusief https://)</p>
 ~;
 #############################################
 

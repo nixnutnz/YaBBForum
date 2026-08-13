@@ -3,16 +3,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11                                                 #
+# Version:        YaBBForum 3.0                                                 #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$suomiadminlngver = 'YaBB 2.6.11 $Revision: 1617 $';
+$suomiadminlngver = 'YaBBForum 3.0 $0 $';
 @suomiadminlngmods = ();
 if(@suomiadminlngmods){
     $suomiadminlngmods = 1;
@@ -48,7 +48,7 @@ $abbr_lang = 'fi';
 '23' => 'Pysyväislinkkien domain',
 '24' => 'Pysyväislinkkien asetukset',
 '25' => 'Pysyväislinkin Symlink- osa (ei aloittavaa kauttaviivaa ja lopettava kauttaviiva (esim. aiheet/))',
-'26' => 'Tämä osa osoitteessa tulee domainnimen ja pysyväislinkin väliin<br />(esim. http://www.yourdomain.com/<b>aiheet/</b>uutisia/aiheen-otsake)',
+'26' => 'Tämä osa osoitteessa tulee domainnimen ja pysyväislinkin väliin<br />(esim. https://www.yourdomain.com/<b>aiheet/</b>uutisia/aiheen-otsake)',
 '31' => 'Poista',
 '32' => 'Suorita',
 '39' => 'Väärä salasana',
@@ -74,7 +74,7 @@ $abbr_lang = 'fi';
 '61a' => 'Kategorian tunniste',
 '61b' => '<span class="small">syötä mikä tahansa alfanumeerinen nimi ilman välilyöntejä</span>',
 '62' => 'Kuvaus',
-'62a' => 'Jos tästä tulee ulkoisen alueen linkki, ensimmäinen kuvauksen rivi kuuluu olla "Nimi"-linkin otsikko, tai kuvaa käyttäessä sinun kuuluisi käyttää HTML:n &lt;img&gt;-tagia. esim. &lt;img src="http://yoursite.com/yourimage.jpg" alt="Kuvasi otsikko" /&gt;',
+'62a' => 'Jos tästä tulee ulkoisen alueen linkki, ensimmäinen kuvauksen rivi kuuluu olla "Nimi"-linkin otsikko, tai kuvaa käyttäessä sinun kuuluisi käyttää HTML:n &lt;img&gt;-tagia. esim. &lt;img src="https://yoursite.com/yourimage.jpg" alt="Kuvasi otsikko" /&gt;',
 '63' => 'Moderaattorit',
 '63a' => 'Kopioi',
 '63b' => 'Liitä',
@@ -110,7 +110,7 @@ $abbr_lang = 'fi';
 '66' => 'Napsauta tätä päästäksesi ao. ohjetiedoston kohtaan',
 '67' => 'Huoltoasetukset',
 '68' => 'Nimi',
-'68a' => q~Jos tämä tulee olemaan ulkoisen alueen linkki, nimi kuuluisi olla muodossa 'http://boardlink.com'~,
+'68a' => q~Jos tämä tulee olemaan ulkoisen alueen linkki, nimi kuuluisi olla muodossa 'https://boardlink.com'~,
 '70' => 'Aihe',
 '72' => 'Viesti',
 '87' => 'Käyttäjäryhmä', #Main group
@@ -228,7 +228,6 @@ $abbr_lang = 'fi';
 '374' => 'Näytettävien aiheiden määrä alue-sivulla',
 '375' => 'Näytettävien viestien määrä aihe-sivulla',
 '376' => 'Viestin ikä päivissä, jonka jälkeen se ei enää näy uutena.',
-'377' => 'Salli oikoluku?<br /><span class="small">Oikoluku turvautuu Googlen websivustoon (googiespell). Tämä tulee huomioida palomuuriasetuksia ja sisältösuodatuksia käytettäessä.</span><br /><b><u>Lisenssi:</u></b><br />Skriptit /yabbfiles/googiespell-hakemistossa on kaksoislisenssoitu. Yksi on vapaalle sovellukselle ("open source") ja toinen on yksityiomistukselliselle (proprietary).<br />Vapaa lisenssi on <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU GPL</a>. Tällä lisenssillä GoogieSpelliä voidaan käyttää vain vapaissa sovelluksissa. GoogieSpell-skriptiä ei voi käyttäää omistusoikeudellisissa sovelluksissa vaikka sovellusta ei edes jaeltaisi.<br />Lisätietoja <a href="http://orangoo.com/labs/GoogieSpell/License/" target="_blank">http://orangoo.com/labs/GoogieSpell/License/</a>.',
 '377a' => 'Mikäli tämä viesti on esillä tarvittavia moduleita ei ole asennettu palvelimelle.<br />Jos mikä tahansa virheviesti joka alkaa "Can\'t locate ..." näkyy tätä modulia ei ole asennettu palvelimellesi.<br /><br />',
 '377b' => 'Asennettu',
 '377c' => '<br />Jos haluat käyttää oikolukua tämän moduulin tulee olla asennettu palvelimelle. Pyydä palveluntarjoajaasi asentamaan nämä.<br />Asenna:<br />- Bundle::LWP (for LWP::UserAgent and HTTP::Request::Common)<br />- Crypt::SSLeay',
@@ -294,13 +293,13 @@ $abbr_lang = 'fi';
 '479b' => 'Poista "greybox"-toiminto käytöstä',
 '479c' => 'Aktivoi "greybox"-toiminto: Yksi kuva per laatikko',
 '479d' => 'Aktivoi "greybox"-toiminto: Kaikki liitteet yhdessä',
-'480' => '01/31/01 13:15:17',
-'481' => '31.01.01 13:15:17',
-'482' => '31.01.2001 13:15:17',
-'483' => 'Tam 12., 2001, 13:15',
-'483a' => '12. Tam, 2001 at 1:15pm',
-'484' => '01/31/01 13:15',
-'485' => '31. Tam 13:15',
+'480' => '01/31/26 at 13:15:17',
+'481' => '31.01.26 at 13:15:17',
+'482' => '31.01.2026 at 13:15:17',
+'483' => 'Tam 31st, 2026 at 1:15pm',
+'483a' => '31st Tam, 2026 at 1:15pm',
+'484' => '01/31/26 at 1:15pm',
+'485' => '31. Tam at 13:15',
 '486' => 'Aikaformaatti',
 '487' => 'Aikavyöhykkeen on oltava luku väliltä -23.5 ja 23.5!',
 '488' => 'Käyttäjiä yhteensä:',
@@ -1133,7 +1132,7 @@ $abbr_lang = 'fi';
 %versiontxt = (
 '1' => 'Selaimen on tuettava JavaScriptiä jotta versiotarkistus toimisi!',
 '2' => '<b><font color="red">Uusi versio saatavilla!</font></b><br \/>Jos haluat siirtyä käyttämään versiota ',
-'3' => ', mene osoitteeseen <a href="http://www.yabbforum.com/downloads.php" target="_blank">http://www.yabbforum.com/downloads.php</a>.',
+'3' => ', mene osoitteeseen <a href="https://www.yabbforum.com/downloads.php" target="_blank">https://www.yabbforum.com/downloads.php</a>.',
 '4' => 'Käytössäsi oleva versio:',
 '5' => 'Viimeisin vakaa versio:',
 '6' => 'Käytössäsi on viimeisin vakaa versio.',
@@ -1343,7 +1342,7 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 '5' => 'Järjestelmän antamaa lisätietoa:',
 '6' => 'Asennettu',
 '7' => 'Joitakin moduuleja ei ole asennettu palvelimellesi.',
-'8' => '<b>Jos tarvitset moduuleja (Lue Tietoja-kenttä), voit pyytää palveluntarjoajaasi asentamaan tarvittavat moduulit!<br /><br />Jos ylläpidät omaa palvelintasi tai jos palveluntarjoajasi ei suostu asentamaan moduuleita katso <a href="http://codex.yabbforum.com/YaBB.pl?num=1225217016" target="_blank"><b>lisätietoja <i>YaBB Codex</i>-sivulta</b></a>.</b>',
+'8' => '<b>Jos tarvitset moduuleja (Lue Tietoja-kenttä), voit pyytää palveluntarjoajaasi asentamaan tarvittavat moduulit!<br /><br />Jos ylläpidät omaa palvelintasi tai jos palveluntarjoajasi ei suostu asentamaan moduuleita katso <a href="https://codex.yabbforum.com/YaBB.pl?num=1225217016" target="_blank"><b>lisätietoja <i>YaBB Codex</i>-sivulta</b></a>.</b>',
 'Digest::MD5' => 'Käytetään salasanan suojaukseen.<br />Moduuli on välttämätön! Ilman tätä YaBB ei toimi!',
 'Time::HiRes' => 'Käytetään suorituskyvyn mittaamiseen, jos debug-asetus on päällä.<br />Jos tätä moduulia ei ole asennettu suorituskyvyn mittaamisessa käytettävä aika näytetään kokonaisina sekunteina eikä yhtään tarkemmin. Jos tämä ei ole tärkeää sinulle, etä tarvitse tätä moduulia.',
 'Time::Local' => 'Käytetään ajan muuttamisessa aikaleimaksi.<br />Moduuli on välttämätön! Ilman tätä YaBB ei aina toimi!',
@@ -1531,7 +1530,7 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 );
 
 timetostring($date);
-$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="http://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">!<br />\n<a href="http://www.yabbforum.com">YaBB</a> &copy; 2000-$year. Kaikki oikeudet pidätetään.</span>~;
+$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="https://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">!<br />\n<a href="https://www.yabbforum.com">YaBB</a> &copy; 2000-$year. Kaikki oikeudet pidätetään.</span>~;
 $iFrameSupport = 'Valitamme, mutta nähdäksesi uutiset, on sinun käytettävä selainta joka tukee iFramen käyttöä';
 $rna = 'Yhteyttä etäpalvelimelle ei ole!';
 

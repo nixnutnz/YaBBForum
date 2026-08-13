@@ -60,17 +60,17 @@ $SectionBody4 = q~<p>If you would like other members of this YaBB community to b
 <h4 class="help">Skype or VoIP</h4>
 <p>If you have a Skype or VoIP address, you may enter it here.</p>
 <h4 class="help">MySpace</h4>
-<p>If you have a MySpace page, you may enter it here. Note that you only need to fill in the last part of the URL. For example, if your MySpace page is 'http://myspace.com/yourname', you only need to enter 'yourname'.</p>
+<p>If you have a MySpace page, you may enter it here. Note that you only need to fill in the last part of the URL. For example, if your MySpace page is 'https://myspace.com/yourname', you only need to enter 'yourname'.</p>
 <h4 class="help">Twitter</h4>
-<p>If you have a Twitter account, you may enter it here. Note that you only need to fill in the last part of the URL. For example, if your Twitter page is 'http://twitter.com/yourname', you only need to enter 'yourname'.</p>
+<p>If you have a Twitter account, you may enter it here. Note that you only need to fill in the last part of the URL. For example, if your Twitter page is 'https://twitter.com/yourname', you only need to enter 'yourname'.</p>
 <h4 class="help">YouTube</h4>
-<p>If you have a YouTube account, you may enter it here. Note that you only need to fill in the last part of the URL. For example, if your YouTube page is 'http://www.youtube.com/yourname', you only need to enter 'yourname'.</p>
+<p>If you have a YouTube account, you may enter it here. Note that you only need to fill in the last part of the URL. For example, if your YouTube page is 'https://www.youtube.com/yourname', you only need to enter 'yourname'.</p>
 <h4 class="help">Facebook</h4>
-<p>If you have a Facebook page, you may enter here. Note that you can either use your profile ID number or your username. For example, to use your profile ID number, if your Facebook URL is 'http://facebook.com/profile.php?id=123456', you only need to enter '123456', and to use your username, if your Facebook URL is 'http://facebook.com/yourname', you only need to enter 'yourname'.</p>
+<p>If you have a Facebook page, you may enter here. Note that you can either use your profile ID number or your username. For example, to use your profile ID number, if your Facebook URL is 'https://facebook.com/profile.php?id=123456', you only need to enter '123456', and to use your username, if your Facebook URL is 'https://facebook.com/yourname', you only need to enter 'yourname'.</p>
 <h4 class="help">Website Title</h4>
 <p>If you have a website, you can enter the title here. This will be the text the URL (below) will be attached to.</p>
 <h4 class="help">Website URL</h4>
-<p>Here you can enter the URL to your website. Note that this must be a full URL. (i.e. include http:// )</p>
+<p>Here you can enter the URL to your website. Note that this must be a full URL. (i.e. include https:// )</p>
 ~;
 #############################################
 

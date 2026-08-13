@@ -1,4 +1,4 @@
-﻿###############################################################################
+###############################################################################
 # Admin.lng (Administrative text definitions)                                 #
 ###############################################################################
 # Dutch/Nederlands - Translation by Pieszyce                                  #
@@ -6,16 +6,16 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:      YaBB 2.6.11                                                   #
+# Version:      YaBBForum 3.0                                                   #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by: The YaBB Development Team                                      #
 #              with assistance from the YaBB community.                       #
 ###############################################################################
 
-$dutchadminlngver = 'YaBB 2.6.11 $Revision: 1617 $';
+$dutchadminlngver = 'YaBBForum 3.0 $0 $';
 if ( $action eq 'detailedversion' && $language ne 'Dutch' ) { return 1; }
 @days = ('Zondag','Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag');
 @months = ('Jan','Feb','Mrt','Apr','Mei','Jun','Jul','Aug','Sept','Oct','Nov','Dec');
@@ -44,7 +44,7 @@ $abbr_lang = 'nl-nl';
 '23' => q~Permalink Domein~,
 '24' => q~Permalink Instellingen~,
 '25' => q~Permalink Symlink URL part (Gebruik geen leidende slash en met slepende schuine streep (bijv. articles/))~,
-'26' => q~Dit is een deel in de URL tussen uw domeinnaam en het Permalink URL deel<br />(bijv. http://www.yourdomain.com/<b>artikelen/</b>nieuws/dit-is-de-titel)~,
+'26' => q~Dit is een deel in de URL tussen uw domeinnaam en het Permalink URL deel<br />(bijv. https://www.yourdomain.com/<b>artikelen/</b>nieuws/dit-is-de-titel)~,
 '31' => q~Verwijder~,
 '32' => q~Ga~,
 '39' => q~Onjuist wachtwoord~,
@@ -106,7 +106,7 @@ $abbr_lang = 'nl-nl';
 '66' => q~Klik hier om op de relevante Help-sectie te komen~,
 '67' => q~Maintenance instellingen~,
 '68' => q~Naam~,
-'68a' => q~Als dit een externe board link is, moet de naam in de vorm zijn van 'http://boardlink.com'~,
+'68a' => q~Als dit een externe board link is, moet de naam in de vorm zijn van 'https://boardlink.com'~,
 '70' => q~Onderwerp~,
 '72' => q~Tekst~,
 '87' => q~Hoofdgroep~,
@@ -224,7 +224,6 @@ $abbr_lang = 'nl-nl';
 '374' => q~Maximum aan Topics getoond per pagina in de Berichten Index~,
 '375' => q~Maximum aantal berichten getoond per pagina van een topic~,
 '376' => q~Aantal dagen, nadat een bericht niet langer als 'Nieuw' zal worden weergegeven in zowel het board als het berichten overzicht.~,
-'377' => q~Spellingcontrole inschakelen?<br /><span class="small">Deze spellingcontrole is gebaseerd op externe websites die behoren tot GoogieSpell. U moet rekening houden met uw firewallinstellingen en inhoud blokkers in het gebruik van deze functie.</span><br /><b><u>Licentie:</u></b><br />De scripts in /yabbfiles/googiespell hebben een dubbele licentie. Een is voor gratis software ("open source"), de andere is voor propriëtaire software.<br />de gratis licensie is <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 licentie</a>. Onder deze licentie kunt u alleen GoogieSpell met/in vrije software gebruiken (dwz software waar de bron is vrijgegeven). U kunt GoogieSpell met propriëtaire software niet gebruiken zelfs als u uw software niet distribueert.<br />Voor meer details zie <a href="http://orangoo.com/labs/GoogieSpell/Buy_License/" target="_blank">orangoo.com/labs/GoogieSpell/Buy_License/</a>.~,
 '377a' => q~Als u dit bericht ziet, zijn de benodigde modules ter gebruik van de spellingcontrole op uw server <b>Niet</b> geïnstalleerd<br />Als een foutbericht als "kan niet lokaliseren... wordt weergegeven, dan is deze module niet geinstalleerd op uw server.<br /><br />~,
 '377b' => q~Geïnstalleerd~,
 '377c' => q~<br />Om SpellChecker te gebruiken, moet u al deze modules op uw server geïnstalleerd hebben. Vraag uw server host hen voor u te installeren.<br />Installeer alstublieft:<br />- Bundle::LWP (for LWP::UserAgent and HTTP::Request::Common)<br />- Crypt::SSLeay~,
@@ -289,13 +288,13 @@ $abbr_lang = 'nl-nl';
 '479b' => q~"Greybox" deactiveren~,
 '479c' => q~"Greybox" voor een afbeelding per box activeren~,
 '479d' => q~"Greybox" voor alle afbeeldingen in een box activeren~,
-'480' => q~01/31/01 om 13:15:17~,
-'481' => q~31.01.01 om 13:15:17~,
-'482' => q~31.01.2001 om 13:15:17~,
-'483' => q~Jan 12e, 2001 om 1:15pm~,
-'483a' => q~12e Jan, 2001 om 1:15pm~,
-'484' => q~01/31/01 om 1:15pm~,
-'485' => q~31. Jan om 13:15~,
+'480' => '01/31/26 om 13:15:17',
+'481' => '31.01.26 om 13:15:17',
+'482' => '31.01.2026 om 13:15:17',
+'483' => 'Jan 31st, 2026 om 1:15pm',
+'483a' => '31st Jan, 2026 om 1:15pm',
+'484' => '01/31/26 om 1:15pm',
+'485' => '31. Jan om 13:15',
 '486' => q~Tijdformaat~,
 '487' => q~Tijdverschil moet tussen -23.5 en 23.5 liggen.~,
 '488' => q~Totaal aantal Leden:~,
@@ -678,8 +677,8 @@ $abbr_lang = 'nl-nl';
 '5' => q~Laatste login gegevens:~,
 '6' => q~Met medewerking van~,
 '7' => q~Setup en Converter Back-up bestanden~,
-'8' => q~Wanneer u uw forum getest heeft en zeker bent dat alles correct geconverteerd is, kunt u de Setup Utility en uw oude YaBB back-up bestanden in de Converter-mappen verwijderen (indien aanwezig). Dit zal ook de conversie programma's verwijderen, zodat ze niet opnieuw uitgevoerd kunnen worden.~,
-'9' => q~Oude Back-up bestanden, setup, en converteerprogramma's verwijderen~,
+'8' => q~Wanneer u uw forum getest heeft en zeker bent dat alles correct geconverteerd is, kunt u de Setup Utility en uw oude YaBB back-up bestanden in de Converter-mappen verwijderen (indien aanwezig).~,
+'9' => q~Oude Back-up bestanden, setup verwijderen~,
 '10' => q~Oude Back-up bestanden verwijderd~,
 '11' => q~Gedetailleerde versie controle~,
 '15' => q~Terug naar~,
@@ -1131,7 +1130,7 @@ $abbr_lang = 'nl-nl';
 %versiontxt = (
 '1' => q~Ofwel uw browser ondersteunt JavaScript niet of u moet het inschakelen om de versie check mogelijk te maken.~,
 '2' => q~<b><span style="color:red">Er is een nieuwe release versie beschikbaar.</span></b><br />Als u deze wilt downloaden ~,
-'3' => q~, ga alstublieft naar <a href="http://www.yabbforum.com/downloads.php" onclick="target='_blank';">http://www.yabbforum.com/downloads.php</a>.~,
+'3' => q~, ga alstublieft naar <a href="https://www.yabbforum.com/downloads.php" onclick="target='_blank';">https://www.yabbforum.com/downloads.php</a>.~,
 '4' => q~UW versie:~,
 '5' => q~Laatste RELEASE versie:~,
 '6' => q~U werkt met de laatste versie.~,
@@ -1341,7 +1340,7 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 '5' => q~Door hhet systeem verstrekte informatie:~,
 '6' => q~Geïnstalleerd~,
 '7' => q~Sommige modules zijn niet op uw server geïnstalleerd.~,
-'8' => q~<b>Als een module installatie echt nodig ist (Lees de Info), moet uw eerste keuze zijn om uw server host te vragen de benodigde modules voor u te installeren.<br /><br />Als u uw eigen server host, of als uw host de module niet voor u wil installeren, zie <a href="http://www.yabbforum.com/cgi-bin/codex/YaBB.pl?num=1225217016" target="_blank"><b>deze post in de <i>YaBB Codex</i> voor hulp</b></a>.</b>~,
+'8' => q~<b>Als een module installatie echt nodig ist (Lees de Info), moet uw eerste keuze zijn om uw server host te vragen de benodigde modules voor u te installeren.<br /><br />Als u uw eigen server host, of als uw host de module niet voor u wil installeren, zie <a href="https://www.yabbforum.com/cgi-bin/codex/YaBB.pl?num=1225217016" target="_blank"><b>deze post in de <i>YaBB Codex</i> voor hulp</b></a>.</b>~,
 'Digest::MD5' => q~Gebruikt voor wachtwoord versleuteling.<br /> Deze module is essentieel, Zonder het, zal YaBB niet werken.~,
 'Time::HiRes' => q~Gebruikt voor de benchmarking-tijd, als foutopsporing ingeschakeld is.<br />Als deze module niet geïnstalleerd is, wordt de benchmark-tijd niet weergegeven in hoge resolutie en volle seconden. Anders heeft u deze module niet nodig.~,
 'Time::Local' => q~Gebruikte tijd tekenreeksen omzetten in tijdstempels.<br />Deze module is essentieel, zonder het zal YaBB niet altijd werken.~,
@@ -1530,7 +1529,7 @@ $maintxt {'dst'} = '<sup>*</sup>'; ## needed to show Today in registration log
 );
 
 timetostring($date);
-$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="http://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="http://www.yabbforum.com">YaBB Forum Software</a> &copy; 2000-$year. Alle rechten voorbehouden.</span>~;
+$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="https://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="https://www.yabbforum.com">YaBB Forum Software</a> &copy; 2000-$year. Alle rechten voorbehouden.</span>~;
 $iFrameSupport = 'Sorry, om het laatste nieuws te zien, moet u een browser gebruiken die iframes ondersteund';
 $rna = 'Externe Server niet beschikbaar.';
 

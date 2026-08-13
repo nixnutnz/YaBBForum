@@ -1,4 +1,4 @@
-﻿###############################################################################
+###############################################################################
 # ContextHelp.lng                                                             #
 ###############################################################################
 # Dutch/Nederlands - Translation by Pieszyce                                  #
@@ -6,30 +6,30 @@
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:      YaBB 2.6.11                                                   #
+# Version:      YaBBForum 3.0                                                   #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by: The YaBB Development Team                                      #
 #              with assistance from the YaBB community.                       #
 ###############################################################################
-# Many thanks to Carsten Dalgaard (http://www.carsten-dalgaard.dk/)           #
+# Many thanks to Carsten Dalgaard (https://www.carsten-dalgaard.dk/)           #
 # for his contribution to the YaBB community                                  #
 ###############################################################################
 
-$dutchcontexthelplngver = 'YaBB 2.6.11 $Revision: 1611 $';
+$dutchcontexthelplngver = 'YaBBForum 3.0 $0 $';
 if ( $action eq 'detailedversion' ) { return 1; }
 
 ### Do not translate uppercase words in sharp brackets
 
 %contextxt = (
 'clicktip' => "Klik met de rechtermuisknop voor hulp",
-'url' => "Voeg een \"URL\" link in:<br /><br />Selecteer de URL: [SELECT]http://www.yabbforum.com[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url]http://www.yabbforum.com[/url]<hr />Voeg een \"Tekst\" link in:<br /><br />Selecteer de URL <u>en</u> de tekst: [SELECT]http://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url=http://www.yabbforum.com]YaBB Forum[/url]<hr />De [link] YaBBC tags werken op de zelfde manier als de [url] tags, met de uitzondering dat de [link] tag (er is geen plaatsingsknop voor deze tag) de aangeklikte link zal openen in het huidige venster, overwegende dat de [url] tag de aangeklikte link in een nieuw venster opent.",
+'url' => "Voeg een \"URL\" link in:<br /><br />Selecteer de URL: [SELECT]https://www.yabbforum.com[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url]https://www.yabbforum.com[/url]<hr />Voeg een \"Tekst\" link in:<br /><br />Selecteer de URL <u>en</u> de tekst: [SELECT]https://www.yabbforum.com YaBB Forum[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [url=https://www.yabbforum.com]YaBB Forum[/url]<hr />De [link] YaBBC tags werken op de zelfde manier als de [url] tags, met de uitzondering dat de [link] tag (er is geen plaatsingsknop voor deze tag) de aangeklikte link zal openen in het huidige venster, overwegende dat de [url] tag de aangeklikte link in een nieuw venster opent.",
 'ftp' => "Voeg een \"FTP\" link in:<br /><br />Selecteer het FTP adres: [SELECT]ftp://ftpdom[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [ftp]ftp://ftpdom[/ftp]",
-'image' => "Voer een afbeelding in:<br /><br />Selecteer de afbeelding directory: [SELECT]http://imagedirectory/image.gif[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [img]http://imagedirectory/image.gif[/img]",
+'image' => "Voer een afbeelding in:<br /><br />Selecteer de afbeelding directory: [SELECT]https://imagedirectory/image.gif[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [img]https://imagedirectory/image.gif[/img]",
 'email2' => "Voer een \"Address\" mail link in:<br /><br />Selecteer het mail adres: [SELECT]myname\@domain.com[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [email]myname\@domain.com[/email]<hr />Voer een \"Text\" mail link in:<br /><br />Selecteer het mail adres <u>en</u> de tekst: [SELECT]myname\@domain.com Mail me[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [email=myname\@domain.com]Mail mij[/email]",
-'media' => "Voeg een Media bestand in: <br /><br />Selecteer de URL naar het Media bestand: [SELECT]http://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [media]http://www.your-domain.com/yabbchelp.swf[/media]",
+'media' => "Voeg een Media bestand in: <br /><br />Selecteer de URL naar het Media bestand: [SELECT]https://www.your-domain.com/yabbchelp.swf[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [media]https://www.your-domain.com/yabbchelp.swf[/media]",
 'table' => "Voeg een lege één-cel tabel in:<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [table][tr][td][/td][/tr][/table]<hr />Sluit een tekst of een afbeelding in een één-cel-tabel in:<br /><br />Selecteer de tekst of afbeelding directory: [SELECT]Hello World[/SELECT]<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [table][tr][td]Hello World[/td][/tr][/table]",
 'tr' => "Voeg een tabel  rij in:<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [tr][/tr]",
 'td' => "Voeg een tabel cel in:<br /><br />Klik op de \"[TITLE]\" knop: [BUTTON]<br /><br /><b>YaBBC Code:</b> [td][/td]",

@@ -1,8 +1,8 @@
 ### the gnu tar specification:
-### http://www.gnu.org/software/tar/manual/tar.html
+### https://www.gnu.org/software/tar/manual/tar.html
 ###
 ### and the pax format spec, which tar derives from:
-### http://www.opengroup.org/onlinepubs/007904975/utilities/pax.html
+### https://www.opengroup.org/onlinepubs/007904975/utilities/pax.html
 
 package Archive::Tar;
 require 5.005_03;
@@ -299,7 +299,7 @@ sub _read_tar {
         }
 
         ### ignore labels:
-        ### http://www.gnu.org/manual/tar/html_node/tar_139.html
+        ### https://www.gnu.org/manual/tar/html_node/tar_139.html
         next if $entry->is_label;
 
         if( length $entry->type and ($entry->is_file || $entry->is_longlink) ) {
@@ -1825,22 +1825,22 @@ to an uploaded file, which might be a compressed archive.
 
 =item The GNU tar specification
 
-C<http://www.gnu.org/software/tar/manual/tar.html>
+C<https://www.gnu.org/software/tar/manual/tar.html>
 
 =item The PAX format specication
 
-The specifcation which tar derives from; C< http://www.opengroup.org/onlinepubs/007904975/utilities/pax.html>
+The specifcation which tar derives from; C< https://www.opengroup.org/onlinepubs/007904975/utilities/pax.html>
 
-=item A comparison of GNU and POSIX tar standards; C<http://www.delorie.com/gnu/docs/tar/tar_114.html>
+=item A comparison of GNU and POSIX tar standards; C<https://www.delorie.com/gnu/docs/tar/tar_114.html>
 
 =item GNU tar intends to switch to POSIX compatibility
 
 GNU Tar authors have expressed their intention to become completely
-POSIX-compatible; C<http://www.gnu.org/software/tar/manual/html_node/Formats.html>
+POSIX-compatible; C<https://www.gnu.org/software/tar/manual/html_node/Formats.html>
 
 =item A Comparison between various tar implementations
 
-Lists known issues and incompatibilities; C<http://gd.tuwien.ac.at/utils/archivers/star/README.otherbugs>
+Lists known issues and incompatibilities; C<https://gd.tuwien.ac.at/utils/archivers/star/README.otherbugs>
 
 =back
 

@@ -1,11 +1,11 @@
-﻿###############################################################################
+###############################################################################
 # user03_posting.help                                                         #
 ###############################################################################
 # YaBB: Yet another Bulletin Board                                            #
 # Open-Source Community Software for Webmasters                               #
-# Version:        YaBB 2.6.11 and higher                                      #
+# Version:        YaBBForum 3.0 and higher                                      #
 # Released:       November 9, 2015                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-and newer YaBB (www.yabbforum.com) - All Rights Reserved.#
 # Software by: The YaBB Development Team                                      #
@@ -76,10 +76,10 @@ De meeste YaBBC labels kunnen rond tekst geplaatst worden, door eerst de tekst t
             <br />Syntax:
             <br />Resultaat:
         </td> 
-        <td>[url]http://www.yabbforum.com[/url]
-            <br />[yabbc][url]http://www.yabbforum.com[/url][/yabbc]
-            <br />[url=http://www.yabbforum.com]YaBB Forum[/url]
-            <br />[yabbc][url=http://www.yabbforum.com]YaBB Forum[/url][/yabbc]
+        <td>[url]https://www.yabbforum.com[/url]
+            <br />[yabbc][url]https://www.yabbforum.com[/url][/yabbc]
+            <br />[url=https://www.yabbforum.com]YaBB Forum[/url]
+            <br />[yabbc][url=https://www.yabbforum.com]YaBB Forum[/url][/yabbc]
         </td>
     </tr><tr>
         <td colspan="2">
@@ -147,7 +147,7 @@ De meeste YaBBC labels kunnen rond tekst geplaatst worden, door eerst de tekst t
             <br />Resultaat: 
         </td>
         <td>[media]url naar flash bestand[/media]
-            <br />[media]http://www.your-domain.com/yabbchelp.swf[/media]
+            <br />[media]https://www.your-domain.com/yabbchelp.swf[/media]
             <br />[yabbc][media]$imagesdir/yabbchelp.swf[/media][/yabbc]
         </td>
     </tr><tr>

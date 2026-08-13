@@ -5,14 +5,14 @@
 # Open-Source Community Software for Webmasters                               #
 # Version:        YaBB 2.6.1                                                  #
 # Packaged:       December 2, 2014                                            #
-# Distributed by: http://www.yabbforum.com                                    #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
 # Copyright (c) 2000-2015 YaBB (www.yabbforum.com) - All Rights Reserved.     #
 # Software by:  The YaBB Development Team                                     #
 #               with assistance from the YaBB community.                      #
 ###############################################################################
 
-$russianadminlngver = 'YaBB 2.6.11 $Revision: 1484 $';
+$russianadminlngver = 'YaBBForum 3.0 $0484 $';
 @russianadminlngmods = ();
 if(@russianadminlngmods){
     $russianadminlngmods = 1;
@@ -44,7 +44,7 @@ if ( $action eq 'detailedversion' && $language ne 'Russian') { return 1; }
 '23' => 'Домен для Постоянной Ссылки',
 '24' => 'Постоянные ссылки',
 '25' => 'Неизменяемая часть Постоянной Ссылки в URL (без косой черты спереди, но с закрывающей обратной косой чертой (напр. articles/))',
-'26' => 'Это часть в URL между Вашим доменным именем и частью URL с Постоянной ссылкой<br />(напр. http://www.yourdomain.com/<b>articles/</b>news/this-is-the-title)',
+'26' => 'Это часть в URL между Вашим доменным именем и частью URL с Постоянной ссылкой<br />(напр. https://www.yourdomain.com/<b>articles/</b>news/this-is-the-title)',
 '31' => 'Удалить',
 '32' => 'Вперед',
 '39' => 'Недопустимый Пароль',
@@ -70,7 +70,7 @@ if ( $action eq 'detailedversion' && $language ne 'Russian') { return 1; }
 '61a' => 'ID категории',
 '61b' => '<span class="small">enter any alphanumeric name you wish with no spaces</span>',
 '62' => 'Описание',
-'62a' => 'If this is to be an external board link, the first line of the description should be the title of the Name link, or if using an image as the link the first line should use the HTML &lt;img&gt; tag. e.g. &lt;img src="http://yoursite.com/yourimage.jpg" alt="Your Image Title" /&gt;',
+'62a' => 'If this is to be an external board link, the first line of the description should be the title of the Name link, or if using an image as the link the first line should use the HTML &lt;img&gt; tag. e.g. &lt;img src="https://yoursite.com/yourimage.jpg" alt="Your Image Title" /&gt;',
 '63' => 'Модераторы',
 '63d' => 'Board Moderators',
 '63a' => 'Копировать',
@@ -106,7 +106,7 @@ if ( $action eq 'detailedversion' && $language ne 'Russian') { return 1; }
 '66' => 'Нажмите здесь для перехода в соответствующий раздел Справки',
 '67' => 'Режим тех-обслуживания',
 '68' => 'Имя',
-'68a' => q~If this is to be an external board link, the name should be in the format of 'http://boardlink.com'~,
+'68a' => q~If this is to be an external board link, the name should be in the format of 'https://boardlink.com'~,
 '70' => 'Тема',
 '72' => 'Сообщение',
 '87' => 'Главная Группа',
@@ -224,7 +224,6 @@ if ( $action eq 'detailedversion' && $language ne 'Russian') { return 1; }
 '374' => 'Максимальное число пунктов для показа в &quot;Списке Тем&quot;',
 '375' => 'Максимальное число Сообщений для показа на странице в Теме',
 '376' => 'Число дней, по прошествии которых непрочитанные Пользователем Сообщения не будут более отмечаться как Новые при просмотре списка Тем.',
-'377' => 'Задействовать Проверку Орфографии?<br /><span class="small">Модуль Проверки Орфографии зависит от внешнего вебсайта, который принадлежит компании Google (googiespell). Вы должны настроить Ваш файрвол таким образом, что бы он допускал возможность использования этого сервиса.<br /><b><u>Лицензия:</u></b><br />Скрипт в папке /yabbfiles/googiespell имеет двойную лицензию. Одна предназначена для использования со свободным программным обеспечением ("open source"), другая - для проприетарного программного обеспечения.<br />Для свободного программного обеспечения скрипт распростаняется по лицензии <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GPL</a>. Согласно этой лицензии Вы можете только использовать GoogieSpell совместно со свободным программным обеспечением. Вы не можете использовать GoogieSpell совместно с проприетарным программным обеспечением даже в том случае, если Вы распространяете его исходники.<br />Для получения дополнительной информации смотрите <a href="http://orangoo.com/labs/GoogieSpell/License/" target="_blank">GoogieSpell License</a>.</span>',
 '377a' => 'Если Вы видите это сообщение, необходимые модули для Perl не установлены на Вашем сервере.<br />Если Вы видите сообщения об ошибке с примерным содержанием "Can\'t locate ...", это также означает, что необходимые модули для Perl не установлены на Вашем сервере.<br /><br />',
 '377b' => 'Установлен',
 '377c' => '<br />Если Вы хотите задействовать Проверку Орфографии, то Вы должны установить все нижеуказанные модули на Ваш сервер. Или попросите Вашего Хостера сделать это для Вас.<br />Модули для установки:<br />- Bundle::LWP (для LWP::UserAgent и HTTP::Request::Common)<br />- Crypt::SSLeay',
@@ -290,13 +289,13 @@ if ( $action eq 'detailedversion' && $language ne 'Russian') { return 1; }
 '479b' => 'Отключить "GreyBox"',
 '479c' => 'Использовать "GreyBox" для показа одного изображения',
 '479d' => 'Использовать "GreyBox" для отображения всех картинок из вложений',
-'480' => "01/31/01 $admin_txt{'107'} 13:15:17",
-'481' => "31.01.01 $admin_txt{'107'} 13:15:17",
-'482' => "31.01.2001 $admin_txt{'107'} 13:15:17",
-'483' => "Янв. 12-ое, 2001, 1:15pm",
-'483a' => '12ого янв., 2001 в 1:15pm',
-'484' => "01/31/01 $admin_txt{'107'} 1:15pm",
-'485' => "31. Янв. $admin_txt{'107'} 13:15",
+'480' => '01/31/26 $admin_txt{'107'} 13:15:17',
+'481' => '31.01.26 $admin_txt{'107'} 13:15:17',
+'482' => '31.01.2026 $admin_txt{'107'} 13:15:17',
+'483' => 'Jan 31st, 2026 $admin_txt{'107'} 1:15pm',
+'483a' => '31st Jan, 2026 $admin_txt{'107'} 1:15pm',
+'484' => '01/31/26 $admin_txt{'107'} 1:15pm',
+'485' => '31. Jan $admin_txt{'107'} 13:15',
 '486' => 'Формат Времени',
 '487' => 'Смещение по времени должно быть в пределах от -23.5 до 23.5!',
 '488' => 'Всего Участников:',
@@ -1133,7 +1132,7 @@ if ( $action eq 'detailedversion' && $language ne 'Russian') { return 1; }
 %versiontxt = (
 '1' => 'Возможно Ваш браузер не поддерживает работу с JavaScript. Если это не так, то Вам необходимо разрешить поддержку Javascript в Вашем браузере, чтобы разрешить работу функции проверки версий форума!',
 '2' => '<b><font color="red">Стабильная версия!</font></b><br />Если Вы захотите её загрузить ',
-'3' => ', перейдите на <a href="http://www.yabbforum.com/downloads.php" target="_blank">http://www.yabbforum.com/downloads.php<\/a>.',
+'3' => ', перейдите на <a href="https://www.yabbforum.com/downloads.php" target="_blank">https://www.yabbforum.com/downloads.php<\/a>.',
 '4' => 'ВАША версия:',
 '5' => 'Последняя СТАБИЛЬНАЯ версия:',
 '6' => 'Вы используете последнюю стабильную версию.',
@@ -1343,7 +1342,7 @@ $maintxt {'dst'} = "<sup>*</sup>"; ## needed to show Today in registration log
 '5' => 'Информация, предоставленная системой:',
 '6' => 'Установлен',
 '7' => 'Некоторые модули не установлены на Вашем сервере или сервере провайдера.',
-'8' => '<b>Если они действительно Вам требуются, вы должны попросить своег опровайдера установить их для Вас!<br /><br />Если это Ваш собственный сервер и Вы хотите установить на него недостающие модули, читайте <a href="http://www.yabbforum.com/cgi-bin/codex/YaBB.pl?num=1225217016" target="_blank"><b>Пост тех. поддержки</b></a>.</b>',
+'8' => '<b>Если они действительно Вам требуются, вы должны попросить своег опровайдера установить их для Вас!<br /><br />Если это Ваш собственный сервер и Вы хотите установить на него недостающие модули, читайте <a href="https://www.yabbforum.com/cgi-bin/codex/YaBB.pl?num=1225217016" target="_blank"><b>Пост тех. поддержки</b></a>.</b>',
 'Digest::MD5' => 'Используется для шифрования пароля.<br />Этот модуль обязателен, без него форум работать не будет! ',
 'Time::HiRes' => 'Используется для измерения быстродействия.<br />Если этот модуль не установлен, то секунды быстродействия буду отображаться как целое число. Этот модуль мало важен и как правило не требуется. ',
 'Time::Local' => 'Используется для конвертации едениц времени в привычное отображение его.<br />Этот модуль обязателен, без него форум работать не будет! ',
@@ -1533,7 +1532,7 @@ $maintxt {'dst'} = "<sup>*</sup>"; ## needed to show Today in registration log
 );
 
 timetostring($date);
-$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="http://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="http://www.yabbforum.com">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.</span>~;
+$yycopyright = qq~<a href="$boardurl/$yyexec.$yyext"><span style="font-size: 10px">$mbname</span></a> &#187; <span style="font-size: 10px">Powered by</span> <a href="https://www.yabbforum.com"><span style="font-size: 10px">$YaBBversion</span></a><span style="font-size: 10px">.<br />\n<a href="https://www.yabbforum.com">YaBB Forum Software</a> &copy; 2000-$year. All Rights Reserved.</span>~;
 $iFrameSupport = 'Извините, но для просмотра последних новостей o YABB Вы должны использовать браузер, который поддерживает работу с фреймами.';
 $rna = 'Удаленный сервер недоступен!';
 

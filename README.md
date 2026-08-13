@@ -3,15 +3,21 @@
 	
 	The original Forum software most other message boards are based on!
 
-	YaBB (Yet Another Bulletin Board) first came on the scene in 2000, when teenager Zef Hemel and a team of collaborators released YaBB 1.0  
+	YaBB (Yet Another Bulletin Board) first came on the scene in 2000, 
+	when teenager Zef Hemel and a team of collaborators released YaBB 1.0  
 
 	It was notable as one of the very first open-source internet forum packages written in Perl.
 
 	and now 25 years later it's still here, still FREE and better than ever.
 
-	Currently over 50,000 web communities using YaBB worldwide, and over 1 Million registered users throughout these forums!
+	Currently over 50,000 web communities using YaBB worldwide, 
+	and over 1 Million registered users throughout these forums!
 
-	Download the YaBBForum zip from Releases on the right (below if you're on a mobile device), extract to a new folder in your webroot, -- "chown -hR" the new folder to apache:yourusername for EL or www-data:yourusername for Debian or chmod following the quick guide (or host with perhost.nz & all you need to do is uload, setting perms is done automatically) then run Setup.pl
+	Download the YaBBForum zip from Releases on the right (below if you're on a mobile device), 
+	extract to a new folder in your webroot, 
+	"chown -hR" the new folder to apache:yourusername for EL or www-data:yourusername for Debian 
+	or chmod following the quick guide (or host with perhost.nz & all you need to do is uload, 
+	setting perms is done automatically) then run Setup.pl
 
 	For help go to https://yabbforum.nz
 
@@ -19,7 +25,9 @@
 	
 	Currently developing this on my own so....
 	
-	Looking for help from experts in graphics, proof reading, beta testing, Perl coding, style sheets & ideas people, all working to bring this fantastic software to perfection.
+	Looking for help from experts in graphics, proof reading, beta testing, 
+	Perl coding, style sheets & ideas people, 
+	all working to bring this fantastic software to perfection.
 
 	https://perlhost.nz offers hassle free hosting for YaBBForum, can be preinstalled for you.
 

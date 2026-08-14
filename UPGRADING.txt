@@ -8,12 +8,13 @@
 	Select the following directories and files and copy to your forum directory
 
 	Admin
+	Convert
 	Help
 	Languages
 	Modules
 	Quick-Guide_26
 	Sources
-	Templates
+	Templates > if you have your own templates you will need to go to Admin > Forum Layout > Template Config & resave each template
 	yabbfiles
 
 	AdminIndex.pl
@@ -27,8 +28,23 @@
 
 	DO NOT COPY OVER ANY OTHER FILE OR DIRECTORY
 
+	Delete files
+	Sources/SpellChecker.pl
+	
+	Delete Folders
+	yabbfiles/googiespell < only googiespell, not yabbfiles
+	conf
+	db
+	hooks
+	locks
+	
+	Edit .htaccess
+	change Yabb to index
+	
+	###########
+	
 	Make sure the 3 .pl files are chmod 0755 (that's executable) and all files/folders are owned by apache for EL
-	or www-data for Debian OS's with group owned by the same or your username
+	or www-data for Debian OS's with group owned by your username
 
 	You should be able to access your upgraded board and recheck all your admin settings & configure what's new
 

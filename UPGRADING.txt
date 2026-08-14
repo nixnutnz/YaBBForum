@@ -41,15 +41,16 @@
 	Edit .htaccess
 	change Yabb to index
 	
+	Check/Reset your admin settings as some items will change
+	
 	###########
 	
-	Make sure the 3 .pl files are chmod 0755 (that's executable) and all files/folders are owned by apache for EL
-	or www-data for Debian OS's with group owned by your username
+	Make sure the 3 .pl files are chmod 0755 (that's executable)
 
 	You should be able to access your upgraded board and recheck all your admin settings & configure what's new
 
 	If you get an error check the logs if it's not displayed on screen and fix whatever is broken
-	if you can't fix it try running Setup.pl
+	if you can't fix it try running Setup.pl but be aware this will change the forum start date so record that and you can reset it later
 	otherwise copy back the file with issues and compare the old and new to see what was different
 
 	If you get to the point where you can't get it sorted, rename the forum folder you just upgraded (name.bak) and restore the original folder

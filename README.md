@@ -1,5 +1,5 @@
 	
-	This is version 3.0, if you want any previous versions go to yabb.nz/archive/
+	This is version 3.0, if you want any previous versions go to https://yabb.nz/archive/
 	
 	The original Forum software most other message boards are based on!
 

@@ -1,0 +1,122 @@
+###############################################################################
+# Menu.lng (Image text/images definitions)                                    #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.0                                                 #
+# Packaged:       July 26, 2026                                                 #
+# Distributed by: https://yabbforum.nz                                        #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+# Traduit par Alain Beaudoin                                                  #
+###############################################################################
+
+$menulngver = 'YaBBForum 3.0';
+
+if (!$language){$language = $lang;}
+
+%img_txt =(
+'2' => 'Admin',
+'27' => 'Voir le profil',
+'31' => 'Supprimer',
+'33' => 'Créer un nouveau sujet',
+'34' => 'Connexion',
+'34a' => 'Mettre à jour la session',
+'54' => 'Supprimer',
+'55' => 'Supprimer la sélection',
+'63' => 'Modérateurs',
+'66' => 'Modifier',
+'69' => 'Courriel',
+'70' => 'Mes favoris',
+'71' => 'Ajouter aux favoris',
+'72' => 'Retirer des favoris',
+'79' => 'Éditer le profil',
+'97' => 'S\'enregistrer',
+'102' => qq~<img src="$imagesdir/back_to_top.png" alt="Haut" title="Haut" />~,
+'102b' => qq~<img src="$imagesdir/back_to_bot.png" alt="Bas" title="Bas" />~,
+'103' => 'Index du forum',
+'104' => 'Verrouiller/Déverrouiller',
+'105' => 'Dernier message',
+'108' => 'Déconnexion',
+'119' => 'Aide',
+'121' => 'Supprimer',
+'131' => 'Notifier des réponses',
+'131a' => 'Ajouter une notification de sujet',
+'131d' => 'Supprimer la notification de sujet',
+'132' => 'Déplacer',
+'144' => 'MP',
+'144a' => 'Message personnel',
+'145' => 'Citation',
+'145q' => 'Marquer &amp; Citer',
+'146' => 'Répondre',
+'182' => 'Rechercher',
+'300' => 'Marquer les sujets comme lus',
+'316' => 'Boîte de réception',
+'320' => 'Boîte d\'envoi',
+'321' => 'Nouveau message',
+'323' => 'Préférences',
+'331' => 'Membres',
+'418' => 'Notification',
+'452' => 'Marquer tous les messages comme lus',
+'465' => 'Imprimer',
+'465a' => 'Imprimer le message',
+'467' => 'Profil',
+'515' => 'WWW',
+'707' => 'Envoyer le sujet',
+'781' => 'Épinglé',
+'620' => 'Scinder',
+'621' => 'Déplacer, scinder &amp; fusionner',
+'620a' => 'Scinder ce sujet en commençant par ce message comme premier message d\'un nouveau sujet, suivi des autres messages jusqu\'au dernier message ajouté à ce fil.',
+'621a' => 'Ouvrir la fenêtre pour déplacer, scinder ou fusionner des sujets.',
+'622' => 'Cacher',
+'623' => 'Réduire',
+'624' => 'Développer',
+'625' => 'Ajouter à mes favoris',
+'626' => 'Retirer de mes favoris',
+'627' => 'Marquer comme non lu',
+'mycenter' => "Panneau utilisateur",
+'addbuddy' => 'Ajouter à ma liste d\'amis',
+'pmadmin' => 'Envoyer un message aux administrateurs',
+'alertmod' => 'Alerter le modérateur du forum à propos de ce message',
+'alertmodtext' => 'Signaler le message',
+'forward' => 'Transférer',
+'sendpm' => 'Envoyer un message',
+'sendbmess' => 'Envoyer un message de diffusion',
+'facebook' => 'Facebook',
+'gtalk' => 'GTalk',
+'msn' => 'MSN',
+'myspace' => 'MySpace',
+'skype' => 'Skype/VoIP',
+'twitter' => 'Twitter',
+'youtube' => 'YouTube',
+'birthdaylist' => 'Liste des anniversaires',
+'eventcal' => 'Calendrier',
+'to_top' => 'Haut de page',
+);
+
+%img_polltxt = (
+'1' => 'Créer un sondage',
+'2' => 'Ajouter un sondage',
+'20' => 'Ouvert',
+'21' => 'Fermé',
+'27' => 'Supprimer',
+'33' => 'Voir les votes',
+'33a' => 'Voir le sujet',
+'39' => 'Modifier',
+'43' => 'Retirer le vote',
+'44' => 'Sondage',
+'45' => 'Nouveau sondage',
+'46' => 'Sondage fermé',
+);
+
+%img_imtxt = (
+'42' => 'Liste d\'amis',
+'46' => 'Stockage',
+);
+
+require Sources::Menu;
+SetMenu();
+
+1;

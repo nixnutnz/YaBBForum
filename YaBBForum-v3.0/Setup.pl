@@ -22,12 +22,21 @@ no warnings qw(uninitialized once redefine);
 use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
 use Cwd;
+
+my $cwd = cwd();
+push @INC, $cwd;
+our $VERSION = '3.0';
+
+$setupplver  = 'YaBBForum 3.0';
+$yymycharset = 'UTF-8';
+
 # --- INSERT PREFLIGHT CHECK HERE ---
 BEGIN {
-    my @dirs_to_check  = ('.', 'Variables', 'Members', 'Messages', 'Boards', 'Backups', 'Languages', 'Convert');
-    my @files_to_check = ('Paths.pm');
+    my @dirs_to_check   = ('.', 'Variables', 'Members', 'Messages', 'Boards', 'Backups', 'Languages', 'Convert');
+    my @files_to_check  = ('AdminIndex.pl', 'index.pl');
+    my @files_to_check1 = ('Paths.pm');
     my $errors = 0;
-    my $report = "<br>=== YaBBForum Permissions Pre-Flight Check ===<br><br>";
+    my $report = "<br>=== YaBBForum Permissions Pre-Flight Check ===<br>";
 
     # 1. Check Directories (Require 0775 on non-suEXEC)
     foreach my $dir (@dirs_to_check) {
@@ -44,17 +53,19 @@ BEGIN {
         }
     }
 
-    # 2. Check Critical Files (Require 0664 on non-suEXEC)
+    $report .= "<br>"; # Empty line separation
+
+    # 2. Check Critical Script Files (.pl - Require 0755 on non-suEXEC)
     foreach my $file (@files_to_check) {
         if (-e $file) {
             if (-w $file) {
                 $report .= "<br>[OK]   Writable file: $file\n";
             } else {
-                chmod(0664, $file); # Attempt to fix
+                chmod(0755, $file); # Attempt to fix
                 if (-w $file) {
-                    $report .= "<br>[OK]   Permissions fixed (664): $file\n";
+                    $report .= "<br>[OK]   Permissions fixed (755): $file\n";
                 } else {
-                    $report .= "<br>[FAIL] File locked: $file (Requires chmod 664)\n";
+                    $report .= "<br>[FAIL] File locked: $file (Requires chmod 755)\n";
                     $errors++;
                 }
             }
@@ -63,25 +74,47 @@ BEGIN {
         }
     }
 
-    $report .= "\n";
+    $report .= "<br>"; # Empty line separation
 
-    # 3. Output Error Report ONLY if there are critical failures
+    # 3. Check Configuration Files (.pm - Require 0664 on non-suEXEC)
+    foreach my $file1 (@files_to_check1) {
+        if (-e $file1) {
+            if (-w $file1) {
+                $report .= "<br>[OK]   Writable file: $file1\n";
+            } else {
+                chmod(0664, $file1); # Attempt to fix
+                if (-w $file1) {
+                    $report .= "<br>[OK]   Permissions fixed (664): $file1\n";
+                } else {
+                    $report .= "<br>[FAIL] File locked: $file1 (Requires chmod 664)\n";
+                    $errors++;
+                }
+            }
+        } else {
+            $report .= "<br>[INFO] File does not exist yet: $file1 (Will be created during setup)\n";
+        }
+    }
+
+    $report .= "<br>";
+
+    # 4. Output Error Report ONLY if there are critical failures
     if ($errors > 0) {
         # Send text header so browser formats the error cleanly
-    print "Content-type: text/html\n\n\n";
-    print "<!DOCTYPE html><html lang=en><head><title>YaBBForum 3.0 Setup</title>\n";
-    print "</head>\n";
-    print "<body bgcolor=#f8fffa style=\"font-family:sans; font-size:14px; color:#670000;\">\n";
-    print "<center><table width=95% border=0 cellpadding=2 cellspacing=2><tr><td>\n";
-    
+        print "Content-type: text/html\n\n\n";
+        print "<!DOCTYPE html><html lang=en><head><title>YaBBForum 3.0 Setup</title>\n";
+        print "</head>\n";
+        print "<body bgcolor=#f8fffa style=\"font-family:sans; font-size:14px; color:#670000;\">\n";
+        print "<center><table width=95% border=0 cellpadding=2 cellspacing=2><tr><td>\n";
+     
         print $report;
         print "<br><br>[ERROR] Setup cannot proceed. $errors critical path(s) are not writable.\n";
         print "<br>You must chmod:\n";
         print "<br>  - failed directories to 775 recursively\n";
+        print "<br>  - failed .pl files to 755\n";
         print "<br>  - failed files to 664\n";
         print "<br>Setup aborted.\n\n";
         print "<br><br>Read <a href=Quick-Guide_26/English/>Quick-Guide_26</a> to find out what to do.\n\n";
-        print "<br><br>If you are hosting with <a href=https://perlhost.nz>PerlHost.nz</a> you can simply wait till 10 minutes before the hour every hour and these will be set for you then come back & reload this page & begin setup.\n\n";
+        print "<br><br>If you are hosting with <a href=https://perlhost.nz>PerlHost.nz</a> you can simply wait till 10 minutes before the hour every hour and these will be set for you then come back & reload this page & begin setup.</td></tr></table>\n\n";
         exit(1);
     }
 
@@ -89,13 +122,6 @@ BEGIN {
     # and YaBBForum loads smoothly into the installer UI!
 }
 # --- END PREFLIGHT CHECK ---
-
-my $cwd = cwd();
-push @INC, $cwd;
-our $VERSION = '3.0';
-
-$setupplver  = 'YaBBForum 3.0';
-$yymycharset = 'UTF-8';
 
 # conversion will stop after $max_process_time
 # in seconds, than the browser will call the script

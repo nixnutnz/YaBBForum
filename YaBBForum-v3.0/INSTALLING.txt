@@ -1,0 +1,31 @@
+####################
+#                                               #
+#         YABB 3.0 RELEASE         #
+#                                               #
+####################
+
+
+**************************************************
+PLEASE READ THE FOLLOWING IMPORTANT INFORMATION
+**************************************************
+
+    This version is the latest Stable release!
+
+
+**************************************************
+INSTALLATION 
+**************************************************
+
+    1) Create a new directory and upload all files/folders, CHMOD Setup.pl to 755
+    Open in a browser https://yourdomain/newfolder/Setup.pl
+
+    If you host with PerlHost.nz you can ignore step 2, simply upload your files and go have a rest, every hour our server sets up everything you need, changes owner and permissions, you don't even need to chmod the .pl files, it's all done for you!!!
+    
+    2) You must CHMOD directories; Variables, Members, Messages, Boards, Backups, Languages to 775 recursively; index.pl, AdminIndex.pl to 755 & Paths.pm to 664.
+
+    3)  If converting previous version, run Setup.pl again, and follow the instructions on the web page before proceeding,
+    however this not recomended. The best way to upgrade is explained in the file UPGRADING.txt
+
+    4)  The default administrator username is admin & password is "admin", change the password after reading the README FIRST post in your new forum.
+
+    5)  Remove Setup files when installation is complete from in your Admin.

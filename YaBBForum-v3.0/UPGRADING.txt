@@ -1,3 +1,20 @@
+####################
+#                                               #
+#         YABB 3.0 RELEASE         #
+#                                               #
+####################
+
+
+**************************************************
+PLEASE READ THE FOLLOWING IMPORTANT INFORMATION
+**************************************************
+
+    This version is the latest Stable release!
+
+
+**************************************************
+UPGRADING 
+**************************************************
 
 	To upgrade from any previous 2.6 version
 
@@ -5,6 +22,8 @@
 
 	If you have any modified files at all, ensure you copy those mods to the new file first, I use meld for that
 
+	The date format has changed & will change the forum start date so record that and you can reset it later under Forum Config
+	
 	Select the following directories and files and copy to your forum directory
 
 	Admin
@@ -25,7 +44,8 @@
 	Setup.pl < in case you need to run setup again but not likely
 	UPGRADING.txt
 	VERSION.txt
-
+	meta.pm
+	
 	DO NOT COPY OVER ANY OTHER FILE OR DIRECTORY
 
 	Delete files
@@ -46,11 +66,12 @@
 	###########
 	
 	Make sure the 3 .pl files are chmod 0755 (that's executable)
-
+	and Variables, Members, Messages, Boards, Backups, Languages to 775 recursively; index.pl, AdminIndex.pl to 755 & Paths.pm to 664
+	
 	You should be able to access your upgraded board and recheck all your admin settings & configure what's new
 
 	If you get an error check the logs if it's not displayed on screen and fix whatever is broken
-	if you can't fix it try running Setup.pl but be aware this will change the forum start date so record that and you can reset it later
+	if you can't fix it try running Setup.pl 
 	otherwise copy back the file with issues and compare the old and new to see what was different
 
 	If you get to the point where you can't get it sorted, rename the forum folder you just upgraded (name.bak) and restore the original folder

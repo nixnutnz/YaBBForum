@@ -1,6 +1,5 @@
 	
-	This is version 3.0-beta, if you want the previous version it's in 2.6.14
-	>>> googiespell has not been removed from 2.6.14 <<<
+	This is version 3.0, if you want any previous versions go to yabb.nz/archive/
 	
 	The original Forum software most other message boards are based on!
 
@@ -14,13 +13,9 @@
 	Currently over 50,000 web communities using YaBB worldwide, 
 	and over 1 Million registered users throughout these forums!
 
-	Download the YaBBForum zip from Releases on the right (below if you're on a mobile device), 
-	extract to a new folder in your webroot, 
-	"chown -hR" the new folder to apache:yourusername for EL or www-data:yourusername for Debian 
-	or chmod following the quick guide (or host with perhost.nz & all you need to do is uload, 
-	setting perms is done automatically) then run Setup.pl
+	Download the YaBBForum zip from Releases on the right (below if you're on a mobile device)
 
-	For help go to https://yabbforum.nz
+	For help go to https://yabbforum.nz/support/
 
 	To contribute to development or help in any way use the contacts on the site above.
 	

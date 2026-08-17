@@ -163,7 +163,7 @@ $SectionBody4 = qq~<p>Dit zijn een aantal compleet nieuwe functies in YaBB 2.5.2
 ### Section 5
 #############################################
 $SectionSub5 = "Nieuwe_functies_in_YaBB_2.6.0";
-$SectionBody5 = qq~<p>Dit zijn een aantal compleet nieuwe functies tot YaBB 2.6.0 die zijn toegevoegd door de populaire vraag van gebruikers. Deze toevoegingen zijn onder andere:</p>
+$SectionBody5 = qq~<p>Dit zijn een aantal compleet nieuwe functies tot YaBBForum die zijn toegevoegd door de populaire vraag van gebruikers. Deze toevoegingen zijn onder andere:</p>
 <ul>
     <li><b>Subboards</b>
         <br />YaBB ondersteunt nu subboards. Naar de Admin's keuze, kunnen de boards met subboards berichten bevatten of gewoon subboards. Ook nieuw: Boards en Subboard berichten indexen kunnen worden bekeken in de board index.

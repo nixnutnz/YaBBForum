@@ -3,5 +3,5 @@ AuthGroupFile /dev/null
 AuthName DenyViaWeb
 AuthType Basic
 
-order allow,deny
-deny from all
+ 
+#Require all denied

@@ -113,7 +113,7 @@ BEGIN {
         print "<br>  - failed .pl files to 755\n";
         print "<br>  - failed files to 664\n";
         print "<br>Setup aborted.\n\n";
-        print "<br><br>Read <a href=Quick-Guide_26/English/>Quick-Guide_26</a> to find out what to do.\n\n";
+        print "<br><br>Read <a href=Quick-Guide/English/>Quick-Guide</a> to find out what to do.\n\n";
         print "<br><br>If you are hosting with <a href=https://perlhost.nz>PerlHost.nz</a> you can simply wait till 10 minutes before the hour every hour and these will be set for you then come back & reload this page & begin setup.</td></tr></table>\n\n";
         exit(1);
     }
@@ -1983,7 +1983,7 @@ sub SetInstall2 {
 ########## Advanced Tabs ##########
 
 \$addtab_on = $addtab_on;                         # show advanced tabs on Forum (For admin only.)
-\@AdvancedTabs = ("home","help","search","ml","admin","revalidatesession","login","register","guestpm","mycenter","logout","eventcal","birthdaylist","credits|./Quick-Guide_26/English/info/credits.html|0|0|0|0|"); # Advanced Tabs order and infos
+\@AdvancedTabs = ("home","help","search","ml","admin","revalidatesession","login","register","guestpm","mycenter","logout","eventcal","birthdaylist","credits|./Quick-Guide/English/info/credits.html|0|0|0|0|"); # Advanced Tabs order and infos
 
 ########## Smilies ##########
 

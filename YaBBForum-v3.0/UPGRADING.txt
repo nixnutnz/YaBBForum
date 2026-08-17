@@ -31,7 +31,7 @@ UPGRADING
 	Help
 	Languages
 	Modules
-	Quick-Guide_26
+	Quick-Guide
 	Sources
 	Templates > if you have your own templates you will need to go to Admin > Forum Layout > Template Config & resave each template
 	yabbfiles

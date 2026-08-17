@@ -148,7 +148,7 @@ $SectionBody4 = q~<p>These are some completely new features to YaBB 2.5.2 that w
 ### Section 5
 #############################################
 $SectionSub5 = "New_Features_in_YaBB_2.6.0";
-$SectionBody5 = q~<p>These are some completely new features to YaBB 2.6.0 that were added by popular request of users. These additions include:</p>
+$SectionBody5 = q~<p>These are some completely new features to YaBBForum that were added by popular request of users. These additions include:</p>
 <ul>
     <li><b>Subboards</b>
         <br />YaBB now supports subboards. At the Admin's choice, the boards containing subboards can hold messages or simply hold subboards. Also new: Board and Subboard Message indexes can be viewed within the Board index.

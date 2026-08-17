@@ -3,7 +3,7 @@ $SectionName = "Forum_Moderator_and_Banning_Functions";
 ### Section 1
 #############################################
 $SectionSub1 = "Forum_Moderator";
-$SectionBody1 = q~<p>The Forum Moderator position is new to YaBB 2.6.0. As Forum Moderator, you have all the abilities of a Moderator extending over nearly any post on the Forum outside of the sections reserved for Admins.</p>
+$SectionBody1 = q~<p>The Forum Moderator position is new to YaBBForum. As Forum Moderator, you have all the abilities of a Moderator extending over nearly any post on the Forum outside of the sections reserved for Admins.</p>
 <p>The Forum Moderator has an additional ability as well: You can ban users who break Forum rules, are disruptive or are spamming the Forum.</p>~;
 #############################################
 

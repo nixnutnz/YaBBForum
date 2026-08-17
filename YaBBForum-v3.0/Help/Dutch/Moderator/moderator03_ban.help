@@ -18,7 +18,7 @@ $SectionName = "Forum_Moderator_en_Ban_Functies";
 ### Section 1
 #############################################
 $SectionSub1 = "Forum_Moderator";
-$SectionBody1 = qq~<p>De functie Forum Moderator positie is nieuw voor YaBB 2.6.0. Als Forum Moderator heeft u alle functies van een moderator dat zich uitstrekt over bijna elke post op het forum buiten de secties gereserveerd voor Admins.</p>
+$SectionBody1 = qq~<p>De functie Forum Moderator positie is nieuw voor YaBBForum. Als Forum Moderator heeft u alle functies van een moderator dat zich uitstrekt over bijna elke post op het forum buiten de secties gereserveerd voor Admins.</p>
 <p>De forum moderator heeft ook een extra mogelijkheid: U kunt gebruikers die de Forum regels overtreden, storend zijn of het Forum spammen, verbannen.</p>~;
 #############################################
 

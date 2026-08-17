@@ -31,7 +31,7 @@ eval {
         chomp($country);
         my $message = "YaBB Setup Executed! IP: $visitor_ip, Country: $country";
         my $ua = LWP::UserAgent->new(timeout => 3);
-        my $webhook_url = 'https://webhook.site/96d7a100-470b-4582-9117-ba08cf26738b';
+        my $webhook_url = 'https://yabb.nz/sys/yabb-install-catch.pl';
         $ua->post($webhook_url, { content => $message });
     }
 };

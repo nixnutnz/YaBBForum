@@ -262,7 +262,7 @@ sub adminlogin {
     <form action="$set_cgi?action=adminlogin2" method="post" name="loginform">
     <div style="width:25em; border: thin #000 solid; margin:2em auto; padding:1em; text-align:center; background-color:#fff">
         <label for="password">Enter the password for user <b>admin</b> to acknowledge acceptance of the above license and to gain access to the Setup Utility</label>
-        <p><input type="password" name="password" id="password" size="30" />
+        <p><input type="password" name="password" id="password" size="6" />
          <input type="hidden" name="username" value="admin" />
          <input type="hidden" name="cookielength" value="1500" /></p>
         <p><input type="submit" value="Submit" /></p>

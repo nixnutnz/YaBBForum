@@ -1,135 +1,130 @@
 ###############################################################################
-# Menu.lng (Définition des textes menus)                                     #
+# Menu.lng (Menu text/images definitions)                                     #
 ###############################################################################
-# YaBB            : Yet another Bulletin Board   Encore un autre babillard     #
-# Logiciel communautaire open-source pour les webmestres                      #
-# Version         : YaBB 2.7.00                                               #
-# Distribué par   : http://www.yabbforum.com                                  #
+# German/Du - Translation by Pyragony                                         #
+# and other members of the YaBB community                                     #
+# review & changes by Pyragony (webmaster@yabbtest.de)                        #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:      YaBBForum 3.0                                                   #
+# Packaged:     2. Dezember 2014                                              #
+# Distributed by: https://www.yabbforum.com                                    #
 # =========================================================================== #
-# Copyright (c) 2000-2017 YaBB (www.yabbforum.com) - Tous droits réservés.    #
-# Logiciel par    : L'équipe de développement de YaBB                         #
-#                   avec l'assistance de la communauté YaBB                   #
-# =========================================================================== #
-# Version         : YaBB 2.7.00 fr-ca. Révision 1005                          #
-# Traduite par    : Alain Beaudoin                                            #
-# Modifié le      : 11 Décembre 2017                                          #
-# Distribué par   : http://www.alainbeaudoin.com                              #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.com) - All Rights Reserved.     #
+# Software by: The YaBB Development Team                                      #
+#              with assistance from the YaBB community.                       #
 ###############################################################################
 
-$french_camenulngbase = 1941;
-$french_camenulngver  = 'YaBB 2.7.00 $Revision$';
-@french_camenulngmods = ();
-if (@french_camenulngmods) {
-    $french_camenulngmods = 1;
+$german_dumenulngver = 'YaBBForum 3.0 $0 $';
+@german_dumenulngmods = ();
+if(@german_dumenulngmods){
+    $german_dumenulngmods = 1;
 }
 if ( $action eq 'detailedversion' ) { return 1; }
 
-if (!$language) { $language = $lang; }
+if (!$language){$language = $lang;}
 
 %img_txt = (
-    '2' => 'Admin',
-    '27' => 'Voir profile',
-    '31' => 'Retirer',
-    '33' => 'Débuter un nouveau sujet',
-    '34' => 'Connexion',
-    '34a' => 'Mettre à jour la session',
-    '54' => 'Retirer',
-    '55' => 'Retirer la sélection',
-    '63' => 'Modérateurs',
-    '66' => 'Modifier',
-    '69' => 'Courriel',
-    '70' => 'Mes favoris',
-    '71' => 'Ajouter au favoris',
-    '72' => 'Retirer des favoris',
-    '79' => 'Éditer profile',
-    '97' => 'S\'enregistrer',
-    '102' => qq~<img src="$imagesdir/back_to_top.png" alt="Haut" title="Haut" />~,
-    '102b' => qq~<img src="$imagesdir/back_to_bot.png" alt="Bas" title="Bas" />~,
-    '103' => 'Index du forum',
-    '104' => 'Verrouiller/Déverrouiller',
-    '105' => 'Dernière publication',
-    '108' => 'Déconnexion',
-    '119' => 'Aide',
-    '121' => 'Retirer',
-    '131' => 'Notifier les réponses',
-    '131a' => 'Ajouter un sujet de notice',
-    '131d' => 'Supprimer un sujet de notice',
-    '132' => 'Déplacer',
-    '144' => 'MP',
-    '144a' => 'Message Personnel',
-    '145' => 'Citation',
-    '145q' => 'Marque &amp; Citation',
-    '146' => 'Répondre',
-    '182' => 'Chercher',
-    '300' => 'Marquer le sujet comme lu',
-    '316' => 'Boîte de réception',
-    '320' => 'Envoyé',
-    '321' => 'Nouveau Message',
-    '323' => 'Préférences',
-    '331' => 'Membres',
-    '418' => 'Notification',
-    '452' => 'Marquer toutes les publications comme lues',
-    '465' => 'Imprimer',
-    '465a' => 'Imprimer la publication',
-    '467' => 'Profile',
-    '515' => 'WWW',
-    '707' => 'Envoyer sujet',
-    '781' => 'Épinglé',
-    '620' => 'Scinder',
-    '621' => 'Déplacer, Scinder et Fusionner',
-    '620a' => 'Scinder ce sujet en commençant par ce message en tant que premier message d\'un nouveau sujet, suivi des autres messages jusqu\'au dernier message',
-    '621a' => 'Ouvrir la fenêtre pour déplacer, scinder ou fusionner des sujets',
-    '622' => 'Cacher',
-    '623' => 'Réduire',
-    '624' => 'Développer',
-    '625' => 'Ajouter à mes favoris',
-    '626' => 'Retirer de mes favoris',
-    '627' => 'Marquer comme non lu',
-    'mycenter' => 'PC Utilisateur',
-    'addbuddy' => 'Ajouter à ma liste d\'amis',
-    'pmadmin' => 'Envoyer un message aux administrateurs',
-    'alertmod' => 'Aviser les modérateurs à propos de ce message',
-    'alertmodtext' => 'Signaler un message',
-    'forward' => 'Transférer',
-    'sendpm' => 'Envoyer message',
-    'sendbmess' => 'Envoyer un message de diffusion',
-    'aim' => 'AIM',
-    'facebook' => 'Facebook',
-    'gtalk' => 'GTalk',
-    'icq' => 'ICQ',
-    'msn' => 'MSN',
-    'myspace' => 'MySpace',
-    'skype' => 'Skype/VoIP',
-    'yim' => 'YIM',
-    'twitter' => 'Twitter',
-    'youtube' => 'YouTube',
-    'birthdaylist' => 'Liste d\'anniversaire',
-    'eventcal' => 'Calendrier',
-    'to_top' => 'Au haut de la page',
-    'no_text' => 'aucun texte -',
+'2' => 'Admin-Center',
+'27' => 'Profil zeigen',
+'31' => 'Löschen',
+'33' => 'Neues Thema beginnen',
+'34' => 'Einloggen',
+'34a' => 'Sessionupdate',
+'54' => 'Löschen',
+'55' => 'Gewählte löschen',
+'63' => 'Moderatoren',
+'66' => 'Ändern',
+'69' => 'eMail',
+'70' => 'Meine Favoriten',
+'71' => 'Zu Favoriten hinzufügen',
+'72' => 'Aus den Favoriten löschen',
+'79' => 'Profil bearbeiten',
+'97' => 'Registrieren',
+'102' => qq~<img src="$imagesdir/back_to_top.png" alt="Top" title="Nach oben" />~,
+'102b' => qq~<img src="$imagesdir/back_to_bot.png" alt="Bottom" title="Nach unten" />~,
+'103' => 'Übersicht',
+'104' => 'Sperren/Öffnen',
+'105' => 'Letzter Beitrag',
+'108' => 'Ausloggen',
+'119' => 'Hilfe',
+'121' => 'Löschen',
+'131' => 'Bei Antwort benachrichtigen',
+'131a' => 'Themen-Benachrichtigung hinzufügen',
+'131d' => 'Themen-Benachrichtigung löschen',
+'132' => 'Veschieben',
+'144' => 'PN',
+'144a' => 'Persönliche Nachricht',
+'145' => 'Zitieren',
+'145q' => 'Markieren &amp; Zitieren',
+'146' => 'Antworten',
+'182' => 'Suchen',
+'300' => 'Themen als gelesen markieren',
+'316' => 'Posteingang',
+'320' => 'Gesendete Nachrichten',
+'321' => 'Neue Nachricht',
+'323' => 'Einstellungen',
+'331' => 'Mitglieder',
+'418' => 'Benachrichtigungen',
+'452' => 'ALLE Beiträge als gelesen markieren',
+'465' => 'Drucken',
+'465a' => 'Beitrag drucken',
+'467' => 'Profil',
+'515' => 'Homepage',
+'707' => 'Thema versenden',
+'781' => 'Sticky',
+'620' => 'Teilen',
+'621' => 'Verschieben, Teilen &amp; Verbinden',
+'620a' => 'Teilen - dieses Thema teilen, dabei gewählten Beitrag als Ersten eines neuen Themas verwenden',
+'621a' => 'Fenster öffnen um Thema zu verschieben, zu teilen und zu verbinden.',
+'622' => 'Verstecken',
+'623' => 'Einklappen',
+'624' => 'Ausklappen',
+'625' => 'Zu Favoriten hinzufügen',
+'626' => 'Aus meinen Favoriten löschen',
+'627' => 'Thema als ungelesen markieren',
+'mycenter' => 'Kontrollzentrum',
+'addbuddy' => 'Zu meiner Freundesliste hinzufügen',
+'pmadmin' => 'PN an Administrator',
+'alertmod' => 'Diesen Beitrag einem Foren-Moderator melden!',
+'alertmodtext' => 'Moderator melden',
+'forward' => 'Weiterleiten',
+'sendpm' => 'Nachricht senden',
+'sendbmess' => 'Broadcast-Nachricht senden',
+'facebook' => 'Facebook',
+'gtalk' => 'GTalk',
+'msn' => 'MSN',
+'myspace' => 'MySpace',
+'skype' => 'Skype/VoIP',
+'twitter' => 'Twitter',
+'youtube' => 'YouTube',
+'birthdaylist' => 'Geburtstagsliste',
+'eventcal' => 'Kalender',
+'to_top' => 'Zum Seitenanfang',
 );
 
 %img_polltxt = (
-    '1' => 'Créer un sondage',
-    '2' => 'Ajouter un sondage',
-    '20' => 'Ouvert',
-    '21' => 'Fermer',
-    '27' => 'Retirer',
-    '33' => 'Voir les votes',
-    '33a' => 'Voir les sujets',
-    '39' => 'Modifier',
-    '43' => 'Retirer un vote',
-    '44' => 'Sondage',
-    '45' => 'Nouveau sondage',
-    '46' => 'Sondage fermé',
+'1' => 'Umfrage starten',
+'2' => 'Umfrage hinzufügen',
+'20' => 'Öffnen',
+'21' => 'Schließen',
+'27' => 'Löschen',
+'33' => 'Ergebnis zeigen',
+'33a' => 'Thema anzeigen',
+'39' => 'Ändern',
+'43' => 'Stimme zurücknehmen',
+'44' => 'Umfrage',
+'45' => 'Neue Umfrage',
+'46' => 'Umfrage geschlossen',
 );
 
 %img_imtxt = (
-    '42' => 'Liste d\'amis',
-    '46' => 'Espace de rangement',
+'42' => 'Freundesliste',
+'46' => 'Archiv',
 );
 
 require Sources::Menu;
-set_menu();
+SetMenu();
 
 1;

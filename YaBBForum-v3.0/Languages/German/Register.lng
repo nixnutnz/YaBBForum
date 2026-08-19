@@ -48,7 +48,7 @@ if ( $action eq 'detailedversion' ) { return 1; }
 '113' => ' ist bereits registriert.',
 '114' => ' ist verf&uuml;gbar!',
 '115' => ' ist reserviert.',
-'209' => 'I love YaBBForum!',
+'209' => 'I love YaBB 2.6.0!',
 '213' => q~Passwörter sind nicht identisch.~,
 '241' => 'Feld. Gültige Zeichen sind Buchstaben (A-Z, a-z), Zahlen (0-9), Leerzeichen und ( _ ! @ # $ % ^ & * ( ) + | ` ~ - = \ : ; \' " , . / ? [ ] { } )',
 '241r' => 'Feld. Gültige Zeichen sind Buchstaben (A-Z, a-z), Zahlen (0-9), Leerzeichen und ( + - . @ _ )',

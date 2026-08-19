@@ -37,6 +37,7 @@ use version;
 
 
 if ( $action eq 'detailedversion' ) { return 1; }
+
 $yyexec      = 'index';
 $script_root = $ENV{'SCRIPT_FILENAME'};
 if ( !$script_root ) {

@@ -5,6 +5,6 @@ AuthType Basic
 
 
 <Limit GET>
- 
+
 Require all denied
 </Limit>

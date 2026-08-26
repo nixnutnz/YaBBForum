@@ -1,0 +1,328 @@
+$SectionName = "Manage_Boards";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "Accessing_the_Board_Functions";
+$SectionBody1 = q~<p>Nachdem Sie nun Ihre Kategorien erstellt haben, können Sie die erstaunlichen Board-Erstellungs-Dienstprogramme von YaBB verwenden, um die postfähigen Abschnitte Ihrer Community zu verwalten. Mit YaBB können Sie in jeder Kategorie eine unbegrenzte<b>*</b> Anzahl von Boards erstellen. Um auf diese Funktionen zugreifen zu können, müssen Sie als Administrator oder globaler Moderator mit den entsprechenden Zugriffsrechten angemeldet sein. Sobald Sie fertig sind, sehen Sie sich das Hauptmenü an. Sie werden einen Link mit dem Titel „Admin“ bemerken. Wenn Sie darauf klicken, wird ein Passwortbildschirm angezeigt, in dem Sie überprüfen können, ob Sie tatsächlich berechtigt sind, im Admin Center zu arbeiten. Sobald Ihr Passwort bestätigt ist, werden Sie zum Kontrollfeld des Administrators weitergeleitet. Suchen Sie im linken Menü nach dem Abschnitt „Forumssteuerung“ und klicken Sie auf den Link „Foren“.</p>
+<p><i><b>*</b> YaBB ist nur durch den Ihnen zugewiesenen Speicherplatz auf Ihrem Webhosting-Server begrenzt.</i></p>
+~;
+##########################################
+
+### Abschnitt 2
+##########################################
+$SectionSub2 = "Adding_New_Boards";
+$SectionBody2 = q~<p>YaBB gibt Forumadministratoren die Möglichkeit, mehrere Boards über einen einzigen Bildschirm hinzuzufügen. Greifen Sie dazu wie oben erläutert auf die Vorstandsverwaltungsfunktionen des Forums zu. Scrollen Sie dort zum Ende der Liste der vorhandenen Boards (falls vorhanden) und suchen Sie die Funktion mit dem Titel „Boards hinzufügen“. Geben Sie die Anzahl der neuen Boards, die Sie erstellen möchten, in das Textfeld ein und klicken Sie dann auf die Schaltfläche „Hinzufügen“.</p>
+<p>Auf dieser Seite „Boards bearbeiten“ erhalten Sie eine große Auswahl an Optionen für jedes neue Board, das Sie hinzufügen möchten:</p>
+<ul>
+    <li><b><span class="underline">Board-ID</span></b>
+        <ul>
+            <li>Dies wird nur für interne YaBB-Funktionen verwendet und wird in der URL verwendet, die zum Anzeigen eines Boards verwendet wird. Sie können einen beliebigen alphanumerischen Namen ohne Leerzeichen eingeben.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Name</span></b>
+        <ul>
+            <li>Dies ist der Name des Boards, den Ihre Benutzer sehen. Sie können hier alles eingeben, was Sie möchten.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Beschreibung</span></b>
+        <ul>
+            <li>Beschreiben Sie dieses Forum, damit Ihre Benutzer wissen, um welches Thema es sich handelt.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Board-Moderatoren</span></b>
+        <ul>
+            <li>Klicken Sie auf den Link unter dem Wort „Moderatoren“, um die Mitglieder hinzuzufügen, denen Sie Moderatorzugriff für <i>dieses Forum</i> gewähren möchten.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Mitgliedergruppenmoderatoren</span></b>
+        <ul>
+            <li>Wenn Sie festlegen möchten, dass alle Mitglieder einer oder mehrerer bestimmter Mitgliedergruppen als Moderatoren für <i>dieses Forum</i> fungieren, wählen Sie hier die Mitgliedergruppe(n) aus.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Wenn Sie eine bestimmte Mitgliedergruppe einrichten und sie als Mitgliedergruppen-Moderatorgruppe in einem Board zuweisen, ist es einfach, einen neuen Moderator zu diesem Board hinzuzufügen – fügen Sie ihn einfach dieser Mitgliedergruppe hinzu.</p>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Sie können Moderatoren und Moderatorgruppen auch einem bestimmten Board zuweisen, indem Sie zu diesem Board gehen und oben auf den Link „Moderatoren hinzufügen/löschen“ klicken oder indem Sie im Profil eines Mitglieds zum Abschnitt „Administratorbearbeitung“ gehen und das Board oder die Boards auswählen, die sie moderieren sollen.</p>
+    </li>
+    <li><b><span class="underline">Kategorie</span></b>
+        <ul>
+            <li>Wählen Sie aus, zu welcher Kategorie dieses Board gehören soll.</li>
+        </ul>
+    </li>
+   <li><b><span class="underline">Elternboard</span></b>
+        <ul>
+            <li>Wählen Sie ggf. das Board aus, von dem dieses Board ein Unterboard sein soll.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Kann posten?</span></b>
+        <ul>
+            <li>Wählen Sie aus, ob Themen in diesem Forum angezeigt werden können.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Wenn es sich um ein neues/leeres Forum handelt, können dort keine Themen gepostet werden. Beiträge können nur in den darin enthaltenen Subboards verfasst werden. Wenn dieses Board über Threads verfügt, bedeutet die Festlegung eines „No Post“-Boards, dass selbst der Administrator keinen Zugriff mehr auf die Threads hat.</p>
+    </li>
+    <li><b><span class="underline">Board-Bild</span></b>
+        <ul>
+            <li>Hier können Sie ein kleines Bild zur Darstellung dieses Boards zuweisen. Wählen Sie aus, für welche Vorlage das Board-Bild gelten soll. (Sie können für jede Vorlage, die Sie haben, unterschiedliche Board-Grafiken zuweisen.) Geben Sie dann die vollständige URL zum Bild im Standardformat https://www.domain.com/folder/imagename.jpg in das URL-Feld ein. Sie können auch Board-Bilder hochladen. Diese werden im Ordner „Boards“ im Vorlagengrafikordner gespeichert. Sie können die Größe der Board-Grafik festlegen, indem Sie zur Registerkarte „Bilder“ im Admin Center/Forumkonfiguration/Erweiterte Einstellungen gehen. 50 x 50 ist im Allgemeinen eine gute Größe für ein Tafelbild. Zulässige Bildformate sind .gif, .jpg und .png.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">RSS</span></b>
+        <ul>
+            <li>Hier können Sie den RSS-Feed (Really Simple Syndication) für dieses Board aktivieren oder deaktivieren. RSS ermöglicht es Benutzern, über die neuesten Informationen in einem Forum auf dem Laufenden zu bleiben, ohne auf der Forumsseite bleiben zu müssen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Zero Post Count Board?</span></b>
+        <ul>
+            <li>Aktivieren Sie dieses Kästchen, wenn Sie verhindern möchten, dass Beiträge in diesem Forum die Anzahl der Beiträge der Benutzer erhöhen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allen anzeigen?</span></b>
+        <ul>
+            <li>Durch Aktivieren dieser Option wird sichergestellt, dass der Board-Name und die Board-Beschreibung allen angezeigt werden, die die Kategorie anzeigen können, in der sich dieses Board befindet, auch wenn sie keinen Zugriff auf den Inhalt des Boards selbst haben.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Dies ist eine gute Möglichkeit, Ihren Gästen zu zeigen, dass ihnen mehr Inhalte zur Verfügung stehen, wenn sie sich registrieren und Mitglieder werden.</p>
+    </li>
+    <li><b><span class="underline">Anhänge zulassen</span></b>
+        <ul>
+            <li>Wenn Sie diese Option aktivieren, können Benutzer Dateien an ihre Beiträge in diesem Forum anhängen, sofern die Option „Anhängen von Dateien in Beiträgen zulassen?“ aktiviert ist. Die Option ist im Admin Center/Forumkonfiguration/Erweiterte Einstellungen unter der Registerkarte „Dateianhänge“ aktiviert.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Globale Ankündigungen</span></b>
+        <ul>
+            <li>Durch Aktivieren dieser Option wird sichergestellt, dass die Nachrichten in diesem Board oben auf jedem Board als wichtig angezeigt werden. Unabhängig davon, wie die Board-Berechtigungen festgelegt sind, können nur Forumadministratoren und globale Moderatoren neue Themen starten oder antworten. <b><span class="underline">Hinweis:</span> YaBB lässt nur zu, dass ein einzelnes Board dieses Label trägt.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Papierkorb</span></b>
+        <ul>
+            <li>Wenn Sie diese Option aktivieren, wird dieses Forum zu einem Papierkorb für von Moderatoren gelöschte Nachrichten. Es kann auch als Papierkorb für Forumadministratoren verwendet werden, indem das Kontrollkästchen im Admin Center/Konfiguration/Forumeinstellungen auf der Registerkarte „Mitarbeiter“ deaktiviert wird. <b><span class="underline">Hinweis:</span> YaBB lässt nur zu, dass ein einzelnes Board dieses Label trägt.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Board-Regeln aktivieren</span></b>
+        <ul>
+            <li>Aktivieren Sie dieses Kästchen, wenn Sie die Board-Regeln für dieses Board aktivieren möchten. In diesem Abschnitt können Sie Regeln für ein bestimmtes Forum veröffentlichen, die sich von den Regeln unterscheiden können, die Sie allgemein für Ihr Forum haben.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Reduzieren zulassen?</span></b>
+        <ul>
+            <li>Aktivieren Sie dieses Kästchen, wenn Sie möchten, dass Benutzer die Forenregeln ausblenden können.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Regeltitel</span></b>
+        <ul>
+            <li>Titel für die Regeln für dieses Forum.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Forumsregeln</span></b>
+        <ul>
+            <li>Regeln für dieses Forum. Sie können in den Regeln HTML-Tags verwenden.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Mindestalter für den Zugriff</span></b>
+        <ul>
+            <li>Zugriff nach Mindestalter beschränken.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Maximales Zugriffsalter</span></b>
+        <ul>
+            <li>Zugriff nach Höchstalter beschränken.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Geschlechtsspezifischer Zugriff</span></b>
+        <ul>
+            <li>Zugriff nach Geschlecht einschränken.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Die Alters-/Geschlechtsbeschränkungen basieren auf den Informationen, die Benutzer in ihrem Profil für die Auswahl von Geburtstag und Geschlecht eingeben. Wenn ein Benutzer kein Alter eingibt oder kein Geschlecht auswählt, hat YaBB keine Möglichkeit, sein Alter oder Geschlecht zu erfahren, und <i>er erhält daher keinen Zugriff auf Foren, die diese Einschränkungen anwenden.</i></p>
+    </li>
+    <li><b><span class="underline">Board-Passwort</span></b>
+        <ul>
+            <li>Wenn dies aktiviert ist und ein Passwort eingegeben wurde, müssen Mitglieder das Passwort verwenden, um auf dieses Forum zuzugreifen. Beachten Sie, dass das Hinzufügen eines Passworts zu einem „Externer Link“-Board nichts bewirkt.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Darf Themen starten</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedergruppen ein neues Thema beginnen können.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Darf auf Themen antworten</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedsgruppen auf Themen antworten dürfen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Darf Themen anzeigen</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedsgruppen Themen anzeigen dürfen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Darf Umfragen erstellen</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedsgruppen Umfragen erstellen dürfen.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Damit Gäste <span class="underline">jede</span> der oben genannten vier Funktionen ausführen können, <i><b>wählen Sie in diesem Optionsfeld keine Mitgliedsgruppen aus</b></i>.</p>
+    </li>
+</ul>
+<p>Sobald Sie alle Informationen für Ihre neuen Boards ausgefüllt haben, scrollen Sie zum Ende der Liste und klicken Sie auf die Schaltfläche „Speichern“. Ihre neuen Boards werden erstellt und zum Posten geöffnet!</p>
+~;
+##########################################
+
+### Abschnitt 3
+##########################################
+$SectionSub3 = "Editing_a_Board";
+$SectionBody3 = q~<p>Wenn Sie Änderungen an einem der von Ihnen erstellten Boards vornehmen müssen, befolgen Sie einfach die obigen Anweisungen, um auf Ihren Board-Verwaltungsbereich zuzugreifen. In der Liste der Boards sehen Sie für jeden Titel ein Kontrollkästchen. Aktivieren Sie dieses Kontrollkästchen für jedes einzelne Board, das Sie bearbeiten möchten. Scrollen Sie nach der Auswahl zum Ende der Board-Listen und suchen Sie nach den Optionsfeldern mit der Überschrift „Mit ausgewählt“. Klicken Sie auf das Optionsfeld mit der Bezeichnung „Bearbeiten“ und dann auf die Schaltfläche rechts mit der Bezeichnung „Los“.</p>
+<p>Auf dieser Seite „Boards bearbeiten“ erhalten Sie eine große Auswahl an Optionen für jedes neue Board, das Sie bearbeiten möchten:</p>
+<ul>
+    <li><b><span class="underline">Board-ID</span></b>
+        <ul>
+            <li>Dies wird nur für interne YaBB-Funktionen verwendet und wird in der URL verwendet, die zum Anzeigen eines Boards verwendet wird. Diese Board-ID ist <i>nicht bearbeitbar</i> und wird nur zu Informationszwecken angezeigt.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Name</span></b>
+        <ul>
+            <li>Dies ist der Name des Boards, den Ihre Benutzer sehen. Sie können hier alles eingeben, was Sie möchten.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Beschreibung</span></b>
+        <ul>
+            <li>Beschreiben Sie dieses Forum, damit Ihre Benutzer wissen, um welches Thema es sich handelt.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Moderatoren</span></b>
+        <ul>
+            <li>Klicken Sie auf den Link unter dem Wort „Moderatoren“, um die Mitglieder hinzuzufügen, denen Sie Moderatorzugriff für <i>dieses Forum</i> gewähren möchten.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Mitgliedergruppenmoderatoren</span></b>
+        <ul>
+            <li>Wenn Sie festlegen möchten, dass alle Mitglieder einer oder mehrerer bestimmter Mitgliedergruppen als Moderatoren für <i>dieses Forum</i> fungieren, wählen Sie hier die Mitgliedergruppe(n) aus.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Wenn Sie eine bestimmte Mitgliedergruppe einrichten und sie als Mitgliedergruppen-Moderatorgruppe in einem Board zuweisen, ist es einfach, einen neuen Moderator zu diesem Board hinzuzufügen – fügen Sie ihn einfach dieser Mitgliedergruppe hinzu.</p>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Sie können Moderatoren und Moderatorgruppen auch einem bestimmten Board zuweisen, indem Sie zu diesem Board gehen und oben auf den Link „Moderatoren hinzufügen/löschen“ klicken oder indem Sie im Profil eines Mitglieds zum Abschnitt „Administratorbearbeitung“ gehen und das Board oder die Boards auswählen, die sie moderieren sollen.</p>
+    </li>
+    <li><b><span class="underline">Kategorie</span></b>
+        <ul>
+            <li>Wählen Sie aus, zu welcher Kategorie dieses Board gehören soll.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Elternboard</span></b>
+        <ul>
+            <li>Wählen Sie aus, von welchem Board dieses Board ein Unterboard sein soll.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Untergeordnete Boards</span></b>
+        <ul>
+            <li>Zeigt Ihnen an, welche Boards bereits Unterboards in diesem Board sind.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Kann posten?</span></b>
+        <ul>
+            <li>Wählen Sie aus, ob Themen in diesem Forum angezeigt werden können.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Wenn es sich um ein neues/leeres Forum handelt, können dort keine Themen gepostet werden. Beiträge können nur in den darin enthaltenen Subboards verfasst werden. Wenn dieses Board über Threads verfügt, bedeutet die Festlegung eines „No Post“-Boards, dass selbst der Administrator keinen Zugriff mehr auf die Threads hat.</p>
+    </li>
+    <li><b><span class="underline">Board-Bild</span></b>
+        <ul>
+            <li>Hier können Sie ein kleines Bild zur Darstellung dieses Boards zuweisen. Wählen Sie aus, für welche Vorlage das Board-Bild gelten soll. (Sie können für jede Vorlage, die Sie haben, unterschiedliche Board-Grafiken zuweisen.) Geben Sie dann die vollständige URL zum Bild im Standardformat https://www.domain.com/folder/imagename.jpg in das URL-Feld ein. Sie können auch Board-Bilder hochladen. Diese werden im Ordner „Boards“ im Vorlagengrafikordner gespeichert. Sie können die Größe der Board-Grafik festlegen, indem Sie zur Registerkarte „Bilder“ im Admin Center/Forumkonfiguration/Erweiterte Einstellungen gehen. 50 x 50 ist im Allgemeinen eine gute Größe für ein Tafelbild. Zulässige Bildformate sind .gif, .jpg und .png.</li>
+        </ul>
+       <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Wenn Sie einer bestimmten Vorlage bereits ein Board-Bild zugewiesen haben und das Bild ändern möchten, löschen Sie zuerst das alte Bild.</p>
+    </li>
+    <li><b><span class="underline">RSS</span></b>
+        <ul>
+            <li>Hier können Sie den RSS-Feed (Really Simple Syndication) für dieses Board aktivieren oder deaktivieren. RSS ermöglicht es Benutzern, über die neuesten Informationen in einem Forum auf dem Laufenden zu bleiben, ohne auf der Forumsseite bleiben zu müssen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Zero Post Count Board?</span></b>
+        <ul>
+            <li>Aktivieren Sie dieses Kästchen, wenn Sie verhindern möchten, dass Beiträge in diesem Forum die Anzahl der Beiträge der Benutzer erhöhen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allen anzeigen?</span></b>
+        <ul>
+            <li>Durch Aktivieren dieser Option wird sichergestellt, dass der Board-Name und die Board-Beschreibung allen angezeigt werden, die die Kategorie anzeigen können, in der sich dieses Board befindet, auch wenn sie keinen Zugriff auf den Inhalt des Boards selbst haben.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Dies ist eine gute Möglichkeit, Ihren Gästen zu zeigen, dass ihnen mehr Inhalte zur Verfügung stehen, wenn sie sich registrieren und Mitglieder werden.</p>
+    </li>
+    <li><b><span class="underline">Anhänge zulassen</span></b>
+        <ul>
+            <li>Wenn Sie diese Option aktivieren, können Benutzer Dateien an ihre Beiträge in diesem Forum anhängen, sofern die Option „Anhängen von Dateien in Beiträgen zulassen?“ aktiviert ist. Die Option ist im Admin Center/Forumkonfiguration/Erweiterte Einstellungen unter der Registerkarte „Dateianhänge“ aktiviert.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Globale Ankündigungen</span></b>
+        <ul>
+            <li>Durch Aktivieren dieser Option wird sichergestellt, dass die Nachrichten in diesem Board oben auf jedem Board als wichtig angezeigt werden. Unabhängig davon, wie die Board-Berechtigungen festgelegt sind, können nur Forumadministratoren und globale Moderatoren neue Themen starten oder antworten. <b><span class="underline">Hinweis:</span> YaBB lässt nur zu, dass ein einzelnes Board dieses Label trägt.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Papierkorb</span></b>
+        <ul>
+            <li>Wenn Sie diese Option aktivieren, wird dieses Forum zu einem Papierkorb für von Moderatoren gelöschte Nachrichten. Es kann auch als Papierkorb für Forumadministratoren verwendet werden, indem das Kontrollkästchen im Admin Center/Konfiguration/Forumeinstellungen auf der Registerkarte „Mitarbeiter“ deaktiviert wird. <b><span class="underline">Hinweis:</span> YaBB lässt nur zu, dass ein einzelnes Board dieses Label trägt.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Board-Regeln aktivieren</span></b>
+        <ul>
+            <li>Aktivieren Sie dieses Kästchen, wenn Sie die Board-Regeln für dieses Board aktivieren möchten.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Reduzieren zulassen?</span></b>
+        <ul>
+            <li>Aktivieren Sie dieses Kästchen, wenn Sie möchten, dass Benutzer die Forenregeln ausblenden können.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Regeltitel</span></b>
+        <ul>
+            <li>Titel für die Regeln für dieses Forum.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Forumsregeln</span></b>
+        <ul>
+            <li>Regeln für dieses Forum. Sie können in den Regeln HTML-Tags verwenden.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Mindestalter für den Zugriff</span></b>
+        <ul>
+            <li>Zugriff nach Mindestalter beschränken.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Maximales Zugriffsalter</span></b>
+        <ul>
+            <li>Zugriff nach Höchstalter beschränken.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Geschlechtsspezifischer Zugriff</span></b>
+        <ul>
+            <li>Zugriff nach Geschlecht einschränken.</li></ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Die Alters-/Geschlechtsbeschränkungen basieren auf den Informationen, die Benutzer in ihrem Profil für die Auswahl von Geburtstag und Geschlecht eingeben. Wenn ein Benutzer kein Alter eingibt oder kein Geschlecht auswählt, hat YaBB keine Möglichkeit, sein Alter oder Geschlecht zu erfahren. Daher <i>wird ihm kein Zugriff auf Foren gewährt, die diese Einschränkungen anwenden.</i></p></li>
+    <li><b><span class="underline">Darf Themen starten</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedergruppen ein neues Thema beginnen können.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Darf auf Themen antworten</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedsgruppen auf Themen antworten dürfen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Darf Themen anzeigen</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedsgruppen Themen anzeigen dürfen.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Darf Umfragen erstellen</span></b>
+        <ul>
+            <li>Beschränken Sie, welche Mitgliedsgruppen Umfragen erstellen dürfen.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Administratortipp:</span></b> Damit Gäste <span class="underline">jede</span> der oben genannten vier Funktionen ausführen können, <i><b>wählen Sie in diesem Optionsfeld keine Mitgliedsgruppen aus</b></i>.</p>
+    </li>
+</ul>
+<p>Sobald Sie alle Informationen für Ihre Boards bearbeitet haben, scrollen Sie zum Ende der Liste und klicken Sie auf die Schaltfläche „Speichern“. Ihre Änderungen an den Boards werden sofort sichtbar.</p>
+ ~;
+##########################################
+
+### Abschnitt 4
+##########################################
+$SectionSub4 = "Deleting_a_Board";
+$SectionBody4 = q~<p>Wenn Sie ein Board entfernen möchten, folgen Sie den Anweisungen im Abschnitt „Auf die Board-Funktionen zugreifen“ oben, um auf Ihre Board-Verwaltungsseite zuzugreifen.</p>
+<h4>Ein Board löschen</h4>
+<ul>
+    <li>In der Liste der Boards sehen Sie ein Kontrollkästchen für jeden Titel. Aktivieren Sie dieses Kontrollkästchen für jedes einzelne Board, das Sie entfernen möchten.</li>
+    <li>Scrollen Sie nach der Auswahl zum Ende der Board-Listen und suchen Sie nach den Optionsfeldern mit der Überschrift „Mit ausgewählt“.</li>
+    <li>Klicken Sie auf das Optionsfeld mit der Bezeichnung „Entfernen“ und dann auf die Schaltfläche rechts mit der Bezeichnung „Los“.</li>
+    <li>In einem kleinen Popup werden Sie aufgefordert, zu bestätigen, dass Sie diese Boards entfernen möchten. Klicken Sie auf „OK“, um sie zu entfernen, oder auf „Abbrechen“, um sie beizubehalten</li>
+</ul>
+~;
+##########################################
+
+1;

@@ -1,0 +1,101 @@
+$SectionName = "Manage_Categories";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Pag-access sa_the_Category_Functions";
+$SectionBody1 = q~<p>Ang bersyon ng YaBB na ito ay nilagyan ng maraming makapangyarihang tool upang pamahalaan at kontrolin ang daloy ng pakikipag-usap ng iyong komunidad, ang pundasyon kung saan ay ang kakayahang pagpangkatin ang mga Board sa isang walang limitasyong<b>*</b> na bilang ng Mga Kategorya. Upang ma-access ang mga function na ito, dapat, siyempre, naka-log in bilang isang Administrator (o Global Moderator na may wastong mga karapatan sa pag-access). Kapag ikaw na, tingnan ang Main tab na menu sa tuktok ng iyong forum sa ilalim ng logo. Mapapansin mo ang isang link na may pamagat na "Admin". Ang pag-click dito ay maglalabas ng screen ng password upang ma-verify mo na, sa katunayan, awtorisado kang magtrabaho sa Admin Center. Kapag nakumpirma na ang iyong password, dadalhin ka sa control panel ng Administrator. Sa kaliwang menu, hanapin ang seksyong may pamagat na “Forum Controls” at mag-click sa link na may pamagat na “Mga Kategorya”.</p>
+<p><i><b>*</b> Nililimitahan lang ang YaBB ng espasyong nakalaan sa iyo sa iyong web hosting server.</i></p>
+~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Adding_New_Categories";
+$SectionBody2 = q~<p>Pinapayagan ka ng YaBB na magdagdag ng maraming bagong Kategorya nang sabay-sabay o paisa-isa. Upang gawin ito, i-access ang mga function ng pamamahala ng Kategorya ng forum tulad ng ipinapakita sa itaas. Pagdating doon, mag-scroll sa ibaba ng listahan at hanapin ang function na pinamagatang "Magdagdag ng Mga Kategorya". Ilagay ang bilang ng mga bagong Kategorya na nais mong gawin sa kahon at pindutin ang button na may pamagat na “Idagdag”.</p>
+<p>Sa bagong pahinang ito, bibigyan ka ng isang hanay ng mga opsyon para sa bawat isa sa mga bagong kategorya na gusto mong likhain:</p>
+<ul>
+      <li><b><span class="underline">ID</span></b>
+            <ul>
+                  <li>Ang ID ng bawat Kategorya ay dapat na natatangi. Ito ay para sa panloob na paggamit lamang. Hinahayaan nito ang YaBB na subaybayan ang mga bagay, at ito ay gagamitin sa URL upang tingnan ang Kategorya. Ang entry ay dapat na alphanumeric (Walang mga simbolo at Walang mga puwang). Ang lahat ng Category ID ay naka-store sa lower case na uri, kaya hindi mahalaga ang malalaking titik.</li>
+            </ul>
+      </li>
+      <li><b><span class="underline">Pangalan</span></b>
+            <ul>
+                  <li>Ito ang pamagat ng iyong Kategorya. Ito ang pangalang makikita ng iyong mga user. Maaari mong i-edit ito gayunpaman gusto mo.</li>
+            </ul>
+      </li>
+      <li><b><span class="underline">Larawan ng Kategorya</span></b>
+            <ul>
+                  <li>Kung gusto mong gumamit ng larawan para sa iyong Kategorya, maaari kang mag-upload ng larawang gagamitin.</li>
+            </ul>
+            <p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Ang mga uri ng file na pinapayagan para sa mga larawan ng Kategorya ay .bmp, .gif, .jpg, at .png. Upang makatipid sa pag-download ng bandwidth, ang Mga Larawan ng Kategorya ay dapat na paunang sukat na humigit-kumulang 25px ang taas. Kung nagtakda ka ng laki ng larawan para sa Mga Larawan ng Lupon sa "Mga Advanced na Setting -> Mga Larawan", ang mga larawang may labis na laki ng Kategorya ay ire-resize sa parehong laki ng mga Larawan ng Lupon.</p>
+      </li>
+      <li><b><span class="underline">Pinapayagan na Tingnan/Tingnan ang Kategorya</span></b>
+            <ul>
+                  <li>Kung nais mong gawing pribado ang buong Kategorya, maaari mong piliin kung aling Mga Grupo ng Miyembro ang papayagang makita ang Kategorya na ito. Iwanang blangko ito upang payagan ang lahat (kabilang ang mga bisita) na tingnan ang Kategorya na ito, O kung maglalagay ka ng anumang board sa Kategoryang ito na gusto mong makita ng mga bisita.</li>
+            </ul>
+      </li>
+      <li><b><span class="underline">Allow Collapse</span></b>
+            <ul>
+                  <li>Lagyan ng check ang kahong ito upang payagan ang iyong mga user na palawakin at i-collapse ang Kategorya na ito sa pahina ng Pangunahing Index.</li>
+            </ul>
+            <p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Ang iyong bagong Kategorya ay hindi makikita sa Board Index (pangunahing) page ng forum hanggang sa mayroon itong kahit isang board sa loob nito.</p>
+      </li>
+      <li><b><span class="underline">RSS</span></b>
+            <ul>
+                  <li>Kung pinagana mo ang RSS (Really Simple Syndication) (“Advanced Settings -> Permalinks/RSS”), ang paglalagay ng check sa kahong ito ay maglalagay ng RSS button sa Kategorya. Binibigyang-daan ng RSS ang mga user na manatiling napapanahon sa pinakabagong impormasyon sa isang board nang hindi nananatili sa site ng forum.</li>
+            </ul>
+       </li>
+</ul>
+~;
+##############################################
+
+### Seksyon 3
+##############################################
+$SectionSub3 = "Editing_a_Category";
+$SectionBody3 = q~<p>Ang pag-edit ng Kategorya gamit ang YaBB ay mabilis at madali salamat sa pagsusumikap ng aming kamangha-manghang koponan ng mga developer. Habang nasa loob ng function na Mga Kategorya ng iyong Admin Center (tingnan ang Pag-access sa Mga Function ng Kategorya sa itaas para sa mga detalye), makikita mo ang isang listahan ng mga umiiral nang Kategorya, bawat isa ay may kaukulang check box. Ang pag-click sa isang check box ay i-flag ang Kategorya na iyon para sa pag-edit.</p>
+<p>Kapag nasuri mo na ang lahat ng Mga Kategorya na gusto mong i-edit, mag-scroll sa ibaba ng listahan at hanapin ang hanay ng mga radio button na may pamagat na “With selected”. Mag-click sa radio button para sa "I-edit" at pagkatapos ay pindutin ang pindutan sa kanan na may pamagat na "Go". Sa loob ay makikita mo ang mga sumusunod na item para sa <i>bawat</i> Kategorya:</p>
+<ul>
+    <li><b><span class="underline">ID</span></b>
+        <ul>
+            <li>Ito ay para sa panloob na paggamit lamang at <span class="underline"><i>hindi nae-edit.</i></span> Hinahayaan nito ang YaBB na subaybayan ang mga bagay, at ito ay gagamitin sa URL upang tingnan ang Kategorya na iyon.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Pangalan</span></b>
+        <ul>
+            <li>Ito ang pamagat ng iyong Kategorya. Ito ang pangalang makikita ng iyong mga user. Maaari mong i-edit ito gayunpaman gusto mo.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Pinapayagan na Tingnan/Tingnan ang Kategorya</span></b>
+        <ul>
+            <li>Kung gusto mong gawing pribado ang buong Kategorya, maaari mong piliin kung aling Mga Grupo ng Miyembro ang papayagang tingnan ang Kategorya na ito. Iwanan itong blangko upang payagan ang lahat (kabilang ang mga Bisita) na tingnan ito, O kung magkakaroon ka ng <span class="underline">anumang</span> board sa Kategoryang ito na gusto mong makita ng lahat (kabilang ang mga Bisita).</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Allow Collapse</span></b>
+        <ul>
+            <li>Lagyan ng check ang kahong ito upang payagan ang iyong mga user na palawakin at i-collapse ang Kategorya na ito sa pahina ng Pangunahing Index.</li>
+        </ul>
+    </li>
+      <li><b><span class="underline">RSS</span></b>
+            <ul>
+                  <li>Kung pinagana mo ang RSS (Really Simple Syndication) (“Advanced Settings -> Permalinks/RSS”), ang paglalagay ng check sa kahong ito ay maglalagay ng RSS button sa Kategorya. Binibigyang-daan ng RSS ang mga user na manatiling napapanahon sa pinakabagong impormasyon sa isang board nang hindi nananatili sa site ng forum.</li>
+            </ul>
+       </li>
+</ul>
+<p>Kapag natapos mo nang gawin ang iyong mga pag-edit, hanapin at i-click ang button na may pamagat na “I-save” sa ibaba ng listahan ng mga kategorya.</p>
+~;
+##############################################
+
+### Seksyon 4
+##############################################
+$SectionSub4 = "Deleting_a_Category";
+$SectionBody4 = q~<p>Kung gusto mong mag-alis ng Kategorya, sundin ang mga direksyon (tingnan ang Pag-access sa Mga Function ng Kategorya sa itaas para sa mga detalye) upang ma-access ang iyong pahina ng pamamahala ng Kategorya.</p>
+<ul>
+    <li class="help_attn_strong"><b><span class="underline">Babala:</span> Ang pagtanggal ng Kategorya ay magtatanggal din ng anumang mga board na mayroon ka sa Kategorya na iyon.</b> Ilipat muna ang mga ito sa ibang Kategorya kung gusto mong i-save ang mga ito.</li>
+    <li>Sa listahan ng Mga Kategorya, mapapansin mo ang isang check box na tumutugma sa bawat pamagat. Lagyan ng check ang kahon na ito para sa bawat at bawat Kategorya na gusto mong alisin. Kapag napili na, mag-scroll sa ibaba ng mga listahan ng Kategorya at hanapin ang hanay ng mga radio button na may pamagat na “With selected”. Mag-click sa radyo na may label na “Alisin” pagkatapos ay pindutin ang button sa kanan na pinamagatang “Go”.</li>
+    <li>Hihilingin sa iyo ng isang maliit na pop-up na kumpirmahin na gusto mong alisin ang mga kategoryang ito. I-click ang “OK” para alisin ang mga ito o “Kanselahin” para panatilihin ang mga ito.</li>
+</ul>
+~;
+##############################################
+
+1;

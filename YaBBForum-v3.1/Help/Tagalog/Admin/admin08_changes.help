@@ -1,0 +1,312 @@
+$SectionName = "What's_Changed";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "General_Observations";
+$SectionBody1 = q~<p>Ang YaBB ay isang 'buhay na dokumento'. Nagbabago ito sa paglipas ng panahon. Nagdaragdag ng mga feature, at paminsan-minsan ay inaalis, habang umuunlad ang YaBB. Ang mga Seksyon sa ibaba ay nagdodokumento ng marami sa mga pagbabago para sa admin.</p>
+~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Features_in_YaBB_2.2_and_later_versions";
+$SectionBody2 = q~<p>Sa paggawa ng YaBB 2.2, nagsagawa kami ng overhaul sa iba't ibang seksyon ng admin center.
+    <br />Habang lumaki ang bilang ng mga pag-andar, muling pinangkat namin ang ilan sa mga ito sa mga tab at maaaring nagbago ng mga lugar ang ilang mga pag-andar.
+    <br />Ito ang ilang feature sa YaBB 2.2 na natural na nangangailangan ng ilang pagsasaayos sa antas ng admin. Ang mga karagdagan na ito ay ang mga sumusunod:</p>
+<ul>
+    <li><b>RSS</b>
+        <br />Sinuman ay maaari na ngayong gumamit ng RSS (Talagang Simple Syndication, tingnan ang <a href="https://en.wikipedia.org/wiki/RSS" title="RSS on Wikipedia" target="_blank">artikulong ito sa Wikipedia</a>) upang kunin ang pinakabagong mga ulo ng balita mula sa iyong forum patungo sa isang panlabas na dokumento o sa isang browser.
+    </li>
+    <li><b>Mga Permalink</b>
+        <br />Upang gawing mas 'normal' ang mga URI ng forum maaari mong itakda ang iyong forum na gumamit ng mga permalink.
+        <br />Mag-ingat sa paglalapat ng mga setting, kahit na ang pinakamaliit na pagkakamali ay maaaring maging sanhi ng iyong forum na hindi magagamit!
+    </li>
+    <li><b>Paghiwalayin ang Mga Search Engine mula sa mga ordinaryong user</b>
+        <br />Upang makakuha ng mas tumpak na larawan ng iyong mga bisita sa forum, maaari mong paghiwalayin ang mga spider ng search engine mula sa mga ordinaryong bisita.
+    </li>
+    <li><b>Pag-template ng E-mail</b>
+        <br />Kapag gusto mong i-edit ang 'system e-mails' na mas angkop sa iyong mga pangangailangan, hindi mo na kailangan pang makipaglaban sa source code, gamitin lang ang 'E-mail Messages' templating tool.
+    </li>
+    <li><b>Mga anti-spam na tool</b>
+        <br />Dahil ang spam ay narito upang manatili, kailangan namin ng mas malalakas na tool laban dito at ngayon ay mayroon na kami.
+        <br />Itakda ang iyong ginustong mga panuntunan sa spam upang mag-trigger ng babala (at kalaunan ay pagbabawal) batay sa hindi gustong nilalaman ng post, tukuyin ang ilang partikular na sitwasyon ng proseso ng pag-post at ilayo ang mga nagbebenta ng Viagra.
+    </li>
+    <li><b>Captcha</b>
+        <br />Para medyo mahirapan ang mga malisyosong bot na pumapasok sa iyong forum, gamitin ang captcha (visual confirmation, tingnan ang <a href="https://en.wikipedia.org/wiki/Captcha" title="Captcha in Wikipedia" target="_blank">artikulo na ito sa Wikipedia</a>, ngunit mag-ingat, posibleng mahirap gamitin ang ilang mga user.
+    </li>
+    <li><b>Mga mensahe sa broadcast</b>
+        <br />Makipag-ugnayan sa iyong staff ng forum gamit ang Broadcast Messages at magpadala ng mga mensahe sa antas ng grupo (moderator, moderator group, forum moderator, global moderator, at admin).
+    </li>
+</ul>
+<p>Pagkatapos, mayroong ilang mas maliliit na karagdagan sa mga setting ng forum at sa 'Seguridad ng referrer' na hindi na ipapaliwanag pa rito ngunit maaaring lumitaw bilang kapaki-pakinabang para sa iyo na dumaan.</p>
+~;
+##############################################
+
+### Seksyon 3
+##############################################
+$SectionSub3 = "Mga Bagong_Tampok_sa_YaBB_2.3";
+$SectionBody3 = q~<p>Ito ang ilang ganap na bagong feature sa YaBB 2.3 na idinagdag sa pamamagitan ng popular na kahilingan ng mga user. Ang mga karagdagan na ito ay:</p>
+<ul>
+    <li><b>Reverse Post sa Topic Advanced Edition</b>
+        <br />Pinapayagan ang Admin na piliin ang default na order ng post (pinakaluma sa pinakabago o pinakabago sa pinakaluma). Maaari ding paganahin ng Admin ang isang setting sa Admin Center upang payagan/hindi payagan ang indibidwal na user na pumili ng kanilang sariling post order. Kung pinapayagan, maaaring baguhin ng bawat user ang pagkakasunud-sunod ng mga post sa pamamagitan ng pag-click sa pangalan ng paksa sa mga pahina ng paksa at/o itakda ito sa kanilang sariling pahina ng Profile/Mga Opsyon.
+    </li>
+    <li><b>Button sa Itaas ng Pahina</b>
+        <br />Nagdaragdag ng button sa ibabang bar ng bawat page na magdadala sa iyo pabalik sa "Itaas ng Pahina".
+    </li>
+    <li><b>Mga Pie Chart para sa Mga Poll</b>
+        <br />Pinapayagan ang mga user ng opsyon na makita ang mga resulta ng poll bilang bar graph o pie chart sa pamamagitan ng pag-click sa naaangkop na button na ipinapakita kasama ng mga resulta ng poll.
+    </li>
+    <li><b>Quick Reply Advanced Edition</b>
+        <br />Pinapayagan nito ang mga user na mabilis na mag-post ng tugon o bagong post. Nagbibigay din ito ng maraming bagong tampok sa pag-quote.
+        <br />Maaaring:
+        <ul>
+            <li>Paganahin/Huwag paganahin ang Quick Post Box</li>
+            <li>I-enable/I-disable ang Quick Reply Box</li>
+            <li>I-enable/I-disable ang Mark & Quote</li>
+            <li>Paganahin/Huwag Paganahin ang UserQuote</li>
+            <li>Paganahin/Huwag Paganahin ang Tumalon sa Quick Post/Reply Box kung ang user ay nag-click sa <b>Start New Topic</b>, <b>Reply</b> o <b>Quote Button</b></li>
+            <li>Itakda ang Max na haba para sa Quote</li>
+        </ul>
+    </li>
+    <li><b>Preselected Smilies</b>
+        <br />Pinapayagan ang Admin na piliin kung aling Smiley ang ipapakita sa block ng More Smilies sa tabi ng Post at PM window.
+    </li>
+    <li><b>Showcase Poll</b>
+        <br />Pinapayagan ang isang poll na pinili ng mga Admin/GMod na lumabas sa tuktok ng Board Index.
+    </li>
+    <li><b>YaBB Backup</b>
+        <br />Ang mga admin ay maaaring gumawa ng mga backup ng forum nang mabilis sa alinman sa 8 iba't ibang mga format na mayroon o walang compression. Ang mga backup ay iniimbak sa isang bagong direktoryo ng yabb/Backups, at maaaring i-download, i-e-mail, o tanggalin. Maaaring pumili ang admin ng buong backup (lahat ng mga direktoryo), mga bahagyang backup (ilang mga direktoryo), o mga file lamang na mas bago kaysa sa huling backup. Nagtatampok din ng mapipiling alerto upang sabihin sa Admin kung ang backup ay mas luma sa <i>X</i> araw.
+    </li>
+    <li><b>Mga Larawan ng Kategorya</b>
+        <br />Pinapayagan ang Admin na gumamit ng larawan kasama ng mga pangalan ng kategorya.
+    </li>
+    <li><b>Pagbabago ng Laki ng Larawan at Greybox</b>
+        <br />Maaaring magtakda ng mga limitasyon ang mga admin sa maximum na laki ng display para sa mga larawan ng avatar, mga nai-post na larawan, mga larawan ng attachment, at mga larawan ng lagda. Ang mas malalaking larawan ay "lumiliit" upang magkasya sa loob ng maximum na mga limitasyon na itinakda.
+        <br />Ang mga naka-attach na larawan at larawan sa loob ng mga post ay maaaring ipakita sa isang bahagyang translucent na ibabaw sa halip sa isang bagong window. Ang Administrator ay maaaring pumili sa pagitan ng isang view at isang gallery style view para sa mga naka-attach na larawan.
+        <p class="help_attn"><span class="underline"><b>TANDAAN:</b></span> Ang isang imahe na mas mataas kaysa sa lapad nito ay lilimitahan ng maximum na taas at aayusin ang lapad nang proporsyonal, na magiging mas mababa sa maximum na lapad. Ang isang larawang mas malawak kaysa sa mas mataas ay malilimitahan ng maximum na lapad at magsasaayos ng taas nang proporsyonal, na magiging mas mababa sa pinakamataas na taas.</p>
+    </li>
+    <li><b>Mga Multi-Attachment</b>
+        <br />Maaaring piliin ng mga admin kung ilan at anong uri ng mga file ang maaaring ilakip ng user sa isang post. Nagbibigay din ng download counter para sa bawat naka-attach na file. Ang mga nakalakip na file ay magpapakita ng icon na sumasagisag sa bawat partikular na uri ng file para sa pinakakaraniwang uri ng file.
+        <p class="help_attn_strong"><span class="underline"><b>BABALA:</b></span> Ang ilang uri ng file ay maaaring magdulot ng mga panganib sa forum o sa user na nagda-download ng mga ito dahil magagamit ang mga ito para magsama ng malisyosong code. Kabilang dito ngunit hindi limitado sa:</p>
+        <ul>
+            <li class="help_attn_strong">MS Excel file (.xls) na maaaring maglaman ng malisyosong code sa mga macro</li>
+            <li class="help_attn_strong">MS PowerPoint file (.ppt) na maaaring maglaman ng mga nakakahamak na script</li>
+            <li class="help_attn_strong">Mga HTML file (.htm, .html) na maaaring maglaman ng anumang bilang ng mga pagsasamantala</li>
+        </ul>
+        <p class="help_attn_strong">Wala sa mga ganitong uri ang pinapayagan bilang default. Maaaring payagan sila ng Admin, ngunit bigyan ng babala - ito ay mapanganib. Ang mga HTML file ay maaaring i-upload bilang mga text file (.txt) na ganap na ligtas. Hayaan ang user na nag-download nito na baguhin ito pabalik sa HTML at maiwasan ang panganib sa iyong forum. Magsaliksik at siguraduhing kinakailangan ito bago mo payagan ang mga bagong uri ng file.</p>
+    </li>
+    <li><b>User Avatar Upload</b>
+        <br />Maaaring piliin ng mga admin na payagan ang mga user na mag-upload ng sarili nilang avatar image file. Tinutukoy ang mga file gamit ang user ID sa filename para sa madaling pag-uuri. Maaari lamang ma-access ng mga user ang kanilang sariling larawan.
+    </li>
+    <li><b>Advanced na Split at Splice</b>
+        <br />Binibigyang-daan kang ilipat ang mga solong post, napiling mga post, o lahat ng mga post sa isang bagong thread o sa anumang iba pang post sa anumang board na pinapayagan kang ma-access. Maaari mong piliing ilipat ang post o kopyahin ito, at piliin kung mag-iiwan ng split message o hindi.
+    </li>
+    <li><b>Advanced na Palawakin/I-collapse</b>
+        <br />Pinapayagan ang Mga Kategorya sa Board Index na i-collapse o palawakin nang hindi nire-reload ang mga pahina. Nangangailangan ng AJAX na suportahan ng browser.
+    </li>
+    <li><b>Mga Pinalawak na Profile</b>
+        <br />Pinapayagan ang Administrator na magdagdag ng mga karagdagang field sa Profile ng user. Ang Administrator ay may maraming mga opsyon sa mga field na ito, tulad ng paggawa sa kanila ng mandatoryong entry sa panahon ng pagpaparehistro, paggawa ng mga ito na makikita ng lahat o ilang partikular na grupo lamang, na nagpapahintulot sa mga user na i-edit ang mga ito, o pagdaragdag ng mga field sa memberlist.
+    </li>
+    <li><b>Mga Notification ng E-Mail sa Admin para sa Mga Pagpaparehistro ng Bagong Miyembro</b>
+        <br />Pinapayagan ang Administrator na pumili ng opsyon na makatanggap ng abiso sa pamamagitan ng e-Mail kung may bagong miyembrong nagparehistro. Pinapayagan din nito ang Administrator na gamitin ang forum webmaster e-Mail address o ilagay ang isa sa kanyang pinili.
+    </li>
+    <li><b>Spell Checker</b>
+        <br />Pinapayagan ang Administrator na paganahin ang isang spelling checker na susuriin ang pagbabaybay sa Mga Post at sa Mga Personal na Mensahe.
+    </li>
+</ul>
+~;
+
+##############################################
+### Seksyon 4
+##############################################
+$SectionSub4 = "Mga Bagong_Tampok_sa_YaBB_2.5.2";
+$SectionBody4 = q~<p>Ito ang ilang ganap na bagong tampok sa YaBB 2.5.2 na idinagdag sa pamamagitan ng sikat na kahilingan ng mga user. Ang mga karagdagan na ito ay:</p>
+<ul>
+    <li><b>Mga Karagdagang Panukala laban sa Spam</b>
+        <ul>
+            <li><b>SpamFruits</b>
+                <br />Isa sa pinakasikat sa mga hakbang na anti-spam ng YaBB, hinihiling ng SpamFruits na piliin ng nagparehistro ang tamang graphic.
+            </li>
+            <li><b>Anti-Spam na Tanong</b>
+                <br />Ito ay nangangailangan ng nagparehistro na sagutin ang isang random na tanong mula sa isang bangko ng mga tanong kung saan ang Admin ay may opsyon na i-edit. Ito ay isang pagpigil laban sa mga pagpaparehistro ng Spam. Higit pang mga hakbang laban sa spam ay matatagpuan sa: <a href="https://www.boardmod.org/yabb2/YaBB.pl?catselect=mods_y2" target="_blank">www.boardmod.org/yabb2/YaBB.pl?catselect=mods_y2</a>
+            </li>
+            <li><b>Minimum na bilang ng mga post na dapat mayroon ang isang miyembro bago mai-post ang mga link at larawan</b>
+                <br />Maaaring itakda ng Admin ang pinakamababang bilang ng mga post na kinakailangan upang maglagay ng mga link at/o mga larawan sa mga post, lagda at profile ng user. Ito ay upang maiwasan ang mga spammer na magrehistro at agad na mag-post ng mga link at larawan.
+            </li>
+            <li><b>Walang e-mail sa tinanggihang opsyon sa membership</b>
+                <br />Ang Admin ay mayroon na ngayong opsyon kung ipapadala o hindi ang default na 'tinanggihang membership' na e-mail kapag gumagamit ng Admin Approval para sa mga membership at nag-aalis ng pagpaparehistro mula sa screen ng Registration Log. Bakit gagamitin ang iyong bandwidth sa pagpapadala ng mga abiso sa pagtanggi sa mga e-mail address na malamang ay huwad pa rin?
+            </li>
+        </ul>
+    </li>
+    <li><b>Membership Delete Lock</b>
+        <br />May opsyon na ngayon ang Admin na payagan (o hindi payagan) ang mga miyembro na alisin ang kanilang sariling mga account. Sa hindi pagpayag sa mga miyembro na tanggalin ang kanilang sariling mga account, ang Admin ay may oras upang matuklasan ang mga dahilan para sa miyembro na gustong umalis at pinapanatili din ang mga tool na maaaring kailanganin ng Admin upang madaling tanggalin ang mga post ng spam, pagbawalan ang miyembro na pigilan silang magparehistro sa ilalim ng parehong mga kredensyal, atbp., depende sa sitwasyon at mga pangangailangan ng forum.
+    </li>
+</ul>
+~;
+
+##############################################
+### Seksyon 5
+##############################################
+$SectionSub5 = "Mga Bagong_Tampok_sa_YaBB_2.6.0";
+$SectionBody5 = q~<p>Ito ang ilang ganap na bagong feature sa YaBBForum na idinagdag sa pamamagitan ng sikat na kahilingan ng mga user. Kabilang sa mga karagdagan na ito ang:</p>
+<ul>
+    <li><b>Mga Subboard</b>
+        <br />Sinusuportahan na ngayon ng YaBB ang mga subboard. Sa pagpili ng Admin, ang mga board na naglalaman ng mga subboard ay maaaring maglaman ng mga mensahe o simpleng humawak ng mga subboard. Bago rin: Maaaring tingnan ang mga index ng Board at Subboard Message sa loob ng index ng Board.
+    </li>
+    <li><b>Mga Panuntunan ng Lupon</b>
+        <br />Maaaring lumikha ang Admin ng mga partikular na panuntunan para sa mga indibidwal na board gamit ang html coding.
+    </li>
+    <li><b>Mga Board na Pinoprotektahan ng Password</b>
+        <br />Maaaring protektahan ng Admin ng Password ang mga partikular na board. Ang mga board na protektado ng password ay maaari lamang matingnan ng mga miyembro na mayroon ding password.
+    </li>
+    <li><b>Mga External-link na Board</b>
+        <br />Maaaring lumikha ang Admin ng mga board na talagang mga link sa ibang mga lugar. Sinusubaybayan ng YaBB kung ilang beses nire-redirect ng link ang mga user sa target ng link.
+    </li>
+    <li><b>Kalendaryo ng Kaganapan</b>
+        <br />Pahintulutan ang Mga Miyembro (at, kung pinahihintulutan, Mga Panauhin) na mag-post ng mga kaganapan sa isang kalendaryo.
+        <br />Maaari ding ipakita ng Kalendaryo ng Kaganapan ang mga kaarawan ng miyembro pati na rin ang pagbibigay sa Admin ng opsyon para sa isang hiwalay na pahina ng mga kaarawan ng Miyembro.
+        <br />Maaari ding itakda ng Admin ang bilang ng mga miyembro na ipapakita sa bawat pahina ng Listahan ng Kaarawan.
+    </li>
+    <li><b>Higit pang Mga Panukala na Anti-Spam</b>
+        Binibigyang-daan ng <br /><b>Pinahusay na Captcha</b> ang Admin na pumili ng mga character na ilalagay bago at/o pagkatapos ng regular na captcha na may mga tagubilin sa bisita o nagparehistro na laktawan ang mga character na iyon kapag ini-input ang captcha para sa pag-verify.
+    </li>
+    <li><b>Forum Moderator at Magdagdag ng Moderator mula sa board</b>
+        <br />Isang bagong posisyon ng staff sa pagitan ng Global Moderator na maaaring may maraming pahintulot na administratibo at ng Board Moderator na responsable para sa isa o higit pang indibidwal na board. Ang Moderator ng Forum ay may mga pahintulot ng Moderator sa lahat ng non-staff board pati na rin ang kakayahang mag-ban at mag-un-ban ng mga miyembro. Bago rin ang kakayahan ng isang Admin na magdagdag ng mga moderator at grupo ng moderator sa isang board mula mismo sa board pati na rin ang kakayahang magtalaga ng isang miyembro sa posisyon ng Board Moderator mula sa seksyong Admin Edit ng kanilang Profile ng Miyembro.
+    </li>
+    <li><b>Mga Nag-time na Pagbawal</b>
+        <br />Pinapayagan nito ang Administrator, Global Moderator, at Forum Moderator na i-ban ang mga Miyembro sa loob ng isang araw, isang linggo, isang buwan, o permanente. Maaari ding i-ban ng Administrator ang mga IP address mula sa log ng error, suriin ang mga IP address sa pamamagitan ng IP Lookup at magdagdag ng mga IP address sa listahan ng pagbabawal ng Guardian mula sa log ng error at mula sa Banlog (na nag-log ng mga pagtatangka sa pag-access ng mga pinagbawalan na user).
+    </li>
+    <li><b>Ajax Live Preview</b>
+        <br />Isang pinahusay na bersyon ng Live Preview para sa pag-post ng Mga Mensahe, mga kaganapan sa Kalendaryo at Personal na mensahe, ipinapakita ng Ajax Live Preview kung ano ang dapat na hitsura ng post kapag na-post na ito.
+    </li>
+    <li><b>Mga Karagdagang Template</b>
+        <br />Halos lahat ng html code ay inalis sa source-code at inilagay sa mga template file para sa madaling pag-customize ng Admin.
+    </li>
+    <li><b>Mga CSS button</b>
+        <br />Sa halip na kailanganin ang mga hanay ng mga button na partikular sa bawat wika, ang iba't ibang mga button ay ginagawa na ngayon gamit ang mga icon at css sa isang background na pinili ng Admin. Ang lahat ng mga pindutan ay nilikha 'on-the-fly' mula sa isang file ng kahulugan (menu.def) sa folder na 'Mga Template' upang ang bawat 'balat' ay maaaring magkaroon ng sarili nitong hanay ng mga pindutan sa pamamagitan lamang ng pagpapalit ng icon at wika sa <i>menu.def</i> file.
+    </li>
+    <li><b>Mga kahulugan ng icon</b>
+        <br />Sa halip na maging hard-coded sa source-code, ang mga pangalan ng iba't ibang mga graphics ng imahe ay iniimbak bilang mga variable sa mga template habang ang mga pangalan ng imahe ng icon ay naka-imbak sa isang icon ng kahulugan ng file (micon.def) sa folder na 'Mga Template' upang ang bawat 'balat' ay maaaring magkaroon ng sarili nitong hanay ng mga icon at graphics.
+    </li>
+    <li><span class="anchor" id="time"></span><b>Mga Time-Zone na nakabatay sa lokasyon na may awtomatikong Daylight Savings time</b>
+        <br />Maaaring piliin ng Admin kung may opsyon o wala ang mga user na pumili ng sarili nilang Time Zone. Kung pipiliin ng Admin na huwag payagan ang pagpili ng user, ang lahat ng ipapakitang oras sa Forum ay ang Forum Default na Time Zone.
+        <ul>
+            <li>Para sa ganap na paggana, ang Perl Modules <strong>DateTime</strong>, at <strong>DateTime::TimeZone</strong> ay kailangang i-install sa host server kasama ang lahat ng kanilang mga kinakailangang dependency. Tingnan sa iyong serbisyo sa pagho-host upang matiyak na mayroon ka ng mga ito o na mai-install ang mga ito para sa iyo. Kung naka-install ang mga Module:
+                <ul>
+                    <li>Maaaring pumili ang Admin ng Default na Time Zone ng Forum batay sa Bansa/Lungsod ng Forum o gumamit ng oras ng UTC/GMT. Kung pipiliin ang isang Time Zone batay sa Bansa/Lungsod, awtomatikong magsasaayos ang YaBB para sa Daylight Savings Time para sa Time Zone na iyon.</li>
+                    <li>Kung ang mga user ay may opsyon na pumili ng sarili nilang Time Zone, ang kanilang ipinapakitang oras ay awtomatikong mag-a-adjust sa Daylight Savings Time batay sa napiling lokasyon.</li>
+                </ul>
+            </li>
+            <li>Kung ang mga kinakailangang Perl Module ay <b>hindi</b> naka-install:
+                <ul>
+                    <li>Maaaring pumili ang Admin mula sa 'UTC' o 'local' para sa Default na Time Zone ng Forum.</li>
+                    <li>Kung gusto ng Admin na gumamit ng 'time offset' (ilang oras at minuto ang Oras ng Forum ang kailangang mula sa UTC/GMT), ang Time Zone ay dapat itakda sa 'lokal' at ang Time Offset ay manu-manong itakda.</li>
+                    <li>Kung may opsyon ang mga user na pumili ng sarili nilang Time Zone, magiging available sa kanila ang Default na Time Zone ng Forum ang 'lokal' lang ang Default na Time Zone ng Forum, kung hindi, UTC lang ang kanilang pipiliin.</li>
+                    <li>Ang pagpipiliang DST ay gagana lamang nang maayos kung ang 'localtime' ng host server ay <strong>hindi</strong> UTC/GMT at ang mga petsa ng mga server ng host para sa DST ay tumutugma sa Time Zone kung saan ang Forum ay nasa loob. Tingnan sa iyong serbisyo sa pagho-host para malaman ito.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+~;
+### Seksyon 6
+##############################################
+$SectionSub6 = "Lisensya_-_YaBB_Public_License_(YPL)";
+$SectionBody6 = q~
+<h2>YaBB Public License (YPL)</h2>
+<p>Sa ibaba ay ang lisensyang pinagtibay ng YaBB para sa software. Ipinapaliwanag nito ang iyong mga pinalawig na karapatan at paghihigpit sa YaBB forum software. Karaniwan naming hinihiling na iwanan mong buo ang copyright at makikita sa ibaba ng iyong forum sa lahat ng oras sa lahat ng pahina. Kung nais mong sirain ang sumusunod na lisensya o alisin ang copyright, maaari kang magtanong sa pamamagitan ng pagbisita sa sumusunod na URL: <a href="https://yabbforum.nz/licenses.php">https://yabbforum.nz/licenses.php</a>.</p>
+<ul>
+    <li><b>Bersyon 1.0</b>, Pinagtibay Noong Abril 17, 2001</li>
+    <li><b>Bersyon 2.0</b>, Pinagtibay Noong Abril 13, 2004</li>
+    <li><b>Bersyon 2.1</b>, Pinagtibay Noong Setyembre 7, 2005</li>
+    <li><b>Bersyon 2.2</b>, Pinagtibay Noong Nobyembre 08, 2007</li>
+    <li><b>Bersyon 2.2.1</b>, Pinagtibay Noong Marso 05, 2008</li>
+    <li><b>Bersyon 2.2.2</b>, Pinagtibay Noong Hunyo 05, 2008</li>
+    <li><b>Bersyon 2.2.3</b>, Pinagtibay Noong Hulyo 12, 2008</li>
+    <li><b>Bersyon 2.3</b>, Pinagtibay Noong Oktubre 12, 2008</li>
+    <li><b>Bersyon 2.3.1</b>, Pinagtibay Noong Enero 04, 2009</li>
+    <li><b>Bersyon 2.4</b>, Pinagtibay Noong Abril 12, 2009</li>
+    <li><b>Bersyon 2.5 Anniversary Edition</b>, Pinagtibay Noong Hulyo 04, 2010</li>
+    <li><b>Bersyon 2.5.2</b>, Pinagtibay Noong Oktubre 21, 2012</li>
+    <li><b>Bersyon 2.5.4 RC1</b>, Pinagtibay Noong Setyembre 1, 2013</li>
+    <li><b>Bersyon 2.6.0</b>, Pinagtibay Noong Pebrero 20, 2014</li>
+</ul>
+<h4>Mga Kahulugan</h4>
+<p><b>Ikaw:</b> Ito ay ikaw, kung isinasaalang-alang mong ipamahagi, baguhin o gamitin ang Package na ito.</p>
+<p><b>Programa:</b> Ito ay tumutukoy sa mga YaBB source file na binubuo ng Perl program at mga derivatives ng program na iyon.</p>
+<p><b>Package:</b> Ito ay tumutukoy sa koleksyon ng mga file na ipinamahagi ng YaBB at mga derivatives ng koleksyon ng mga file na iyon na ginawa sa pamamagitan ng textual na pagbabago.</p>
+<p><b>Karaniwang Bersyon:</b> Ito ay tumutukoy sa naturang Package kung hindi ito nabago o nabago alinsunod sa mga kagustuhan ng YaBB gaya ng tinukoy sa ibaba.</p>
+<p><b>Bayarin sa Pamamahagi:</b> Isa itong bayad na sinisingil mo para sa pagbibigay ng kopya ng Package na ito sa ibang partido.</p>
+<p><b>Libreng Magagamit:</b> Nangangahulugan ito na walang sinisingil na bayad para sa karapatang gamitin ang Package, kahit na maaaring may mga bayarin na kasangkot sa paghawak nito. Nangangahulugan din ito na maaaring muling ipamahagi ito ng mga tatanggap ng Package sa ilalim ng parehong mga kundisyon na natanggap nila ito.</p>
+<p><b>Lisensya:</b> Ito ang dokumentong kasalukuyan mong binabasa (YaBB's Public License).</p>
+<p><b>Mga Ilegal na Pagkilos:</b> Anumang pagkilos na ilegal sa bansang iyong tinitirhan, kung saan naka-host ang mga website ng bansang gumagamit ng YaBB, at sa bansang tinitirhan ng bisita sa nasabing mga website.</p>
+<h4>Preamble</h4>
+<p>Ang mga lisensya para sa karamihan ng software ay idinisenyo upang alisin ang iyong kalayaang ibahagi at baguhin ito. Sa kabaligtaran, ang Lisensyang ito ay inilaan upang garantiyahan ang iyong kalayaan na magbahagi at magpalit ng libreng software -- upang matiyak na ang software ay libre para sa lahat ng mga gumagamit nito. </p>
+<p>Kapag nagsasalita kami ng libreng software, ang tinutukoy namin ay kalayaan, hindi presyo. <i>Ang aming YaBB Public License ay idinisenyo upang matiyak na mayroon kang kalayaan na mamahagi ng mga kopya ng libreng software (at singilin para sa isang serbisyo kung gusto mo), na natatanggap mo ang source code o makukuha mo ito kung gusto mo, na maaari mong baguhin ang software o gamitin ang mga piraso nito sa mga bagong libreng programa; at alam mong magagawa mo ang mga bagay na ito.</i></p>
+<p>Upang protektahan ang iyong mga karapatan, kailangan naming gumawa ng mga paghihigpit na nagbabawal sa sinuman na tanggihan ang mga karapatang ito o hilingin sa iyo na isuko ang mga karapatan. Ang mga paghihigpit na ito ay isinasalin sa ilang mga responsibilidad para sa iyo kung namamahagi ka ng mga kopya ng software, o kung babaguhin mo ito. Halimbawa, kung namahagi ka ng mga kopya ng naturang programa, libre man o may bayad, dapat mong ibigay sa mga tatanggap ang lahat ng karapatan na mayroon ka. Dapat mong tiyakin na natatanggap din nila o makukuha ang source code, at dapat mong ipakita sa kanila ang mga tuntuning ito para malaman nila ang kanilang mga karapatan. </p>
+<p>Pinoprotektahan namin ang iyong mga karapatan sa dalawang hakbang: (1) copyright ang software, at (2) inaalok sa iyo ang lisensyang ito na nagbibigay sa iyo ng legal na pahintulot na kopyahin, ipamahagi at/o baguhin ang software. </p>
+<p>Gayundin, para sa proteksyon ng bawat may-akda at sa amin, gusto naming tiyakin na nauunawaan ng lahat na walang warranty para sa libreng software na ito. <i>Kung ang software ay binago ng ibang tao at ipinasa, gusto naming malaman ng mga tatanggap nito na kung ano ang mayroon sila ay hindi ang orihinal, upang ang anumang mga problemang ipinakilala ng iba ay hindi sumasalamin sa mga reputasyon ng orihinal na may-akda.</i></p>
+<p>Sa wakas, ang anumang libreng programa ay patuloy na pinagbabantaan ng mga patent ng software. <i>Nais naming iwasan ang panganib na ang mga redistributor ng isang libreng programa ay indibidwal na makakakuha ng mga lisensya ng patent, sa katunayan na ginagawang pagmamay-ari ang programa. Upang maiwasan ito, ginawa naming malinaw na ang anumang patent ay dapat na lisensyado para sa libreng paggamit ng lahat o hindi lisensyado.</i></p>
+<h4>Mga Tuntunin at Kundisyon para sa Paggamit</h4>
+<p>Maaari mong i-download at gamitin ang YaBB lamang kung sumasang-ayon ka sa mga sumusunod na item:</p>
+<ol>
+    <li>Pananatilihin mong buo ang lisensyang ito sa iyong YaBB Package.</li>
+    <li>Sumasang-ayon ka sa buong lisensyang ito.</li>
+    <li>Iiwan mong nakikita ang copyright ng YaBB sa iyong naka-install na forum habang inilagay ang mga ito sa orihinal na Package. Hindi nalalapat ang panuntunang ito kung bumili ka ng hiwalay na lisensya para alisin ang copyright o muling ipinamamahagi ang Package at sinunod ang iba pang mga panuntunan sa lisensyang ito para alisin ito.</li>
+    <li>Hindi mo ginagamit ang YaBB para sa anumang Ilegal na Pagkilos o pinapayagan ang mga gumagamit ng iyong kopya ng YaBB na magsagawa ng mga ilegal na aksyon sa o sa YaBB. Kabilang dito ngunit hindi limitado sa: paggamit ng YaBB forum para mag-post ng paninirang-puri laban sa sinumang iba pang indibidwal o grupo, paggamit ng YaBB forum para mag-post ng "mga hack at crack" para sa software, o paggamit ng YaBB forum para magplano ng krimen o teroristang gawa. <i>Ang YaBB ay hindi inilaan o lisensyado para sa mga ilegal na paggamit.</i> Kung makakita ka ng mga pinaghihinalaang aksyon, mangyaring iulat ang mga ito sa tamang awtoridad o sa web host ng lumalabag na website.</li>
+</ol>
+<h4>Mga Tuntunin at Kundisyon para sa Pagkopya, Pamamahagi, at Pagbabago</h4>
+<p>0. Nalalapat ang Lisensyang ito sa anumang programa o iba pang gawa na naglalaman ng notice na inilagay ng may-ari ng copyright na nagsasabing maaari itong ipamahagi sa ilalim ng mga tuntunin nitong YaBB Public License. </p>
+<p>Ang mga aktibidad maliban sa paggamit, pagkopya, pamamahagi at pagbabago ay hindi saklaw ng Lisensyang ito; sila ay nasa labas ng saklaw nito. Ang pagkilos ng pagpapatakbo ng Programa ay hindi pinaghihigpitan, at ang output mula sa Programa ay saklaw lamang kung ang mga nilalaman nito ay bumubuo ng isang gawa batay sa Package (na independyente sa ginawa sa pamamagitan ng pagpapatakbo ng Programa). Kung totoo iyan ay depende sa kung ano ang ginagawa ng Programa. </p>
+<p>1. Maaari mong kopyahin at ipamahagi ang mga verbatim na kopya ng source code ng Package habang natatanggap mo ito, sa anumang medium, basta't kitang-kita at naaangkop na mag-publish sa bawat kopya ng naaangkop na notice sa copyright at disclaimer ng warranty; panatilihing buo ang lahat ng mga abiso na tumutukoy sa YaBB Public License na ito at sa kawalan ng anumang warranty; at bigyan ang sinumang ibang tatanggap ng Package ng kopya ng Lisensyang ito kasama ng Package. </p>
+<p>Maaari kang maningil ng bayad para sa pisikal na pagkilos ng paglilipat ng kopya, at maaari kang mag-alok ng proteksyon ng warranty sa iyong opsyon kapalit ng bayad. Kung ang paglilipat ng isang kopya para sa isang bayad, isang uri ng pagbabago sa orihinal na Programa ay dapat na ginawa o isang serbisyo ay dapat na naidagdag sa Programa maliban sa pagkilos ng mismong paglipat. </p>
+<p>2. Maaari mong baguhin ang iyong kopya o mga kopya ng Package o anumang bahagi nito, sa gayon ay bumubuo ng isang gawa batay sa Package, at kopyahin at ipamahagi ang mga naturang pagbabago o gawa sa ilalim ng mga tuntunin ng Seksyon 1 sa itaas, sa kondisyon na natutugunan mo rin ang lahat ng mga kundisyong ito: </p>
+<ul style="list-style:none;">
+    <li> a) Dapat mong maging sanhi ng mga binagong file na magdala ng mga kilalang abiso na nagsasaad na binago mo ang mga file at ang petsa ng anumang pagbabago.</li>
+    <li> b) Dapat mong maging sanhi ng anumang gawa na iyong ipinamahagi o nai-publish, na sa kabuuan o bahagi ay naglalaman o hinango mula sa Package o anumang bahagi nito, na maging lisensyado sa kabuuan nang walang bayad sa lahat ng ikatlong partido sa ilalim ng mga tuntunin ng Lisensyang ito.</li>
+    <li> c) Kung ang binagong Programa ay karaniwang nagbabasa ng mga utos nang interactive kapag tumatakbo, dapat mong gawin ito, kapag nagsimulang tumakbo para sa naturang interactive na paggamit sa pinakakaraniwang paraan, upang mag-print o magpakita ng isang anunsyo kasama ang isang naaangkop na abiso sa copyright.</li>
+</ul>
+<p>Nalalapat ang mga kinakailangang ito sa binagong gawain sa kabuuan. Kung ang mga makikilalang seksyon ng gawaing iyon ay hindi hinango mula sa Package at maaaring maituring na independyente at hiwalay na mga gawa sa kanilang sarili, ang Lisensyang ito at ang mga tuntunin nito ay hindi nalalapat sa mga seksyong iyon kapag ipinamahagi mo ang mga ito bilang hiwalay na mga gawa. Ngunit kapag ipinamahagi mo ang parehong mga seksyon bilang bahagi ng isang kabuuan na isang gawa batay sa Package, ang pamamahagi ng kabuuan ay dapat na nasa mga tuntunin ng Lisensyang ito, na ang mga pahintulot para sa iba pang mga lisensyado ay umaabot sa kabuuan, at sa gayon ay sa bawat isa at bawat bahagi kahit sino ang sumulat nito. </p>
+<p>Kaya, hindi layunin ng seksyong ito na i-claim ang mga karapatan o ipaglaban ang iyong mga karapatang magtrabaho nang buo mong isinulat; sa halip, ang layunin ay gamitin ang karapatang kontrolin ang pamamahagi ng mga hinalaw o kolektibong gawa batay sa Package. </p>
+<p>Sa karagdagan, ang pagsasama-sama lamang ng isa pang gawain na hindi batay sa Package kasama ng Programa (o sa isang gawaing nakabatay sa Programa) sa dami ng isang storage o distribution medium ay hindi magdadala sa ibang gawain sa ilalim ng saklaw ng Lisensyang ito.</p>
+<p>3. Hindi mo maaaring kopyahin, baguhin, i-sublicense, o ipamahagi ang Package maliban kung hayagang ibinigay sa ilalim ng Lisensyang ito. Ang anumang pagtatangkang kopyahin, baguhin, i-sublicense o ipamahagi ang Package ay walang bisa, at awtomatikong wawakasan ang iyong mga karapatan sa ilalim ng Lisensyang ito. Gayunpaman, ang mga partidong nakatanggap ng mga kopya, o mga karapatan, mula sa iyo sa ilalim ng Lisensyang ito ay hindi wawakasan ang kanilang mga lisensya hangga't ang mga naturang partido ay mananatiling ganap na sumusunod. </p>
+<p>4. Hindi mo kinakailangang tanggapin ang Lisensyang ito, dahil hindi mo pa ito nilagdaan. Gayunpaman, wala nang ibang nagbibigay sa iyo ng pahintulot na baguhin o ipamahagi ang Package o ang mga hinangong gawa nito. Ang mga pagkilos na ito ay ipinagbabawal ng batas kung hindi mo tinatanggap ang Lisensyang ito. Samakatuwid, sa pamamagitan ng pagbabago o pamamahagi ng Package (o anumang gawa batay sa Package), ipinapahiwatig mo ang iyong pagtanggap sa Lisensya na ito upang gawin ito, at lahat ng mga tuntunin at kundisyon nito para sa pagkopya, pamamahagi o pagbabago ng Package o mga gawa batay dito. </p>
+<p>5. Sa tuwing ipapamahagi mo ang Package (o anumang gawa batay sa Package), ang tatanggap ay awtomatikong makakatanggap ng lisensya mula sa orihinal na tagapaglisensya upang kopyahin, ipamahagi o baguhin ang Package na napapailalim sa mga tuntunin at kundisyong ito. Hindi ka maaaring magpataw ng anumang karagdagang mga paghihigpit sa paggamit ng mga tatanggap ng mga karapatang ipinagkaloob dito. Wala kang pananagutan sa pagpapatupad ng pagsunod ng mga ikatlong partido sa Lisensyang ito. </p>
+<p>6. Kung, bilang resulta ng paghatol ng hukuman o paratang ng paglabag sa patent o para sa anumang iba pang dahilan (hindi limitado sa mga isyu sa patent), ang mga kundisyon ay ipinataw sa iyo (sa pamamagitan man ng utos ng hukuman, kasunduan o iba pa) na sumasalungat sa mga kondisyon ng Lisensyang ito, hindi ka nila pinahihintulutan mula sa mga kondisyon ng Lisensyang ito. Kung hindi mo maipamahagi upang matugunan nang sabay-sabay ang iyong mga obligasyon sa ilalim ng Lisensyang ito at anumang iba pang nauugnay na obligasyon, kung gayon bilang resulta ay hindi mo maaaring ipamahagi ang Package. Halimbawa, kung ang lisensya ng patent ay hindi magpapahintulot sa walang royalty na muling pamamahagi ng Package ng lahat ng tumatanggap ng mga kopya nang direkta o hindi direkta sa pamamagitan mo, kung gayon ang tanging paraan na matutugunan mo ito at ang Lisensyang ito ay ang ganap na pagpigil sa pamamahagi ng Package. </p>
+<p>Kung ang alinmang bahagi ng seksyong ito ay pinaniniwalaang hindi wasto o hindi maipapatupad sa ilalim ng anumang partikular na pangyayari, ang balanse ng seksyon ay nilalayong ilapat, at ang seksyon sa kabuuan ay nilayon na ilapat sa iba pang mga pangyayari. </p>
+<p>Hindi layunin ng seksyong ito na hikayatin kang labagin ang anumang mga patent o iba pang paghahabol sa karapatan sa ari-arian o upang labanan ang bisa ng anumang naturang mga paghahabol; ang seksyong ito ay may tanging layunin na protektahan ang integridad ng libreng sistema ng pamamahagi ng software, na ipinapatupad ng mga kasanayan sa pampublikong lisensya. Maraming tao ang gumawa ng malaking kontribusyon sa malawak na hanay ng software na ipinamahagi sa pamamagitan ng system na iyon sa pag-asa sa pare-parehong aplikasyon ng system na iyon; nasa may-akda/donor na magpasya kung handa siyang ipamahagi ang software sa pamamagitan ng anumang iba pang sistema at hindi maaaring ipataw ng isang may lisensya ang pagpipiliang iyon. </p>
+<p>Ang seksyong ito ay nilayon na linawin nang lubusan kung ano ang pinaniniwalaang resulta ng natitirang bahagi ng Lisensyang ito. </p>
+<p>7. Kung ang pamamahagi at/o paggamit ng Package ay pinaghihigpitan sa ilang partikular na bansa sa pamamagitan ng mga patent o ng mga naka-copyright na interface, ang orihinal na may-ari ng copyright na naglalagay ng Package sa ilalim ng Lisensyang ito ay maaaring magdagdag ng tahasang heograpikal na limitasyon sa pamamahagi hindi kasama ang mga bansang iyon, upang ang pamamahagi ay pinahihintulutan lamang sa o sa mga bansang hindi ibinukod. Sa ganoong kaso, isinasama ng Lisensyang ito ang limitasyon na parang nakasulat sa katawan ng Lisensyang ito. </p>
+<p>8. Maaaring mag-publish ang YaBB ng binagong at/o mga bagong bersyon ng YaBB Public License paminsan-minsan. Ang ganitong mga bagong bersyon ay magiging katulad ng diwa sa kasalukuyang bersyon, ngunit maaaring magkaiba sa detalye upang matugunan ang mga bagong problema o alalahanin. </p>
+<p>Ang bawat bersyon ay binibigyan ng natatanging numero ng bersyon. Kung ang Package ay tumukoy ng numero ng bersyon ng Lisensyang ito na nalalapat dito at "anumang mas bagong bersyon," mayroon kang opsyon na sundin ang mga tuntunin at kundisyon alinman sa bersyong iyon o ng anumang mas bagong bersyon na na-publish ng YaBB. Kung hindi tinukoy ng Package ang numero ng bersyon ng Lisensyang ito, maaari kang pumili ng anumang bersyon na nai-publish ng YaBB. </p>
+<p>9. Kung nais mong isama ang mga bahagi ng Package sa iba pang mga libreng programa na ang mga kondisyon sa pamamahagi ay iba, sumulat sa may-akda upang humingi ng pahintulot. Para sa software na naka-copyright ng YaBB, sumulat sa YaBB; minsan gumagawa kami ng mga eksepsiyon para dito. Ang aming desisyon ay gagabayan ng dalawang layunin ng pagpapanatili ng libreng katayuan ng lahat ng mga derivatives ng aming libreng software at ng pagsulong ng pagbabahagi at muling paggamit ng software sa pangkalahatan.</p>
+<p>10. Dahil ang Package ay lisensyado nang walang bayad, walang warranty para sa Package, sa lawak na pinahihintulutan ng naaangkop na batas. Maliban kung iba ang nakasaad sa nakasulat, ibinibigay ng mga may hawak ng copyright at/o iba pang mga partido ang Package "as is" nang walang anumang uri ng warranty, ipinahayag man o ipinahiwatig, kabilang ang, ngunit hindi limitado sa, ang mga ipinahiwatig na warranty ng kakayahang maikalakal at kaangkupan para sa isang partikular na layunin. Ang buong panganib sa kalidad at pagganap ng Package ay nasa iyo. Kung may depekto ang Package, ipapalagay mo ang halaga ng lahat ng kinakailangang servicing, pagkukumpuni o pagwawasto. </p>
+<p>11. Sa anumang pagkakataon, maliban kung kinakailangan ng naaangkop na batas o sinang-ayunan ng nakasulat, ang sinumang may-ari ng copyright, o anumang iba pang partido na maaaring baguhin at/o muling ipamahagi ang Package gaya ng pinahihintulutan sa itaas, ay mananagot sa iyo para sa mga pinsala, kabilang ang anumang pangkalahatan, espesyal, incidental o kinahinatnang pinsala na nagmumula sa paggamit o kawalan ng kakayahan na gamitin ang Package (kabilang ang ngunit hindi limitado sa pagkawala ng hindi nakuha o data na ibinigay sa iyo ng isang third party o pagkawala ng data o pagkawala ng data sa iyo. kabiguan ng mga bahagi ng Package na ito na gumana kasama ng iba pang mga programa), kahit na ang may hawak o ibang partido ay naabisuhan tungkol sa posibilidad ng mga naturang pinsala.</p>
+<h4>Paano Ilapat ang Mga Tuntuning Ito sa Iyong Mga Bagong Programa</h4>
+<p> Kung bubuo ka ng isang bagong programa, at gusto mo itong maging pinakamahusay na magagamit sa publiko, ang pinakamahusay na paraan upang makamit ito ay gawin itong libreng software na maaaring muling ipamahagi at baguhin ng lahat sa ilalim ng mga tuntuning ito. </p>
+<p>Upang gawin ito, ilakip ang mga sumusunod na paunawa sa programa. Ito ay pinakaligtas na ilakip ang mga ito sa simula ng bawat source file upang pinakaepektibong ihatid ang pagbubukod ng warranty; at ang bawat file ay dapat magkaroon ng hindi bababa sa linya ng "copyright" at isang pointer kung saan matatagpuan ang buong abiso. </p>
+<p>Magbigay ng isang linya upang ibigay ang pangalan ng programa at ideya kung ano ang ginagawa nito. </p>
+<p>Copyright (C) yyyy pangalan ng may-akda </p>
+<p>--<br />
+Ang program na ito ay libreng software; maaari mo itong ipamahagi muli at/o baguhin ito sa ilalim ng mga tuntunin ng YaBB Public License (YPL) gaya ng inilathala ng Free Software Foundation, binago ng YaBB; alinman sa bersyong ito 2.6.0 ng Lisensya, o (sa iyong opsyon) anumang mas bagong bersyon.<br />
+-- <br />
+Ang programang ito ay ipinamahagi sa pag-asa na ito ay magiging kapaki-pakinabang, ngunit WALANG ANUMANG WARRANTY; nang walang kahit na ipinahiwatig na warranty ng MERCHANTABILITY o FITNESS FOR A PARTICULAR PURPOSE. Tingnan ang YaBB Public License para sa higit pang mga detalye.<br />
+-- <br />
+Dapat ay nakatanggap ka ng kopya ng YaBB Public License kasama ng programang ito; kung hindi, sumulat sa YaBB.<br />
+-- <br /> </p>
+<p>Magdagdag din ng impormasyon kung paano makipag-ugnayan sa iyo sa pamamagitan ng electronic at papel na koreo. </p>
+<p>Hindi pinahihintulutan ng YaBB Public License na ito na isama ang iyong programa sa mga proprietary program. Kung ang iyong programa ay isang subroutine na aklatan, maaari mong ituring na mas kapaki-pakinabang ang pagpapahintulot sa pag-link ng mga proprietary application sa library. Kung ito ang gusto mong gawin, gamitin ang GNU Library General Public License sa halip na ang License na ito.</p>
+<h4>Buod ng Iyong Mga Karapatan sa Software na ito</h4>
+<p>1. MAAARI mong gamitin ang Package na ito nang walang bayad, at ang Package, na naglalaman ng lahat ng source code, ay magiging available sa iyo anumang oras. </p>
+<p>2. HINDI mo maaaring ibenta ang Package na ito kung walang nabago at ito ay Iyong ipinamamahagi sa parehong paraan na ipinamahagi sa Iyo ang orihinal na Package. </p>
+<p>3. MAAARI mong ibenta ang Package na ito kung nagawa mo na ang sumusunod:</p>
+<ul>
+    <li>Nabago mo ang mga item o code sa Package na ito at nakapagkomento ng maayos kung ano at kailan naganap ang mga pagbabago.</li>
+    <li>Kung ang Package ay hindi pa nabago (o kung ito ay mayroon na), ikaw ay nagsasama ng isang serbisyo tulad ng pag-install sa Package na ito.</li>
+    <li>Nagsama ka ng kopya ng orihinal na YaBB Public License na ito sa iyong produkto at inilapat ang wastong mga abiso sa copyright.</li>
+    <li>Ginawa mong available ang source code at lahat ng iba pang materyal na available noong natanggap Mo ang Package na ito sa publiko at ipinamahagi ang materyal na ito sa mga orihinal na may-akda ng produktong ito.</li>
+</ul>
+<p>4. HINDI mo maaaring gamitin ang YaBB software para sa anumang ilegal na pagkilos. Ang ganitong paggamit ay magpapawalang-bisa sa lisensyang ito at ituturing na ilegal ang iyong kopya ng YaBB. Hindi maaaring managot ang YaBB para sa mga ganitong paggamit.</p>
+~;
+
+1;

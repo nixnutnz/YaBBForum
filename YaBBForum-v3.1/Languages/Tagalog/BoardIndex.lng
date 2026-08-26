@@ -1,0 +1,111 @@
+##################################################################################
+# BoardIndex.lng (Mga kahulugan ng teksto ng BoardIndex) #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.1                                                 #
+# Packaged:       01 Sep, 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$boardindexlngver = 'YaBBForum 3.1';
+
+%boardindex_txt = (
+'18' => 'Indeks',
+'20' => 'Pangalan ng Forum',
+'21' => 'Mga Post',
+'21l' => 'mga post',
+'22' => 'Huling Post',
+'34' => 'Login',
+'63' => 'Mga Moderator',
+'63a' => 'Mga Grupo ng Moderator',
+'64' => 'Mga Sub-Board',
+'65' => 'Mga Sub-Board sa',
+'66' => 'Sub-Board',
+'67' => 'Ang board na ito ay naglalaman ng mga bagong post.',
+'68' => 'Walang bagong post ang board na ito.',
+'69' => 'ng',
+'70' => 'Ang mga sub-board ay naglalaman ng mga bagong post.',
+'71' => 'sub-board ay naglalaman ng mga bagong post.',
+'72' => 'walang bagong post ang sub-board.',
+'141' => 'Mga panauhin',
+'142' => 'Mga Miyembro',
+'bviews' => 'Pagtingin',
+'143' => 'Mga Search Engine',
+'158' => '<a href="$scripturl?action=who">Mga User Online</a>',
+'200' => 'Forum Statistics',
+'201' => 'Ang pinakabagong miyembro ay',
+'235' => 'Huling Post',
+'236' => 'Ang pinakahuling post ay',
+'298' => 'Moderator',
+'298a' => 'Pangkat ng Moderator',
+'315' => 'Nakalimutan ang password?',
+'316' => 'Inbox',
+'320' => 'Nakapadalang Kahon',
+'330' => 'Mga Paksa',
+'330l' => 'mga paksa',
+'333' => 'Mga Bagong Post',
+'334' => 'Walang Bagong Post',
+'470' => 'N/A',
+'470a' => '<i>Dating Miyembro</i>',
+'487' => 'May kabuuan ng',
+'488' => 'mga rehistradong miyembro',
+'489' => 'Ang forum ay naglalaman ng kabuuang',
+'490' => 'sa loob',
+'500' => 'Pagmamarka sa lahat ng mga Post bilang nabasa na', # sa loob ng JavaScript!
+'500a' => 'Kumpleto', # sa loob ng JavaScript!
+'500b' => 'Pagmamarka sa lahat ng Paksa bilang Nabasa', # sa loob ng JavaScript!
+'524' => 'Sa',
+'525' => 'Ni',
+'526' => 'Mga Na-redirect na Hit',
+'643' => 'Itaas',
+'685' => 'Info Center',
+'791' => 'Tingnan ang',
+'792' => 'pinakabagong mga post',
+'792a' => 'pinakabagong paksa',
+'793' => 'sa forum.',
+'795' => 'Meron ka',
+'796' => 'Mga Personal na Mensahe',
+'797' => 'Tingnan',
+'800' => 'Ang pinakamaraming user na naka-online noon ay',
+'801' => 'Ang pinakamaraming miyembro kailanman online ay',
+'802' => 'Ang pinakamaraming bisitang naka-online noon ay',
+'803' => 'Ang pinakamaraming search engine kailanman online ay',
+'no_ip' => 'Walang IP na naka-log',
+'guest_ip' => 'Mga bisitang IP',
+'recenttopic' => '10 pinakahuling paksa',
+);
+
+%boardindex_imtxt = (
+'11' => 'Nagkaroon ka',
+'12' => 'mga mensahe sa iyong PM',
+'14' => 'Mga bagong mensahe:',
+'15' => '.\nGusto mo bang tingnan ang iyong PM Inbox',
+'16' => 'na lumampas sa limitasyon ng imbakan ng',
+'18' => 'mga mensahe',
+'19' => 'Ang pinakamatanda',
+'20' => 'Awtomatikong tinanggal ang mga mensahe.\n\nGusto mo bang tingnan ang iyong PM',
+'21' => 'ngayon?',
+'24' => 'kung saan',
+'25' => 'bago',
+'26' => 'bago',
+'46' => 'Imbakan',
+'47' => 'sila',
+'48' => 'ang mensahe',
+'50' => 'Bagong Broadcast Personal na Mensahe.',
+'51' => '\nGusto mo bang tingnan ang Broadcast PM box',
+'50a' => 'Mga Bagong Alerto na Mensahe:',
+);
+
+%boardindex_exptxt = (
+'1' => 'Palawakin',
+'2' => 'I-collapse',
+'5' => 'Ang kategoryang ito ay naglalaman ng <b>bagong</b> mga post.',
+'6' => 'Walang mga bagong post ang kategoryang ito.',
+);
+
+1;

@@ -1,0 +1,17 @@
+$SectionName = "Moderator_Help_Center";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Your_Moderator_Status";
+$SectionBody1 = q~<p>Binabati kita sa iyong pag-promote sa katayuan ng Board Moderator o Forum Moderator.  Nagagawa mo na ngayong direktang tumulong sa YaBB forum na ito sa pamamagitan ng pamamahala ng isa o higit pang mga board at ang mga post sa loob ng mga ito. Bagama't pamilyar ang karamihan sa mga bagong function na magagamit mo, may ilang mga bago na tatalakayin sa seksyon ng tulong na ito.</p>
+<br>
+<br />Para sa suporta at pag-troubleshoot, pakibisita ang <a href="https://yabbforum.nz" target="_blank"><b>Komunidad ng Suporta ng YaBB</b></a></p>
+<p>Mangyaring sumangguni sa seksyong Glossary sa Tulong ng User kung kailangan mo ng paglilinaw sa iba't ibang page view na inilalarawan sa mga seksyon sa ibaba.</p>
+<p>Ang mga sumusunod na larawan ng Moderator Menu ay ibinigay para sa sanggunian.</p>
+<p>{yabb mymoding}</p>
+<p>Maaari mong gamitin ang menu sa kaliwa upang mabilis na tumalon sa anumang paksa sa ibaba.</p>
+<p>Maaari mong gamitin itong button na <img src="{top_img}" alt="Back to Top" title="Back to Top" /> sa kanang ibaba ng bawat seksyon ng Tulong upang bumalik sa tuktok ng pahina ng Tulong sa Moderator</p>
+~;
+##############################################
+
+1;

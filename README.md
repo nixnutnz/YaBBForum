@@ -1,5 +1,5 @@
 	
-	This is version 3.0, if you want any previous versions go to https://yabb.nz/archive/
+	This is version 3.1, if you want any previous versions go to https://yabb.nz/archive/
 	
 	The original Forum software most other message boards are based on!
 
@@ -8,10 +8,10 @@
 
 	It was notable as one of the very first open-source internet forum packages written in Perl.
 
-	and now 25 years later it's still here, still FREE and better than ever.
+	and now 26 years later it's still here, still FREE and better than ever.
 
 	Currently over 50,000 web communities using YaBB worldwide, 
-	and over 1 Million registered users throughout these forums!
+	and Millions of registered users throughout these forums!
 
 	Download the YaBBForum zip from Releases on the right (below if you're on a mobile device)
 

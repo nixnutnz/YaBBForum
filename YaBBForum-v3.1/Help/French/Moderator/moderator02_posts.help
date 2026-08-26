@@ -1,0 +1,71 @@
+$SectionName = "Post_Functions";
+
+### Section 1
+############################################
+$SectionSub1 = "Modification_a_Post";
+$SectionBody1 = q~Vous avez désormais la possibilité d'éditer, de modifier ou de supprimer n'importe quelle publication sur le(s) forum(s) que vous modérez. Cette fonction vous aidera à lutter contre le spam, à supprimer les langues ou contenus indésirables, à censurer les utilisateurs, à ajouter des ajouts et bien plus encore. Les instructions ci-dessous fournissent des étapes spécifiques sur la façon d'exécuter ces fonctions :
+<h4 class="help">Modifier une publication</h4>
+<ul>
+    <li>Identifiez le message que vous souhaitez modifier.</li>
+    <li>Dans ce message, vous verrez un petit menu avec "Citer", "Modifier" et "Supprimer". Cliquez sur celui intitulé "Modifier".</li>
+    <li>Vous aurez ensuite accès à la page de modification où vous pourrez apporter vos modifications. Lorsque vous avez terminé, appuyez sur le bouton intitulé « Enregistrer ».
+        <p class="help_attn"><b><span class="underline">Conseil du modérateur :</span></b> Il est utile de pouvoir identifier tout texte modifié ou ajouté par un modérateur lors de la modification d'une publication. Une bonne façon de procéder consiste à utiliser une couleur de texte différente pour le texte du modérateur.  Pour ce faire, utilisez votre souris pour surligner votre texte puis cliquez sur un bouton de couleur, ou cliquez sur la palette de couleurs et sélectionnez une couleur de texte.</p>
+    </li>
+</ul>
+<p>Veuillez noter qu'une petite ligne de texte s'affichera sur le message indiquant que vous avez effectué une modification. En tant que tel, il est conseillé de joindre également une raison expliquant pourquoi vous avez effectué la modification. Cela permet au personnel du forum, à l'affiche et au reste de la communauté de savoir qu'il y a eu un problème. Vous pouvez utiliser le bouton Modifier au-dessus de la fenêtre de publication ou les balises YaBBC [edit][/edit] pour ajouter un message concernant votre modification.</p>
+<p>Cela encadrera votre texte dans une zone afin qu'il ressemble à l'exemple suivant :</p>
+[yabbc][edit]J'ai modifié ce post et voici pourquoi ![/edit][/yabbc]
+~;
+############################################
+
+### Section 2
+############################################
+$SectionSub2 = "Supprimer_un_Post";
+$SectionBody2 = q~Si vous pensez qu'une publication est inappropriée, constitue une violation des Conditions d'utilisation ou n'en fait pas partie, vous avez la possibilité de la supprimer du sujet, sans supprimer l'intégralité du sujet.
+<h4 class="help">Supprimer un seul message</h4>
+<ul>
+    <li>Identifiez la publication que vous souhaitez supprimer.</li>
+    <li>Dans ce message, vous verrez un petit menu avec "Citer", "Modifier" et "Supprimer". Cliquez sur celui intitulé "Supprimer".</li>
+    <li>Cela supprimera <i>instantanément</i> le message incriminé.</li>
+</ul>
+<h4 class="help">Suppression de plusieurs messages</h4>
+<ul>
+    <li>Si plusieurs publications doivent être supprimées dans un même sujet, répétez les étapes ci-dessus pour chaque publication à supprimer.</li>
+    <li>Si l'administrateur a activé la suppression multiple dans le Centre d'administration/Paramètres du forum/, suivez ces instructions pour supprimer simultanément toutes les publications à supprimer :
+        <ul>
+            <li>Identifiez les posts que vous souhaitez supprimer.</li>
+            <li>Dans chaque message, <i>à côté</i> du bouton « Supprimer », cliquez sur la petite case à cocher.</li>
+            <li>En bas de la page, après tous les messages de ce sujet, vous trouverez votre menu Modérateur. Recherchez et cliquez sur le bouton intitulé "Supprimer la sélection".</li>
+            <li>Cela supprimera également <i>instantanément</i> tous les messages que vous avez vérifiés.</li>
+        </ul>
+    </li>
+</ul>
+~;
+############################################
+
+### Section 3
+############################################
+$SectionSub3 = "Splitting_a_Topic_";
+$SectionBody3 = q~<p>Dans le cas où une conversation commence à s'éloigner du sujet, vous souhaiterez peut-être diviser le sujet en deux sujets distincts en utilisant la fonction « Split ». Cela vous permet de déplacer une publication et toutes les publications qui la composent vers un tout nouveau sujet où les différentes conversations peuvent se poursuivre sans détourner l'attention de l'original.</p>
+<h4 class="help">Diviser un sujet</h4>
+<ul>
+    <li>Identifiez la publication dans laquelle le partage du sujet aura lieu.  Ce sera le premier message du nouveau sujet qui sera créé.</li>
+    <li>Dans ce message, vous verrez un petit menu avec « Citer », « Modifier », « Diviser » et « Supprimer ». Cliquez sur celui intitulé « Split ». Notez, évidemment, que cette option ne sera <i>pas</i> affichée sur le premier message d'un sujet.</li>
+    <li>Cette fonction déplacera instantanément le message et tous les messages qu'il contient vers un tout nouveau sujet. Le sujet du message que vous divisez est le sujet du nouveau sujet.
+        <p class="help_attn"><b><span class="underline">Conseil du modérateur :</span></b> Étant donné que le sujet d'un sujet qui a été divisé sera normalement « re : (sujet original du sujet) », vous souhaiterez peut-être modifier le premier message du nouveau sujet créé par la scission. Vous pouvez modifier la ligne Objet de ce message, en la remplaçant par quelque chose de plus approprié pour le nouveau sujet de conversation.</p>
+    </li>
+</ul>
+<h4 class="help">Diviser un sujet à l'aide de Advanced Split/Splice :</h4>
+<p>Cliquez sur le bouton Split/Splice dans le menu Modérateur sous le dernier message affiché. Sélectionnez parmi les options suivantes :</p>
+<ul>
+    <li>Quels messages vous souhaitez déplacer</li>
+    <li>S'il faut laisser les messages d'origine, un message "Déplacé ou ajouté à", ou rien</li>
+    <li>Catégorie dans laquelle les publications divisées seront placées.</li>
+    <li>Tableau sur lequel les posts divisés seront placés.</li>
+    <li>Sujet dans lequel les posts divisés seront placés.</li>
+    <li>Sujet du sujet dans lequel les messages partagés seront placés.</li>
+</ul>
+~;
+############################################
+
+1;

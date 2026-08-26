@@ -1,0 +1,46 @@
+$SectionName = "Administrar_Plantillas";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Accediendo_al_Editor_de_plantillas";
+$SectionBody1 = q~<p>YaBB te brinda la posibilidad de agregar y/o modificar rápida y fácilmente la apariencia de tu foro. Para acceder a estas funciones, debe iniciar sesión como administrador del foro o moderador global con los derechos de acceso adecuados. En el "Centro de administración", busque la sección en el menú de la izquierda titulada "Diseño del foro". Allí verás dos enlaces: “Configuración de plantilla” y “Hoja de estilo”.</p>
+~;
+#############################################
+### Sección 2
+#############################################
+$SectionSub2 = "Template_Configuration";
+$SectionBody2 = q~Si desea agregar una plantilla (también conocida como máscara), cambiar el archivo de hoja de estilo que desea usar para su foro o usar plantillas distintas a la predeterminada, esta sección le permite hacerlo.
+<p><b>Agregar una nueva apariencia</b></p>
+<ul>
+    <li>Cree una carpeta en 'yabbfiles/Templates/Forum' (esta ubicación puede ser diferente para usted) para los gráficos de su nuevo diseño y cargue sus gráficos. Cargue también su nueva hoja de estilo en el mismo lugar que está la hoja de estilo predeterminada (default.css). (<b>NO</b> sobrescriba su hoja de estilo predeterminada). Su nueva hoja de estilo debe tener un nombre que se asocie fácilmente con su nueva carpeta de gráficos. (Por ejemplo, le gustaría utilizar una máscara 'Noir'. Nombra la carpeta de gráficos 'noir' y la hoja de estilo 'noir.css'.)</li>
+    <li>Cree una carpeta en su directorio 'yabb2/Templates' para sus nuevos archivos de plantilla. (Nuevamente, asegúrese de que el nombre sea algo que pueda asociar fácilmente con su nuevo diseño). Cargue sus nuevos archivos de plantilla en este directorio. El archivo '.html' <b>no</b> debe llamarse 'default.html'; asígnele el mismo nombre que su nueva carpeta. (Usando el ejemplo anterior, nombre la carpeta 'noir' y el archivo .html 'noir.html'.)</li>
+    <li>En “Configuración de plantilla”, los nombres de su nueva hoja de estilo y carpetas ahora deberían aparecer en el cuadro de selección desplegable. Elija las nuevas carpetas, plantillas y hojas de estilo para su nueva máscara. Cree un nombre para la nueva máscara y escríbalo en el cuadro de texto en la parte inferior de la página "Configuración de plantilla". Guarde su nueva máscara con su nuevo nombre. Ahora puedes elegir tu nueva apariencia como predeterminada para nuevos miembros e invitados en el área "Configuración y preferencias del foro".</li>
+</ul>
+~;
+#############################################
+### Sección 3
+#############################################
+$SectionSub3 = "Editando_Plantillas";
+$SectionBody3 = q~YaBB le brinda la posibilidad de editar el código html para todas las secciones principales del foro, excepto el Centro de administración. 
+<p><b>Edición de una plantilla</b></p>
+<ul>
+    <li>En la parte superior de la sección "Configuración de plantilla" hay un enlace "Ir a Editar archivos de plantilla". Esto abre la sección Editar plantillas. La lista de selección desplegable muestra todos los archivos de plantillas en todas las carpetas de plantillas. El contenido del archivo seleccionado aparecerá en la ventana y podrá editarse. Nota: a excepción de los archivos con la extensión '.html', todos los archivos de plantilla son archivos codificados en Perl. No edite ni altere ningún nombre de variable. ( <span style="fondo-color:amarillo">$variable</span> = q\~código html aquí\~;) Cambiar los nombres de las variables puede hacer que su foro no funcione.</li>
+</ul>
+~;
+#############################################
+### Sección 4
+#############################################
+$SectionSub4 = "Hojas_de_estilo_de_edición";
+$SectionBody4 = q~YaBB también le brinda la posibilidad de editar la hoja de estilo del foro, elegir fondos de botones y fondos para los botones UBBC. 
+<p><b>Edición de una hoja de estilo</b></p>
+<ul>
+    <li>El botón “Hoja de estilo” lo lleva a la sección “Hoja de estilo WYSIWYG” donde puede cambiar atributos como el color y el color de fondo para elementos como el título del índice del tablero, la barra de categorías y las secciones de visualización de mensajes. </li>
+</ul>
+<p class="help_attn">La hoja de estilo predeterminada no se puede editar desde la pantalla WYSIWYG. Sin embargo, puede guardar sus cambios en una nueva hoja de estilo y luego elegir esa hoja de estilo como hoja de estilo para su plantilla predeterminada en la sección "Configuración de plantilla".</p>
+<h4>Edición de un archivo de hoja de estilo</h4>
+<ul>
+    <li>En la parte superior de la sección “Hoja de estilo WYSIWYG” hay un botón “Fuente”. Esto abre la sección "Editar hoja de estilo". La lista de selección desplegable muestra todas las hojas de estilo disponibles, incluidas aquellas que pertenecen a funciones especiales como el 'calscroller'. El contenido del archivo seleccionado aparecerá en la ventana y podrá editarse.</li>
+</ul>
+~;
+
+1;

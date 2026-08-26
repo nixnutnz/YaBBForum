@@ -1,0 +1,34 @@
+##################################################################################
+# HelpCentre.lng (Mga String ng Wika para sa Help Center #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.1                                                 #
+# Packaged:       01 Sep, 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$helpcentrelngver = 'YaBBForum 3.1';
+
+%helptxt = (
+'1' => "Seksyon ng Tulong",
+'2' => "Nilalaman",
+'3' => "Tulong sa Gumagamit",
+'4' => "Tulong sa Moderator",
+'5' => "Tulong sa Global Moderator",
+'6' => "Tulong ng Administrator",
+'7' => "I-edit ang Mga Entry sa Help Center",
+'8' => "Tapos na.",
+'9' => "Gumamit ng Mga Pahintulot",
+'10' => "Ito ay kung saan mo ine-edit, magdagdag, mag-alis o mag-aayos muli ng mga seksyon ng tulong na ipinapakita sa mga gumagamit sa sistema ng tulong. Sa kaliwang bahagi ay makikita mo ang mga magagamit na seksyon ng tulong. Maaari mong markahan at i-edit ang mga ito o idagdag ang mga ito sa kanang bahagi ng mga patlang sa pamamagitan ng pagmamarka at pag-click sa arrow upang gawin silang makita sa sistema ng tulong.",
+'643' => 'Bumalik sa itaas',
+'769' => "Lokasyon ng flash",
+'7a' => ' Pamagat ng Seksyon',
+'7b' => 'Pamagat ng sub-section',
+);
+
+1;

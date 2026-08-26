@@ -1,0 +1,62 @@
+##################################################################################
+# LogInOut.lng (LogInOut text definitions) #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.1                                                 #
+# Packaged:       01 Sep, 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$loginoutlngver = 'YaBBForum 3.1';
+
+%loginout_txt = (
+'34' => 'Login',
+'35' => 'User ID o e-mail address',
+'35a' => 'User ID o e-mail address field.',
+'35b' => 'User ID, Screen Name o e-mail address',
+'36' => 'Password',
+'36b' => 'I-reset ang Password',
+'130' => "Pagbati,\nAng pangkat ng $mbname",
+'130a' => "Ang pag-reset ng password ay hiniling ng isang bisita sa $mbname. Kung hindi ka nagsumite ng kahilingang i-reset ang iyong password, mangyaring huwag pansinin ang e-mail na ito, kung hindi, pumunta dito upang i-reset ang iyong password: ",
+'192' => 'Matagumpay na naipadala ang e-mail sa:',
+'193' => 'Bumalik',
+'194' => 'kahilingan',
+'241' => 'patlang.',
+'315' => 'Nakalimutan ang Password?',
+'339' => 'Ipadala',
+'669' => 'Nakalimutan ang Password',
+'711' => 'Mahal',
+'753' => 'Kailangan magrehistro?',
+'837' => 'Ang iyong user ID ay case sensitive.',
+'capslock' => 'Ang caps lock ay isinaaktibo.',
+'wrong_char' => 'Ang karakter na ito sa Password ay hindi wasto',
+'error_user_info' => 'Dapat mong ipasok ang iyong User ID o e-mail address.',
+'no_user_info_exists' => 'Ang User ID o e-mail address na iyong ipinasok ay hindi umiiral sa forum na ito.', 
+'verification_question_desc' => 'Pakisagot ang tanong sa pagpapatunay sa itaas.',
+'verification_question_case' => 'Ang mga sagot ay case-sensitive.',
+'error_verification' => 'Nawawala ang verification code.',
+'error_verification_question' => 'Dapat mong sagutin ang tanong sa pagpapatunay.',
+'keeps' => 'Panatilihin akong naka-log in',
+);
+
+%floodtxt=(
+'1' => 'Ang iyong Verification Code ay',
+'3' => 'Verification Code',
+'casewarning' => 'Paki-type ang mga character na lumilitaw sa larawan. Ang mga character ay dapat na nai-type sa parehong pagkakasunud-sunod, at sila ay case-sensitive.',
+'casewarning_1' => 'Paki-type ang mga character nang eksakto kung paanong lumilitaw ang mga ito sa larawan,',
+'casewarning_2' => '<br /><span style="font-weight: bold;">nang wala ang una',
+'casewarning_3' => '<br /><span style="font-weight: bold;">nang walang huli',
+'casewarning_4' => 'at huli',
+'casewarning_5' => 'mga character.</span><br />Ang mga character ay kailangang i-type sa parehong pagkakasunud-sunod,<br />at sila ay case-sensitive.',
+);
+
+%prereg_txt=(
+'5' => 'Ang iyong account ay isinaaktibo. Maaari ka na ngayong mag-log in gamit ang iyong user id at password.',
+);
+
+1;

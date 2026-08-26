@@ -1,0 +1,41 @@
+$SectionName = "Banning_Functions";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "Banning_Members";
+$SectionBody1 = q~<p>2.6.0 bietet globalen Moderatoren und Forum-Moderatoren eine neue zusätzliche Möglichkeit: Sie können Benutzer sperren, die gegen Forum-Regeln verstoßen, störend sind oder das Forum spammen.</p>
+<p>Um mit dem Sperren eines Mitglieds zu beginnen, greifen Sie auf das Profil des Mitglieds zu. Auf dieser Seite finden Sie drei Methoden zum Sperren eines Mitglieds:</p>
+<ol>
+    <li>nach IP-Adresse</li>
+    <li>per E-Mail-Adresse</li>
+    <li>nach Benutzer-ID</li>
+</ol>
+<p><b><span class="underline">Ein Mitglied sperren</span></b></p>
+<ul>
+    <li><b>IP-Adresse</b>
+        <ul>
+            <li>Die letzten drei IP-Adressen des Mitglieds werden auf seiner Profilseite aufgeführt. Sie haben die Möglichkeit, auf eine der aufgelisteten IP-Adressen zu klicken, um eine Seite aufzurufen, auf der Sie auswählen können, welchen IP-Suchdienst Sie verwenden möchten, um festzustellen, wo auf der Welt sich die ausgewählte IP befindet. Dies kann hilfreich sein, um festzustellen, ob das Mitglied tatsächlich ein Spammer ist oder einfach nur stört. Sie haben auch die Möglichkeit, diese IP-Adresse für einen Tag, eine Woche, einen Monat oder dauerhaft zu sperren.</li>
+        </ul>
+    </li>
+    <li><b>E-Mail-Adresse</b>
+        <ul>
+            <li>Mit dieser zweiten Methode können Sie verhindern, dass sich jemand registriert oder anmeldet, der diese bestimmte E-Mail-Adresse (Beispiel: bad@user.com) verwendet. Wie beim IP-Sperren haben Sie die Möglichkeit, diese Adresse für einen Tag, eine Woche, einen Monat oder dauerhaft zu sperren.</li>
+        </ul>
+    </li>
+    <li><b>Benutzer-ID</b>
+        <ul>
+            <li>Schließlich ist die einfachste Möglichkeit, einen Benutzer zu sperren, die Angabe seiner Benutzer-ID. Beachten Sie, dass dies <i>nicht</i> ihr Bildschirmname ist. Auch hier haben Sie die Wahl, das Verbot für einen Tag, eine Woche, einen Monat oder dauerhaft zu verhängen.</li>
+        </ul>
+    </li>
+</ul>
+~;
+##########################################
+
+### Abschnitt 2
+##########################################
+$SectionSub2 = "Entsperrung";
+$SectionBody2 = q~<p>Manchmal rechtfertigen die Umstände die Aufhebung des Verbots von Mitgliedern, die gesperrt wurden. Um die Sperrung eines Mitglieds aufzuheben, greifen Sie auf das Profil des Mitglieds zu. Unabhängig davon, welche Methode zum Sperren des Mitglieds verwendet wurde, sehen Sie einen Link zum Aufheben der Sperre. Wenn Sie darauf klicken, werden die Informationen dieses Mitglieds aus der Sperrliste entfernt.</p>
+~;
+##########################################
+
+1;

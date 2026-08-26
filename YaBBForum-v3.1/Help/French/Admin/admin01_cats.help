@@ -1,0 +1,101 @@
+$SectionName = "Gérer_Catégories";
+
+### Section 1
+############################################
+$SectionSub1 = "Accès aux_fonctions_de_catégorie";
+$SectionBody1 = q~<p>Cette version de YaBB est équipée de nombreux outils puissants pour gérer et contrôler le flux conversationnel de votre communauté, dont la pierre angulaire est la possibilité de regrouper les forums dans un nombre illimité<b>*</b> de catégories. Pour accéder à ces fonctions, vous devez bien entendu être connecté en tant qu'administrateur (ou modérateur global disposant des droits d'accès appropriés). Une fois que vous y êtes, regardez le menu à onglets principal en haut de votre forum sous le logo. Vous remarquerez un lien intitulé « Admin ». En cliquant dessus, un écran de mot de passe apparaîtra afin que vous puissiez vérifier que vous êtes effectivement autorisé à travailler dans le centre d'administration. Une fois votre mot de passe confirmé, vous serez redirigé vers le panneau de contrôle de l'administrateur. Dans le menu de gauche, recherchez la section intitulée « Contrôles du forum » et cliquez sur le lien intitulé « Catégories ».</p>
+<p><i><b>*</b> YaBB n'est limité que par l'espace qui vous est alloué sur votre serveur d'hébergement Web.</i></p>
+~;
+############################################
+
+### Section 2
+############################################
+$SectionSub2 = "Ajout_de_nouvelles_catégories";
+$SectionBody2 = q~<p>YaBB vous permet d'ajouter de nombreuses nouvelles catégories d'un seul coup ou une à la fois. Pour cela, accédez aux fonctions de gestion des catégories du forum comme indiqué ci-dessus. Une fois là-bas, faites défiler vers le bas de la liste et recherchez la fonction intitulée « Ajouter des catégories ». Entrez le nombre de nouvelles catégories que vous souhaitez créer dans la case et appuyez sur le bouton intitulé « Ajouter ».</p>
+<p>Sur cette nouvelle page, un ensemble d'options vous sera proposé pour chacune des nouvelles catégories que vous souhaitez créer :</p>
+<ul>
+      <li><b><span class="underline">ID</span></b>
+            <ul>
+                  <li>L'ID de chaque catégorie doit être unique. Ceci est destiné à un usage interne uniquement. Il permet à YaBB de suivre les choses et sera utilisé dans l'URL pour afficher la catégorie. L'entrée doit être alphanumérique (pas de symboles ni d'espaces). Tous les ID de catégorie sont stockés en minuscules, les majuscules n'ont donc pas d'importance.</li>
+            </ul>
+      </li>
+      <li><b><span class="underline">Nom</span></b>
+            <ul>
+                  <li>Voici le titre de votre catégorie. C'est le nom que vos utilisateurs verront. Vous pouvez le modifier comme vous le souhaitez.</li>
+            </ul>
+      </li>
+      <li><b><span class="underline">Photo de catégorie</span></b>
+            <ul>
+                  <li>Si vous souhaitez utiliser une image pour votre catégorie, vous pouvez télécharger une image à utiliser.</li>
+            </ul>
+            <p class="help_attn"><b><span class="underline">Conseil de l'administrateur :</span></b> Les types de fichiers autorisés pour les images de catégorie sont .bmp, .gif, .jpg et .png. Pour économiser sur la bande passante de téléchargement, les images de catégorie doivent être prédimensionnées pour avoir une hauteur d'environ 25 pixels. Si vous avez défini la taille de l'image pour les images du tableau dans « Paramètres avancés -> Images », les images de catégorie surdimensionnées seront redimensionnées à la même taille que les images du tableau.</p>
+      </li>
+      <li><b><span class="underline">Autorisé à afficher/voir la catégorie</span></b>
+            <ul>
+                  <li>Si vous souhaitez rendre l'intégralité de cette catégorie privée, vous pouvez choisir quels groupes de membres seront autorisés à voir cette catégorie. Laissez ce champ vide pour permettre à tout le monde (y compris les invités) de voir cette catégorie, OU si vous souhaitez placer un tableau dans cette catégorie que vous souhaitez que les invités puissent voir.</li>
+            </ul>
+      </li>
+      <li><b><span class="underline">Autoriser le repli</span></b>
+            <ul>
+                  <li>Cochez cette case pour permettre à vos utilisateurs de développer et de réduire cette catégorie sur la page d'index principal.</li>
+            </ul>
+            <p class="help_attn"><b><span class="underline">Conseil de l'administrateur :</span></b> Votre nouvelle catégorie ne sera pas visible sur la page Index des forums (principale) du forum tant qu'elle ne contiendra pas au moins un forum.</p>
+      </li>
+      <li><b><span class="underline">RSS</span></b>
+            <ul>
+                  <li>Si vous avez activé RSS (Really Simple Syndication) (« Paramètres avancés -> Permaliens/RSS »), cocher cette case placera un bouton RSS dans la catégorie. RSS permet aux utilisateurs de se tenir au courant des informations les plus récentes sur un forum sans avoir à rester sur le site du forum.</li>
+            </ul>
+       </li>
+</ul>
+~;
+############################################
+
+### Section 3
+############################################
+$SectionSub3 = "Editing_a_Category";
+$SectionBody3 = q~<p>Modifier une catégorie avec YaBB est rapide et facile grâce au travail acharné de notre fantastique équipe de développeurs. Dans la fonction Catégories de votre Centre d'administration (voir Accès aux fonctions de catégorie ci-dessus pour plus de détails), vous verrez une liste de catégories existantes, chacune avec une case à cocher correspondante. Cliquer sur une case à cocher marquera cette catégorie pour modification.</p>
+<p>Une fois que vous avez coché toutes les catégories que vous souhaitez modifier, faites défiler vers le bas de la liste et recherchez l'ensemble de boutons radio intitulés « Avec sélectionné ». Cliquez sur le bouton radio « Modifier », puis appuyez sur le bouton à droite intitulé « Go ». À l'intérieur, vous trouverez les éléments suivants pour <i>chaque</i> catégorie :</p>
+<ul>
+    <li><b><span class="underline">ID</span></b>
+        <ul>
+            <li>Ceci est destiné à un usage interne uniquement et n'est <span class="underline"><i>non modifiable.</i></span> Il permet à YaBB de suivre les choses et il sera utilisé dans l'URL pour afficher cette catégorie.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Nom</span></b>
+        <ul>
+            <li>Voici le titre de votre catégorie. C'est le nom que vos utilisateurs verront. Vous pouvez le modifier comme vous le souhaitez.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Autorisé à afficher/voir la catégorie</span></b>
+        <ul>
+            <li>Si vous souhaitez rendre l'intégralité de cette catégorie privée, vous pouvez choisir quels groupes de membres seront autorisés à afficher cette catégorie. Laissez ce champ vide pour permettre à tout le monde (y compris les invités) de le voir, OU si vous avez <span class="underline">des</span> tableaux dans cette catégorie que vous souhaitez que tous (y compris les invités) puissent voir.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Autoriser le repli</span></b>
+        <ul>
+            <li>Cochez cette case pour permettre à vos utilisateurs de développer et de réduire cette catégorie sur la page d'index principal.</li>
+        </ul>
+    </li>
+      <li><b><span class="underline">RSS</span></b>
+            <ul>
+                  <li>Si vous avez activé RSS (Really Simple Syndication) (« Paramètres avancés -> Permaliens/RSS »), cocher cette case placera un bouton RSS dans la catégorie. RSS permet aux utilisateurs de se tenir au courant des informations les plus récentes sur un forum sans avoir à rester sur le site du forum.</li>
+            </ul>
+       </li>
+</ul>
+<p>Lorsque vous avez terminé vos modifications, recherchez et cliquez sur le bouton intitulé « Enregistrer » au bas de la liste des catégories.</p>
+~;
+############################################
+
+### Section 4
+############################################
+$SectionSub4 = "Suppression_d'une_Catégorie";
+$SectionBody4 = q~<p>Si vous souhaitez supprimer une catégorie, suivez les instructions (voir Accès aux fonctions de catégorie ci-dessus pour plus de détails) pour accéder à votre page de gestion des catégories.</p>
+<ul>
+    <li class="help_attn_strong"><b><span class="underline">Avertissement :</span> La suppression d'une catégorie supprimera également tous les tableaux que vous avez dans cette catégorie.</b> Déplacez-les d'abord vers une autre catégorie si vous souhaitez les enregistrer.</li>
+    <li>Dans la liste des catégories, vous remarquerez une case à cocher qui correspond à chaque titre. Cochez cette case pour chaque catégorie que vous souhaitez supprimer. Une fois sélectionné, faites défiler vers le bas de la liste des catégories et localisez l'ensemble de boutons radio intitulé « Avec sélectionné ». Cliquez sur la radio intitulée « Supprimer », puis appuyez sur le bouton à droite intitulé « Go ».</li>
+    <li>Une petite fenêtre contextuelle vous demandera de confirmer que vous souhaitez supprimer ces catégories. Cliquez sur "OK" pour les supprimer ou sur "Annuler" pour les conserver.</li>
+</ul>
+~;
+############################################
+
+1;

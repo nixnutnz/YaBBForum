@@ -1,0 +1,499 @@
+$SectionName = "Pag-post";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Starting_a_Topic";
+$SectionBody1 = q~Pagkatapos mong magrehistro ng account, magkakaroon ka ng kakayahang magsimula ng mga bagong paksa. Upang gawin ito, mag-navigate sa isang kategorya na gusto mong simulan ang isang pag-uusap. Tiyaking ito ang tamang kategorya para sa paksa ng iyong post. Kapag nasa loob ka na ng kategoryang ito, maghanap ng link o button na may pamagat na “Start New Topic” at i-click ito. Ang eksaktong lokasyon ng button na ito ay mag-iiba depende sa kung aling template ang ginagamit, ngunit ito ay madalas na malapit sa tuktok ng listahan ng mga paksa.
+<p>Ipapakita nito sa iyo ang isang bagong pahina kung saan maaari mong simulan ang pag-type ng iyong post, o dalhin ka sa isang form sa ibaba ng pahina. Sa ibaba ay makikita mo ang isang paglalarawan ng mga item sa pahinang ito.</p>
+<h4 class="help">Preview:</h4>
+<p>Binibigyan ka nito ng view kung ano ang magiging hitsura ng iyong mensahe kapag na-post na ito.</p>
+<h4 class="help">Paksa:</h4>
+<p>Ito ang pamagat ng iyong paksa at ito ang ipapakita sa pahina ng kategorya.</p>
+<h4 class="help">Icon ng Mensahe:</h4>
+<p>Kung gusto mong magdagdag ng espesyal na icon sa iyong post, maaari kang pumili ng isa mula sa listahang ito.</p>
+<h4 class="help">Magdagdag ng mga tag ng YaBBC:</h4>
+<p>Ang mga tag ng YaBBC ay nagbibigay sa iyo ng kakayahang i-format ang teksto sa iyong post. Upang magdagdag, i-click lamang ang pindutan na iyong pinili. Tingnan ang <a href="#YaBBC_Reference">YaBBC Reference</a> para sa kumpletong sanggunian.</p>
+<h4 class="help">Magdagdag ng Smilies:</h4>
+<p>I-personalize ang iyong post sa pamamagitan ng pagdaragdag ng emoticon, o smiley. I-click lang ang gusto mo at awtomatikong ilalagay ito ng YaBB sa iyong post.</p>
+<h4 class="help">Attach:</h4>
+<p>Kung pinapayagan ng Administrator, maaari kang magdagdag ng file sa iyong post sa pamamagitan ng pag-click sa button na “Browse” upang mahanap ang file sa iyong hard drive na ia-upload. Bigyang-pansin ang mga pinapayagang uri ng file at maximum na laki ng file.</p>
+<h4 class="help">Post:</h4>
+<p>Ginagawa ng button na ito ang eksaktong inaasahan mo. Pindutin ang button na “I-post” kung handa ka nang tingnan ng komunidad ang iyong mensahe.</p>
+~;
+##############################################
+
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Sumasagot_sa_isang_Post";
+$SectionBody2 = q~<p>Bilang karagdagan sa pag-post ng mga bagong paksa, maaari ka ring tumugon sa mga kasalukuyang post o paksa nang mabilis at madali. Kapag nakakita ka ng paksang gusto mong bigyan ng komento, hanapin ang button o link na may pamagat na “Reply” o “Quote”. Ang paggamit ng "Tumugon" ay magdadala sa iyo sa isang pahina ng post na katulad ng inilarawan sa itaas. Eksaktong ginagawa ng quote ang parehong bagay, gayunpaman, idaragdag nito ang sinabi ng isa pang user sa iyong post sa isang espesyal na kahon tulad ng nakikita mo sa ibaba.</p>
+[yabbc][quote]Ito ay isang quote[/quote][/yabbc]
+~;
+##############################################
+
+
+### Seksyon 3
+##############################################
+$SectionSub3 = "Pag-post_a_Poll";
+$SectionBody3 = q~<p>Kung mayroon kang tanong na gusto mong itanong sa komunidad na ito, binibigyan ka ng YaBB ng kakayahang lumikha ng poll kasama ng iyong paksa. Ito ay isang kamangha-manghang paraan upang makakuha ng magandang ideya kung ano ang nararamdaman ng komunidad na ito tungkol sa iyong tanong. Upang mag-post ng poll, hanapin ang button na may pamagat na "Start New Poll" mula sa view ng kategorya at i-click ito. Ang eksaktong lokasyon ng button na ito ay mag-iiba depende sa kung aling template ang ginagamit, ngunit ito ay madalas na malapit sa tuktok ng listahan ng mga paksa. Sa espesyal na pahina ng post na ito, i-type ang iyong tanong at mga opsyon sa kahon na may label na ayon sa pagkakabanggit, pagkatapos ay punan ang iyong mensahe tulad ng inilarawan sa itaas.</p>
+~;
+##############################################
+
+### Seksyon 4
+##############################################
+$SectionSub4 = "Pag-post ng_isang_Kaganapan";
+$SectionBody4 = q~<p>Kung ang Kalendaryo ng Kaganapan ay na-activate at pinahihintulutan ito ng Admin, ang mga miyembro at maging ang mga bisita ay maaaring magdagdag ng mga paunawa para sa mga espesyal na kaganapan, pista opisyal, pagpupulong, at mga paalala sa Kalendaryo ng Kaganapan. Ang seksyon ng Pag-post ng Kaganapan sa Kalendaryo ng Kaganapan ay may marami sa parehong mga tampok na makikita sa Pag-post sa isang Paksa. Maaari kang magdagdag ng mga smilies at gamitin ang YaBBC para i-format ang iyong post sa Kaganapan. Pagkatapos ay maaari mo itong i-preview upang makita kung ano ang magiging hitsura nito kapag na-post na ito.</p>
+~;
+##############################################
+
+
+### Seksyon 5
+##############################################
+$SectionSub5 = "YaBBC_Reference";
+$SectionBody5 = qq~<p>Para sa mga kadahilanang pangseguridad ay hindi maaaring gamitin ang karaniwang HTML code sa mga post. Sa halip, pinapayagan ng YaBB ang paggamit ng YaBBC (YaBB Code) para sa pag-format. Ang YaBBC ay katulad ng HTML, ngunit ligtas at na-standardize para sa paggamit ng bulletin board. Upang magamit, maaari mong i-click ang YaBBC na button na iyong pinili sa lahat ng pahina ng post o manu-manong i-type ang mga ito. Nasa ibaba ang isang listahan ng bawat tag at ang function nito.</p>
+<h4 class="help">Ano ang YaBBC?</h4>
+<p>Ang YaBBC ay isang hanay ng mga tag batay sa wikang HTML. Pinapayagan ka nitong magdagdag ng pag-format sa iyong mga mensahe sa parehong paraan tulad ng ginagawa ng HTML, ngunit may mas simpleng syntax at hindi kailanman masisira ang layout ng mga pahinang iyong tinitingnan.
+Karamihan sa mga tag ng YaBBC ay maaaring ibalot sa text, sa pamamagitan ng unang <span class="highlight">pag-highlight</span> sa text, at pagkatapos ay pag-click sa YaBBC button na may gustong pag-format.</p>
+<div class="yabbc center">
+<table>
+    <tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/url.png" alt="url"/></span> Ipasok ang URL, Link</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+            <br />Syntax:
+            <br />Resulta:
+        </td>
+        <td>[url]https://yabbforum.nz[/url]
+            <br />[yabbc][url]https://yabbforum.nz[/url][/yabbc]
+            <br />[url=https://yabbforum.nz]YaBB Forum[/url]
+            <br />[yabbc][url=https://yabbforum.nz]YaBB Forum[/url][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">
+            <ul>
+                <li>I-type ang URL at text: yabbforum.nz YaBB Forum</li>
+                <li>I-highlight ang lahat ng ito: <span class="highlight">yabbforum.nz YaBB Forum</span></li>
+                <li>I-click ang button: [yabbc][url=yabbforum.nz]YaBB Forum[/url][/yabbc]</li>
+            </ul>
+            Ang [link] YaBBC tag ay gumagana sa parehong paraan tulad ng [url] tags, maliban na ang [link] tag (walang insertion button para sa tag na ito) ay magbubukas sa na-click na link sa kasalukuyang window, samantalang ang [url] na tag ay magbubukas sa na-click na link sa isang bagong window.
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/ftp.png" alt="FTP Button" /></span> Ipasok ang FTP</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[ftp]ftp://ftpdom[/ftp]
+            <br />[yabbc][ftp]ftp://ftpdom[/ftp][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/img.png" alt="Image Button" /></span> Ipasok ang Larawan</th>
+    </tr><tr>
+        <td>Syntax:
+                <br />
+                <br />Resulta:
+        </td>
+        <td>[img]$imagesdir/on.png[/img]
+                <br />
+                <br />[yabbc][img]$imagesdir/on.png[/img][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/email2.png" alt="Email Button" /></span> Ipasok ang Email</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+            <br />Syntax:
+            <br />Resulta:
+        </td>
+        <td>[email]myname\@domain.com[/email]
+            <br />[yabbc][email]myname\@domain.com[/email][/yabbc]
+            <br />[email=myname\@domain.com]Mag-click para mag-email sa akin[/email]
+            <br />[yabbc][email=myname\@domain.com]Mag-click para mag-email sa akin[/email][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">
+            <ul>
+                <li>I-type ang e-mail address at text: myname\@domain.com I-click upang mag-email sa akin</li>
+                <li>I-highlight ang lahat ng ito: <span class="highlight">myname\@domain.com I-click upang mag-email sa akin</span></li>
+                <li>I-click ang button: [yabbc][email=myname\@domain.com]I-click para mag-email sa akin[/email][/yabbc]</li>
+            </ul>
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/media.png" alt="Add media files" /></span> Magpasok ng mga multi media file</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Halimbawa:
+            <br />Resulta:
+        </td>
+        <td>[media]url sa flash file[/media]
+            <br />[media]https://www.your-domain.com/yabbchelp.swf[/media]
+            <br />[yabbc][media]$imagesdir/yabbchelp.swf[/media][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/table.png" alt="Table Button" /></span> <span class="ubbcbutton ubbcbuttonback" style="margin:0 4px"><img srcroot="$yng"><img srcroot="$yng" alt="Table Data Button" /></span> <span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/tr.png" alt="Table Row Button" /></span> Insert Table - Column - Row</th>
+    </tr><tr>
+        <td>Syntax:</td>
+        <td>[talahanayan][tr][td]halimbawa ng teksto[/td][/tr][/talahanayan]</td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/hr.png" alt="Horizontal Rule Button" /></span> Ipasok ang Pahalang na Panuntunan</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[oras]
+            <br /><hr />
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td> </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/tele.png" alt="Teletype Button" /></span> Ipasok ang Teletype</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[tt]halimbawa ng teksto[/tt]
+            <br />[yabbc][tt]halimbawa ng teksto[/tt][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/code.png" alt="Code Button" /></span> Ipasok ang Code</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />
+            <br />
+            <br /><!-- Ito ang break na tumutugma sa blankong break sa ibaba -->
+            <br />Resulta:
+        </td>
+        <td>[code]<script language="javascript">
+            <br /><!--
+            <br />alerto("Hello YaBB 2!");
+            <br />//-->
+            <br /></script> [/code]
+            <br />
+            <br />[yabbc][code]<script language="javascript">
+            <!--
+            alert("Hello YaBB 2!");
+            //-->
+            </script>[/code][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/quote2.png" alt="Quote Button" /></span> Insert Quote</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[quote]Hello YaBB 2[/quote]
+            <br />[yabbc][quote]Kumusta YaBB 2[/quote][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/edit.png" alt="Edit Button" /></span> Insert Edit</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[edit]Ito ay na-edit sa YaBB 2[/edit]
+            <br />[yabbc][edit]Na-edit ito sa YaBB 2[/edit][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/sup.png" alt="Superscript Button" /></span> Ipasok ang Superscript</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />Resulta:
+        </td>
+        <td>text [sup]halimbawa[/sup]
+            <br />
+            <br />[yabbc]text [sup]halimbawa[/sup][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/sub.png" alt="Subscript Button" /></span> Ipasok ang Subscript</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />Resulta:
+        </td>
+        <td>text [sub]halimbawa[/sub]
+            <br />
+            <br />[yabbc]text [sub]halimbawa[/sub][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/list.png" alt="List Button" /></span> Insert List - List Item</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />
+            <br />Resulta:
+        </td>
+        <td>[list][*]item 1
+            <br />[*]item 2
+            <br />[*]item 3[/list]
+            <br />[yabbc][list][*]item 1
+            [*]item 2
+            [*]item 3[/list][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">Maaari kang lumikha ng mga nakaayos na listahan sa pamamagitan ng pagsasama ng titik na "o" sa simula ng tag ng listahan.</td>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />
+            <br />Resulta:
+        </td>
+        <td>[olist][*]item 1
+            <br />[*]item 2
+            <br />[*]item 3[/olist]
+            <br />[yabbc][olist][*]item 1
+            [*]item 2
+            [*]item 3[/olist][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2">Maaari kang lumikha ng 2 o 3 antas ng mga listahan sa pamamagitan ng pagsasama ng isang listahan sa loob ng isa pang listahan.</td>
+    </tr><tr>
+        <td>Halimbawa:
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />Resulta:
+        </td>
+        <td>[list][*]item 1
+            <br />[*]item 2
+            <br />[listahan][*]subitem 1
+            <br />[*]subitem 2[/list]
+            <br />[*]item 3[/list]
+            <br />[yabbc][list][*]item 1
+            [*]item 2
+            [listahan][*]subitem 1
+            [*]subitem 2[/list][*]item 3[/list][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/me.png" alt="/me Button" /></span> /me</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>/me loves YaBB 2
+            <br />[yabbc]/me loves YaBB 2[/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/move.png" alt="Move Button" /></span> Insert Marquee</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[move]halimbawa ng text[/move]
+            <br />[yabbc][move]halimbawa ng text[/move][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/timestamp.png" alt="Timestamp Button" /></span> Ipasok ang Timestamp</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[timestamp=1121602762]
+            <br />[yabbc][timestamp=1121602762][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/noparse.png" alt="No Parse Button" /></span> Walang Parse</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[noparse][table][tr][td]Hindi ma-parse ang talahanayang ito[/td][/tr][/table][/noparse]
+            <br />[yabbc][noparse][table][tr][td]Hindi ma-parse ang talahanayang ito[/td][/tr][/table][/noparse][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/bold.png" alt="Bold Button" /></span> Ipasok ang Bold Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[b]halimbawa ng teksto[/b]
+            <br />[yabbc][b]halimbawa ng teksto[/b][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/italicize.png" alt="Italic Button" /></span> Ipasok ang Italic Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[i]halimbawa ng teksto[/i]
+            <br />[yabbc][i]halimbawa ng teksto[/i][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/underline.png" alt="Underline Button" /></span> Insert Underline Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[u]halimbawa ng teksto[/u]
+            <br />[yabbc][u]halimbawa ng teksto[/u][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/strike.png" alt="Strikethrough Button" /></span> Ipasok ang Strikethrough Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[s]halimbawa ng teksto[/s]
+            <br />[yabbc][s]halimbawa ng teksto[/s][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/highlight.png" alt="Highlight Button" /></span> Ipasok ang Naka-highlight na Teksto</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[highlight]halimbawa ng text[/highlight]
+            <br />[yabbc][highlight]halimbawa ng teksto[/highlight][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><img src="$imagesdir/face1.gif" alt="Font Face Selector" /> Baguhin ang Font Face</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[font=Courier New]Courier New font[/font]
+            <br />[yabbc][font=Courier New]Courier New font[/font][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><img src="$imagesdir/size1.gif" alt="Size Selector" /> Baguhin ang Laki ng Font</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[size=14]14 point na font[/size]
+            <br />[yabbc][size=14]14 point na font[/size][/yabbc]</td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><img src="$imagesdir/palette_help.gif" alt="Color picker and the palette" /> Pumili ng kulay ng text</th>
+    </tr><tr>
+        <td colspan="2">Maaari mong gamitin ang quick color picker para pumili ng kulay ng text mula sa palette na naglalaman ng 12 ready made color tag o buksan ang palette para gumawa ng custom na color tag.</td>
+    </tr><tr>
+        <td>Syntax:
+            <br />Resulta:
+        </td>
+        <td>[color=#ff0000]red colored text[/color]
+            <br />[yabbc][color=#ff0000]red colored text[/color][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/pre.png" alt="Preformatted Button" /></span> Ipasok ang Preformatted Text</th>
+    </tr><tr>
+        <td>Syntax: <br />
+            <br />
+            <br />Resulta:
+        </td>
+        <td>[pre] ito
+preformatted na teksto [/pre]
+            <br />
+            <br />[yabbc][pre] ito
+preformatted text [/pre][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/left.png" alt="Left Align Button" /></span> Ipasok ang Left Aligned Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />Resulta:
+        </td>
+        <td>[left]text
+            <br />halimbawa[/kaliwa]
+            <br />
+            <br />[yabbc][left]text
+halimbawa[/left][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/center.png" alt="Center Align Button" /></span> Insert Center Aligned Text</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />Resulta:
+        </td>
+        <td>[center]text
+            <br />halimbawa[/center]
+            <br />
+            <br />text ng [yabbc][center].
+halimbawa[/center][/yabbc]
+        </td>
+    </tr><tr>
+        <td colspan="2"><hr /></td>
+    </tr><tr>
+        <th colspan="2"><span class="ubbcbutton ubbcbuttonback"><img src="$yyhtml_root/UBBCbuttons/right.png" alt="Right Align Button" /></span> Ipasok ang Naka-align sa Kanan na Teksto</th>
+    </tr><tr>
+        <td>Syntax:
+            <br />
+            <br />
+            <br />Resulta:
+        </td>
+        <td>[kanan]text
+            <br />halimbawa[/kanan]
+            <br />
+            <br />[yabbc][right]text
+halimbawa[/kanan][/yabbc]
+        </td>
+    </tr>
+</table>
+</div>
+~;
+##############################################
+
+1;

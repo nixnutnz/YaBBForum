@@ -1,0 +1,16 @@
+$SectionName = "{yabb myboardname}_Help_Center";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Welcome_to_the_YaBB_Family";
+$SectionBody1 = q~<p>Ang YaBB ay isa sa mga nangungunang provider sa mundo ng libre, Perl-based na message board system para sa mga webmaster. Ang aming makabagong sistema ay nagbibigay-daan sa mga tao na makakuha at manatiling konektado sa isang madaling gamitin, madaling maunawaan na format. Halika at tingnan kung ano ang alam na ng daan-daang libong webmaster at milyun-milyong rehistradong user!</p>
+
+<br />Para sa suporta at pag-troubleshoot, pakibisita ang <a href="https://yabbforum.nz" target="_blank"><b>Komunidad ng Suporta ng YaBB</b></a></p>
+<p>Ang seksyon ng tulong na ito ay magbibigay sa iyo ng bilis sa mga function ng forum na ito ng YaBB. Sa loob, matututunan mo kung paano magrehistro ng account, mag-login, mag-edit ng iyong profile, mag-post ng mensahe, at marami pang iba. Kung gusto mong lumaktaw sa isang seksyon, mangyaring gamitin ang menu sa kaliwa.</p>
+<p>Mula noong huling paglabas ng YaBB, <i>maraming bagong feature ang ipinakilala</i>, kaya maglaan ng oras sa pagbabasa sa mga <b>Help</b> file na ito.</p>
+<p>Maaari mong gamitin ang menu sa kaliwa upang mabilis na tumalon sa anumang paksa sa ibaba.</p>
+<p>Maaari mong gamitin itong button na <img src="{top_img}" alt="Back to Top" title="Back to Top" /> sa kanang ibaba ng bawat seksyon ng Tulong upang bumalik sa tuktok ng pahina ng Tulong</p>
+~;
+#############################################
+
+1;

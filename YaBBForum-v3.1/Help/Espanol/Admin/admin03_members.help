@@ -1,0 +1,142 @@
+$SectionName = "Administrar_Miembros";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Controles_de_miembros_de_acceso";
+$SectionBody1 = q~<p>Dado que YaBB está diseñado para alentar y facilitar una comunidad activa de usuarios, viene con varias herramientas para ayudar a los administradores del foro en la gestión de miembros. Para acceder a estos controles, asegúrese de haber iniciado sesión como administrador e ingrese a su "Centro de administración". Una vez dentro, busque la sección en el menú de la barra lateral titulada “Controles de miembros”.</p>
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Manualmente_Agregar_Miembro";
+$SectionBody2 = q~<p>Es posible que de vez en cuando sea necesario que un administrador del foro cree manualmente una nueva cuenta de miembro. Por ejemplo, esto a menudo puede resultar útil para ayudar a las personas con una discapacidad a convertirse en miembros.</p>
+<p>En la sección Controles de miembros en la barra lateral del Centro de administración, haga clic en el enlace titulado "Agregar miembro". Esta nueva página le brindará un formulario de registro simple que le permitirá agregar un miembro sin tener que cerrar sesión. Simplemente complete este formulario con el nombre de usuario, la contraseña y el correo electrónico del nuevo miembro.</p>
+~;
+#############################################
+
+
+### Sección 3
+#############################################
+$SectionSub3 = "Prohibición de miembros";
+$SectionBody3 = q~<p>Desafortunadamente, los usuarios no siempre disfrutan del gran sentido de comunidad que ofrece YaBB. Estos usuarios pueden volverse groseros, infringir las reglas, acosar a otros miembros o incluso enviar spam a su foro. Es por eso que YaBB te brinda la posibilidad de bloquear a estos alborotadores para que no perturben tu foro. Se puede prohibir a miembros individuales su página de perfil y la sección Ban Utilities del Centro de administración. Para comenzar a prohibir a un miembro de esta manera, acceda a su Centro de administración y busque "Controles de miembros" como se describe anteriormente. Busque el enlace titulado "Ban Utilities" y haga clic en él. Esta nueva página le brindará tres métodos para prohibir a un miembro:</p>
+<ol>
+    <li>por dirección IP</li>
+    <li>por dirección de correo electrónico</li>
+    <li>por ID de usuario</li>
+</ol>
+<h4>Prohibir a un miembro la utilidad de prohibición</h4>
+<p class="help_attn">Tenga en cuenta que las direcciones IP, direcciones de correo electrónico y ID de usuario prohibidas en la página Ban Utilities se marcan como prohibiciones permanentes.</p>
+<ul>
+    <li><b>Dirección IP</b>
+        <ul>
+            <li>La prohibición por dirección IP evitará que cualquier persona acceda a su foro si su dirección IP aparece aquí. Si bien es eficaz, esto podría impedir que un usuario legítimo inicie sesión, como dos personas que comparten la misma conexión de ISP. También puede fallar si el usuario está detrás de un proxy o tiene una IP dinámica. Para ingresar una dirección IP específica, ingrese los cuatro octetos de la dirección IP del usuario (ejemplo: 192.168.255.8).</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> También puede bloquear un rango de direcciones IP ingresando solo los primeros octetos de la dirección. Por ejemplo, ingresando la IP como: 192.168. bloquearía todas las direcciones IP desde 192.168.0.0 hasta 192.168.255.255. Introduzca solo 1 dirección IP por línea.</p> </li>
+    <li><b>Dirección de correo electrónico</b>
+        <ul>
+            <li>Este segundo método le permite evitar que cualquier persona que use una dirección de correo electrónico específica (ejemplo: bad@user.com) se registre o inicie sesión. Ingrese solo 1 dirección de correo electrónico por línea.</li>
+        </ul>
+    </li>
+    <li><b>Nombre de usuario</b>
+        <ul>
+            <li>Por último, la forma más sencilla de prohibir a un usuario es mediante su ID de usuario. Tenga en cuenta que este <i>no</i> es su nombre de pantalla. Ingrese solo 1 ID de usuario por línea.</li>
+        </ul>
+    </li>
+</ul>
+<h4>Prohibir el acceso de un miembro a su perfil</h4>
+<p class="help_attn">La prohibición desde su perfil le da al administrador (u otro miembro del personal autorizado) la opción de prohibir al miembro por períodos de tiempo establecidos, dando una razón para la prohibición y la opción de enviar un correo electrónico notificándole la prohibición.</p>
+<ul>
+    <li><b>Dirección IP</b>
+        <ul>
+            <li>La prohibición por dirección IP impedirá que cualquier persona acceda a su foro si su dirección IP aparece aquí.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo del administrador:</span></b> Solo puedes bloquear las IP que figuran en el perfil del miembro.</p> </li>
+    <li><b>Dirección de correo electrónico</b>
+        <ul>
+            <li>Este método le permite evitar que cualquier persona que utilice una dirección de correo electrónico específica (ejemplo: bad@user.com) se registre o inicie sesión.</li>
+        </ul>
+    </li>
+    <li><b>ID de usuario</b>
+        <ul>
+            <li>Tenga en cuenta que este <i>no</i> es su nombre de pantalla.</li>
+        </ul>
+    </li>
+</ul>
+~;
+#############################################
+
+### Sección 4
+#############################################
+$SectionSub4 = "Grupos_de_miembros";
+$SectionBody4 = q~<p>Los grupos de miembros le brindan la posibilidad de asignar un grupo o clasificación a un miembro. Estos grupos pueden luego usarse para otorgar privilegios especiales y/o acceso a su foro o simplemente usarse por diversión. Si desea crear un grupo de miembros, ingrese a su Centro de administración y busque la sección titulada "Controles de miembros" como se describe arriba y luego haga clic en el enlace "Grupos de miembros".</p>
+<p>Esta nueva página le mostrará los tres tipos de grupos de miembros.</p>
+<ol>
+    <li>Los primeros son Sistema/Grupos estáticos. Se les puede cambiar el nombre haciendo clic en el botón "Editar" para cada entrada; sin embargo, debido a su importancia, <i>no se pueden eliminar</i>.</li>
+    <li>Los segundos son "Grupos de publicaciones de miembros independientes" y un administrador o moderador global los asigna a un miembro <i>manualmente</i>, ya que no están vinculados al recuento de publicaciones de un usuario.</li>
+    <li>El tercer grupo, sin embargo, se basa en cuántas publicaciones ha realizado un miembro. YaBB los asignará <i>automáticamente</i> cuando un miembro alcance el número mínimo de publicaciones indicado.</li>
+</ol>
+<h4>Crear un nuevo grupo de miembros</h4>
+<p>Para crear un nuevo grupo de miembros, haga clic en el enlace titulado "Agregar grupo" junto a los grupos de miembros "Publicar independientes" o "Publicar dependientes". Esto abrirá una nueva página con un formulario para agregar nuevos grupos.</p>
+<ul>
+    <li><b>Nombre:</b>
+        <ul>
+            <li>Este es el nombre del grupo de miembros que se mostrará a todos.</li>
+        </ul>
+    </li>
+    <li><b># de estrellas:</b>
+        <ul>
+            <li>¿Cuántas estrellas debe tener este grupo?</li>
+        </ul>
+    </li>
+    <li><b>Tipo de estrella:</b>
+        <ul>
+            <li>Elija un tipo de estrella predeterminado en el cuadro desplegable o ingrese la URL de una imagen diferente.
+                <p class="help_attn"><b><span class="underline">Consejo del administrador:</span></b> Si importó un foro anterior a 2.6.0/2.6.1, sus antiguas estrellas predeterminadas no aparecerán ya que 2.6.0 usa diferentes gráficos de estrellas con diferentes extensiones. Si desea utilizar las estrellas antiguas o las personalizadas, asegúrese de copiarlas en la carpeta que contiene los gráficos de su plantilla. Lo más probable es que sea 'yabbfiles/Templates/Forum/default'. De lo contrario, simplemente elija nuevos gráficos de estrellas en la lista desplegable.</p></li>
+        </ul>
+    </li>
+    <li><b>Color:</b>
+        <ul>
+            <li>Esto le da al Grupo un tratamiento de color especial. Déjelo en blanco si no hay color, o elija un color por nombre de color, por valor hexadecimal (el rango válido es de 000000 (6 ceros) a FFFFFF), o use la herramienta Paleta para elegir un color personalizado.</li>
+        </ul>
+    </li>
+    <li><b>Grupo Publicar Independiente:</b>
+        <ul>
+            <li>Marque si desea que este sea un grupo <b>no</b> asignado según el recuento de publicaciones.</li>
+        </ul>
+    </li>
+    <li><b>¿Público?</b>
+        <ul>
+            <li>Marque esta casilla si desea que el nombre de este grupo se muestre a todos los miembros y que se muestre una barra de color del grupo en la sección Usuario en línea del índice del foro.</li>
+        </ul>
+    </li>
+    <li><b>Publicar grupo dependiente</b>
+        <ul>
+            <li>Seleccione esto si desea que los usuarios sean asignados automáticamente a este grupo según el recuento de publicaciones. Luego ingrese la cantidad mínima de publicaciones requeridas para convertirse en miembro de este grupo.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo del administrador:</span></b> YaBB viene con un grupo de miembros post-dependientes llamado “Nuevos miembros” que tiene un recuento mínimo de publicaciones de <b>-1</b>. Esto está implementado para asignar automáticamente nuevos miembros registrados a un grupo. Un nuevo miembro comienza con un recuento de publicaciones de -1, por lo que si <i>elimina este grupo</i> o <i>cambia el recuento mínimo de publicaciones</i>, sus nuevos miembros no podrán publicar ni utilizar MP hasta que los coloque manualmente en un grupo. Puedes editar el nombre del grupo, las estrellas o los colores sin efectos en los nuevos miembros.</p>
+        <p class="help_attn"><b><span class="underline">Consejo del administrador:</span></b> Una buena manera de personalizar su foro YaBB es asignar nombres a sus grupos dependientes de publicaciones que se relacionen con el nicho de su foro.</p>
+    </li>
+</ul>
+~;
+#############################################
+
+### Sección 5
+#############################################
+$SectionSub5 = "Privilegios_Moderador_Global";
+$SectionBody5 = q~<p>YaBB le brinda la posibilidad de seleccionar qué funciones administrativas desea confiar a sus moderadores globales. Puede elegir estos permisos de acceso en el Centro de administración en Controles generales en la sección Acceso global del moderador. Al mover el mouse sobre cada opción de acción, obtendrá una breve descripción de lo que permite cada opción. Sus moderadores globales deben tener una comprensión clara de los niveles de acceso que les está brindando y nada puede comunicarlo mejor que usted, el administrador, discutiéndolo con ellos.</p>
+<p>Las opciones más importantes se enumeran como tres selecciones en la parte superior de la página. Tenga en cuenta que el acceso al Centro de administración NO significa necesariamente que sus moderadores globales puedan controlar todos los elementos que puede ver en el Centro de administración. Si permite este acceso, puede personalizar los permisos del Moderador global en la lista de acciones a continuación.</p>
+<p>Elegir Editar el perfil (pero no las ediciones de administrador) permitirá al moderador global cambiar contraseñas, direcciones de correo electrónico y todas las demás opciones en el perfil del usuario (excepto las ediciones de administrador). <b>Nota:</b> Los moderadores globales no pueden editar ni modificar ningún perfil de administrador.</p>
+<p>Al elegir la opción Ediciones de administrador, los moderadores globales podrán cambiar el recuento de publicaciones, la posición y los grupos de miembros de un usuario. <b>Nota:</b> Los moderadores globales no pueden editar ni modificar las ediciones del administrador, ni pueden “promocionar” a otros usuarios a moderadores globales o administradores del foro.</p>
+<p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Algunas acciones dependen del nivel de edición de perfil que se le haya otorgado al moderador global. El acceso a cosas como archivos adjuntos PM y la descarga de copias de seguridad de YaBB dependen de tener marcada la opción Ediciones de administrador.</p>
+<p class="help_attn"><b><span class="underline">Consejo para administradores:</span></b> En la mayoría de los casos, las acciones que NO seleccione para el Moderador global ni siquiera serán visibles para ellos en el Centro de administración; sin embargo, <i>no siempre es así</i>.</p>
+~;
+#############################################
+### Sección 6
+#############################################
+$SectionSub6 = "Foro_Moderador";
+$SectionBody6 = q~<p>Lo nuevo en YaBB 2.6 es el “Moderador del foro”. Este es un puesto con más privilegios globales que el de Moderador de la junta y menos que el de Moderador global. El moderador del foro tiene privilegios de moderación automática para <strong>todos</strong> los tableros accesibles a los miembros, pero no tiene acceso a las funciones de administrador, excepto para prohibir y cancelar la prohibición de miembros de los perfiles de miembros.</p>
+~;
+#############################################
+
+1;

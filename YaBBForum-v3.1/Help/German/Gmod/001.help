@@ -1,0 +1,18 @@
+$SectionName = "Global_Moderator_Help_Center";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "Your_Global_Moderator_Status";
+$SectionBody1 = qq~<p>Ein globaler Moderator ist eine Administrator-ähnliche Position. Sie haben die Möglichkeit, Moderatorfunktionen in allen Foren zu nutzen und, wenn der Administrator dies zulässt, möglicherweise einige Kerneinstellungen dieser YaBB-Community zu bearbeiten. Ihnen wurde die Fürsorge und Führung anvertraut, um sicherzustellen, dass diese wachsende Gemeinschaft gedeiht.</p>
+<br>
+<br />Für Support und Fehlerbehebung besuchen Sie bitte <a href="https://yabbforum.nz" target="_blank"><b>YaBBs Support-Community</b></a></p>
+<p>Wenn Sie Erläuterungen zu den verschiedenen Seitenaufrufen benötigen, die in den folgenden Abschnitten beschrieben werden, lesen Sie bitte den Abschnitt „Glossar“ in der Benutzerhilfe.</p>
+<p>Die folgenden Bilder des Moderatormenüs dienen als Referenz.</p>
+<p>{yabb mymoding</p>
+<p>Sie können das Menü auf der linken Seite verwenden, um schnell zu einem der folgenden Themen zu springen.</p>
+<p>Sie können diese Schaltfläche <img src="{top_img}" alt="Zurück nach oben" title="Zurück nach oben" class="cursor" /> unten rechts in jedem Hilfeabschnitt verwenden, um zum Anfang der Global Moderator-Hilfeseite zurückzukehren</p>
+~;
+##########################################
+
+
+1;

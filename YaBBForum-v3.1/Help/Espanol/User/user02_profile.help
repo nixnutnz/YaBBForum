@@ -1,0 +1,144 @@
+$SectionName = "User_CP_and_Profile";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Usuario_CP";
+$SectionBody1 = q~El CP de usuario (Panel de control de usuario) de YaBB es una combinación de su perfil de usuario con Lista de amigos, Mensajería personal, Notificaciones y Favoritos.
+<p>Cuando ingresas al “CP de usuario”, tienes múltiples opciones sobre qué hacer:</p>
+<ul>
+    <li>Encima del panel lateral izquierdo, verá un menú con pestañas que contiene "Mensajes", "Perfil" y "Publicaciones".</li>
+    <li>En <b>Mensajes</b>, controlas todos tus mensajes personales: puedes ordenarlos en tus carpetas (si están habilitados) o enviar mensajes nuevos, así como buscar un mensaje en particular.</li>
+    <li>En <b>Perfil</b>, puedes ver la apariencia de tu perfil y editar su contenido. Con la 'Lista de amigos' puedes comprobar rápidamente el estado de conexión de tus amigos, enviarles mensajes y comprobar sus detalles.</li>
+    <li>En <b>Publicaciones</b>, puedes comprobar y actualizar tus notificaciones y favoritos, así como consultar tus últimas publicaciones.</li>
+    <li>En el panel derecho verá parte de su perfil tal como aparece en la página Mostrar publicaciones, su lista de amigos, información sobre su apariencia en línea/fuera de línea y su tablero y notificaciones de temas.</li>
+</ul>
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Perfil_Overview";
+$SectionBody2 = q~ YaBB te permite completar un perfil que le cuenta a la gente sobre ti. ¡Puedes tener tu nombre, edad, información de mensajería instantánea, avatar personal (imagen) y más!
+<p><b>Paso 1:</b> Para cambiar su perfil, haga clic en la opción "CP de usuario" en el menú del foro de arriba. Luego haga clic en "Perfil" en la pequeña pestaña
+menú debajo del menú principal con pestañas. Esto lo llevará a la página Ver perfil.</p>
+<p><b>Paso 2:</b> En su página Ver perfil, verá varios enlaces que le permitirán acceder a cada parte de su perfil de usuario, que se divide en cinco secciones: Editar perfil, Información de contacto, Opciones, Lista de amigos y Preferencias de PM. Haga clic en el enlace apropiado para acceder a esa parte de su perfil.</p>
+<p><b>Paso 3:</b> Por razones de seguridad, se le pedirá que ingrese su contraseña. Hágalo y luego haga clic en "Confirmar contraseña".</p>
+<p>Ahora tienes acceso a todas las configuraciones y opciones de tu cuenta para este foro de YaBB. Los detalles sobre cada una de estas configuraciones se describen a continuación.</p>
+~;
+#############################################
+
+### Sección 3
+#############################################
+$SectionSub3 = "Editar_Perfil";
+$SectionBody3 = q~La sección Editar perfil le brinda acceso rápido a la configuración básica del perfil de su cuenta en este foro de YaBB.
+<h4 class="help">Contraseña</h4>
+<p>Si desea cambiar su contraseña, puede hacerlo rellenando este cuadro. Se recomienda encarecidamente que su contraseña tenga al menos <i></i> 6 caracteres y utilice una combinación de letras y números.</p>
+<h4 class="help">Verificar contraseña</h4>
+<p>Para ayudar a evitar que se te bloquee el acceso al foro sin darte cuenta, YaBB verifica que hayas escrito la nueva contraseña correctamente pidiéndole que ingreses tu nueva contraseña nuevamente en este cuadro.</p>
+<h4 class="help">Nombre</h4>
+<p>Este es su nombre mostrado. Este es tu nombre que todos verán en este foro de YaBB.</p>
+<h4 class="help">Género</h4>
+<p>Si desea que otros sepan su género, puede elegir "Hombre" o "Mujer" en este cuadro desplegable. Algunos foros ponen límites a la cantidad de veces que puedes editar esta información.</p>
+<h4 class="help">Cumpleaños</h4>
+<p>Si desea que otros vean su edad y tengan un ícono especial en su perfil en su cumpleaños, ingréselo en formato DD (día), MM (mes), AAAA (año). También puedes ocultar tu año de nacimiento y edad a los invitados y otros miembros. Algunos foros ponen límites a la cantidad de veces que puedes editar esta información.</p>
+<h4 class="help">Ubicación</h4>
+<p>Opcional. Este cuadro está disponible para completar información sobre dónde vive, de dónde es o cualquier otra cosa que elija que se muestre en su perfil.</p>
+<p class="help_attn"><b><span class="underline">Consejo para el usuario:</span></b> Tenga en cuenta que algunos tableros pueden contener una restricción de acceso a edad o género. Por ejemplo, si no ingresa una edad en su perfil, no habrá forma de saber si se le debe permitir el acceso a un tablero que establece un límite de edad de más de 21 años. Lo mismo ocurre con el género, si un tablero está configurado para permitir solo mujeres, no se le permitirá el acceso si no ingresa Mujer como su género en el perfil. En algunos casos, es posible que el administrador haya optado por hacer que el género y/o la fecha de nacimiento sean obligatorios y puede limitar la cantidad de veces que puede editar esta información.</p>
+~;
+#############################################
+
+### Sección 4
+#############################################
+$SectionSub4 = "Información_de_contacto";
+$SectionBody4 = q~<p>Si desea que otros miembros de esta comunidad YaBB puedan comunicarse con usted, esta sección le permitirá proporcionar esta información en su perfil.</p>
+<h4 class="help">Correo electrónico</h4>
+<p>Esta debe ser una dirección de correo electrónico válida. Se utiliza para notificaciones del sistema, como contraseñas olvidadas, notificaciones de temas y correos electrónicos de foros.</p>
+<h4 class="help">Ocultar correo electrónico del público</h4>
+<p>Marque esta casilla si no desea que otros miembros de la comunidad YaBB vean su dirección de correo electrónico. <b>Nota:</b> esto no lo oculta a los administradores.</p>
+<h4 class="help">Google Talk</h4>
+<p>Si tienes Google Talk, puedes ingresar tu dirección aquí.</p>
+<h4 class="help">Skype o VoIP</h4>
+<p>Si tiene una dirección de Skype o VoIP, puede ingresarla aquí.</p>
+<h4 class="help">MySpace</h4>
+<p>Si tiene una página de MySpace, puede ingresarla aquí. Tenga en cuenta que solo necesita completar la última parte de la URL. Por ejemplo, si su página de MySpace es 'https://myspace.com/yourname', sólo necesita ingresar 'yourname'.</p>
+<h4 clase="ayuda">Twitter</h4>
+<p>Si tienes una cuenta de Twitter, puedes ingresarla aquí. Tenga en cuenta que solo necesita completar la última parte de la URL. Por ejemplo, si tu página de Twitter es 'https://twitter.com/tunombre', solo necesitas ingresar 'tunombre'.</p>
+<h4 class="help">YouTube</h4>
+<p>Si tienes una cuenta de YouTube, puedes ingresarla aquí. Tenga en cuenta que solo necesita completar la última parte de la URL. Por ejemplo, si tu página de YouTube es 'https://www.youtube.com/tunombre', solo necesitas ingresar 'tunombre'.</p>
+<h4 class="ayuda">Facebook</h4>
+<p>Si tienes una página de Facebook, puedes ingresar aquí. Tenga en cuenta que puede utilizar su número de identificación de perfil o su nombre de usuario. Por ejemplo, para usar su número de ID de perfil, si su URL de Facebook es 'https://facebook.com/profile.php?id=123456', solo necesita ingresar '123456', y para usar su nombre de usuario, si su URL de Facebook es 'https://facebook.com/yourname', solo necesita ingresar 'su nombre'.</p>
+<h4 class="help">Título del sitio web</h4>
+<p>Si tiene un sitio web, puede ingresar el título aquí. Este será el texto al que se adjuntará la URL (a continuación).</p>
+<h4 class="help">URL del sitio web</h4>
+<p>Aquí puede ingresar la URL de su sitio web. Tenga en cuenta que debe ser una URL completa. (es decir, incluya https:// )</p>
+~;
+#############################################
+
+### Sección 5
+#############################################
+$SectionSub5 = "Opciones";
+$SectionBody5 = q~La sección Opciones de tu perfil de YaBB te permite editar la configuración del foro relacionada con tu cuenta.
+<h4 class="help">Imagen_personalizada</h4>
+<p>YaBB te permite definir una imagen pequeña (llamada avatar) que se mostrará debajo de tu nombre en el lado izquierdo de tus publicaciones. Este foro tiene varios avatares ya instalados y puedes elegir uno de la lista. Si desea utilizar su propia imagen como avatar, consulte las opciones a continuación.</p>
+<p>El administrador del foro también puede habilitar una o ambas de las siguientes opciones:</p>
+<ul>
+    <li><span class="underline"><b>Vincular a tu propia imagen de avatar</b></span>
+        <br />Si tienes tu propia imagen y te gustaría usarla en este YaBB como avatar, puedes ingresar la URL aquí.</li>
+    <li><span class="underline"><b>Subir tu propia imagen de avatar</b></span>
+        <br />Si desea cargar su propia imagen y usarla en este YaBB como avatar, haga clic en el botón Examinar y seleccione un archivo en su computadora para cargar.</li>
+</ul>
+<h4 class="help">Texto personal</h4>
+<p>Esta es una pequeña línea de texto que se mostrará debajo de tu avatar.</p>
+<h4 class="help">Firma</h4>
+<p>Tu firma se muestra en la parte inferior de cada publicación que realizas y en tu perfil.</p>
+<h4 class="help">Formato de hora</h4>
+<p>Esta opción le permite cambiar la forma en que se le presentan las fechas y horas en toda esta comunidad YaBB.</p>
+<h4 class="help">Zona horaria</h4>
+<p>Si el Administrador lo permite, puede elegir su zona horaria por País y Ciudad. Esto no solo establece su diferencia horaria personal, sino que también permite que YaBB se ajuste automáticamente al horario de verano para esa zona horaria.</p>
+<h4 class="help">Plantilla</h4>
+<p>Si el webmaster de este foro de YaBB tiene más de una plantilla disponible para usar, puede elegir una de este cuadro.</p>
+<h4 class="help">Idioma</h4>
+<p>Aquí puede seleccionar su idioma nativo para ver esta comunidad si está disponible. <strong>Nota</strong>: los mensajes publicados <strong>no</strong> se traducen automáticamente al idioma elegido.</p>
+<h4 class="help">¿Ocultar avatares de miembros en hilos?</h4>
+<p>Marcar esta opción evitará que todos los avatares de los miembros aparezcan cuando estés viendo un hilo.</p>
+<h4 class="help">¿Ocultar texto de miembro en hilos?</h4>
+<p>Marcar esta opción evitará que todos los textos de usuario de los miembros aparezcan cuando estés viendo un hilo.</p>
+<h4 class="help">¿Ocultar imágenes adjuntas en hilos?</h4>
+<p>Al marcar esta opción, todas las imágenes adjuntas seguirán apareciendo cuando estés viendo un hilo.</p>
+<h4 class="help">¿Ocultar firmas de miembros en hilos?</h4>
+<p>Marcar esta opción evitará que todas las firmas de los miembros aparezcan cuando estés viendo un hilo.</p>
+<h4 class="help">¿Ocultar la fila de caritas debajo del área Publicar/Responder?</h4>
+<p>Marcar esta opción evitará que aparezcan imágenes sonrientes cuando publiques un tema nuevo o respondas a un hilo.</p>
+~;
+#############################################
+
+### Sección 6
+#############################################
+$SectionSub6 = "Lista_de_amigos";
+$SectionBody6 = q~La sección <span class="underline"><b>Lista de amigos</b></span> del perfil le brinda la posibilidad de agregar otros miembros con los que contacta con frecuencia a una lista que se mostrará en su vista CP de usuario.  Su lista de amigos mostrará cada nombre, su estado en línea/fuera de línea y opciones de enlace para enviar al usuario un mensaje privado, un correo electrónico o visitar el enlace a su sitio web.<br />
+<ul>
+    <li>Agregue usuarios a su lista de amigos haciendo clic en el enlace debajo del cuadro de visualización de la lista de amigos.</li>
+    <li>Elimine usuarios de su lista de amigos haciendo doble clic en su nombre de usuario dentro del cuadro de visualización de la lista de amigos.</li>
+</ul>
+~;
+#############################################
+
+### Sección 7
+#############################################
+$SectionSub7 = "PM_Preferencias";
+$SectionBody7 = q~Esta sección de su perfil le brinda la posibilidad de personalizar cómo ve y recibe mensajes personales de otros miembros de la comunidad.
+<p class="help_attn"><b><span class="underline">Consejo para el usuario:</span></b> Tenga en cuenta que la mensajería personal es una función opcional y solo estará disponible si el administrador decide habilitarla.  Del mismo modo, es posible que algunas de las opciones enumeradas a continuación que están subrayadas no se vean en su lista de Preferencias de PM porque también son opcionales a discreción del administrador y pueden deshabilitarse.</p>
+<h4 class="help">Lista de ignorados</h4>
+<p>Esta función le permite ignorar a otros miembros impidiéndole ver los mensajes personales que envían. Además, se le ofrece una opción de casilla de verificación para desactivar todos los MP si así lo desea.</p>
+<h4 class="help">Notificarme de nuevos PM por correo electrónico:</h4>
+<p>Si desea recibir un correo electrónico cuando un miembro le envíe un mensaje personal, esta opción le permite habilitar esa función.</p>
+<h4 class="help">¿Habilitar ventana emergente de mensajes personales?</h4>
+<p>Al marcar esta casilla se mostrará una pequeña ventana emergente para notificarle sobre cualquier mensaje personal nuevo. Si <span class="underline">no</span> está marcado, verá mensajes nuevos en el “saludo” en la parte superior del foro en este formato: Tiene X mensajes e Y mensajes nuevos.</p>
+<h4 class="help">¿La ventana emergente PM muestra los MP en una nueva ventana?</h4>
+<p>Si tienes los mensajes emergentes de MP habilitados, al marcar esta casilla se abrirán tus mensajes MP en una nueva ventana cuando hagas clic en el enlace de la ventana emergente; de lo contrario, se cargarán en la ventana actual.</p>
+<h4 class="help">¿Ver el texto del mensaje en la vista de lista de mensajes personales?</h4>
+<p>Marcar la casilla permite ver la primera línea del texto del mensaje en vistas de lista. Para ver solo el remitente/destinatario y la fecha, etc., deje esta casilla sin marcar.</p>
+~;
+#############################################
+
+1;

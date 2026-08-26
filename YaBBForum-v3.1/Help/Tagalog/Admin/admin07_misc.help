@@ -1,0 +1,86 @@
+$SectionName = "Other_Settings";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Event_Calendar";
+$SectionBody1 = q~<p>YaBB 2.6 ang pagdaragdag ng Kalendaryo ng Kaganapan kung saan maaaring mag-post ang mga miyembro at kawani ng mga pista opisyal, espesyal na kaganapan, at pagpupulong. Upang ma-set up ang Kalendaryo ng Kaganapan, dapat kang naka-log in bilang Administrator ng Forum o Global Moderator na may wastong mga karapatan sa pag-access. Sa “Admin Center” hanapin ang seksyon sa kaliwang menu na may pamagat na “General Controls”. Mag-click sa “Kalendaryo ng Kaganapan”.</p>
+<ul>
+    <li><b>Mga Karaniwang Setting</b>
+        <br />Dito maaaring piliin ng Admin kung sino (kung sinuman) ang makakakita sa Kalendaryo ng Kaganapan, kung sino (kung sinuman) ang nakakakita sa link ng Kalendaryo ng Kaganapan sa naka-tab na menu, ipinapakita man o hindi ang mga kaarawan ng miyembro at iba pang mga pangunahing opsyon.
+    </li>
+    <li><b>Mga Setting ng Kaganapan</b>
+        <br />Pinapayagan ng seksyong ito ang Admin na piliin kung paano ipapakita ang mga kaganapan sa 'mini calendar' at sa listahan ng kaganapan.
+    </li>
+    <li><b>Mga Setting ng Pag-access</b>
+        <br />Pinapayagan ng seksyong ito ang Admin na pumili kung aling mga grupo at/o indibidwal ang maaaring mag-post ng mga bagong kaganapan. Mayroon ding checkbox na, kapag nilagyan ng check, ay mag-a-activate ng awtomatikong pag-alis ng mga nag-expire na kaganapan mula sa database ng Kalendaryo ng Kaganapan kapag nagdagdag ng mga bagong kaganapan.
+    </li>
+    <li><b>Mga Setting ng Listahan ng Kaarawan</b>
+        <br />Pinapayagan ng mga seksyong ito ang Admin na pumili kung sino (kung sinuman) ang pinapayagang makakita ng listahan ng lahat ng miyembro na naka-save ang petsa ng kanilang kapanganakan sa kanilang Profile ng User.
+    </li>
+    <li><strong>Muling Buuin ang Listahan ng Kaarawan</strong>
+        <br />Binubuo ng button na ito ang listahan ng mga kaarawan ng miyembro kung sakaling masira ito.
+    </li>
+    <li><strong>Tanggalin ang Mga Lumang Kaganapan</strong>
+        <br />Ang button na ito ay nag-aalis ng mga nag-expire na kaganapan mula sa database ng kaganapan. (<span class="help_attn important"><strong>Mag-ingat</strong>, hindi mababawi ang pagkilos na ito.</span>)
+    </li>
+    <li><strong>Mga Setting ng Icon ng Kaganapan sa Kalendaryo</strong>
+        <br />Dito maaari kang mag-upload at mamahala ng mga karagdagang icon upang i-customize ang iyong Kalendaryo ng Kaganapan.
+    </li>
+</ul>
+<p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Kung 'Pahintulutan ang User na itago ang edad sa Profile at View ng Mensahe at itago ang edad at taon ng kapanganakan sa Calendar?' ay naka-check sa "Mga Setting ng Forum -> Mga Miyembro", maaaring piliin ng mga miyembro na itago ang kanilang edad. Sa kaganapang iyon, tanging buwan at araw ng kapanganakan ng Miyembro ang ipapakita.</p>
+~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Smiley_Options";
+$SectionBody2 = q~<p>Upang ma-set up ang Smiley Options, dapat kang naka-log in bilang Administrator ng Forum o Global Moderator na may wastong mga karapatan sa pag-access. Sa “Admin Center” hanapin ang seksyon sa kaliwang menu na may pamagat na “General Controls”. Mag-click sa “Smiley Options”.</p>
+<ul>
+    <li><b>Mga Opsyon sa Smiley</b>
+        <br />Pinapayagan ng seksyong ito ang Admin na pamahalaan ang mga smilies (emoticon) para gamitin sa mga post, personal na mensahe, at mga kaganapan sa kalendaryo.
+        <br /><strong>Alisin ang Smiley Block</strong>
+        <br />Kapag nilagyan ng check, walang smilies na lumalabas sa ilalim ng text-input box sa anumang pahina ng pag-post.
+        <br /><strong>Detached Smiley Pop-up Style</strong>
+        <br />Inaayos ng 'Simple' ang mga smilies sa pop-up box sa mga hilera. Inaayos ng 'Advanced' ang mga smilies sa isang format ng talahanayan.
+        <br /><strong>Ipakita ang Mga Idinagdag na Smilies</strong> at <strong>Mga Nilalaman ng Direktoryo ng Smilies</strong>
+        <br />Piliin kung saan idinagdag ang mga smilies at buong nilalaman ng Smilies Directory sa pamamagitan ng pagpili sa kani-kanilang mga drop down na pagpipilian.
+        <br /><strong>Ipakita ang Mga Idinagdag/Mga Dagdag na Ngiti</strong>
+        <br />Piliin ang <em>radiobutton</em> sa kanan nito upang huwag paganahin ang pagpapakita ng mga dagdag na ngiti sa Smiley Block. Kung hindi, piliin kung aling mga dagdag na ngiti ang gusto mo sa Smiley Block sa pamamagitan ng pagpili sa <em>radiobutton</em> na nauugnay sa bawat smiley na gusto mong ipakita.
+    </li>
+    <li><strong>Nagdagdag ng Mga Smilies</strong>
+        <br />Ito ay isang listahan ng mga smilies na idinagdag sa default na listahan ng Smilies. Maaaring magdagdag ng mga ngiti sa seksyong "Magdagdag ng mga Smili". Maaari kang pumili ng isang file na ia-upload, magtakda ng isang smiley code at isang paglalarawan para dito tulad ng mga default na smilies sa Smiley Block. Maaari kang mag-upload ng ilang bagong ngiti nang sabay-sabay. I-click ang button na 'I-save ang Mga Setting' upang tapusin ang pagdaragdag ng iyong mga bagong smilies.
+        <br />Ang mga pinapayagang uri ng file ay png, jpg, jpeg, at gif. Ang mga smiley file ay limitado sa maximum na 100kb ang laki.
+    </li>
+    <li><strong>Mga Nilalaman ng Smilies Directory</strong>
+        <br />Ito ay isang listahan ng lahat ng mga smiley file sa Smilies folder sa "yabbfiles" na folder. (Maaaring mag-iba ang lokasyong ito depende sa iyong pag-install ng YaBB.
+        <br />Maaaring idagdag ang mga file sa seksyong ito sa pamamagitan ng direktang pagdaragdag ng mga file sa folder na ito. Ang mga pinapayagang uri ng file ay png, jpg, jpeg, at gif. Dapat na hindi hihigit sa 100kb ang laki ng mga smiley file.
+    </li>
+</ul>
+~;
+
+##############################################
+### Seksyon 3
+##############################################
+$SectionSub3 = "Social_Bookmarks";
+$SectionBody3 = q~<p>Pinapayagan ng Social Bookmarks ang mga miyembro at bisita na madaling magbahagi ng mga item sa iyong forum sa pamamagitan ng pagbabahagi ng Mga Bookmark na item sa kanilang mga pahina sa social media.</p>
+<p>Upang ma-edit ang Mga Setting ng Mga Social Bookmark, dapat kang naka-log in bilang Administrator ng Forum o Global Moderator na may wastong mga karapatan sa pag-access. Sa “Admin Center” hanapin ang seksyon sa kaliwang menu na may pamagat na “General Controls”. Mag-click sa “Mga Social Bookmark”.</p>
+<ul>
+    <li><b>Mga Setting ng Mga Social Bookmark</b>
+        <br />Dito maaari mong paganahin ang Mga Social Bookmark at piliin kung aling mga Board ang magpapakita ng Mga Social Bookmark sa kanilang mga paksa.
+    </li>
+    <li><strong>Mga Social Bookmark</strong>
+        <br />Inililista ng seksyong ito ang iyong kasalukuyang Mga Social Bookmark at ipinapakita ang nauugnay na icon at marker ng pagkakasunud-sunod. Maaari mong i-edit ang listahan o tanggalin ito.
+    </li>
+    <li><strong>Magdagdag ng Bagong Bookmark</strong>
+        <br />Dito maaari kang magdagdag ng mga bagong Social Bookmark para sa iyong forum.
+        <ul>
+            <li><em>Pamagat</em>: ang text na ipapakita kapag nag-mouse ang isang user sa icon ng Bookmark.</li>
+            <li><em>Larawan</em>: i-upload ang icon para sa bagong Bookmark.</li>
+            <li><em>URL</em>: Ang URL ng site ng Social Bookmark. (Para sa Google ang URL ay mukhang “https://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=<span style="background-color:yellow">{url}</span>&title=<span style="background-color:yellow">{title}</span>”</li>
+            <li><em>Order</em>: Kung gusto mong ipakita ang bagong Bookmark sa pagitan ng dalawang nakaraang Bookmark, magtalaga ng bagong Bookmark ng numero sa pagitan ng mga nakatalaga sa iba pang Bookmark. (Halimbawa, gusto mong lumitaw ang iyong bagong Bookmark bago ang Google [40], italaga ang '39' bilang marker ng order para sa iyong bagong Bookmark.)</li>
+        </ul>
+    </li>
+</ul>
+~;
+
+1;

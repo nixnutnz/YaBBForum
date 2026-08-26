@@ -1,0 +1,15 @@
+$SectionName = "Centro_de_ayuda_administrativa";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Introducción";
+$SectionBody1 = qq~<p>Como bien sabes, YaBB es una plataforma comunitaria fantástica. Fácilmente instalado; manejado fácilmente. Es la solución perfecta para hacer crecer y mantener una relación sólida y proactiva con su base de usuarios. Esta sección de Ayuda le ayudará a comprender algunas de las muchas funciones nuevas y potentes que ahora tiene a su alcance.</p>
+<br>
+    <br />Para obtener soporte y solución de problemas, visite la <a href="https://yabbforum.nz" target="_blank"><b>Comunidad de soporte de YaBB</b></a></p>
+<p>Consulte la sección Glosario en Ayuda del usuario si necesita aclaraciones sobre las diferentes vistas de página o los términos descritos en las secciones siguientes.</p>
+<p>Puedes utilizar el menú de la izquierda para saltar rápidamente a cualquier tema a continuación.</p>
+<p>Puede utilizar este botón <img src="{top_img}" alt="Volver al inicio" title="Volver al inicio" /> en la parte inferior derecha de cada sección de Ayuda para regresar a la parte superior de la página de Ayuda del administrador</p>
+~;
+#############################################
+
+1;

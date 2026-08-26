@@ -1,0 +1,71 @@
+$SectionName = "Post_Funciones";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Modificando_una_publicación";
+$SectionBody1 = q~Ahora tienes la posibilidad de editar, modificar o eliminar cualquier publicación en los tableros que moderes. Esta función le ayudará a combatir el spam, eliminar lenguaje o contenido no deseado, censurar usuarios, agregar complementos y mucho más. Las instrucciones siguientes proporcionan algunos pasos específicos sobre cómo realizar estas funciones:
+<h4 class="help">Modificar una publicación</h4>
+<ul>
+    <li>Identifica la publicación que deseas editar.</li>
+    <li>En esa publicación, verá un pequeño menú con "Citar", "Modificar" y "Eliminar". Haga clic en el que se titula “Modificar”.</li>
+    <li>Luego se le dará acceso a la página de edición donde podrá realizar sus cambios. Cuando haya terminado, presione el botón titulado "Guardar".
+        <p class="help_attn"><b><span class="underline">Consejo del moderador:</span></b> Es útil poder identificar cualquier texto modificado o agregado por un moderador al modificar una publicación. Una buena forma de hacerlo es utilizar un texto de color diferente para el texto del Moderador.  Para hacer esto, use el mouse para resaltar el texto y luego haga clic en un botón de color, o haga clic en la paleta de colores y seleccione un color de texto.</p>
+    </li>
+</ul>
+<p>Ten en cuenta que aparecerá una pequeña línea de texto en la publicación indicando que has realizado una edición. Como tal, se recomienda que también adjunte el motivo por el cual realizó la edición. Esto permite que el personal del foro, el autor y el resto de la comunidad sepan que hubo un problema. Puedes usar el botón Editar encima de la ventana de publicación o las etiquetas [editar][/editar] YaBBC para agregar un mensaje sobre tu edición.</p>
+<p>Esto encerrará su texto en un cuadro para que se vea similar al siguiente ejemplo:</p>
+[yabbc][editar]¡Modifiqué esta publicación y este es el motivo![/editar][/yabbc]
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Eliminando_una_publicación";
+$SectionBody2 = q~Si cree que una publicación es inapropiada, viola el Acuerdo de usuario o no pertenece, tiene la opción de eliminarla del tema, sin eliminar el tema completo.
+<h4 class="help">Eliminar una sola publicación</h4>
+<ul>
+    <li>Identifique la publicación que desea eliminar.</li>
+    <li>En esa publicación, verá un pequeño menú con "Citar", "Modificar" y "Eliminar". Haga clic en el que se titula "Eliminar".</li>
+    <li>Esto eliminará <i>instantáneamente</i> la publicación infractora.</li>
+</ul>
+<h4 class="help">Eliminar varias publicaciones</h4>
+<ul>
+    <li>Si hay varias publicaciones que deben eliminarse dentro de un solo tema, repita los pasos anteriores para cada publicación que deba eliminarse.</li>
+    <li>Si el administrador ha habilitado la eliminación múltiple en el Centro de administración/Configuración del foro/, siga estas instrucciones para eliminar todas las publicaciones que deben eliminarse a la vez:
+        <ul>
+            <li>Identifica las publicaciones que deseas eliminar.</li>
+            <li>En cada publicación, <i>junto</i> al botón "Eliminar", haga clic en la pequeña casilla de verificación.</li>
+            <li>Cerca de la parte inferior de la página, más allá de todas las publicaciones de ese tema, encontrará el Menú del moderador. Busque y haga clic en el botón titulado "Eliminar seleccionados".</li>
+            <li>Esto también eliminará <i>instantáneamente</i> todas las publicaciones que hayas verificado.</li>
+        </ul>
+    </li>
+</ul>
+~;
+#############################################
+
+### Sección 3
+#############################################
+$SectionSub3 = "Dividir_un_tema_";
+$SectionBody3 = q~<p>En el caso de que una conversación comience a desviarse del tema, es posible que desee dividir el tema en dos temas separados utilizando la función “Dividir”. Esto le permite mover una publicación y todas las publicaciones que contiene a un tema completamente nuevo donde la conversación diferente puede continuar sin distraerse de la original.</p>
+<h4 class="help">División de un tema</h4>
+<ul>
+    <li>Identifique la publicación donde se producirá la división del tema.  Esta será la primera publicación del nuevo tema que se creará.</li>
+    <li>En esa publicación, verá un pequeño menú con "Citar", "Modificar", "Dividir" y "Eliminar". Haga clic en el titulado "Dividir". Tenga en cuenta que, obviamente, esta opción <i>no</i> se mostrará en la primera publicación de un tema.</li>
+    <li>Esta función moverá instantáneamente la publicación y todas las publicaciones debajo de ella a un tema completamente nuevo. El tema de la publicación que dividiste es el tema del nuevo tema.
+        <p class="help_attn"><b><span class="underline">Consejo del moderador:</span></b> Dado que el tema de un tema que se ha dividido normalmente será “re:(tema original del tema)”, es posible que desees modificar la primera publicación en el nuevo tema creado por la división. Puedes editar la línea de Asunto de esa publicación, cambiándola por algo más apropiado para el nuevo tema de conversación.</p>
+    </li>
+</ul>
+<h4 class="help">División de un tema mediante división/empalme avanzado:</h4>
+<p>Haga clic en el botón Dividir/Unir en el menú del moderador debajo de la última publicación mostrada. Seleccione entre las siguientes opciones:</p>
+<ul>
+    <li>Qué publicaciones quieres mover</li>
+    <li>Si dejar las publicaciones originales, un mensaje "Movido o empalmado a", o nada</li>
+    <li>Categoría donde se colocarán las publicaciones divididas.</li>
+    <li>Tablero donde se colocarán las publicaciones divididas.</li>
+    <li>Tema donde se colocarán las publicaciones divididas.</li>
+    <li>Asunto del tema donde se colocarán las publicaciones divididas.</li>
+</ul>
+~;
+#############################################
+
+1;

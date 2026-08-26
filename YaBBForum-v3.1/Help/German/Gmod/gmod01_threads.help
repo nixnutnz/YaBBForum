@@ -1,0 +1,240 @@
+$SectionName = "Topic_Functions";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "Deleting_an_entire_Topic";
+$SectionBody1 = q~<p>Wenn Sie der Meinung sind, dass ein Thema unangemessen ist, gegen die Mitgliedervereinbarung dieses Forums verstößt, ein Problem verursacht oder einfach fehl am Platz ist, haben Sie die Möglichkeit, das gesamte Thema zu entfernen.</p>
+<h4 class="help">Entfernen eines Themas</h4>
+<p>Beim Anzeigen der Beitragsansicht</p>
+<ul>
+    <li>Scrollen Sie zum Ende des Themas und suchen Sie Ihr „Moderatormenü“ unter der Seitenzahl.</li>
+    <li>Aktivieren Sie keine Kontrollkästchen rechts neben Beiträgen.</li>
+    <li>Klicken Sie auf die Schaltfläche „Moderatormenü“ mit der Überschrift „Löschen“.</li>
+    <li>In einem kleinen Popup werden Sie dann aufgefordert, zu bestätigen, dass Sie das gesamte Thema entfernen möchten. Klicken Sie auf „OK“, um es zu entfernen, oder auf „Abbrechen“, um es zu behalten.</li>
+</ul>
+<p>Beim Anzeigen des Nachrichtenindex</p>
+<ul>
+    <li>Wenn „Einzelnes Kontrollkästchen“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag befindet sich ein kleines Kontrollkästchen. Überprüfen Sie es, indem Sie darauf klicken. Wiederholen Sie dies für jedes Thema, das Sie entfernen möchten.</li>
+            <li>Sobald alle Themen, die Sie entfernen möchten, markiert sind, suchen Sie nach einer Reihe von Optionsfeldern mit den Titeln „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Entfernen“ und „Verschieben nach:“. Klicken Sie auf das Optionsfeld für „Entfernen“.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Multi-Checkbox“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Kontrollkästchen mit Symbolen darüber, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren. Aktivieren Sie das Kontrollkästchen unter dem Symbol „Entfernen“ für jedes Thema, das Sie entfernen möchten.</li>
+            <li>Wenn Sie alle Themen entfernen, aktivieren Sie das Kontrollkästchen „Alle markieren“ unter allen Themen.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Symbolansicht“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Symbole, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren.</li>
+            <li>Klicken Sie auf das Symbol ganz rechts, das „Entfernen“ symbolisiert.</li>
+        </ul>
+    </li>
+</ul>
+~;
+##########################################
+
+### Abschnitt 2
+##########################################
+$SectionSub2 = "Locking_or_Unlocking_a_Topic";
+$SectionBody2 = q~<p>Wenn Sie der Meinung sind, dass ein Thema keinen guten Zweck mehr erfüllen kann oder Sie andere daran hindern möchten, neue Beiträge hinzuzufügen, bietet Ihnen die Sperr-/Entsperrfunktion diese Möglichkeit. Durch einmaliges Klicken wird das Thema gesperrt, durch erneutes Klicken auf die Schaltfläche wird das Thema entsperrt</p>
+<h4 class="help">Thema sperren/entsperren</h4>
+<p>Beim Anzeigen der Beitragsansicht</p>
+<ul>
+    <li>Scrollen Sie zum Ende des Themas und suchen Sie Ihr „Moderatormenü“ unter der Seitenzahl.</li>
+    <li>Aktivieren Sie keine Kontrollkästchen rechts neben Beiträgen.</li>
+    <li>Klicken Sie auf die Schaltfläche „Moderatormenü“ mit der Überschrift „Sperren/Entsperren“.</li>
+</ul>
+<p>Beim Anzeigen des Nachrichtenindex</p>
+<ul>
+    <li>Wenn „Einzelnes Kontrollkästchen“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag befindet sich ein kleines Kontrollkästchen. Überprüfen Sie es, indem Sie darauf klicken. Wiederholen Sie diesen Vorgang für jeden Thread, den Sie sperren oder entsperren möchten.</li>
+            <li>Suchen Sie unten in der Nachrichtenliste eine Reihe von Optionsfeldern mit den Titeln „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Entfernen“ und „Verschieben nach:“. Klicken Sie auf das Radio für „Sperren/Entsperren“.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Multi-Checkbox“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Kontrollkästchen mit Symbolen darüber, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren. Aktivieren Sie das Kontrollkästchen unter dem Symbol „Entfernen“ für jedes Thema, das Sie entfernen möchten.</li>
+            <li>Wenn Sie alle Themen entfernen, aktivieren Sie das Kontrollkästchen „Alle markieren“ unter allen Themen.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Symbolansicht“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Symbole, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren.</li>
+            <li>Klicken Sie auf das Symbol ganz links, das „Sperren/Entsperren“ symbolisiert.</li>
+        </ul>
+    </li>
+</ul>
+<p>Beim Posten</p>
+<ul>
+    <li>Beim Posten gibt es über dem Postfenster einen Auswahlbereich mit den Aufschriften „Sperren/Entsperren“, „Sticky“ und „Ausblenden“. Aktivieren oder deaktivieren Sie „Sperren/Entsperren“. (Halten Sie die Strg- oder Apfeltaste gedrückt, während Sie mit der Maus klicken, um mehr als eine Auswahl auszuwählen oder die Auswahl aufzuheben.)</li>
+    <li>Posten Sie wie gewohnt eine Nachricht. Möglicherweise möchten Sie erklären, warum das Thema gesperrt wurde.</li>
+</ul>
+<h4 class="help">Gesperrte Themen umgehen</h4>
+<ul>
+    <li>Administratoren, globalen Moderatoren, Forum-Moderatoren und Moderatoren kann die Berechtigung erteilt werden, die Sperrfunktion eines Beitrags zu umgehen, sodass sie in einem Thread posten können, der für alle anderen Benutzer gesperrt bleibt.</li>
+    <li>Diese Berechtigung wird aktiviert, indem Sie die entsprechenden Gruppen auf der Registerkarte „Mitarbeiter“ im Admin Center/Forumkonfiguration/Forumeinstellungen auswählen.</li>
+</ul>
+~;
+##########################################
+
+### Abschnitt 3
+##########################################
+$SectionSub3 = "Sticky_Topics";
+$SectionBody3 = q~<p>Wenn Sie der Meinung sind, dass ein Thema für alle Besucher des von Ihnen moderierten Forums sehr wichtig ist, können Sie es zu einem „Sticky“-Thema machen. Diese Themen werden dann über allen anderen Themen angezeigt. Ein nützliches Beispiel wären Forenregeln.</p>
+<h4 class="help">So bleiben Sie bei einem Thema hängen</h4>
+<p>Beim Anzeigen des Themas</p>
+<ul>
+    <li>Scrollen Sie zum Ende des Themas und suchen Sie Ihr „Moderatormenü“.</li>
+    <li>Klicken Sie auf die Schaltfläche „Sticky“</li>
+</ul>
+<p>Beim Anzeigen des Nachrichtenindex</p>
+<ul>
+    <li>Wenn „Einzelnes Kontrollkästchen“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jedes Thema befindet sich ein kleines Kontrollkästchen. Überprüfen Sie es, indem Sie darauf klicken. Wiederholen Sie dies für jedes Thema, das Sie festhalten möchten.</li>
+            <li>Suchen Sie unten in der Nachrichtenliste eine Reihe von Optionsfeldern mit den Titeln „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Entfernen“ und „Verschieben nach:“. Klicken Sie auf das Radio für „Sticky“.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Multi-Checkbox“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Kontrollkästchen mit Symbolen darüber, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren. Aktivieren Sie das Kontrollkästchen unter dem „Sticky“-Symbol für jedes Thema, das Sie kleben möchten.</li>
+            <li>Wenn Sie alle Themen festhalten möchten, aktivieren Sie das Kontrollkästchen „Alle markieren“ unter allen Themen.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Symbolansicht“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Symbole, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren.</li>
+            <li>Klicken Sie auf das zweite Symbol von links, das „Sticky“ symbolisiert.</li>
+        </ul>
+    </li>
+</ul>
+<p>Beim Posten</p>
+<ul>
+    <li>Beim Posten gibt es über dem Postfenster einen Auswahlbereich mit den Aufschriften „Sperren/Entsperren“, „Sticky“ und „Ausblenden“. Aktivieren oder deaktivieren Sie „Sticky“. (Halten Sie die Strg- oder Apfeltaste gedrückt, während Sie mit der Maus klicken, um mehr als eine Auswahl auszuwählen oder die Auswahl aufzuheben.)</li>
+    <li>Posten Sie wie gewohnt eine Nachricht. Vielleicht möchten Sie erklären, warum das Thema blockiert wurde.</li>
+</ul>
+<h4 class="help">So lösen Sie die Blockierung eines Themas</h4>
+<p>Um die Fixierung Ihres Themas aufzuheben, befolgen Sie die gleiche Vorgehensweise wie beim Fixieren. Durch Klicken auf die Schaltfläche „Sticky“ für ein Thema, das bereits ein „Sticky“-Thema ist, wird die Sticky-Funktion aufgehoben.</p>
+~;
+##########################################
+
+### Abschnitt 4
+##########################################
+$SectionSub4 = "Hide_a_Topic";
+$SectionBody4 = q~<p>Wenn Sie ein Thema nicht löschen, es aber für normale Benutzer unsichtbar halten möchten, können Sie es ausblenden. Ausgeblendete Themen können nur von Administratoren, globalen Moderatoren und den Moderatoren dieses Forums angezeigt werden.</p>
+<h4 class="help">So verbergen Sie ein Thema</h4>
+<p>Beim Anzeigen des Themas</p>
+<ul>
+    <li>Scrollen Sie zum Ende des Themas und suchen Sie Ihr „Moderatormenü“.</li>
+    <li>Klicken Sie auf die Schaltfläche „Ausblenden“</li>
+</ul>
+<p>Beim Anzeigen des Nachrichtenindex</p>
+<ul>
+    <li>Wenn „Einzelnes Kontrollkästchen“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jedes Thema befindet sich ein kleines Kontrollkästchen. Überprüfen Sie es, indem Sie darauf klicken. Wiederholen Sie diesen Vorgang für jedes Thema, das Sie ausblenden möchten.</li>
+            <li>Suchen Sie unten in der Nachrichtenliste eine Reihe von Optionsfeldern mit den Titeln „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Entfernen“ und „Verschieben nach:“. Klicken Sie auf das Radio für „Ausblenden“.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Multi-Checkbox“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Kontrollkästchen mit Symbolen darüber, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren. Aktivieren Sie das Kontrollkästchen unter dem Symbol „Ausblenden“ für jedes Thema, das Sie ausblenden möchten.</li>
+            <li>Wenn Sie alle Themen ausblenden, aktivieren Sie das Kontrollkästchen „Alle markieren“ unter allen Themen.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Symbolansicht“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Symbole, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren.</li>
+            <li>Klicken Sie auf das mittlere Symbol, das „Ausblenden“ symbolisiert.</li>
+        </ul>
+    </li>
+</ul>
+<p>Beim Posten</p>
+<ul>
+    <li>Beim Posten gibt es über dem Postfenster einen Auswahlbereich mit den Aufschriften „Sperren/Entsperren“, „Sticky“ und „Ausblenden“. Aktivieren oder deaktivieren Sie „Ausblenden“. (Halten Sie die Strg- oder Apfeltaste gedrückt, während Sie mit der Maus klicken, um mehr als eine Auswahl auszuwählen oder die Auswahl aufzuheben.)</li>
+    <li>Posten Sie wie gewohnt eine Nachricht. Vielleicht möchten Sie erklären, warum Sie das Thema ausgeblendet haben.</li>
+</ul>
+<h4 class="help">So blenden Sie ein Thema ein</h4>
+<p>Um Ihr Thema wieder einzublenden, befolgen Sie das gleiche Verfahren, mit dem Sie es ausgeblendet haben. Durch Klicken auf die Schaltfläche „Ausblenden“ für ein Thema, das bereits ausgeblendet ist, wird es wieder eingeblendet.</p>
+~;
+##########################################
+
+### Abschnitt 5
+##########################################
+$SectionSub5 = "Move_a_Topic";
+$SectionBody5 = q~<p>Wenn Sie ein Thema nicht löschen möchten, aber denken, dass es besser in ein anderes Board passen würde, können Sie diese Option verwenden, um das Thema zu verschieben. Diese Option hinterlässt eine Nachricht mit einem Link in der Themenliste für das ursprüngliche Board, der besagt: „Dieses Thema wurde von (der Person, die es verschoben hat) nach (Link zum neuen Boardnamen) verschoben“. Dadurch wissen Benutzer, die im Thema gepostet haben, sofort, wo sie es finden können, und können schnell dorthin navigieren.</p>
+<h4 class="help">So verschieben Sie ein Thema</h4>
+<p>Beim Anzeigen des Themas</p>
+<ul>
+    <li>Scrollen Sie zum Ende des Themas und suchen Sie Ihr „Moderatormenü“.</li>
+    <li>Klicken Sie auf die Schaltfläche „Verschieben“</li>
+</ul>
+<p>Beim Anzeigen des Nachrichtenindex</p>
+<ul>
+    <li>Wenn „Einzelnes Kontrollkästchen“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jedes Thema befindet sich ein kleines Kontrollkästchen. Überprüfen Sie es, indem Sie darauf klicken. Wiederholen Sie diesen Vorgang für jedes Thema, das Sie verschieben möchten.</li>
+            <li>Suchen Sie unten in der Nachrichtenliste eine Reihe von Optionsfeldern mit den Titeln „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Entfernen“ und „Verschieben nach:“. Klicken Sie auf das Optionsfeld für „Verschieben nach“.</li>
+            <li>Wählen Sie im Dropdown-Auswahlfeld rechts neben den Optionsfeldern das Zielboard aus, an das Sie dieses Thema senden möchten.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Auswahlfeld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Multi-Checkbox“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Kontrollkästchen mit Symbolen darüber, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren. Aktivieren Sie das Kontrollkästchen unter dem Symbol „Verschieben“ für jedes Thema, das Sie verschieben möchten.</li>
+            <li>Wenn Sie alle Themen verschieben, aktivieren Sie das Kontrollkästchen „Alle markieren“ unter allen Themen.</li>
+            <li>Wählen Sie im Dropdown-Auswahlfeld rechts neben den Optionsfeldern das Zielboard aus, an das Sie dieses Thema senden möchten.</li>
+            <li>Klicken Sie auf die Schaltfläche „Los“ neben dem Dropdown-Feld „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>Wenn „Symbolansicht“ in den Forumeinstellungen/Mitarbeitern aktiviert ist
+        <ul>
+            <li>Am Ende der Zeile für jeden Beitrag finden Sie fünf kleine Symbole, die „Sperren/Entsperren“, „Sticky“, „Ausblenden“, „Verschieben“ und „Entfernen“ symbolisieren.</li>
+            <li>Klicken Sie auf das zweite Symbol von rechts, das „Verschieben“ symbolisiert.</li>
+            <li>Es erscheint ein weiterer Bildschirm, in dem Sie das Forum auswählen, an das Sie Ihre Themen senden möchten. Treffen Sie Ihre Auswahl und klicken Sie auf die Schaltfläche „Verschieben“.</li>
+        </ul>
+    </li>
+</ul>
+~;
+##########################################
+
+### Abschnitt 6
+##########################################
+$SectionSub6 = "Splitting_a_Topic";
+$SectionBody6 = q~<p>Da das Teilen eines Themas in der Beitragsansicht erfolgt, finden Sie die Erläuterung dieser Funktion unter <b>Beitragsfunktionen</b>.</p>
+~;
+##########################################
+
+1;

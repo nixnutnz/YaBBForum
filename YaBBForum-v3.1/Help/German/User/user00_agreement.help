@@ -1,0 +1,21 @@
+$SectionName = "User_Agreement";
+
+### Section 1
+#############################################
+$SectionSub1 = "{yabb_boardname}_User_Agreement";
+$SectionBody1 = q~<p>Durch die Nutzung dieser Foren erklären Sie sich damit einverstanden, dass Sie kein Material veröffentlichen, das falsch, verleumderisch, ungenau, beleidigend, vulgär, hasserfüllt, belästigend, obszön, profan, sexuell orientiert, bedrohlich, die Privatsphäre einer Person verletzend oder auf andere Weise gegen <i>irgendein</i> Gesetz verstößt. Sie stimmen außerdem zu, kein urheberrechtlich geschütztes Material zu veröffentlichen, es sei denn, das Urheberrecht liegt bei Ihnen oder Sie haben die Zustimmung des Eigentümers des urheberrechtlich geschützten Materials. Spam, Überschwemmungen, Werbung, Kettenbriefe, Schneeballsysteme und Aufforderungen sind für dieses Forum ebenfalls unangemessen.<br />
+<br />
+Bitte beachten Sie, dass es uns nicht möglich ist, die Gültigkeit von Beiträgen in diesem Forum zu bestätigen. Bitte beachten Sie, dass wir die geposteten Nachrichten nicht aktiv überwachen und nicht für deren Inhalt verantwortlich sind. Wir übernehmen keine Gewähr für die Richtigkeit, Vollständigkeit oder Nützlichkeit der bereitgestellten Informationen. Die Nachrichten geben die Ansichten des Autors wieder, nicht unbedingt die Ansichten dieses Forums. Jeder, der der Meinung ist, dass eine gepostete Nachricht anstößig ist, wird gebeten, dies unverzüglich einem Administrator dieses Forums zu benachrichtigen. Wir haben das Recht, anstößige Inhalte innerhalb einer angemessenen Frist zu entfernen, wenn wir zu dem Schluss kommen, dass eine Entfernung erforderlich ist. Dies ist jedoch ein manueller Vorgang. Bitte beachten Sie daher, dass wir bestimmte Nachrichten möglicherweise nicht sofort entfernen oder bearbeiten können. Diese Richtlinie gilt auch für Mitgliederprofilinformationen.<br />
+<br />
+Sie bleiben allein verantwortlich für den Inhalt Ihrer Nachrichten und erklären sich damit einverstanden, dieses Forum und alle mit diesem Forum verbundenen Websites schadlos zu halten. Wir in diesem Forum behalten uns außerdem das Recht vor, Ihre Identität (oder alle Informationen, die wir über Sie haben) offenzulegen, falls eine Beschwerde oder rechtliche Schritte aufgrund der von Ihnen veröffentlichten Informationen eingehen. Sie haben bei der Registrierung die Möglichkeit, Ihre Benutzer-ID und einen Benutzernamen auszuwählen. Letzterer wird in allen von Ihnen verfassten Nachrichten, Beiträgen und Antworten angezeigt. Wir empfehlen Ihnen, den Namen angemessen zu halten. Mit dem Benutzerkonto, das Sie registrieren möchten, erklären Sie sich damit einverstanden, Ihr Passwort zu Ihrem Schutz und aus Gültigkeitsgründen niemals an ein anderes Mitglied weiterzugeben. Sie erklären sich außerdem damit einverstanden, <i>niemals</i> das Konto eines anderen Mitglieds zum Posten von Nachrichten oder zum Durchsuchen dieses Forums zu verwenden. Nachdem Sie sich in diesem Forum registriert und angemeldet haben, können Sie ein detailliertes Profil ausfüllen. Es liegt in Ihrer Verantwortung, saubere und genaue Informationen bereitzustellen. Alle Informationen, die wir für ungenau oder vulgär halten, werden entfernt.<br />
+<br />
+Bitte beachten Sie, dass bei jedem Beitrag Ihre IP-Adresse aufgezeichnet wird, für den Fall, dass Sie aus diesem Forum ausgeschlossen oder Ihr ISP kontaktiert werden müssen. Dies geschieht nur im Falle eines schwerwiegenden Verstoßes gegen diese Vereinbarung.<br />
+<br />
+<b>Datenschutz</b>: Um zu funktionieren, verwendet dieses Forum auf Ihrem Computer gespeicherte Cookies. Mit Ihrer Registrierung erklären Sie sich auch ausdrücklich mit der Platzierung dieser Cookies auf Ihrem Computer einverstanden.<br />
+<br />
+YaBBForumSoftware.com ist ein Entwicklungs- und Testforum für YaBB-Forensoftware. Es ist <i>kein</i> geeigneter Ort für Diskussionen über Managementrichtlinien, Mitarbeiter oder Mitglieder eines anderen Forums.<br />
+<br />
+Vielen Dank, dass Sie sich angeschlossen haben und uns beim Aufbau einer erfolgreichen Online-Community helfen.</p>~;
+#############################################
+
+1;

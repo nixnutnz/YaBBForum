@@ -1,0 +1,42 @@
+$SectionName = "Personal_and_Broadcast_Messages";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Personal_Messaging";
+$SectionBody1 = q~<p>Ang YaBB ay tungkol sa komunidad at komunikasyon. At maraming paraan para makipag-usap: Pag-post sa mga board, Personal Messaging, e-mail, SKYPE/VoIP, at Gtalk. Siyempre, ang mga paraan ng komunikasyon na ito ay magagamit lamang sa mga rehistradong miyembro. Ang isang exception ay kapag ang Forum Staff ay nagpasya na payagan ang mga bisita na mag-post sa isa o higit pang mga board. Kung ang mga hindi rehistradong miyembro (Mga Panauhin) ay pinapayagang mag-post, hindi pa rin nila maaaring tingnan ang Listahan ng Miyembro o magpadala ng Mga Personal na Mensahe (Tingnan ang pagbubukod sa ibaba).</p>
+<h4 class="help">Mga Personal na Mensahe</h4>
+<p>Bagama't ang e-mail ay isang magandang paraan upang makipag-ugnayan nang pribado sa mga miyembro, mayroon itong ilang mga disbentaha: Dapat mong buksan ang iyong e-mail application upang magsulat at maipadala ang mensahe; dapat buksan ng tatanggap ang kanyang e-mail application; suriin ang kanyang mail at ang iyong mensahe ay magkakahalo sa lahat ng iba pang mail at maaaring tumagal kung minsan ng ilang minuto hanggang isang oras bago maabot ng mail ang tatanggap.</p>
+<p>Bilang alternatibo sa e-mail, nag-aalok ang YaBB ng mas mabilis, mas pribadong paraan. Ang Personal na Pagmemensahe sa forum ay nagbibigay ng agarang paghahatid sa pribadong mailbox ng tatanggap. Ang PM ay ipinadala at natatanggap nang buo sa pamamagitan ng YaBB, kaya ikaw o ang tatanggap ay hindi kailangang magbukas ng isa pang programa o umalis sa YaBB. Ang Personal na Pagmemensahe ay nagbibigay din sa nagpadala at tatanggap ng higit na privacy: walang sinumang totoong e-mail address ang kasangkot o ibinunyag. Ipinapakita lamang ng Mga Personal na Mensahe ang screen name ng parehong partido.</p>
+<p>Nag-aalok ang YaBB ng opsyon para sa mga Administrator na payagan ang mga Bisita na magpadala ng Alerto sa Moderator ng isang Lupon kung may problema. Kung ito ay pinagana, ang mga Moderator ng Lupon ay makakatanggap ng PM ngunit hindi makakasagot maliban sa pamamagitan ng pagpapadala ng e-mail sa Bisita.</p>
+<p class="help_attn"><b><span class="underline">Tip ng User:</span></b> Ang pagpayag sa mga Bisita na mag-post sa iyong forum o magpadala ng mga PM ay nagdudulot ng mga panganib, gaya ng spam o mas masahol pa na nai-post o ipinadala sa mga PM. Upang mabawasan ang panganib na ito, lubos naming inirerekomenda na gamitin ng Administrator ang opsyong available sa Mga Setting ng Seguridad upang mangailangan ng Validation Code at/o Tanong sa Pagpapatunay para sa anumang aksyon ng Bisita (Post, PM, Alert).</p>
+<p>Ang isa pang opsyon na maaaring paganahin ng Administrator ay ang pagpapahintulot sa Mga Personal na Mensahe na maipadala bilang mga kopya na katulad ng mga e-mail.  Kung naka-enable, maaari kang magpadala ng mga carbon copies (cc) at blind carbon copies (bcc) at maaari ding direktang tumugon ang mga tatanggap sa iba pang orihinal na tatanggap.</p>
+<p>Maaari ding paganahin ng Administrator ang opsyon para sa mga miyembro na lumikha ng mga karagdagang folder ng storage para sa kanilang mga PM, at kung malaki ang bilang ng mga mensahe, mahahanap mo ang mga indibidwal na mensahe sa pamamagitan ng paggamit ng feature na PM Search.</p>
+<p>Kung hindi online ang isang tatanggap, maghihintay ang Mga Personal na Mensahe sa PM box ng miyembro hanggang sa susunod na mag-log in siya at manu-manong basahin at/o tanggalin ang mga ito. Kung kailangan mong tawagan muli ang mensahe sa ilang kadahilanan bago ito basahin ng kabilang partido (at wala silang mga PM notification na ipinadala sa kanila sa pamamagitan ng e-mail), maaari mo itong maalala sa pamamagitan ng pagpunta sa iyong PM Outbox at pag-click sa link na Recall sa ilalim ng mensahe.</p>
+<p>Ang YaBB Personal Messages center ay karaniwang isang self-contained, lubos na pribadong e-mail system.</p>
+~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Broadcast_Messaging";
+$SectionBody2 = q~<p>Pinapayagan ng YaBB ang Forum Staff ng kakayahang makipag-usap sa isa't isa sa pamamagitan ng paggamit ng <b>Broadcast Messages</b>.</p>
+<p>Broadcast Messaging ay isang opsyonal na tampok para sa mga Administrator upang paganahin kung pipiliin nila. Maaaring paganahin ng Administrator ang Broadcast Messaging para sa mga pangkat na ito:</p>
+<ul>
+    <li>Mga Administrator</li>
+    <li>Mga Administrator at Global Moderator</li>
+    <li>Mga Administrator, Global Moderator, Forum Moderator, at Board Moderator</li>
+</ul>
+<p>Ang mga pinapayagang pahintulot sa Broadcast Message ay maaaring magpadala ng mga BM sa mga sumusunod na tatanggap:</p>
+<ul>
+    <li>Mga Administrator</li>
+    <li>Mga Global Moderator</li>
+    <li>Mga Moderator ng Forum</li>
+    <li>Mga Board Moderator at lahat ng miyembro ng mga grupo ng miyembro na itinalaga bilang Mga Moderator</li>
+    <li>Lahat ng miyembro ng forum</li>
+    <li>Anumang kumbinasyon ng nasa itaas</li>
+</ul>
+<p>Maaari ding paganahin ng Administrator ang opsyon para sa mga Bisita na magpadala ng <b>PM sa Administrator</b>. Ang mga PM na ito ay aktwal na ipinadala sa Administrator bilang isang Broadcast Message, kaya nangangailangan ito ng parehong opsyon na PM to Admin AT Broadcast Messaging na pinapayagan para sa mga Administrator upang gumana.</p>
+~;
+##############################################
+
+1;

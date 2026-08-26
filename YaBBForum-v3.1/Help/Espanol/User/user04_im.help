@@ -1,0 +1,42 @@
+$SectionName = "Mensajes_personales_y_de_difusión";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Mensajería_personal";
+$SectionBody1 = q~<p>YaBB se trata de comunidad y comunicación. Y hay muchas formas de comunicarse: publicaciones en los foros, mensajería personal, correo electrónico, SKYPE/VoIP y Gtalk. Por supuesto, estos métodos de comunicación sólo están disponibles para miembros registrados. Una excepción es cuando el personal del foro decide permitir que los invitados publiquen en uno o más foros. Si a los miembros no registrados (Invitados) se les permite publicar, aún no podrán ver la Lista de miembros ni enviar mensajes personales (consulte la excepción a continuación).</p>
+<h4 class="help">Mensajes personales</h4>
+<p>Si bien el correo electrónico es una buena forma de mantener correspondencia privada con los miembros, tiene varios inconvenientes: debe abrir su aplicación de correo electrónico para escribir y enviar el mensaje; el destinatario debe abrir su aplicación de correo electrónico; Revise su correo y su mensaje se mezclará con el resto del correo y, a veces, el correo puede tardar de varios minutos a una hora en llegar al destinatario.</p>
+<p>Como alternativa al correo electrónico, YaBB ofrece un método más rápido y privado. La mensajería personal en el foro proporciona entrega instantánea al buzón privado del destinatario. El MP se envía y recibe completamente a través de YaBB, por lo que ni usted ni el destinatario tienen que abrir otro programa ni abandonar YaBB. La mensajería personal también brinda mayor privacidad tanto al remitente como al destinatario: ninguna dirección de correo electrónico real está involucrada ni revelada. Los mensajes personales muestran solo el nombre de usuario de ambas partes.</p>
+<p>YaBB ofrece una opción para que los administradores permitan a los invitados enviar una alerta al moderador de un foro si hay un problema. Si esto está habilitado, los moderadores del foro recibirán un MP pero no podrán responder excepto enviando un correo electrónico al invitado.</p>
+<p class="help_attn"><b><span class="underline">Consejo de usuario:</span></b> Permitir que los invitados publiquen en su foro o envíen MP plantea riesgos, como spam o algo peor, que se publiquen o envíen MP. Para reducir este riesgo, recomendamos encarecidamente que el administrador utilice la opción disponible en la configuración de seguridad para solicitar un código de validación y/o una pregunta de validación para cualquier acción del invitado (publicar, MP, alerta).</p>
+<p>Otra opción que el administrador puede habilitar es permitir que los mensajes personales se envíen como copias similares a los correos electrónicos.  Si está habilitado, puede enviar copias carbón (cc) y copias carbón ocultas (cco) y los destinatarios también pueden responder directamente a otros destinatarios originales.</p>
+<p>El administrador también puede habilitar la opción para que los miembros creen carpetas de almacenamiento adicionales para sus MP y, si la cantidad de mensajes es grande, puede encontrar mensajes individuales utilizando la función de búsqueda de MP.</p>
+<p>Si un destinatario no está en línea, los mensajes personales esperan en el buzón MP del miembro hasta la próxima vez que inicie sesión y los lea y/o elimine manualmente. Si por algún motivo necesita devolver la llamada al mensaje antes de que la otra parte lo lea (y no recibe notificaciones de MP por correo electrónico), puede recuperarlo yendo a su bandeja de salida de MP y haciendo clic en el enlace Recuperar debajo del mensaje.</p>
+<p>El centro de mensajes personales de YaBB es básicamente un sistema de correo electrónico autónomo y altamente privado.</p>
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Broadcast_Messaging";
+$SectionBody2 = q~<p>YaBB permite al personal del foro la capacidad de comunicarse entre sí mediante el uso de <b>mensajes de difusión</b>.</p>
+<p>La mensajería de difusión es una función opcional que los administradores pueden habilitar si así lo desean. El administrador puede habilitar la mensajería de difusión para estos grupos:</p>
+<ul>
+    <li>Administradores</li>
+    <li>Administradores y moderadores globales</li>
+    <li>Administradores, moderadores globales, moderadores de foros y moderadores de juntas directivas</li>
+</ul>
+<p>Aquellos con permiso para difundir mensajes pueden enviar BM a los siguientes destinatarios:</p>
+<ul>
+    <li>Administradores</li>
+    <li>Moderadores globales</li>
+    <li>Moderadores del foro</li>
+    <li>Moderadores de la junta directiva y todos los miembros de los grupos de miembros asignados como moderadores</li>
+    <li>Todos los miembros del foro</li>
+    <li>Cualquier combinación de lo anterior</li>
+</ul>
+<p>El administrador también puede habilitar la opción para que los invitados envíen un <b>PM al administrador</b>. Estos MP en realidad se transmiten al administrador como un mensaje de difusión, por lo que requiere tanto la opción MP al administrador como la mensajería de difusión permitida para los administradores para poder funcionar.</p>
+~;
+#############################################
+
+1;

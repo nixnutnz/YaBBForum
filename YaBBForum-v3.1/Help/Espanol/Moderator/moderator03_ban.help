@@ -1,0 +1,47 @@
+$SectionName = "Forum_Moderator_and_Banning_Functions";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Foro_Moderador";
+$SectionBody1 = q~<p>El puesto de moderador del foro es nuevo en YaBBForum. Como moderador del foro, tienes todas las capacidades de un moderador que se extienden a casi cualquier publicación del foro fuera de las secciones reservadas para administradores.</p>
+<p>El moderador del foro también tiene una capacidad adicional: puede prohibir a los usuarios que infrinjan las reglas del foro, sean disruptivos o envíen spam al foro.</p>~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Prohibición de miembros";
+$SectionBody2 = q~<p>Para comenzar a prohibir a un miembro, acceda al perfil del miembro. Esta página le brindará tres métodos para prohibir a un miembro:</p>
+<ol>
+    <li>por dirección IP</li>
+    <li>por dirección de correo electrónico</li>
+    <li>por ID de usuario</li>
+</ol>
+<p><b><span class="underline">Prohibir a un miembro</span></b></p>
+<ul>
+    <li><b>Dirección IP</b>
+        <ul>
+            <li>Las últimas 3 direcciones IP del miembro aparecen en su página de perfil. Tiene la opción de hacer clic en una de las direcciones IP enumeradas para abrir una página donde puede elegir qué servicio de búsqueda de IP utilizar para determinar en qué parte del mundo se encuentra la IP elegida. Esto puede resultar útil para determinar si el miembro es realmente un spammer o simplemente disruptivo. También tienes la opción de prohibir esa dirección IP por un día, una semana, un mes o permanentemente.</li>
+        </ul>
+    </li>
+    <li><b>Dirección de correo electrónico</b>
+        <ul>
+            <li>Este segundo método le permite evitar que cualquier persona que use esa dirección de correo electrónico específica (ejemplo: bad@user.com) se registre o inicie sesión. Al igual que con la prohibición de IP, tiene la opción de prohibir esa dirección por un día, una semana, un mes o permanentemente.</li>
+        </ul>
+    </li>
+    <li><b>ID de usuario</b>
+        <ul>
+            <li>Por último, la forma más sencilla de prohibir a un usuario es mediante su ID de usuario. Tenga en cuenta que este <i>no</i> es su nombre de pantalla. Nuevamente, tienes la opción de hacer la prohibición por un día, una semana, un mes o permanente.</li>
+        </ul>
+    </li>
+</ul>
+~;
+#############################################
+
+### Sección 3
+#############################################
+$SectionSub3 = "Desprohibición";
+$SectionBody3 = q~<p>Las circunstancias a veces justifican la eliminación de la prohibición de miembros que han sido prohibidos. Para cancelar la prohibición de un miembro, acceda al perfil del miembro. Debajo del método utilizado para prohibir al miembro, verá un enlace "Desbancar". Al hacer clic aquí, se elimina la información de ese miembro de la lista de prohibidos.</p>
+~;
+#############################################
+
+1;

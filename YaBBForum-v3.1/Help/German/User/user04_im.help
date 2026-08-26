@@ -1,0 +1,42 @@
+$SectionName = "Personal_and_Broadcast_Messages";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "Personal_Messaging";
+$SectionBody1 = q~<p>Bei YaBB geht es um Gemeinschaft und Kommunikation. Und es gibt viele Möglichkeiten zu kommunizieren: Beiträge in den Foren, persönliche Nachrichten, E-Mail, SKYPE/VoIP und Gtalk. Selbstverständlich stehen diese Kommunikationswege nur registrierten Mitgliedern zur Verfügung. Eine Ausnahme besteht, wenn das Forumpersonal beschließt, Gästen das Posten in einem oder mehreren Foren zu gestatten. Wenn nicht registrierte Mitglieder (Gäste) zum Posten berechtigt sind, können sie trotzdem weder die Mitgliederliste anzeigen noch persönliche Nachrichten senden (siehe Ausnahme unten).</p>
+<h4 class="help">Persönliche Nachrichten</h4>
+<p>Obwohl E-Mail eine gute Möglichkeit ist, privat mit Mitgliedern zu korrespondieren, hat sie mehrere Nachteile: Sie müssen Ihre E-Mail-Anwendung öffnen, um die Nachricht zu schreiben und zu senden; Der Empfänger muss seine E-Mail-Anwendung öffnen. Überprüfen Sie seine/ihre E-Mails und Ihre Nachricht wird mit allen anderen E-Mails vermischt und es kann manchmal mehrere Minuten bis eine Stunde dauern, bis die E-Mails den Empfänger erreichen.</p>
+<p>Als Alternative zu E-Mail bietet YaBB eine schnellere und privatere Methode. Persönliche Nachrichten im Forum ermöglichen eine sofortige Zustellung an die private Mailbox des Empfängers. Der Versand und Empfang der PM erfolgt komplett über YaBB, sodass weder Sie noch der Empfänger ein anderes Programm öffnen oder YaBB verlassen müssen. Darüber hinaus bietet Personal Messaging sowohl dem Absender als auch dem Empfänger mehr Privatsphäre: Die echte E-Mail-Adresse einer Person wird nicht verraten oder preisgegeben. Persönliche Nachrichten zeigen nur den Bildschirmnamen beider Parteien.</p>
+<p>YaBB bietet Administratoren die Möglichkeit, Gästen zu ermöglichen, bei Problemen eine Benachrichtigung an den Moderator eines Forums zu senden. Wenn dies aktiviert ist, erhalten die Moderatoren des Forums eine PN, können aber nur antworten, indem sie eine E-Mail an den Gast senden.</p>
+<p class="help_attn"><b><span class="underline">Benutzertipp:</span></b> Gästen zu erlauben, in Ihrem Forum zu posten oder PNs zu senden, birgt Risiken wie Spam oder Schlimmeres, das in PNs gepostet oder gesendet wird. Um dieses Risiko zu verringern, empfehlen wir dem Administrator dringend, die in den Sicherheitseinstellungen verfügbare Option zu verwenden, um einen Validierungscode und/oder eine Validierungsfrage für jede Gastaktion (Post, PM, Benachrichtigung) anzufordern.</p>
+<p>Eine weitere Option, die der Administrator aktivieren kann, besteht darin, zuzulassen, dass persönliche Nachrichten als Kopien ähnlich wie E-Mails gesendet werden.  Wenn aktiviert, können Sie Durchschläge (CC) und Blinddurchschläge (BCC) versenden und die Empfänger können auch direkt an andere Originalempfänger antworten.</p>
+<p>Der Administrator kann Mitgliedern auch die Option ermöglichen, zusätzliche Speicherordner für ihre PMs zu erstellen. Wenn die Anzahl der Nachrichten groß ist, können Sie einzelne Nachrichten mithilfe der PM-Suchfunktion finden.</p>
+<p>Wenn ein Empfänger nicht online ist, bleiben persönliche Nachrichten im PM-Postfach des Mitglieds, bis er/sie sich das nächste Mal anmeldet und sie manuell liest und/oder löscht. Sollten Sie die Nachricht aus irgendeinem Grund zurückrufen müssen, bevor die andere Partei sie liest (und sie keine PM-Benachrichtigungen per E-Mail erhalten hat), können Sie sie zurückrufen, indem Sie zu Ihrem PM-Postausgang gehen und unter der Nachricht auf den Link „Rückrufen“ klicken.</p>
+<p>Das YaBB Personal Messages Center ist im Grunde ein eigenständiges, höchst privates E-Mail-System.</p>
+~;
+##########################################
+
+### Abschnitt 2
+##########################################
+$SectionSub2 = "Broadcast_Messaging";
+$SectionBody2 = q~<p>YaBB ermöglicht Forum-Mitarbeitern die Möglichkeit, über <b>Broadcast-Nachrichten</b> miteinander zu kommunizieren.</p>
+<p>Broadcast Messaging ist eine optionale Funktion, die Administratoren bei Bedarf aktivieren können. Der Administrator kann Broadcast Messaging für diese Gruppen aktivieren:</p>
+<ul>
+    <li>Administratoren</li>
+    <li>Administratoren und globale Moderatoren</li>
+    <li>Administratoren, globale Moderatoren, Forum-Moderatoren und Board-Moderatoren</li>
+</ul>
+<p>Wer über die Berechtigung „Broadcast Message“ verfügt, kann BMs an die folgenden Empfänger senden:</p>
+<ul>
+    <li>Administratoren</li>
+    <li>Globale Moderatoren</li>
+    <li>Forummoderatoren</li>
+    <li>Board-Moderatoren und alle Mitglieder von Mitgliedsgruppen, die als Moderatoren zugewiesen sind</li>
+    <li>Alle Forummitglieder</li>
+    <li>Jede Kombination der oben genannten</li>
+</ul>
+<p>Der Administrator kann Gästen auch die Option ermöglichen, eine <b>PN an den Administrator</b> zu senden. Diese PMs werden tatsächlich als Broadcast-Nachricht an den Administrator übertragen. Daher ist sowohl die PM-an-Administrator-Option als auch die für Administratoren zulässige Broadcast-Nachricht erforderlich, damit sie funktioniert.</p>
+~;
+##########################################
+
+1;

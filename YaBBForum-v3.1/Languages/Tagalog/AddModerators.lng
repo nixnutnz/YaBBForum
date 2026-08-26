@@ -1,0 +1,32 @@
+###############################################################################
+# AddModerators.lng                                                           #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.1                                                 #
+# Packaged:       01 Sep, 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$addmoderatorslngver = 'YaBBForum 3.1';
+
+%addmod_txt = (
+'addmod_title' => q~Moderator~,
+'addmod_text' => q~Dito maaari mong italaga ang miyembro bilang Moderator sa alinman/lahat ng mga board. Pindutin nang matagal ang Ctrl o Shift key (Apple key sa Mac) at i-click para pumili ng higit pang mga board.~,
+'addmod_all' => q~Piliin lahat.~,
+'addmod_save' => q~I-save~,
+'remove' => q~Sigurado ka bang gusto mong tanggalin ang miyembro sa listahan?~,
+'modpagetitle' => q~Pumili ng Mga Moderator~,
+'instructions' => q~Double-click upang alisin ang isang pangalan sa listahan~,
+'modsearch' => q~Magdagdag/Magtanggal ng mga Moderator~,
+'addselected' => q~Add Selected~,
+'pageclose' => q~Isara~,
+'instruct' => q~I-type ang unang ilang character ng pangalan ng bagong moderator, pagkatapos ay pumili ng isa o higit pang mga pangalan sa listahan at mag-click sa "Add Selected".~,
+'noresults' => q~Walang Resulta~,
+);
+
+1;

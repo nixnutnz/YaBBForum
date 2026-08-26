@@ -1,0 +1,85 @@
+$SectionName = "Sicherheit";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "Security_Intro";
+$SectionBody1 = q~<p>YaBB ist sehr sicher gegen alle Arten von Angreifern. Die vielen integrierten Funktionen von YaBB schützen Ihr Forum vor Angriffen. Beachten Sie jedoch, dass viele dieser Sicherheitsfunktionen auswählbar sind. Wenn Sie sie also nicht aktivieren, kann dies Risiken bergen. Beispiele hierfür wären die Nichtverwendung mindestens einer der Validierungsmaßnahmen für Registrierungen oder das Erlauben von Gästen, Beiträge ohne Validierungsbild- oder Validierungsfrageprüfung zu posten.</p>
+~;
+##########################################
+
+### Abschnitt 2
+##########################################
+$SectionSub2 = "Sitzungen";
+$SectionBody2 = q~<p><b>Sitzungen</b> sind eine YaBB-Funktion zum Schutz administrativer Funktionen. Wenn Sitzungen im Admin Center aktiviert sind, müssen Mitarbeiter ihre Sitzung immer dann erneut validieren, wenn ihre Netzwerkverbindung die IP-Adresse ändert.</p>
+<p>Um Ihre Sitzung erneut zu validieren, klicken Sie einfach im YaBB-Hauptmenü oben im Forum auf „Sitzung aktualisieren“. Wenn dieser Link nicht vorhanden ist, muss Ihre Sitzung nicht aktualisiert werden.</p>
+<p>Standardmäßig werden Sie zur erneuten Validierung Ihres Passworts aufgefordert. Dies kann in Ihrem Profil im Abschnitt „Profil bearbeiten“ unten in der Liste der Einstellungen geändert werden.</p>
+<p>Um zu überprüfen, ob Sitzungen aktiviert sind, gehen Sie zum Admin Center/Sicherheitscenter/Sicherheitseinstellungen und sehen Sie unter der Registerkarte „Allgemein“ nach. Sitzungen werden aktiviert, wenn das Kontrollkästchen rechts neben „Sitzungs-IDs aktivieren“ aktiviert ist.</p>
+~;
+##########################################
+
+### Abschnitt 3
+##########################################
+$SectionSub3 = "Stealth_Mode";
+$SectionBody3 = q~<p><b>Stealth-Modus</b> ist eine YaBB-Funktion, die es Forum-Administratoren, globalen Moderatoren oder beiden ermöglicht, die Aktivitäten des Forums diskret zu überwachen, ohne „gesehen“ zu werden. Wenn diese Option ausgewählt ist, wird der „Online“-Status von Forumadministratoren und globalen Moderatoren vor allen anderen Mitgliedergruppen und Gästen verborgen.</p>
+<p>Diese Option wird aktiviert, indem Sie das Kontrollkästchen auf der Registerkarte „Mitarbeiter“ im Admin Center/Forumkonfiguration/Forumeinstellungen aktivieren.</p>
+~;
+##########################################
+
+### Abschnitt 4
+##########################################
+$SectionSub4 = "Encrypt_User_IDs";
+$SectionBody4 = q~<p>Diese Funktion soll die Sicherheit erhöhen, indem sie Forumadministratoren die Möglichkeit gibt, den <span class="underline">Anmeldenamen</span> des Benutzers im Link zu seinem Profil zu verbergen. Dies ist der Link, der immer dann erscheint, wenn der Mauszeiger über dem <span class="underline">angezeigten</span> Namen</p> eines Mitglieds platziert wird
+<ul>
+    <li><span class="underline"><b>Option deaktiviert:</b></span> Wenn diese Option deaktiviert ist, endet der Link mit „Benutzername=(Anmelde-ID des Benutzers)“</li>
+    <li><span class="underline"><b>Option aktiviert:</b></span> Wenn diese Option aktiviert ist, endet der Link mit „Benutzername=(verschlüsselte Nummer)“</li>
+</ul>
+<p>Diese Option ist standardmäßig aktiviert. Sie können es deaktivieren, indem Sie das Kontrollkästchen „Benutzer-IDs verschlüsseln“ im Abschnitt „Admin Center/Sicherheitscenter/Sicherheitseinstellungen“ auf der Registerkarte „Allgemein“ deaktivieren.</p>
+~;
+##########################################
+
+### Abschnitt 5
+##########################################
+$SectionSub5 = "Administrative_Functions_-_Global_Moderator_Access";
+$SectionBody5 = q~<p>Der Forum-Administrator kann auswählen, welche Verwaltungsfunktionen die globalen Moderatoren steuern dürfen. Der Forum-Administrator kann den Zugriff auf das Admin Center vollständig einschränken oder globalen Moderatoren erlauben, eine ausgewählte Liste dieser Funktionen zu steuern. Dazu gehören Elemente wie das Bearbeiten von Benutzerprofilen, das Hinzufügen von Mitgliedern, das Löschen von Mitgliedern, das Bearbeiten der Forumsnachrichten, das Ändern der Sicherheitseinstellungen des Forums, das Ausführen von Forum-Backups und vieles mehr.</p>
+~;
+##########################################
+
+### Abschnitt 6
+##########################################
+$SectionSub6 = "Activate_Referral_Security_Checking";
+$SectionBody6 = q~<p>Diese Funktion soll die Sicherheit erhöhen, indem sie Forumadministratoren die Möglichkeit gibt, auszuwählen, welche Aktionen in einer URL außerhalb des Domänennamens des Forums zulässig sind. Wenn diese Option aktiviert ist, kann der Administrator zulässige Aktionen einzeln in der Liste im Abschnitt „Admin Center/Sicherheitscenter/Referrer-Sicherheit“ auswählen.</p>
+<p>Diese Option wird aktiviert, indem Sie das Kontrollkästchen „Überprüfung der Empfehlungssicherheit aktivieren“ auf der Registerkarte „Allgemein“ im Admin Center/Sicherheitscenter/Sicherheitseinstellungen aktivieren.</p>
+~;
+##########################################
+
+### Abschnitt 7
+##########################################
+$SectionSub7 = "Show_IP_in_Board_Index";
+$SectionBody7 = q~<p>Diese Funktion ermöglicht Forumadministratoren die Möglichkeit, die IP-Nummer aller angemeldeten oder das Forum besuchenden Personen anzuzeigen. Diese Option zeigt die IP-Adresse eines Gastes oder Benutzers unten rechts in jedem Beitrag an und ermöglicht auch den Zugriff auf die IP-Suchfunktion, sofern diese aktiviert wurde.</p>
+<p>Diese Option kann für Forumadministratoren, globale Moderatoren, Forummoderatoren oder alle drei aktiviert werden.</p>
+<p>Diese Option wird aktiviert, indem Sie die entsprechenden Kontrollkästchen auf der Registerkarte „Allgemein“ im Admin Center/Sicherheitscenter/Sicherheitseinstellungen aktivieren.</p>
+<h4>IPLookup aktivieren</h4>
+<p>Dadurch wird die IP-Suche aktiviert, sodass diejenigen, die IPs anzeigen können, auch die Einzelheiten einer IP-Adresse über einen der WhoIs-Server nachschlagen können.</p>
+<h4>IP-Suche nach WhoIs-Servern</h4>
+<p>Hier können Sie WhoIs-Server hinzufügen oder entfernen, die vom IP-Lookup-Dienstprogramm verwendet werden. Verwenden Sie \{ip\} in der URL, um die tatsächliche IP-Adresse zu ersetzen, und trennen Sie Titel und URL durch ein Pipe-Symbol „|“. Beispiel: <i>MyLookupSite|mylookupsite.com?ip=\{ip\}</i></p>
+~;
+##########################################
+
+### Abschnitt 8
+##########################################
+$SectionSub8 = "Spam_Protect_-_Enter_Percent";
+$SectionBody8 = q~<p>Diese Funktion soll Spam begrenzen, indem ein Limit dafür festgelegt wird, an wie viele andere Mitglieder ein Benutzer gleichzeitig eine persönliche Nachricht senden kann. Die von Ihnen eingegebene Zahl stellt <b>den maximalen <span class="underline">Prozentsatz</span> aller Mitglieder</b> dar, an den ein Benutzer gleichzeitig PMs senden kann. </p>
+<p>Diese Option wird aktiviert, indem Sie einen gewünschten Prozentsatz in das entsprechende Feld auf der Registerkarte „Persönliche Nachrichten“ im Abschnitt „Admin Center/Forumkonfiguration/Forumeinstellungen“ eingeben.</p>
+~;
+##########################################
+
+### Abschnitt 9
+##########################################
+$SectionSub9 = "Other_Anti-spam_Measures";
+$SectionBody9 = q~YaBBForum verfügt über zusätzliche Funktionen, die Ihnen bei der Bekämpfung von Spam-Registrierungen helfen. Zwei dieser Funktionen sind Honeypot und SpamFruits, die beide über das Admin Center/Sicherheitscenter/Anti-Spam-Einstellungen aktiviert oder deaktiviert werden können. Honeypot ist ein „passiver“ Spambot-Catcher, der Spambots abfängt, wenn sie ein Registrierungsfeld ausfüllen, das für Spambots, aber nicht für Benutzer, die einen Browser verwenden, sichtbar ist. SpamFruits funktioniert, indem es eine Mausbewegung erfordert, um das richtige Bild auszuwählen. Ein weiteres wirksames Anti-Spam-Dienstprogramm ist Anti-Spam Question, das Sie im Admin Center/Security Center/Anti-Spam Question finden.
+<p>Diese Option muss aktiviert sein und es wird dringend empfohlen, dass Sie Fragen verwenden, die die einzigartige Nische Ihres Forums widerspiegeln. Versuchen Sie, keine Fragen zu verwenden, deren Antworten bei Google zu leicht zu finden sind.</p>
+<p><b>Validierungsbild</b> verfügt außerdem über neue Funktionen: Sie können jetzt Zeichen angeben, die vor und/oder nach dem zufällig generierten Validierungsbild angezeigt werden. Diese Zeichen sehen aus wie ein Teil des Validierungsbilds, aber Benutzer werden angewiesen, sie zu ignorieren, wenn sie das Textfeld „Validierungsbild“ ausfüllen.</p>
+~;
+##########################################
+
+1;

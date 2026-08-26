@@ -1,0 +1,57 @@
+$SectionName = "Getting_started";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "Register_an_Account";
+$SectionBody1 = q~<p>Da dieses Forum von YaBB betrieben wird, ist die Registrierung eines Kontos sehr einfach. Sie werden im Handumdrehen chatten!</p>
+<p><b>Schritt 1:</b> Im Menü oben sehen Sie Elemente mit den Titeln „Board-Index“, „Hilfe“, „Anmelden“, „Registrieren“ usw. Klicken Sie auf „Registrieren“.</p>
+<p><b>Schritt 2:</b> Auf dieser neuen Seite sehen Sie ein Formular, in dem Sie Ihre Benutzer-ID und Ihren Benutzernamen sowie Ihr Passwort auswählen können (falls der Administrator dies zulässt) und Ihre E-Mail-Adresse eingeben können. Füllen Sie die Felder mit Ihren Informationen aus.</p>
+<p><b>Schritt 3:</b> Falls vom Administrator aktiviert, müssen Sie möglicherweise die im Bestätigungscode „CAPTCHA“ angezeigten Zeichen eingeben. Box gemäß den Anweisungen auf dem Bildschirm.</p>
+<p><b>Schritt 4:</b> Aktivieren Sie das Kontrollkästchen, um der Benutzervereinbarung zuzustimmen, sofern der Administrator eine solche aktiviert hat.</p>
+<p><b>Schritt 5:</b> Klicken Sie auf die Schaltfläche „Registrieren“. Schaltfläche unten auf der Seite.</p>
+<p>Das ist es! Der Administrator kann von Ihnen die Validierung Ihres Kontos verlangen, bevor Sie Beiträge verfassen können. In diesem Fall erhalten Sie eine E-Mail mit Ihrem Passwort oder einem Link zur Bestätigung Ihrer Registrierung. Einige Administratoren entscheiden sich auch dafür, alle Registrierungen zu genehmigen oder abzulehnen. In diesem Fall erhalten Sie eine E-Mail, sobald Ihr Konto genehmigt wurde.</p>
+<p>Jetzt können Sie sich anmelden und posten!</p>
+<p class="help_attn"><b><span class="underline">Benutzertipp:</span></b> Einige ISPs und E-Mail-Anbieter behandeln den an Sie gesendeten Link so, dass er nicht funktioniert, wenn Sie darauf klicken. Versuchen Sie in diesem Fall, den Link aus der E-Mail zu kopieren und in das URL-Fenster Ihres Browsers einzufügen und so auf das Forum zuzugreifen. Außerdem behandeln einige E-Mail-Clients E-Mails aus Foren als Spam. Wenn Sie Ihr Passwort oder Ihre Link-E-Mail nicht rechtzeitig erhalten, überprüfen Sie Ihren Spam-Ordner.</p>
+<p class="help_attn"><b><span class="underline">Benutzertipp:</span></b> Gelegentlich lässt ein Administrator keine Registrierungen über das Registrierungsformular zu. Wenn Sie kein Mitglied sind und die Schaltfläche „Registrieren“ Der Button ist nicht sichtbar, der Forum-Administrator lässt keine Neuanmeldungen zu. Außerdem kommt es gelegentlich zu technischen Schwierigkeiten und die Registrierung schlägt fehl. Versuchen Sie in diesem Fall, den Administrator des Forums zu kontaktieren. Einige Administratoren verfügen über die Funktion „Nachricht an Administrator(en) senden“. Diese Option steht Ihnen zur Verfügung. Suchen Sie also im Menü dieses Forums danach, falls sie dort verfügbar ist.</p>
+~;
+##########################################
+
+### Abschnitt 2
+##########################################
+$SectionSub2 = "Log_Into_Your_Account";
+$SectionBody2 = q~<p>Da Sie nun ein Konto registriert haben, ist es an der Zeit, sich anzumelden.</p>
+<p><b>Schritt 1:</b> Im Menü oben sehen Sie Elemente mit den Titeln „Board-Index“, „Hilfe“, „Anmelden“, „Registrieren“ usw. Klicken Sie auf „Anmelden“.</p>
+<p><b>Schritt 2:</b> Auf dieser neuen Seite (oder im Formular unten auf der Seite) sehen Sie mehrere Optionen.</p>
+<ul> 
+<li><span class="underline">Benutzer-ID oder E-Mail-Adresse</span> – Geben Sie die Benutzer-ID oder die E-Mail-Adresse ein, mit der Sie sich registriert haben.</li> 
+<li><span class="underline">Passwort</span> – Geben Sie Ihr Passwort ein.</li> 
+<li><span class="underline">Angemeldet bleiben</span> – Wählen Sie aus, ob Sie auf dem Computer, von dem aus Sie sich anmelden, angemeldet bleiben oder nicht.</li> 
+<li><span class="underline">Passwort vergessen</span> – Wenn Sie sich nicht mehr an Ihr Passwort erinnern können, klicken Sie auf diesen Link, um es zurückzusetzen. (Vollständige Wegbeschreibung unten.)</li>
+</ul>
+<p><b>Schritt 3</b> Sobald Sie alles ausgefüllt haben; Klicken Sie im Formular auf die Schaltfläche „Anmelden“.</p>
+<p>Herzlichen Glückwunsch! Sie sind jetzt bereit, an dieser Community teilzunehmen!</p>
+<p class="help_attn"><b><span class="underline">Benutzertipp:</span></b> Wenn Sie das &#8220;Anmelden&#8221; Wenn Sie im Menü auf die Schaltfläche klicken, sind Sie möglicherweise bereits angemeldet. Dies kann bei einigen Foren passieren, die für die sofortige Registrierung eingerichtet sind.</p>
+<p class="help_attn"><b><span class="underline">Benutzertipp:</span></b> Wenn Sie sich auf einem öffentlich zugänglichen Computer anmelden, <i>aktivieren Sie nicht</i> das Kontrollkästchen „Angemeldet bleiben“. Kontrollkästchen aktivieren.</p>
+~;
+##########################################
+
+### Abschnitt 3
+##########################################
+$SectionSub3 = "Log_Out_of_Your_Account";
+$SectionBody3 = q~<p>Wenn Sie mit dem Posten fertig sind, sollten Sie sich von Ihrem Konto abmelden, damit andere Benutzer Ihres Computers keinen Zugriff auf Ihre Informationen haben. Suchen Sie dazu den Menüpunkt „Abmelden“. Sobald Sie auf diese Schaltfläche klicken, werden Sie von YaBB vom Forum abgemeldet. Sie müssen sich erneut anmelden, wenn Sie Beiträge posten oder auf Funktionen zugreifen möchten, die nur Mitgliedern vorbehalten sind.</p>
+~;
+##########################################
+
+### Abschnitt 4
+##########################################
+$SectionSub4 = "Forgotten_Password";
+$SectionBody4 = q~<p>Wenn Sie Ihr Passwort vergessen haben, kann YaBB Ihnen ermöglichen, es zurückzusetzen.</p>
+<p><b>Schritt 1</b> Im Menü oben, Sie werden Elemente mit den Titeln „Board-Index“, „Anmelden“, „Registrieren“ usw. angezeigt. Klicken Sie auf „Anmelden“.</p>
+<p><b>Schritt 2</b> Auf dieser neuen Seite sehen Sie einen Link mit dem Titel „Passwort vergessen“. Klicken Sie auf diesen Link.</p>
+<p><b>Schritt 3</b> Eine neue Seite wird mit mindestens einem Feld geladen. Geben Sie im Feld mit der Bezeichnung „Benutzer-ID oder E-Mail-Adresse“ Folgendes ein: Geben Sie die Benutzer-ID oder die E-Mail-Adresse ein, mit der Sie sich registriert haben. Andere Felder (abhängig davon, welche Validierungsformulare der Forum-Administrator aktiviert hat) dienen zur Bestätigung, dass das Formular nicht von einem Spambot oder einem automatisierten System verwendet wird.</p>
+<p><b>Schritt 4</b> Klicken Sie auf die Schaltfläche mit der Überschrift „Senden“.</p>
+<p><b>Schritt 5</b> YaBB sendet eine E-Mail an die registrierte E-Mail-Adresse mit einem Link zum Zurücksetzen Ihres Passworts. Wenn Sie auf diesen Link klicken, gelangen Sie zu Ihrer Profilseite, auf der Sie Ihr Passwort zurücksetzen können. <b>Hinweis:</b> Nachdem Sie zu Ihrer Profilseite weitergeleitet wurden, haben Sie zehn Minuten Zeit, ein neues Passwort einzugeben.</p>
+~;
+#############################################
+
+1;

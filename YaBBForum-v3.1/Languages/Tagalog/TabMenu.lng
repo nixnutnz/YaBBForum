@@ -1,0 +1,46 @@
+###############################################################################
+# TabMenu.lng (TabMenu text definitions)                                      #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.1                                                 #
+# Packaged:       01 Sep, 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$tabmenulngver = 'YaBBForum 3.1';
+
+%tabmenu_txt=(
+'texterr' => 'Walang laman ang field ng Text.',
+'tabext' => 'Umiiral na ang tab para sa parehong aksyon o may parehong pangalan.',
+'tabfront' => 'Front',
+'taburl' => 'URL',
+'tabwin' => 'Bagong window',
+'edittab' => 'I-edit ang mga tab',
+'tabdel' => 'Burahin ang tab na ito',
+'viewgm' => 'GMod +',
+'viewadm' => 'Admin',
+'tabtext' => 'Text',
+'taberr' => 'Nawawala ang kinakailangang impormasyon:',
+'addtab' => 'Idagdag',
+'savetab' => 'I-save ang Teksto',
+'reordertab' => 'Muling ayusin ang mga Tab:',
+'tableft' => '&lt;',
+'tabright' => '&gt;',
+'edittext1' => 'Sa itaas mo makikita ang mga tab kung paano lilitaw ang mga ito kung makikita silang lahat nang sabay-sabay. Kung nagdagdag ka ng isa o higit pang mga tab mayroon ka na ngayong opsyon na i-edit ang nakikitang teksto nang direkta sa loob ng tab at pagkatapos ay i-click ang',
+'edittext2' => 'icon upang i-save ang bagong teksto o maaari mong tanggalin ang tab sa pamamagitan ng pag-click sa',
+'edittext3' => 'icon. Tandaan na <b>hindi mo maaaring i-edit ang mga URL</b>.',
+'reordertext' => 'Sa kanang bahagi ay mayroong listahan ng lahat ng iyong mga tab na nagpapahintulot sa iyo na baguhin ang pagkakasunud-sunod ng mga ito sa menu ng tab. Piliin ang tab na gusto mong ilipat at i-click ang "&lt;" o "&gt;" na buton upang ilipat ang tab sa nais na direksyon.',
+'urlerr' => 'Walang laman ang field ng URL.',
+'viewmem' => 'Mga Miyembro +',
+'viewwall' => 'Mga bisita +',
+'newtab' => 'Magdagdag ng tab',
+'tabinsert' => 'Idagdag pagkatapos',
+'tabview' => 'Nakikita ni',
+);
+
+1;

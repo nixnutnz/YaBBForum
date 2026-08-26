@@ -1,0 +1,47 @@
+$SectionName = "Forum_Moderator_and_Banning_Functions";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Forum_Moderator";
+$SectionBody1 = q~<p>Ang posisyon ng Forum Moderator ay bago sa YaBBForum. Bilang Moderator ng Forum, nasa iyo ang lahat ng kakayahan ng isang Moderator na nagpapalawak sa halos anumang post sa Forum sa labas ng mga seksyong nakalaan para sa Mga Admin.</p>
+<p>Ang Forum Moderator ay may karagdagang kakayahan din: Maaari mong i-ban ang mga user na lumalabag sa mga panuntunan ng Forum, nakakagambala o nag-spam sa Forum.</p>~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Pagbabawal sa_Mga Miyembro";
+$SectionBody2 = q~<p>Upang simulan ang pagbabawal sa isang Miyembro, i-access ang Profile ng Miyembro. Ang pahinang ito ay magbibigay sa iyo ng tatlong paraan para sa pagbabawal sa isang Miyembro:</p>
+<ol>
+    <li>sa pamamagitan ng IP address</li>
+    <li>sa pamamagitan ng E-mail address</li>
+    <li>sa pamamagitan ng User ID</li>
+</ol>
+<p><b><span class="underline">Pag-ban sa isang Miyembro</span></b></p>
+<ul>
+    <li><b>IP Address</b>
+        <ul>
+            <li>Ang huling 3 IP address ng Miyembro ay nakalista sa kanilang pahina ng Profile. Mayroon kang opsyon na mag-click sa isa sa mga IP address na nakalista upang ilabas ang isang pahina kung saan maaari mong piliin kung aling IP look-up service ang gagamitin upang matukoy kung saan sa mundo ang napiling IP. Ito ay maaaring makatulong sa pagtukoy kung ang Miyembro ay talagang isang spammer o simpleng nakakagambala. Mayroon ka ring opsyon na i-ban ang IP address na iyon sa loob ng isang araw, isang linggo, isang buwan o permanente.</li>
+        </ul>
+    </li>
+    <li><b>E-mail Address</b>
+        <ul>
+            <li>Ang pangalawang paraan na ito ay nagbibigay-daan sa iyo na pigilan ang sinumang gumagamit ng partikular na e-mail address na iyon (halimbawa: bad@user.com) mula sa pagpaparehistro o pag-log in. Tulad ng pag-ban sa IP, mayroon kang opsyon na i-ban ang address na iyon sa loob ng isang araw, isang linggo, isang buwan o permanente.</li>
+        </ul>
+    </li>
+    <li><b>User ID</b>
+        <ul>
+            <li>Sa wakas, ang pinakasimpleng paraan upang i-ban ang isang user ay sa pamamagitan ng kanilang User ID. Tandaan na ito ay <i>hindi</i> ang kanilang Screen Name. Muli, may pagpipilian kang gawin ang pagbabawal para sa isang araw, isang linggo, isang buwan o permanente.</li>
+        </ul>
+    </li>
+</ul>
+~;
+##############################################
+
+### Seksyon 3
+##############################################
+$SectionSub3 = "I-un-Banning";
+$SectionBody3 = q~<p>Minsan ginagarantiyahan ng mga pangyayari ang pag-alis ng pagbabawal sa mga Miyembro na na-ban. Upang alisin sa pagbabawal ang isang Miyembro, i-access ang Profile ng Miyembro. Sa ilalim ng alinmang paraan na ginamit para i-ban ang miyembro, makakakita ka ng link na "I-unban". Ang pag-click dito ay nag-aalis ng impormasyon ng Miyembro na iyon mula sa naka-ban na listahan.</p>
+~;
+##############################################
+
+1;

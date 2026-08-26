@@ -1,0 +1,46 @@
+$SectionName = "Manage_Templates";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Accessing_the_Template_Editor";
+$SectionBody1 = q~<p>Binibigyan ka ng YaBB ng kakayahang mabilis at madaling magdagdag at/o baguhin ang hitsura at pakiramdam ng iyong Forum. Upang ma-access ang mga function na ito, dapat kang naka-log in bilang isang Forum Administrator o Global Moderator na may wastong mga karapatan sa pag-access. Sa "Admin Center" hanapin ang seksyon sa kaliwang menu na may pamagat na "Forum Layout." Doon ay makikita mo ang dalawang link: "Configuration ng Template", at "Style Sheet".</p>
+~;
+##############################################
+### Seksyon 2
+##############################################
+$SectionSub2 = "Template_Configuration";
+$SectionBody2 = q~Kung gusto mong magdagdag ng Template (kilala rin bilang skin), baguhin kung aling stylesheet file ang gusto mong gamitin para sa iyong Forum, o gumamit ng mga template maliban sa default, pinapayagan ka ng seksyong ito na gawin iyon.
+<p><b>Pagdaragdag ng Bagong Balat</b></p>
+<ul>
+    <li>Gumawa ng folder sa 'yabbfiles/Templates/Forum' (maaaring iba ang lokasyong ito para sa iyo) para sa mga graphics para sa iyong bagong skin at i-upload ang iyong mga graphics. I-upload din ang iyong bagong stylesheet sa parehong lugar kung saan ang default na stylesheet (default.css). (Huwag <b>HUWAG</b> i-overwrite ang iyong default na stylesheet.) Ang iyong bagong stylesheet ay dapat magkaroon ng pangalan na madaling maiugnay sa iyong bagong graphics folder. (Halimbawa, gusto mong gumamit ng 'Noir' skin. Pangalanan ang graphics folder na 'noir' at ang stylesheet na 'noir.css'.)</li>
+    <li>Gumawa ng folder sa iyong 'yabb2/Templates' na direktoryo para sa iyong mga bagong template file. (Muli, siguraduhin na ang pangalan ay isang bagay na madali mong iugnay sa iyong bagong balat.) I-upload ang iyong mga bagong Template file sa direktoryong ito. Ang '.html' na file ay dapat <b>hindi</b> pinangalanang 'default.html' - bigyan ito ng parehong pangalan ng iyong bagong folder. (Gamit ang halimbawa sa itaas, pangalanan ang folder na 'noir' at ang .html file na 'noir.html'.)</li>
+    <li>Sa "Configuration ng Template" ang mga pangalan ng iyong bagong stylesheet at mga folder ay dapat na ngayong lumabas sa drop-down na selection box. Piliin ang mga bagong folder, template, at stylesheet para sa iyong bagong skin. Gumawa ng pangalan para sa bagong skin at i-type ito sa textbox sa ibaba ng pahina ng “Configuration ng Template”. I-save ang iyong bagong balat sa ilalim ng bagong pangalan nito. Maaari mo na ngayong piliin ang iyong bagong skin bilang default para sa mga bagong miyembro at bisita sa lugar na "Mga Setting at Mga Kagustuhan sa Forum."</li>
+</ul>
+~;
+##############################################
+### Seksyon 3
+##############################################
+$SectionSub3 = "Editing_Templates";
+$SectionBody3 = q~YaBB ay nagbibigay sa iyo ng kakayahang i-edit ang html code para sa lahat ng pangunahing seksyon ng Forum maliban sa Admin Center. 
+<p><b>Pag-edit ng Template</b></p>
+<ul>
+    <li>Sa tuktok ng seksyong "Configuration ng Template" ay isang link na "Pumunta sa I-edit ang Mga File ng Template". Binubuksan nito ang seksyong I-edit ang Mga Template. Ipinapakita ng listahan ng drop-down na pagpili ang lahat ng iba't ibang mga file ng template sa lahat ng mga folder ng template. Ang mga nilalaman ng napiling file ay lilitaw sa window at maaaring i-edit. Tandaan: maliban sa mga file na may extension na '.html', lahat ng template file ay Perl coded na file. Huwag i-edit o baguhin ang anumang mga variable na pangalan. ( <span style="background-color:yellow">$variable</span> = q\~html code here\~;) Ang pagpapalit ng mga variable na pangalan ay maaaring maging hindi gumagana ang iyong forum.</li>
+</ul>
+~;
+##############################################
+### Seksyon 4
+##############################################
+$SectionSub4 = "Editing_Style_Sheets";
+$SectionBody4 = q~YaBB ay nagbibigay din sa iyo ng kakayahang i-edit ang stylesheet ng forum, pumili ng mga background at background ng button para sa mga button ng UBBC. 
+<p><b>Pag-edit ng Style Sheet</b></p>
+<ul>
+    <li>Ang button na “Style Sheet” ay magdadala sa iyo sa seksyong “WYSIWYG Style Sheet” kung saan maaari mong baguhin ang mga katangian gaya ng kulay at kulay ng background para sa mga item gaya ng Board Index Title, Category Bar, Mga seksyon ng display ng Mensahe. </li>
+</ul>
+<p class="help_attn">Hindi maaaring i-edit ang default na stylesheet mula sa screen ng WYSIWYG. Gayunpaman, maaari mong i-save ang iyong mga pagbabago sa isang bagong stylesheet at pagkatapos ay piliin ang stylesheet na iyon bilang stylesheet para sa iyong default na template sa seksyong "Configuration ng Template."</p>
+<h4>Pag-edit ng Stylesheet file</h4>
+<ul>
+    <li>Sa tuktok ng seksyong “WYSIWYG Style Sheet” ay isang button na “Source”. Binubuksan nito ang seksyong "I-edit ang Style Sheet". Ipinapakita ng drop-down na listahan ng pagpili ang lahat ng available na stylesheet, kabilang ang mga kabilang sa mga espesyal na function gaya ng 'calscroller'. Ang mga nilalaman ng napiling file ay lalabas sa window at maaaring i-edit.</li>
+</ul>
+~;
+
+1;

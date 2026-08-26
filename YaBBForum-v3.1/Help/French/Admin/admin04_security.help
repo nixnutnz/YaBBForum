@@ -1,0 +1,85 @@
+$SectionName = "Sécurité";
+
+### Section 1
+############################################
+$SectionSub1 = "Sécurité_Intro";
+$SectionBody1 = q~<p>YaBB est très sécurisé contre tous les types d'attaquants. Les nombreuses fonctionnalités intégrées de YaBB assurent la sécurité de votre forum contre les attaques. Sachez cependant que bon nombre de ces fonctionnalités de sécurité sont sélectionnables. Par conséquent, si vous ne les activez pas, cela peut présenter des risques. Par exemple, ne pas utiliser au moins une des mesures de validation pour les inscriptions, ou autoriser les invités à publier sans vérifier l'image de validation ou la question de validation.</p>
+~;
+############################################
+
+### Section 2
+############################################
+$SectionSub2 = "Séances";
+$SectionBody2 = q~<p><b>Sessions</b> sont une fonctionnalité YaBB conçue pour protéger les fonctions administratives. Si les sessions sont activées dans le centre d'administration, le personnel devra revalider sa session chaque fois que sa connexion réseau change d'adresse IP.</p>
+<p>Pour revalider votre session, cliquez simplement sur « Mettre à jour la session » dans le menu principal de YaBB en haut du forum. Si ce lien n'est pas présent, votre session n'a pas besoin d'être mise à jour.</p>
+<p>Par défaut, il vous demande votre mot de passe pour le revalider. Cela peut être modifié dans votre profil, dans la section "Modifier le profil", en bas de la liste des paramètres.</p>
+<p>Pour vérifier si les sessions sont activées, accédez au Centre d'administration/Centre de sécurité/Paramètres de sécurité et regardez sous l'onglet « Général ». Les sessions sont activées si la case à droite de « Activer les identifiants de session » est cochée.</p>
+~;
+############################################
+
+### Section 3
+############################################
+$SectionSub3 = "Mode_Furtif";
+$SectionBody3 = q~<p><b>Mode furtif</b> est une fonctionnalité YaBB conçue pour permettre aux administrateurs du forum, aux modérateurs globaux ou aux deux de surveiller discrètement l'activité du forum sans être « vus ». Lorsque cette option est sélectionnée, le statut « En ligne » des administrateurs de forum et des modérateurs globaux est masqué à tous les autres groupes de membres et invités.</p>
+<p>Cette option est activée en cochant la case dans l'onglet « Personnel » présent dans le Centre d'administration/Configuration du forum/Paramètres du forum.</p>
+~;
+############################################
+
+### Section 4
+############################################
+$SectionSub4 = "Encrypt_User_IDs";
+$SectionBody4 = q~<p>Cette fonctionnalité est conçue pour améliorer la sécurité en permettant aux administrateurs du forum de masquer le <span class="underline">nom de connexion</span> de l'utilisateur dans le lien vers son profil. Il s'agit du lien qui apparaît chaque fois que le curseur de la souris est placé sur le <span class="underline">Nom affiché</span> d'un membre.</p>
+<ul>
+    <li><span class="underline"><b>Option désactivée :</b></span> Lorsque cette option est désactivée, le lien se terminera par « username=(identifiant de connexion de l'utilisateur) »</li>
+    <li><span class="underline"><b>Option activée :</b></span> Lorsque cette option est activée, le lien se terminera par « nom d'utilisateur = (numéro crypté) »</li>
+</ul>
+<p>Cette option est activée par défaut. Il peut être désactivé en décochant la case « Chiffrer les identifiants utilisateur » dans la section Centre d'administration/Centre de sécurité/Paramètres de sécurité sous l'onglet « Général ».</p>
+~;
+############################################
+
+### Article 5
+############################################
+$SectionSub5 = "Administrative_Functions_-_Global_Moderator_Access";
+$SectionBody5 = q~<p>L'administrateur du forum peut sélectionner les fonctions administratives que les modérateurs globaux peuvent contrôler. L'administrateur du forum peut restreindre complètement l'accès au centre d'administration ou choisir d'autoriser les modérateurs globaux à contrôler une liste sélectionnée de ces fonctions. Ceux-ci incluent des éléments tels que la modification des profils utilisateur, l'ajout de membres, la suppression de membres, la modification des actualités du forum, la modification des paramètres de sécurité du forum, l'exécution de sauvegardes du forum et bien d'autres encore.</p>
+~;
+############################################
+
+### Article 6
+############################################
+$SectionSub6 = "Activate_Referral_Security_Checking";
+$SectionBody6 = q~<p>Cette fonctionnalité est conçue pour améliorer la sécurité en permettant aux administrateurs du forum de sélectionner les actions autorisées dans une URL en dehors du nom de domaine du forum. Lorsqu'elle est activée, cela permet à l'administrateur de sélectionner les actions autorisées individuellement dans la liste trouvée dans la section Centre d'administration/Centre de sécurité/Sécurité des référents.</p>
+<p>Cette option est activée en cochant la case « Activer la vérification de sécurité des références » dans l'onglet « Général » dans le Centre d'administration/Centre de sécurité/Paramètres de sécurité.</p>
+~;
+############################################
+
+### Article 7
+############################################
+$SectionSub7 = "Afficher_IP_in_Board_Index";
+$SectionBody7 = q~<p>Cette fonctionnalité permet aux administrateurs du forum d'afficher le numéro IP de toute personne connectée ou visitant le forum. Cette option affiche l'adresse IP d'un invité ou d'un utilisateur en bas à droite de chaque message et donne également accès à la fonction de recherche IP si elle a été activée.</p>
+<p>Cette option peut être activée pour les administrateurs du forum, les modérateurs globaux, les modérateurs du forum ou les trois.</p>
+<p>Cette option est activée en cochant les cases appropriées dans l'onglet « Général » trouvé dans le Centre d'administration/Centre de sécurité/Paramètres de sécurité.</p>
+<h4>Activer la recherche IP</h4>
+<p>Cela active la recherche IP, permettant à ceux qui sont capables de visualiser les adresses IP de rechercher également les détails d'une adresse IP via l'un des serveurs WhoIs.</p>
+<h4>Recherche IP des serveurs WhoIs</h4>
+<p>Ici, vous pouvez ajouter ou supprimer des serveurs WhoIs utilisés par l'utilitaire de recherche IP. Utilisez \{ip\} dans l'URL pour remplacer l'adresse IP réelle et séparez le titre et l'URL par un symbole barre verticale « | ». Exemple : <i>MyLookupSite|mylookupsite.com?ip=\{ip\}</i></p>
+~;
+############################################
+
+### Article 8
+############################################
+$SectionSub8 = "Spam_Protect_-_Enter_Percent";
+$SectionBody8 = q~<p>Cette fonctionnalité est conçue pour limiter le spam en définissant une limite sur le nombre d'autres membres auxquels un utilisateur peut envoyer un message personnel à la fois. Le nombre que vous saisissez représente <b>le <span class="underline">pourcentage</span> maximum du nombre total de membres</b> auquel un utilisateur peut envoyer des MP en même temps. </p>
+<p>Cette option est activée en saisissant le pourcentage souhaité dans la case appropriée de l'onglet « Messages personnels » de la section Centre d'administration/Configuration du forum/Paramètres du forum.</p>
+~;
+############################################
+
+### Article 9
+############################################
+$SectionSub9 = "Autres_Mesures_Anti-spam";
+$SectionBody9 = q~YaBBForum possède des fonctionnalités supplémentaires pour vous aider à lutter contre les enregistrements de spam. Deux de ces fonctionnalités sont Honeypot et SpamFruits, qui peuvent toutes deux être activées ou désactivées à partir du Centre d'administration/Centre de sécurité/Paramètres anti-spam. Honeypot est un capteur de robots spammeurs « passif » qui attrape les robots spammeurs lorsqu'ils remplissent un champ d'enregistrement visible par les robots spammeurs mais pas par les personnes utilisant un navigateur. SpamFruits fonctionne en exigeant un déplacement de la souris pour choisir la bonne image. Un autre utilitaire anti-spam efficace est la question anti-spam trouvée dans le centre d'administration/centre de sécurité/question anti-spam.
+<p>Cette option doit être activée et il est fortement recommandé d'utiliser des questions qui reflètent le créneau unique de votre forum. Essayez de ne pas utiliser de questions dont les réponses sont trop faciles à rechercher sur Google.</p>
+<p><b>Image de validation</b> a également de nouvelles fonctionnalités : vous pouvez désormais spécifier les caractères qui apparaîtront avant et/ou après l'image de validation générée aléatoirement. Ces caractères ressemblent à une partie de l'image de validation, mais les utilisateurs sont invités à les ignorer lorsqu'ils remplissent la zone de texte de l'image de validation.</p>
+~;
+############################################
+
+1;

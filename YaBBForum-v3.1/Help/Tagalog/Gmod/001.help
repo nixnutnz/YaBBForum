@@ -1,0 +1,18 @@
+$SectionName = "Global_Moderator_Help_Center";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Iyong_Global_Moderator_Status";
+$SectionBody1 = qq~<p>Ang Global Moderator ay isang posisyong tulad ng Administrator. May kakayahan kang gumamit ng mga function ng Moderator sa lahat ng Board at, kung papayagan ng Administrator, maaari mong i-edit ang ilang pangunahing setting ng komunidad ng YaBB na ito. Ipinagkatiwala sa iyo ang pangangalaga at pamamahala upang matiyak na umunlad ang lumalagong komunidad na ito.</p>
+<br>
+<br />Para sa suporta at pag-troubleshoot, pakibisita ang <a href="https://yabbforum.nz" target="_blank"><b>Komunidad ng Suporta ng YaBB</b></a></p>
+<p>Mangyaring sumangguni sa seksyong Glossary sa Tulong ng User kung kailangan mo ng paglilinaw sa iba't ibang page view na inilalarawan sa mga seksyon sa ibaba.</p>
+<p>Ang mga sumusunod na larawan ng Moderator Menu ay ibinigay para sa sanggunian.</p>
+<p>{yabb mymoding}</p>
+<p>Maaari mong gamitin ang menu sa kaliwa upang mabilis na tumalon sa anumang paksa sa ibaba.</p>
+<p>Maaari mong gamitin itong button na <img src="{top_img}" alt="Back to Top" title="Back to Top" class="cursor" /> sa kanang ibaba ng bawat seksyon ng Tulong upang bumalik sa tuktok ng pahina ng Tulong sa Global Moderator</p>
+~;
+##############################################
+
+
+1;

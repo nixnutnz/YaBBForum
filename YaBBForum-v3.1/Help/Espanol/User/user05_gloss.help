@@ -1,0 +1,187 @@
+$SectionName = "YaBB_Terminología";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Glosario";
+$SectionBody1 = q~YaBB tiene muchos términos descriptivos que se refieren a sus componentes, diferentes vistas de página y elementos visibles. Esta sección se proporciona como un glosario para ayudar a los usuarios a aprender la terminología correcta para sus foros.
+
+<dl>
+    <dt class="help_dd"><b>A</b></dt>
+    <dt><b>Administrador</b></dt>
+    <dd>Un usuario con control total sobre todas las funciones del foro</dd>
+    <dt><b>Centro de administración</b></dt>
+    <dd>El panel de control del foro que permite a los administradores realizar ajustes en el sistema y elegir qué opciones se establecerán para el foro.</dd>
+    <dt><b>Pantalla de ediciones de administrador</b></dt>
+    <dd>Esta es una pantalla en el perfil del usuario disponible solo para administradores y, si está permitido, para moderadores globales. Esta pantalla es donde se realizan el recuento de publicaciones del usuario y las selecciones de grupos de miembros.</dd>
+    <dt><b>Moderador de alerta</b></dt>
+    <dd>Un tipo de mensaje personal que se puede habilitar en tableros para invitados, miembros o ambos. El uso de esta alerta envía un mensaje privado a los moderadores del foro donde el remitente puede describir el problema que está encontrando.</dd>
+    <dt><b>Avatar</b></dt>
+    <dd>Los avatares son imágenes que aparecen debajo del nombre del usuario a la izquierda de cada publicación y también aparecen en el perfil del usuario. El usuario puede seleccionar avatares de un grupo de imágenes de avatar disponibles. El Administrador también puede permitir a los usuarios vincular a una imagen en la web o cargar su propia imagen de avatar.</dd>
+    <dt><b>Adjunto</b></dt>
+    <dd>Estos son archivos que un usuario puede cargar en relación con una publicación. El administrador puede elegir cuántos archivos se pueden adjuntar a las publicaciones, el tamaño máximo de archivo y los tipos de archivos permitidos.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>B</b></dt>
+    <dt><b>Prohibir o prohibir</b></dt>
+    <dd>Esto significa desterrar a un usuario de todo el foro. YaBB ofrece varias opciones sobre cómo hacer esto en el Centro de administración.</dd>
+    <dt><b>Tablero</b></dt>
+    <dd>El segundo grupo de temas principal en su foro, una división de Categorías. Los tableros son una colección de temas donde los usuarios discuten temas específicos.</dd>
+    <dt><b>Índice del tablero</b></dt>
+    <dd>Este es el archivo .template que muestra la lista de categorías y tableros en la página principal o de inicio del foro.</dd>
+    <dt><b>Moderador del foro</b></dt>
+    <dd>Es un miembro al que se le otorga poder para regular los puestos de una o más Juntas. Los moderadores del tablero se asignan editando cada tablero y asignando un miembro o grupo como moderador de ese tablero.</dd>
+    <dt><b>Permisos del tablero</b></dt>
+    <dd>Estas son opciones disponibles para cada tablero individual que le permiten al administrador elegir qué usuarios tendrán acceso al tablero en sí o a las funciones del tablero. Un ejemplo sería un tablero configurado para que un usuario miembro pueda verlo pero no publicar en él.</dd>
+    <dt><b>Mensaje de difusión</b></dt>
+    <dd>Un tipo de mensaje que los miembros del personal del foro pueden habilitar para su uso.</dd>
+    <dt><b>Lista de amigos</b></dt>
+    <dd>Esta es una sección del perfil del usuario que le brinda la posibilidad de agregar otros miembros con los que contacta con frecuencia a una lista que se mostrará en su vista CP de usuario. Su lista de amigos mostrará cada nombre, su estado en línea/fuera de línea y opciones de enlace para enviar al usuario un mensaje privado, un correo electrónico o visitar el enlace a su sitio web.</dd>
+ </dl><dl>
+    <dt class="help_dd"><b>C</b></dt>
+    <dt><b>Categorías</b></dt>
+    <dd>El primer grupo de temas importante de su foro. Las categorías son una colección de tableros que representan una agrupación de ideas o temas similares.</dd>
+    <dt><b>Imagen CAPTCHA</b></dt>
+    <dd>Ver imagen de validación.</dd>
+    <dt><b>Hacer clic en Registro</b></dt>
+    <dd>Ver registro del foro.</dd>
+</dl><dl>
+<dt class="help_dd"><b>D</b></dt>
+    <dt><b>Nombre para mostrar</b></dt>
+    <dd>Ver '<b>Nombre de pantalla</b>'.</dd>
+    <dt><b>Contador de descargas</b></dt>
+    <dd>Esta es una característica asociada con archivos adjuntos a Publicaciones y se muestra a la derecha del nombre del archivo. Esto indica cuántas veces se ha descargado el archivo adjunto. <span class="underline"><b>NOTA:</b></span> En el caso de archivos de imagen, un usuario puede hacer clic en el nombre del archivo y ver la imagen que se muestra en su navegador. Esto cuenta como una descarga, aunque el usuario realmente no haya descargado el archivo a su PC.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>E</b></dt>
+    <dt><b>Registro de errores</b></dt>
+    <dd>Este es un registro disponible para el administrador que registra todos los errores del foro e información sobre cuándo ocurrieron y quién los encontró.</dd>
+</dl><dl>
+<dt class="help_dd"><b>F</b></dt>
+    <dt><b>Foro</b></dt>
+    <dd>Esta es tu instalación completa de YaBB.</dd>
+    <dt><b>Registro del foro</b></dt>
+    <dd>Este es un registro disponible para el administrador que registra información sobre cada “clic” realizado en su foro. Esto le brinda al administrador información sobre qué tipos y versiones de navegador se están utilizando, usuarios versus invitados, páginas de referencia y más.</dd>
+    <dt><b>Logotipo del foro</b></dt>
+    <dd>Esta es la imagen que se muestra en la parte superior de las páginas de su foro. El logotipo estándar que viene con el software del foro tiene el logotipo de YaBB con un número de versión. Puede cambiar el logotipo del foro con cualquier imagen que elija (consulte Ayuda para administradores - Índice de temas de ayuda - ¿Cómo... para obtener instrucciones).</dd>
+    <dt><b>Noticias del foro</b></dt>
+    <dd>Estas son líneas de texto que el administrador puede elegir mostrar en la sección superior del foro. Se pueden configurar para que cambien solo con las actualizaciones de la pantalla o se pueden hacer para que se ciclen o se desvanezcan dentro de un período seleccionable.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>G</b></dt>
+    <dt><b>Imagen de género</b></dt>
+    <dd>Estos son pequeños íconos gráficos de un símbolo masculino o femenino que aparecen si el usuario especifica un género en su perfil y el administrador ha habilitado la visualización de las imágenes. Si están habilitados, aparecerán debajo de la imagen de Avatar del usuario a la izquierda de sus publicaciones, y también en el perfil del usuario.</dd>
+    <dt><b>Anuncio global</b></dt>
+    <dd>Una publicación con un tema importante ingresada en un tablero de anuncios globales especial, que copiará la publicación automáticamente en la PARTE SUPERIOR de <i>cada</i> tablero, en la sección Temas importantes.</dd>
+    <dt><b>Moderador global</b></dt>
+    <dd>Este es un miembro que tiene privilegios de Moderador en todo el foro y puede, dependiendo de cómo elija la configuración el Administrador, tener muchos de los poderes de un Administrador, incluido el acceso a funciones seleccionadas del Centro de administración.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>Yo</b></dt>
+    <dt><b>Lista de ignorados</b></dt>
+    <dd>Una función que te permite ignorar a otros miembros y te impide ver los mensajes personales que envían.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>M</b></dt>
+    <dt><b>Marcar y cotizar</b></dt>
+    <dd>Esta es una característica que le permite resaltar una parte de una publicación anterior y cuando se presiona el botón Marcar y citar, inserta el texto resaltado en su respuesta dentro de un cuadro de cita. Puedes agregar uno o más de estos a tu respuesta, incluso de diferentes publicaciones anteriores.</dd>
+    <dt><b>Miembro</b></dt>
+    <dd>Este es un usuario de su foro que se ha registrado.</dd>
+    <dt><b>Grupo de miembros</b></dt>
+    <dd>Estos son grupos que puede utilizar para asignar miembros a fin de establecer diferentes niveles de permiso para los usuarios. Hay dos tipos de grupos de miembros:
+        <ul>
+            <li>Publicar grupos de miembros dependientes</li>
+            <li>Publicar grupos de miembros independientes</li>
+        </ul>
+    </dd>
+    <dt><b>Lista de miembros</b></dt>
+    <dd>Esta es una lista de todos sus usuarios registrados que se puede ordenar por nombre de pantalla, posición, número de publicaciones o fecha de registro.</dd>
+    <dt><b>Índice de mensajes</b></dt>
+    <dd>Esta es la vista donde se enumeran todos los temas de un tablero. También es el nombre del archivo .template que proporciona esta vista.</dd>
+    <dt><b>MOD o Modificación</b></dt>
+    <dd>Una característica que no está incluida en la instalación del software del Foro Básico YaBB. Las modificaciones pueden incluir de todo, desde un simple cambio en el código del programa hasta un MOD empaquetado, que agrega o cambia características o el comportamiento de su foro. La modificación se puede realizar manualmente usando un editor de texto o usando el programa BoardMOD, que instala los cambios dentro de los archivos de script de YaBB automáticamente. Visite la <a href="https://www.boardmod.org" target = "_blank">página de inicio de BoardMOD</a> y las preguntas frecuentes para obtener más detalles.<br /><br />Haga todas las preguntas de soporte relacionadas con los MOD o el programa BoardMOD en el <a href="https://www.boardmod.org" target = "_blank">Foro de BoardMOD</a>.</dd>
+    <dt><b>Moderador</b></dt>
+    <dd>Ver 'Moderador del foro'.</dd>
+    <dt><b>Grupo moderador</b></dt>
+    <dd>Este es uno o más grupos de miembros que están asignados en la pantalla Editar tableros para ser moderadores de tableros en uno o más tableros. En lugar de promocionar a un solo usuario y tener que agregarlo como moderador del tablero en muchos tableros diferentes, puede crear un grupo de miembros y asignar ese grupo para que sean los moderadores del tablero. Luego, si necesita agregar un nuevo moderador del tablero, todo lo que tiene que hacer es agregarlo al grupo de miembros elegido para moderar en lugar de editar varios tableros.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>P</b></dt>
+    <dt><b>Ventana emergente de mensaje personal</b></dt>
+    <dd>Una opción seleccionable por el usuario que abre una pequeña ventana emergente que le informa que ha recibido un nuevo MP y un enlace de opción para ver su nuevo mensaje ahora.</dd>
+    <dt><b>Encuesta</b></dt>
+    <dd>Un tipo de encuesta que se puede utilizar en el foro y que consta de una pregunta, una lista de respuestas seleccionables y una visualización gráfica de los resultados.</dd>
+    <dt><b>Publicar</b></dt>
+    <dd>Un mensaje singular de un usuario que contiene el texto o contenido real. Una publicación puede ser una publicación de tema nuevo o una respuesta a una publicación existente.</dd>
+    <dt><b>Grupo de miembros dependientes de la publicación</b></dt>
+    <dd>Un grupo de miembros donde los usuarios pueden ascender automáticamente en una jerarquía de grupos de miembros basándose únicamente en la cantidad de publicaciones que han realizado.</dd>
+    <dt><b>Grupo de miembros post-independientes</b></dt>
+    <dd>Un grupo de miembros donde los usuarios deben ser colocados o promovidos manualmente por un administrador o moderador global. Estos grupos se utilizan principalmente para controlar el acceso a categorías o tableros específicos.</dd>
+    <dt><b>Ventana de publicación</b></dt>
+    <dd>Esta es la ventana utilizada para realizar una publicación. Tiene botones de formato encima y algunos de los emoticonos más utilizados debajo.</dd>
+    <dt><b>Ver publicación</b></dt>
+    <dd>Esta es la vista que ves cuando lees las publicaciones de un tema. Esta vista utiliza el archivo Display.template para mostrar la lista de publicaciones.</dd>
+    <dt><b>(PM) Mensaje personal o mensaje privado</b></dt>
+    <dd>Una comunicación en un foro interno similar a un correo electrónico que solo ven el remitente y el destinatario. Se puede acceder a los MP desde el Panel de control del usuario.</dd>
+    <dt><b>Perfil</b></dt>
+    <dd>Esto consta de la página de perfil del usuario y la configuración del perfil. A veces se utiliza como sinónimo de página de perfil, como en "Veo que en tu perfil (página) tienes 1200 publicaciones".</dd>
+    <dt><b>Página de perfil</b></dt>
+    <dd>Esta es una página donde se muestra la información de un usuario, como nombre de pantalla, número de publicaciones, fecha de registro, enlace a su sitio web, últimas publicaciones realizadas por el usuario, etc. Puede acceder a la página de perfil de un usuario haciendo clic en su nombre de pantalla.</dd>
+    <dt><b>Configuración del perfil</b></dt>
+    <dd>Estas son todas las configuraciones que son personales para cada usuario individual. Algunos ejemplos son la zona horaria, la elección de la plantilla, la imagen del avatar, etc. Estos pueden ser cambiados por el usuario individual o por los administradores y, si se permite, por los moderadores globales.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>P</b></dt>
+    <dt><b>Cita</b></dt>
+    <dd>Esta es una característica que permite a un usuario que responde a una publicación citar el contenido completo de la publicación directamente debajo del botón Citar en el que hace clic. Esto evita tener que volver a escribirlo en la respuesta. También puedes resaltar y copiar texto manualmente en una publicación, luego pegarlo en tu respuesta y con el texto resaltado, presionar el botón Insertar cita encima de la ventana de la publicación para colocarlo en un cuadro de cotización (consulta también Marcar y citar).</dd>
+    <dt><b>Cuadro de cotización</b></dt>
+    <dd>Este es un cuadro colocado alrededor del texto citado que distingue el texto citado de las palabras de su publicación de respuesta. Puede incluir texto en un cuadro de cotización resaltando el texto con el mouse y haciendo clic en el botón Insertar cotización encima de la ventana de publicación.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>R</b></dt>
+    <dt><b>Registro</b></dt>
+    <dd>El proceso por el cual un usuario se convierte en miembro de su foro. Hay cuatro modos diferentes de registro entre los que el Administrador puede elegir.</dd>
+    <dt><b>Nombres reservados</b></dt>
+    <dd>Estos son nombres que el administrador ha decidido no permitir su uso en ID de usuario o nombres de usuario.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>S</b></dt>
+    <dt><b>Nombre de pantalla</b></dt>
+    <dd>Este es el nombre “público” del usuario, el nombre que se muestra encima de su imagen de avatar a la izquierda de la ventana de publicación y en la lista de miembros. Un usuario puede cambiar este nombre editando el nombre de pantalla en su perfil.</dd>
+    <dt><b>Buscar</b></dt>
+    <dd>Esta característica permite a un usuario buscar en el foro información en publicaciones o publicaciones de usuarios. En la página de búsqueda se enumeran varias opciones.</dd>
+    <dt class="help_dd"><b><span class="underline">Consejo de usuario:</span></b> Para búsquedas generales, utilice la opción "Cualquier póster" en el cuadro de selección en la parte inferior de las secciones "Por usuario".</dt>
+    <dt><b>Firma</b></dt>
+    <dd>Esta es una sección que aparece en la parte inferior de la publicación de cada usuario. Una firma puede contener una imagen, texto o una combinación de ambos. Cada usuario puede crear firmas en su perfil - página Opciones.</dd>
+    <dt><b>Emoticones</b></dt>
+    <dd>Todo el mundo sabe qué es un Smiley. [yabbc][img]$imagesdir/wink.gif[/img][/yabbc]<br /><br />Simplemente haz clic en el emoticón para agregarlo a tu publicación.</dd>
+    <dt><b>Personal</b></dt>
+    <dd>Un miembro del personal administrativo del foro: administrador del foro, moderador global, moderador del foro, moderador de la junta directiva o miembro de un grupo de moderadores. Los privilegios del personal los establece el administrador del foro.</dd>
+    <dt><b>Tema recurrente</b></dt>
+    <dd>Un tema que un miembro del personal coloca encima de la lista normal de temas en un foro. Los temas fijos permanecerán por encima de todos los demás temas de la lista para dar mayor importancia a un tema determinado.</dd>
+    <dt><b>Hoja de estilo</b></dt>
+    <dd>Este es el archivo .css que controla los elementos de estilo de su foro. Los colores de la plantilla, el tamaño y el color del texto, los fondos y algunos gráficos provienen de la hoja de estilos.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>T</b></dt>
+    <dt><b>Plantilla</b></dt>
+    <dd>Esto se refiere más comúnmente al archivo default.html que forma la "apariencia" de su foro. Este archivo contiene el logotipo del foro, las pestañas del menú, los derechos de autor y todos los elementos que aparecerán en cada página de su foro.</dd>
+    <dd>Esto también puede referirse a la colección de archivos .template, archivos .html, archivos .css y gráficos que le dan apariencia a su foro. Este no es un <i>archivo</i> real, sino <span class="underline">datos</span> que se almacenan en la variable 'templateset' en el archivo Settings.pm en la carpeta Variables.</dd>
+    <dt><b>Pantalla de configuración de plantilla</b></dt>
+    <dd>Esta es una sección dentro del Centro de administración que permite al administrador configurar una plantilla particular para usar una hoja de estilo específica, archivos .template o carpeta que contiene imágenes gráficas.</dd>
+    <dt><b>Tema</b></dt>
+    <dd>Contiene todas las publicaciones sobre un tema de discusión en particular. El tema del tema está determinado por el tema elegido en la primera publicación de un tema. La colección de la primera publicación y todas las respuestas a ella a veces se denomina "Hilo".</dd>
+    <dt><b>Lista de temas</b></dt>
+    <dd>Una lista que muestra todos los temas de un tablero en una o más páginas, con anuncios globales y temas fijos en la parte superior de la lista.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>U</b></dt>
+    <dt><b>Usuario</b></dt>
+    <dd>Este es normalmente un miembro de su foro. Los invitados pueden ser considerados usuarios si se les permite ver elementos o realizar acciones en su foro, aunque no tendrán perfil y no podrán ser ubicados en ningún grupo de miembros.</dd>
+    <dt><b>Panel de control de usuario (CP)</b></dt>
+    <dd>Este es un panel de control para que los usuarios lean sus MP y establezcan sus preferencias individuales para elementos como visualización de la hora, elección de plantilla, imagen de avatar, etc. Incluye la sección MP del usuario, la sección Perfil del usuario y la sección Notificaciones del usuario.</dd>
+    <dt><b>Nombre de usuario</b></dt>
+    <dd>Este es el nombre no visible de un miembro y es el nombre que se utiliza para realizar un seguimiento de las publicaciones del usuario y otras estadísticas, como las publicaciones que se han visto. Este nombre no se puede cambiar sin perder toda la información asociada con el nombre de usuario anterior. Todas las publicaciones anteriores seguirán apareciendo con el nombre de usuario anterior, que luego se mostrará como "Exmiembro".</dd>
+</dl><dl>
+    <dt class="help_dd"><b>V</b></dt>
+    <dt><b>Imagen de validación</b></dt>
+    <dd>Esta es una serie de letras y números generada aleatoriamente que se utiliza para el registro y en ciertos casos en los que los invitados pueden acceder a algunas funciones del foro (publicar, votar en encuestas, etc.).</dd>
+</dl><dl>
+    <dt class="help_dd"><b>Y</b></dt>
+    <dt><b>Copia de seguridad de YaBB</b></dt>
+    <dd>Esta es una función que permite al administrador crear una copia de seguridad de todo o parte de su foro.</dd>
+    <dt><b>YaBBC</b></dt>
+    <dd>Esto es similar al Código del tablón de anuncios (BBC), pero está adaptado específicamente para su uso con foros de YaBB. Los códigos YaBBC se colocan como etiquetas entre corchetes en las publicaciones. Consulte <a href="#YaBBC_Reference">Ayuda para el usuario - Publicaciones - Referencia de YaBBC</a> para ver ejemplos.  </dd>
+</dl>
+~;
+#############################################
+
+1;

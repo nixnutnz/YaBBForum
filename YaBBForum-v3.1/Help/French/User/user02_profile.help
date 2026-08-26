@@ -1,0 +1,144 @@
+$SectionName = "Utilisateur_CP_et_Profile";
+
+### Section 1
+############################################
+$SectionSub1 = "Utilisateur_CP";
+$SectionBody1 = q~Le CP utilisateur (Panneau de configuration utilisateur) de YaBB est une combinaison de votre profil utilisateur avec la liste de contacts, la messagerie personnelle, les notifications et les favoris.
+<p>Lorsque vous saisissez le « CP utilisateur », vous avez plusieurs choix :</p>
+<ul>
+    <li>Au-dessus du volet latéral gauche, vous voyez un menu à onglets contenant "Messages", "Profil" et "Messages".</li>
+    <li>Dans <b>Messages</b>, vous contrôlez tous vos messages personnels : vous pouvez les trier dans vos dossiers (si activé) ou envoyer de nouveaux messages ainsi que rechercher un message particulier.</li>
+    <li>Dans <b>Profil</b>, vous pouvez afficher l'apparence de votre profil et modifier son contenu. Avec la « Liste d'amis », vous pouvez vérifier rapidement le statut en ligne de vos amis, leur envoyer des messages et vérifier leurs coordonnées.</li>
+    <li>Dans <b>Messages</b>, vous pouvez vérifier et mettre à jour vos notifications et favoris, ainsi que consulter vos propres derniers messages.</li>
+    <li>Dans le volet de droite, vous verrez une partie de votre profil tel qu'il apparaît sur la page Afficher les publications, votre liste d'amis, des informations concernant votre apparence en ligne/hors ligne, ainsi que vos notifications de forum et de sujet.</li>
+</ul>
+~;
+############################################
+
+### Section 2
+############################################
+$SectionSub2 = "Profile_Overview";
+$SectionBody2 = q~YaBB vous permet de remplir un profil qui parle de vous aux gens. Vous pouvez avoir votre nom, votre âge, vos informations de messagerie instantanée, votre avatar personnel (photo) et bien plus encore !
+<p><b>Étape 1 :</b> Pour modifier votre profil, cliquez sur l'option « Utilisateur CP » dans le menu du forum ci-dessus. Cliquez ensuite sur « Profil » dans le petit onglet
+sous le menu principal à onglets. Cela vous amènera à la page Afficher le profil.</p>
+<p><b>Étape 2 :</b> sur votre page Afficher le profil, vous verrez plusieurs liens qui vous permettent d'accéder à chaque partie de votre profil utilisateur, qui est divisé en cinq sections : Modifier le profil, Informations de contact, Options, Liste d'amis et Préférences MP. Cliquez sur le lien approprié pour accéder à cette partie de votre profil.</p>
+<p><b>Étape 3 :</b> Pour des raisons de sécurité, il vous sera ensuite demandé de saisir votre mot de passe. Faites-le, puis cliquez sur « Confirmer le mot de passe ».</p>
+<p>Vous avez désormais accès à tous les paramètres et options de votre compte pour ce forum YaBB. Les détails sur chacun de ces paramètres sont décrits ci-dessous.</p>
+~;
+############################################
+
+### Section 3
+############################################
+$SectionSub3 = "Modifier_Profil";
+$SectionBody3 = q~La section Modifier le profil vous donne un accès rapide aux paramètres de profil de base de votre compte sur ce forum YaBB.
+<h4 class="help">Mot de passe</h4>
+<p>Si vous souhaitez modifier votre mot de passe, vous pouvez le faire en remplissant cette case. Il est fortement recommandé que votre mot de passe comporte au moins <i>au moins</i> 6 caractères et utilise une combinaison de lettres et de chiffres.</p>
+<h4 class="help">Vérifier le mot de passe</h4>
+<p>Pour éviter que vous soyez exclu du forum par inadvertance, YaBB vérifie que vous avez correctement orthographié le nouveau mot de passe en vous demandant de saisir à nouveau votre nouveau mot de passe dans cette case.</p>
+<h4 class="help">Nom</h4>
+<p>Voici votre nom affiché. C'est votre nom que tout le monde verra tout au long de ce forum YaBB.</p>
+<h4 class="help">Genre</h4>
+<p>Si vous souhaitez que les autres connaissent votre sexe, vous pouvez choisir « Homme » ou « Femme » dans cette liste déroulante. Certains forums imposent des limites au nombre de fois où vous pouvez modifier ces informations.</p>
+<h4 class="help">Anniversaire</h4>
+<p>Si vous souhaitez que les autres voient votre âge et aient une icône spéciale dans votre profil le jour de votre anniversaire, veuillez le saisir au format JJ (jour), MM (mois), AAAA (année). Vous pourrez peut-être également masquer votre année de naissance et votre âge aux invités et aux autres membres. Certains forums imposent des limites au nombre de fois où vous pouvez modifier ces informations.</p>
+<h4 class="help">Emplacement</h4>
+<p>Facultatif. Cette case est disponible pour remplir des informations sur l'endroit où vous vivez, d'où vous venez ou tout autre élément que vous choisissez d'afficher dans votre profil.</p>
+<p class="help_attn"><b><span class="underline">Conseil d'utilisation :</span></b> Gardez à l'esprit que certains forums peuvent contenir une restriction d'accès en fonction de l'âge ou du sexe. Par exemple, si vous n'indiquez pas d'âge dans votre profil, il n'y aura aucun moyen de savoir si vous devez être autorisé à accéder à un tableau qui fixe une limite d'âge supérieure à 21 ans. De même pour le sexe, si un tableau est configuré pour autoriser uniquement les femmes, vous ne serez pas autorisé à y accéder si vous n'indiquez pas Femme comme sexe dans le profil. Dans certains cas, l'administrateur peut avoir choisi de rendre le sexe et/ou la date de naissance obligatoires et peut limiter le nombre de fois où vous pouvez modifier ces informations.</p>
+~;
+############################################
+
+### Section 4
+############################################
+$SectionSub4 = "Contact_Informations";
+$SectionBody4 = q~<p>Si vous souhaitez que d'autres membres de cette communauté YaBB puissent vous contacter, cette section vous permettra de renseigner cette information dans votre profil.</p>
+<h4 class="help">E-mail</h4>
+<p>Il doit s'agir d'une adresse e-mail valide. Il est utilisé pour les notifications système telles qu'un mot de passe oublié, les notifications de sujets et les e-mails du forum.</p>
+<h4 class="help">Masquer les e-mails du public</h4>
+<p>Cochez cette case si vous ne souhaitez pas que les autres membres de la communauté YaBB voient votre adresse e-mail. <b>Remarque :</b> cela ne le cache pas aux administrateurs.</p>
+<h4 class="help">Google Talk</h4>
+<p>Si vous disposez de Google Talk, vous pouvez saisir votre adresse ici.</p>
+<h4 class="help">Skype ou VoIP</h4>
+<p>Si vous disposez d'une adresse Skype ou VoIP, vous pouvez la saisir ici.</p>
+<h4 class="help">MySpace</h4>
+<p>Si vous avez une page MySpace, vous pouvez la saisir ici. Notez qu'il vous suffit de remplir la dernière partie de l'URL. Par exemple, si votre page MySpace est « https://myspace.com/votrenom », il vous suffit de saisir « votre nom ».</p>
+<h4 class="help">Twitter</h4>
+<p>Si vous possédez un compte Twitter, vous pouvez le saisir ici. Notez qu'il vous suffit de remplir la dernière partie de l'URL. Par exemple, si votre page Twitter est « https://twitter.com/votrenom », il vous suffit de saisir « votre nom ».</p>
+<h4 class="help">YouTube</h4>
+<p>Si vous possédez un compte YouTube, vous pouvez le saisir ici. Notez qu'il vous suffit de remplir la dernière partie de l'URL. Par exemple, si votre page YouTube est « https://www.youtube.com/votrenom », il vous suffit de saisir « votre nom ».</p>
+<h4 class="help">Facebook</h4>
+<p>Si vous avez une page Facebook, vous pouvez participer ici. Notez que vous pouvez utiliser votre numéro d'identification de profil ou votre nom d'utilisateur. Par exemple, pour utiliser votre numéro d'identification de profil, si votre URL Facebook est « https://facebook.com/profile.php?id=123456 », il vous suffit de saisir « 123456 », et pour utiliser votre nom d'utilisateur, si votre URL Facebook est « https://facebook.com/votrenom », il vous suffit de saisir « votre nom ».</p>
+<h4 class="help">Titre du site</h4>
+<p>Si vous avez un site Web, vous pouvez saisir le titre ici. Ce sera le texte auquel l'URL (ci-dessous) sera attachée.</p>
+<h4 class="help">URL du site Web</h4>
+<p>Ici, vous pouvez saisir l'URL de votre site Web. Notez qu'il doit s'agir d'une URL complète. (c'est-à-dire inclure https:// )</p>
+~;
+############################################
+
+### Article 5
+############################################
+$SectionSub5 = "Options";
+$SectionBody5 = q~La section Options de votre profil YaBB vous permet de modifier les paramètres du forum liés à votre compte.
+<h4 class="help">Personalized_Picture</h4>
+<p>YaBB vous permet de définir une petite image (appelée avatar) qui affichera sous votre nom à gauche de vos posts. Ce forum dispose d'un certain nombre d'avatars déjà installés, et vous pouvez en choisir un dans la liste. Si vous souhaitez utiliser votre propre image comme avatar, veuillez consulter les options ci-dessous.</p>
+<p>L'administrateur du forum peut également activer l'une ou les deux options suivantes :</p>
+<ul>
+    <li><span class="underline"><b>Lien vers votre propre image d'avatar</b></span>
+        <br />Si vous avez votre propre image et que vous souhaitez l'utiliser sur ce YaBB comme avatar, vous pouvez saisir l'URL ici.</li>
+    <li><span class="underline"><b>Téléchargement de votre propre image d'avatar</b></span>
+        <br />Si vous souhaitez télécharger votre propre image et l'utiliser sur ce YaBB comme avatar, cliquez sur le bouton Parcourir et sélectionnez un fichier sur votre ordinateur à télécharger.</li>
+</ul>
+<h4 class="help">Texte personnel</h4>
+<p>Il s'agit d'une petite ligne de texte qui s'affichera sous votre avatar.</p>
+<h4 class="aide">Signature</h4>
+<p>Votre signature est affichée au bas de chaque message que vous publiez et dans votre profil.</p>
+<h4 class="help">Format de l'heure</h4>
+<p>Cette option vous permet de modifier la façon dont les dates et les heures vous sont présentées dans cette communauté YaBB.</p>
+<h4 class="help">Fuseau horaire</h4>
+<p>Si l'administrateur le permet, vous pouvez choisir votre fuseau horaire par pays et par ville. Cela définit non seulement votre décalage horaire personnel, mais permet également à YaBB de s'ajuster automatiquement à l'heure d'été pour ce fuseau horaire.</p>
+<h4 class="help">Modèle</h4>
+<p>Si le webmaster de ce forum YaBB dispose de plusieurs modèles disponibles, vous pouvez en choisir un dans cette case.</p>
+<h4 class="help">Langue</h4>
+<p>Ici, vous pouvez sélectionner votre langue maternelle dans laquelle afficher cette communauté si elle est disponible. <strong>Remarque</strong> : Les messages publiés ne sont <strong>pas</strong> automatiquement traduits dans la langue de votre choix.</p>
+<h4 class="help">Masquer les avatars des membres dans les discussions ?</h4>
+<p>Cocher cette option empêchera tous les avatars des membres d'apparaître lorsque vous consultez un fil de discussion.</p>
+<h4 class="help">Masquer le texte des membres dans les discussions ?</h4>
+<p>En cochant cette option, tous les textes utilisateur des membres n'apparaîtront pas lorsque vous consultez un fil de discussion.</p>
+<h4 class="help">Masquer les images jointes dans les discussions ?</h4>
+<p>En cochant cette option, toutes les images jointes continueront d'apparaître lorsque vous consultez un fil de discussion.</p>
+<h4 class="help">Masquer les signatures des membres dans les discussions ?</h4>
+<p>En cochant cette option, toutes les signatures des membres n'apparaîtront pas lorsque vous consultez un fil de discussion.</p>
+<h4 class="help">Masquer la ligne Smiley sous la zone Post/Réponse ?</h4>
+<p>Cocher cette option empêchera les images souriantes d'apparaître lorsque vous publiez un nouveau sujet ou répondez à un fil de discussion.</p>
+~;
+############################################
+
+### Article 6
+############################################
+$SectionSub6 = "Liste_d'amis";
+$SectionBody6 = q~La section <span class="underline"><b>Liste d'amis</b></span> du profil vous donne la possibilité d'ajouter d'autres membres que vous contactez fréquemment à une liste qui s'affichera dans votre vue CP utilisateur.  Votre liste d'amis affichera chaque nom, leur statut en ligne/hors ligne et les options de lien pour envoyer à l'utilisateur un MP, un e-mail ou visiter le lien vers son site Web.<br />
+<ul>
+    <li>Ajoutez des utilisateurs à votre liste d'amis en cliquant sur le lien situé sous la zone d'affichage de la liste d'amis.</li>
+    <li>Supprimez des utilisateurs de votre liste d'amis en double-cliquant sur leur nom d'utilisateur dans la zone d'affichage de la liste d'amis.</li>
+</ul>
+~;
+############################################
+
+### Article 7
+############################################
+$SectionSub7 = "PM_Préférences";
+$SectionBody7 = q~Cette section de votre profil vous donne la possibilité de personnaliser la façon dont vous affichez et recevez les messages personnels des autres membres de la communauté.
+<p class="help_attn"><b><span class="underline">Conseil d'utilisation :</span></b> Gardez à l'esprit que la messagerie personnelle est une fonctionnalité facultative et ne sera disponible que si l'administrateur choisit de l'activer.  De même, certaines des options soulignées ci-dessous peuvent ne pas être visibles dans votre liste de préférences PM car elles sont également facultatives à la discrétion de l'administrateur et peuvent être désactivées.</p>
+<h4 class="help">Liste à ignorer</h4>
+<p>Cette fonction vous permet d'ignorer les autres membres en vous empêchant de visualiser les messages personnels qu'ils envoient. De plus, vous disposez d'une option à cocher pour désactiver tous les MP si vous le souhaitez.</p>
+<h4 class="help">Me prévenir des nouveaux MP par e-mail :</h4>
+<p>Si vous souhaitez recevoir un e-mail lorsqu'un membre vous envoie un message personnel, cette option vous permet d'activer cette fonctionnalité.</p>
+<h4 class="help">Activer la fenêtre contextuelle des messages personnels ?</h4>
+<p>Cocher cette case affichera une petite fenêtre contextuelle pour vous informer de tout nouveau message personnel. Si <span class="underline">non</span> est coché, vous verrez les nouveaux messages dans le « message d'accueil » en haut du forum dans ce format : Vous avez X message(s) et Y nouveau(x) message(s).</p>
+<h4 class="help">La fenêtre contextuelle PM affiche les MP dans une nouvelle fenêtre ?</h4>
+<p>Si les pop-ups MP sont activés, cocher cette case ouvrira vos MP dans une nouvelle fenêtre lorsque vous cliquerez sur le lien dans la fenêtre pop-up, sinon, ils se chargeront dans la fenêtre actuelle.</p>
+<h4 class="help">Afficher le texte du message dans la liste des messages personnels ?</h4>
+<p>Cocher la case permet d'afficher la première ligne du texte du message dans les vues de liste. Pour afficher uniquement l'expéditeur/destinataire, la date, etc., laissez cette case décochée.</p>
+~;
+############################################
+
+1;

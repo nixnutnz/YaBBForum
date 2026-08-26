@@ -1,0 +1,17 @@
+$SectionName = "Moderator_Help_Center";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Su_estado_de_moderador";
+$SectionBody1 = q~<p>Felicitaciones por su ascenso al estado de Moderador del foro o Moderador del foro.  Ahora puedes ayudar directamente a este foro de YaBB administrando uno o más tableros y las publicaciones dentro de ellos. Si bien la mayoría de las nuevas funciones disponibles le resultarán familiares, hay algunas nuevas que se tratarán en esta sección de ayuda.</p>
+<br>
+<br />Para obtener soporte y solución de problemas, visite la <a href="https://yabbforum.nz" target="_blank"><b>Comunidad de soporte de YaBB</b></a></p>
+<p>Consulte la sección Glosario en Ayuda del usuario si necesita aclaraciones sobre las diferentes vistas de página que se describen en las secciones siguientes.</p>
+<p>Las siguientes imágenes del menú del moderador se proporcionan como referencia.</p>
+<p>{yabb mymoding}</p>
+<p>Puedes utilizar el menú de la izquierda para saltar rápidamente a cualquier tema a continuación.</p>
+<p>Puedes usar este botón <img src="{top_img}" alt="Volver al inicio" title="Volver al inicio" /> en la parte inferior derecha de cada sección de Ayuda para regresar a la parte superior de la página de Ayuda del moderador</p>
+~;
+#############################################
+
+1;

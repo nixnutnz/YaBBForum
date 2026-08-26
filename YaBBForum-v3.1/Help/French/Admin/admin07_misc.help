@@ -1,0 +1,86 @@
+$SectionName = "Autres_Paramètres";
+
+### Section 1
+############################################
+$SectionSub1 = "Événement_Calendrier";
+$SectionBody1 = q~<p>YaBB 2.6 propose l'ajout d'un calendrier d'événements où les membres et le personnel peuvent publier des jours fériés, des événements spéciaux et des réunions. Afin de configurer le calendrier des événements, vous devez être connecté en tant qu'administrateur du forum ou modérateur global avec les droits d'accès appropriés. Dans le « Centre d'administration », recherchez la section dans le menu de gauche intitulée « Contrôles généraux ». Cliquez sur « Calendrier des événements ».</p>
+<ul>
+    <li><b>Paramètres standard</b>
+        <br />Ici, l'administrateur peut choisir qui (le cas échéant) voit le calendrier des événements, qui (le cas échéant) voit le lien du calendrier des événements dans le menu à onglets, si les anniversaires des membres sont affichés ou non et d'autres options de base.
+    </li>
+    <li><b>Paramètres de l'événement</b>
+        <br />Cette section permet à l'administrateur de choisir comment les événements seront affichés dans le « mini calendrier » et dans la liste des événements.
+    </li>
+    <li><b>Paramètres d'accès</b>
+        <br />Cette section permet à l'administrateur de choisir quels groupes et/ou individus peuvent publier de nouveaux événements. Il existe également une case à cocher qui, lorsqu'elle est cochée, activera la suppression automatique des événements expirés de la base de données du calendrier des événements lorsque de nouveaux événements sont ajoutés.
+    </li>
+    <li><b>Paramètres de la liste d'anniversaire</b>
+        <br />Cette section permet à l'administrateur de choisir qui (le cas échéant) est autorisé à voir une liste de tous les membres dont la date de naissance est enregistrée dans leur profil utilisateur.
+    </li>
+    <li><strong>Reconstruire la liste d'anniversaire</strong>
+        <br />Ce bouton reconstruit la liste des anniversaires des membres en cas de corruption.
+    </li>
+    <li><strong>Supprimer les anciens événements</strong>
+        <br />Ce bouton supprime les événements expirés de la base de données des événements. (<span class="help_attn important"><strong>Attention</strong>, cette action n'est pas réversible.</span>)
+    </li>
+    <li><strong>Paramètres des icônes d'événements du calendrier</strong>
+        <br />Ici, vous pouvez télécharger et gérer des icônes supplémentaires pour personnaliser votre calendrier d'événements.
+    </li>
+</ul>
+<p class="help_attn"><b><span class="underline">Conseil de l'administrateur :</span></b> Si « Autoriser l'utilisateur à masquer l'âge dans l'affichage du profil et des messages et à masquer l'âge et l'année de naissance dans le calendrier ? » est coché dans « Paramètres du forum -> Membres », les membres peuvent choisir de masquer leur âge. Dans ce cas, seuls le mois et le jour de naissance du Membre seront affichés.</p>
+~;
+############################################
+
+### Section 2
+############################################
+$SectionSub2 = "Options_Smiley";
+$SectionBody2 = q~<p>Pour configurer les options Smiley, vous devez être connecté en tant qu'administrateur du forum ou modérateur global avec les droits d'accès appropriés. Dans le « Centre d'administration », recherchez la section dans le menu de gauche intitulée « Contrôles généraux ». Cliquez sur « Options des smileys ».</p>
+<ul>
+    <li><b>Options de smiley</b>
+        <br />Cette section permet à l'administrateur de gérer les smileys (émoticônes) à utiliser dans les publications, les messages personnels et les événements du calendrier.
+        <br /><strong>Supprimer le bloc Smiley</strong>
+        <br />Lorsque cette case est cochée, aucun smiley n'apparaît sous la zone de saisie de texte sur aucune page de publication.
+        <br /><strong>Style pop-up Smiley détaché</strong>
+        <br />'Simple' organise les smileys dans la boîte contextuelle en rangées. « Avancé » organise les smileys sous forme de tableau.
+        <br /><strong>Afficher les smileys ajoutés</strong> et le <strong>contenu du répertoire des smileys</strong>
+        <br />Sélectionnez où ont été ajoutés les smileys et le contenu entier du répertoire des smileys en choisissant parmi leurs sélections déroulantes respectives.
+        <br /><strong>Afficher les smileys ajoutés/supplémentaires</strong>
+        <br />Sélectionnez le <em>bouton radio</em> à droite pour désactiver l'affichage de smileys supplémentaires dans le bloc Smiley. Sinon, choisissez les smileys supplémentaires que vous souhaitez dans le bloc Smiley en sélectionnant le <em>bouton radio</em> associé à chaque smiley que vous souhaitez afficher.
+    </li>
+    <li><strong>Smileys ajoutés</strong>
+        <br />Il s'agit d'une liste de smileys qui ont été ajoutés à la liste des smileys par défaut. Des smileys peuvent être ajoutés dans la section « Ajouter des smileys ». Vous pouvez choisir un fichier à télécharger, définir un code de smiley et une description comme les smileys par défaut dans le Smiley Block. Vous pouvez télécharger plusieurs nouveaux smileys à la fois. Cliquez sur le bouton « Enregistrer les paramètres » pour terminer l'ajout de vos nouveaux smileys.
+        <br />Les types de fichiers autorisés sont png, jpg, jpeg et gif. La taille des fichiers Smiley est limitée à 100 Ko maximum.
+    </li>
+    <li><strong>Contenu du répertoire des smileys</strong>
+        <br />Ceci est une liste de tous les fichiers smiley dans le dossier Smileys du dossier « yabbfiles ». (Cet emplacement peut varier en fonction de votre installation YaBB.
+        <br />Des fichiers peuvent être ajoutés à cette section en ajoutant directement des fichiers à ce dossier. Les types de fichiers autorisés sont png, jpg, jpeg et gif. Les fichiers Smiley ne doivent pas dépasser 100 Ko.
+    </li>
+</ul>
+~;
+
+############################################
+### Section 3
+############################################
+$SectionSub3 = "Social_Bookmarks";
+$SectionBody3 = q~<p>Les signets sociaux permettent aux membres et aux visiteurs de partager facilement des éléments sur votre forum en partageant des éléments mis en favoris sur leurs pages de réseaux sociaux.</p>
+<p>Pour modifier les paramètres des signets sociaux, vous devez être connecté en tant qu'administrateur du forum ou modérateur global avec les droits d'accès appropriés. Dans le « Centre d'administration », recherchez la section dans le menu de gauche intitulée « Contrôles généraux ». Cliquez sur « Favoris sociaux ».</p>
+<ul>
+    <li><b>Paramètres des favoris sociaux</b>
+        <br />Ici, vous pouvez activer les signets sociaux et choisir quels forums afficheront les signets sociaux dans leurs sujets.
+    </li>
+    <li><strong>Signets sociaux</strong>
+        <br />Cette section répertorie vos favoris sociaux actuels et affiche l'icône associée et le marqueur d'ordre de tri. Vous pouvez modifier la liste ou la supprimer.
+    </li>
+    <li><strong>Ajouter un nouveau signet</strong>
+        <br />Ici, vous pouvez ajouter de nouveaux signets sociaux pour votre forum.
+        <ul>
+            <li><em>Titre</em> : le texte qui s'affichera lorsqu'un utilisateur passera la souris sur l'icône du signet.</li>
+            <li><em>Image</em> : téléchargez l'icône du nouveau signet.</li>
+            <li><em>URL</em> : l'URL du site Social Bookmark. (Pour Google, l'URL ressemble à "https://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=<span style="background-color:yellow">{url}</span>&title=<span style="background-color:yellow">{title}</span>"</li>
+            <li><em>Ordre</em> : Si vous souhaitez que le nouveau favori soit affiché entre deux favoris précédents, attribuez au nouveau favori un numéro entre ceux attribués aux autres favoris. (Par exemple, si vous souhaitez que votre nouveau favori apparaisse juste avant Google [40], attribuez « 39 » comme marqueur d'ordre pour votre nouveau favori.)</li>
+        </ul>
+    </li>
+</ul>
+~;
+
+1;

@@ -1,0 +1,18 @@
+$SectionName = "Global_Moderator_Help_Center";
+
+### Section 1
+############################################
+$SectionSub1 = "Votre_Statut_Global_Moderator";
+$SectionBody1 = qq~<p>Un modérateur global est un poste de type administrateur. Vous avez la possibilité d'utiliser les fonctions de modérateur sur tous les forums et, si l'administrateur le permet, vous pourrez peut-être modifier certains paramètres de base de cette communauté YaBB. On vous a confié les soins et la gouvernance nécessaires pour assurer le développement de cette communauté en pleine croissance.</p>
+<br>
+<br />Pour obtenir de l'aide et du dépannage, veuillez visiter la <a href="https://yabbforum.nz" target="_blank"><b>Communauté d'assistance de YaBB</b></a></p>
+<p>Veuillez vous référer à la section Glossaire de l'aide utilisateur si vous avez besoin de précisions sur les différentes pages vues décrites dans les sections ci-dessous.</p>
+<p>Les images suivantes du menu Modérateur sont fournies à titre de référence.</p>
+<p>{yabb mymoding</p>
+<p>Vous pouvez utiliser le menu de gauche pour accéder rapidement à n'importe quel sujet ci-dessous.</p>
+<p>Vous pouvez utiliser ce bouton <img src="{top_img}" alt="Retour en haut" title="Retour en haut" class="cursor" /> en bas à droite de chaque section d'aide pour revenir en haut de la page d'aide du modérateur global</p>
+~;
+############################################
+
+
+1;

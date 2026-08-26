@@ -1,0 +1,187 @@
+$SectionName = "YaBB_Terminology";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Glossary";
+$SectionBody1 = q~YaBB ay may maraming mapaglarawang termino na tumutukoy sa mga bahaging bahagi nito, iba't ibang page view, at nakikitang mga item. Ang seksyong ito ay ibinigay bilang isang glossary upang matulungan ang mga user na matutunan ang tamang terminolohiya para sa kanilang mga forum.
+
+<dl>
+    <dt class="help_dd"><b>A</b></dt>
+    <dt><b>Administrator</b></dt>
+    <dd>Isang user na may kumpletong kontrol sa lahat ng function ng forum</dd>
+    <dt><b>Admin Center</b></dt>
+    <dd>Ang control panel ng forum na nagbibigay-daan sa Mga Administrator ng kakayahang gumawa ng mga pagsasaayos ng system at piliin kung anong mga opsyon ang itatakda para sa forum.</dd>
+    <dt><b>Screen ng Mga Pag-edit ng Admin</b></dt>
+    <dd>Ito ay isang screen sa Profile ng user na available lang sa Mga Administrator at, kung pinapayagan, Mga Global Moderator. Ang screen na ito ay kung saan ginagawa ang bilang ng post ng user at mga pagpili ng pangkat ng miyembro.</dd>
+    <dt><b>Alerto Moderator</b></dt>
+    <dd>Isang uri ng Personal na Mensahe na maaaring paganahin sa Boards for Guests, Members, o pareho. Ang paggamit ng Alert na ito ay nagpapadala ng PM sa (mga) Moderator ng Board kung saan maaaring ilarawan ng nagpadala ang problemang kinakaharap nila.</dd>
+    <dt><b>Avatar</b></dt>
+    <dd>Ang mga avatar ay mga larawang lumalabas sa ilalim ng pangalan ng user sa kaliwa ng bawat post, at lumalabas din sa Profile ng user. Maaaring piliin ng user ang mga avatar mula sa isang pangkat ng mga available na larawan ng avatar. Maaari ding paganahin ng Administrator ang mga user na mag-link sa isang imahe sa web, o mag-upload ng sarili nilang larawan sa avatar.</dd>
+    <dt><b>Attachment</b></dt>
+    <dd>Ito ang mga file na maaaring i-upload ng user na may kaugnayan sa isang Post. Maaaring piliin ng Administrator kung gaano karaming mga file ang maaaring i-attach sa mga post, maximum na laki ng file, at pinapayagang mga uri ng file.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>B</b></dt>
+    <dt><b>I-ban o I-ban</b></dt>
+    <dd>Ito ay itinataboy ang isang user mula sa buong forum. Nagbibigay ang YaBB ng ilang pagpipilian kung paano ito gawin sa Admin Center.</dd>
+    <dt><b>Lupon</b></dt>
+    <dd>Ang pangalawang pangunahing pagpapangkat ng paksa sa iyong forum, isang dibisyon ng Mga Kategorya. Ang mga board ay kung saan isang koleksyon ng mga Paksa kung saan tinatalakay ng mga user ang mga partikular na paksa.</dd>
+    <dt><b>Board Index</b></dt>
+    <dd>Ito ang .template file na nagpapakita ng listahan ng Mga Kategorya at Board sa pangunahing pahina o home page ng forum.</dd>
+    <dt><b>Board Moderator</b></dt>
+    <dd>Ito ay isang miyembro na binibigyan ng kapangyarihang i-regulate ang mga post ng isa o higit pang mga Board. Ang mga Board Moderator ay itinatalaga sa pamamagitan ng pag-edit sa bawat Board at pagtatalaga ng isang miyembro o grupo bilang Moderator ng Board na iyon.</dd>
+    <dt><b>Mga Pahintulot sa Lupon</b></dt>
+    <dd>Ito ang mga opsyong available para sa bawat indibidwal na Lupon na nagbibigay-daan sa Administrator na pumili kung aling mga user ang papayagang mag-access sa mismong board o sa mga function sa board. Ang isang halimbawa ay isang Lupon na nag-set up upang makita ito ng isang miyembrong user ngunit hindi mag-post dito.</dd>
+    <dt><b>Broadcast Message</b></dt>
+    <dd>Isang uri ng mensahe na maaaring paganahin para sa paggamit ng mga miyembro ng kawani ng forum.</dd>
+    <dt><b>Buddy List</b></dt>
+    <dd>Ito ay isang seksyon ng Profile ng user na nagbibigay sa iyo ng kakayahang magdagdag ng iba pang mga miyembro na madalas mong kontakin sa isang listahan na lalabas sa iyong User CP view. Ipapakita ng iyong Buddy List ang bawat pangalan, ang kanilang Online/Offline na katayuan, at mga opsyon sa link upang magpadala sa user ng PM, isang e-Mail, o bisitahin ang link sa kanilang website.</dd>
+ </dl><dl>
+    <dt class="help_dd"><b>C</b></dt>
+    <dt><b>Mga Kategorya</b></dt>
+    <dd>Ang unang pangunahing pagpapangkat ng paksa sa iyong forum. Ang mga kategorya ay isang koleksyon ng mga Board na kumakatawan sa isang pagpapangkat ng magkakatulad na ideya o paksa.</dd>
+    <dt><b>CAPTCHA Image</b></dt>
+    <dd>Tingnan ang Larawan ng Pagpapatunay.</dd>
+    <dt><b>I-click ang Log</b></dt>
+    <dd>Tingnan ang Forum Log.</dd>
+</dl><dl>
+<dt class="help_dd"><b>D</b></dt>
+    <dt><b>Pangalan ng Display</b></dt>
+    <dd>Tingnan ang '<b>Pangalan ng Screen</b>'.</dd>
+    <dt><b>Download Counter</b></dt>
+    <dd>Ito ay isang tampok na nauugnay sa mga file na naka-attach sa Mga Post, at ipinapakita sa kanan ng pangalan ng file. Sinasabi nito kung ilang beses na-download ang naka-attach na file. <span class="underline"><b>TANDAAN:</b></span> Sa kaso ng mga file ng imahe, maaaring mag-click ang isang user sa pangalan ng file at makita ang larawang ipinapakita sa kanilang browser. Ibinibilang ito bilang pag-download, kahit na hindi pa tunay na na-download ng user ang file sa kanilang PC.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>E</b></dt>
+    <dt><b>Error Log</b></dt>
+    <dd>Ito ay isang log na available sa Administrator na nagtatala ng lahat ng mga error sa forum at impormasyon tungkol sa kung kailan nangyari ang mga ito at kung sino ang nakatagpo ng mga ito.</dd>
+</dl><dl>
+<dt class="help_dd"><b>F</b></dt>
+    <dt><b>Forum</b></dt>
+    <dd>Ito ang iyong buong pag-install ng YaBB.</dd>
+    <dt><b>Forum Log</b></dt>
+    <dd>Ito ay isang log na available sa Administrator na nagtatala ng impormasyon tungkol sa bawat "pag-click" na ginawa sa iyong forum. Nagbibigay ito sa Administrator ng impormasyon sa kung anong mga uri at bersyon ng browser ang ginagamit, mga user kumpara sa mga bisita, mga nagre-refer na pahina, at higit pa.</dd>
+    <dt><b>Logo ng forum</b></dt>
+    <dd>Ito ang larawang ipinapakita sa tuktok ng mga pahina ng iyong forum. Ang karaniwang logo na kasama ng software ng forum ay may logo ng YaBB na may numero ng bersyon. Maaari mong baguhin ang logo ng forum gamit ang anumang larawang pipiliin mo (tingnan ang Tulong sa Admin - Index ng Paksa ng Tulong - Paano Ko... para sa mga tagubilin).</dd>
+    <dt><b>Forum News</b></dt>
+    <dd>Ito ang mga linya ng text na maaaring piliin ng Administrator na ipakita sa tuktok na seksyon ng forum. Maaaring i-configure ang mga ito na magbago lamang sa mga pag-refresh ng screen o maaaring gawing umikot o mag-fade sa loob ng isang mapipiling panahon.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>G</b></dt>
+    <dt><b>Larawan ng Kasarian</b></dt>
+    <dd>Ito ay maliit na icon graphics ng isang lalaki o babae na simbolo na lilitaw kung ang user ay tumukoy ng kasarian sa kanilang Profile at ang Administrator ay pinagana ang mga larawan upang ipakita. Kung pinagana, lilitaw ang mga ito sa ibaba ng larawan ng Avatar ng user sa kaliwa ng kanilang mga post, at gayundin sa Profile ng user.</dd>
+    <dt><b>Pandaigdigang Anunsyo</b></dt>
+    <dd>Isang mahalagang paksang Post na inilagay sa isang espesyal na Global Announcements Board, na awtomatikong kokopyahin ang Post sa TOP ng <i>bawat</i> Board, sa seksyong Mahahalagang Paksa.</dd>
+    <dt><b>Global Moderator</b></dt>
+    <dd>Ito ay miyembro na may mga pribilehiyo ng Moderator sa buong forum at maaaring - depende sa kung paano pinipili ng Administrator ang mga setting - magkaroon ng maraming kapangyarihan ng isang Administrator, kabilang ang access sa mga napiling Admin Center function.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>Ako</b></dt>
+    <dt><b>Balewalain ang Listahan</b></dt>
+    <dd>Isang function na nagbibigay-daan sa iyong huwag pansinin ang ibang mga miyembro at pinipigilan kang tingnan ang anumang Personal na Mensahe na ipinapadala nila.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>M</b></dt>
+    <dt><b>Markahan at Sipi</b></dt>
+    <dd>Ito ay isang feature na nagbibigay-daan sa iyong i-highlight ang isang bahagi ng isang nakaraang post at kapag pinindot ang Mark and Quote button, ipinapasok nito ang naka-highlight na text sa iyong tugon sa loob ng isang quote box. Maaari kang magdagdag ng isa o higit pa sa mga ito sa iyong tugon, kahit na mula sa iba't ibang mga nakaraang post.</dd>
+    <dt><b>Miyembro</b></dt>
+    <dd>Ito ay isang user ng iyong forum na nakarehistro.</dd>
+    <dt><b>Grupo ng Miyembro</b></dt>
+    <dd>Ito ang mga pangkat na maaari mong gamitin upang magtalaga ng miyembro upang magtatag ng iba't ibang antas ng pahintulot para sa mga user. Mayroong dalawang uri ng mga grupo ng miyembro:
+        <ul>
+            <li>Mag-post ng Mga Grupo ng Dependent na Miyembro</li>
+            <li>Mag-post ng Mga Independiyenteng Grupo ng Miyembro</li>
+        </ul>
+    </dd>
+    <dt><b>Listahan ng Miyembro</b></dt>
+    <dd>Ito ay isang listahan ng lahat ng iyong mga nakarehistrong user na kayang ayusin ayon sa Pangalan ng Screen, Posisyon, Bilang ng Mga Post, o Petsa ng Pagrehistro.</dd>
+    <dt><b>Indeks ng Mensahe</b></dt>
+    <dd>Ito ang view kung saan makikita mo ang lahat ng Paksa sa isang Board na nakalista. Ito rin ang pangalan ng .template file na nagbibigay ng view na ito.</dd>
+    <dt><b>MOD o Modification</b></dt>
+    <dd>Isang tampok na hindi kasama sa pag-install ng software ng Basic YaBB Forum. Maaaring isama sa mga pagbabago ang lahat mula sa isang simpleng pagbabago sa code ng programa hanggang sa naka-package na MOD, na nagdaragdag o nagbabago ng mga feature o gawi ng iyong forum. Ang pagbabago ay maaaring gawin nang manu-mano gamit ang isang text editor o sa pamamagitan ng paggamit ng BoardMOD program, na awtomatikong nag-i-install ng mga pagbabago sa loob ng YaBB script file para sa iyo. Pakibisita ang <a href="https://www.boardmod.org" target = "_blank">Homepage ng BoardMOD</a> at FAQ para sa higit pang mga detalye.<br /><br />Pakitanong ang lahat ng tanong sa suporta patungkol sa mga MOD o sa BoardMOD program sa <a href="https://www.boardmod.org" target = "_blank">BoardMOD Forum></a>.
+    <dt><b>Moderator</b></dt>
+    <dd>Tingnan ang 'Board Moderator'.</dd>
+    <dt><b>Pangkat ng Moderator</b></dt>
+    <dd>Ito ay isa o higit pang mga grupo ng miyembro na itinalaga sa screen ng Edit Boards upang maging Board Moderators sa isa o higit pang Boards. Sa halip na i-promote ang isang user at kailangang idagdag sila bilang Board Moderator sa maraming iba't ibang Board, maaari kang lumikha ng isang miyembrong grupo at italaga ang grupong iyon na maging mga Moderator ng Board. Pagkatapos, sakaling kailanganin mong magdagdag ng bagong Board Moderator, ang kailangan mo lang gawin ay idagdag sila sa grupo ng miyembro na piniling mag-moderate sa halip na mag-edit ng maraming Board.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>P</b></dt>
+    <dt><b>Pop-Up ng Personal na Mensahe</b></dt>
+    <dd>Isang opsyon na mapipili ng user na nagbubukas ng maliit na pop-up window na nagsasabi sa iyo na nakatanggap ka ng bagong PM at isang link ng opsyon upang tingnan ang iyong bagong mensahe ngayon.</dd>
+    <dt><b>Poll</b></dt>
+    <dd>Isang uri ng survey na maaaring gamitin sa forum, na binubuo ng isang tanong, listahan ng mga mapipiling sagot, at graphic na pagpapakita ng mga resulta.</dd>
+    <dt><b>I-post</b></dt>
+    <dd>Isang iisang mensahe mula sa isang user na naglalaman ng aktwal na text o nilalaman. Ang isang Post ay maaaring isang post na Bagong Paksa, o isang Tugon sa isang umiiral na post.</dd>
+    <dt><b>Post Dependent Member Group</b></dt>
+    <dd>Isang miyembrong grupo kung saan ang mga user ay maaaring awtomatikong mag-advance ng hierarchy ng mga miyembrong grupo batay lamang sa bilang ng mga Post na kanilang ginawa.</dd>
+    <dt><b>Post Independent Member Group</b></dt>
+    <dd>Isang miyembrong grupo kung saan ang mga user ay dapat ilagay o i-promote nang manu-mano ng isang Administrator o Global Moderator. Ang mga pangkat na ito ay pangunahing ginagamit para sa pagkontrol ng access sa mga partikular na Kategorya o Mga Lupon.</dd>
+    <dt><b>Post Window</b></dt>
+    <dd>Ito ang window na ginamit para gumawa ng Post. Mayroon itong mga button sa pag-format sa itaas nito, at ang ilan sa mga karaniwang ginagamit na Smilies sa ibaba nito.</dd>
+    <dt><b>Post View</b></dt>
+    <dd>Ito ang view na nakikita mo kapag binabasa mo ang mga post sa isang Paksa. Ginagamit ng view na ito ang Display.template file upang ipakita ang listahan ng mga post.</dd>
+    <dt><b>(PM) Personal na Mensahe o Pribadong Mensahe</b></dt>
+    <dd>Isang inner-forum na komunikasyon na katulad ng isang email na nakikita lang ng nagpadala at ng tatanggap. Maaaring ma-access ang mga PM sa User Control Panel.</dd>
+    <dt><b>Profile</b></dt>
+    <dd>Binubuo ito ng Pahina ng Profile at Mga Setting ng Profile ng user. Minsan ito ay ginagamit na kasingkahulugan ng Pahina ng Profile, tulad ng sa "Nakikita ko sa iyong Profile (pahina) mayroon kang 1200 na mga post."</dd>
+    <dt><b>Pahina ng Profile</b></dt>
+    <dd>Ito ay isang pahina kung saan ipinapakita ang impormasyon ng isang user, gaya ng Screen Name, bilang ng mga post, petsa na nakarehistro, link sa kanilang website, huling post na ginawa ng user, atbp. Maaari mong ma-access ang profile page ng isang user sa pamamagitan ng pag-click sa kanilang Screen Name.</dd>
+    <dt><b>Mga Setting ng Profile</b></dt>
+    <dd>Ito ang lahat ng mga setting na personal sa indibidwal na user. Ang mga halimbawa ay time zone, pagpili ng template, larawan ng avatar, atbp. Ang mga ito ay maaaring baguhin ng indibidwal na user o ng mga Administrator at, kung pinapayagan, ng mga Global Moderator.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>Q</b></dt>
+    <dt><b>Sipi</b></dt>
+    <dd>Ito ay isang feature na nagbibigay-daan sa isang user na tumutugon sa isang post na sipiin ang buong nilalaman ng post nang direkta sa ibaba ng button na Quote na iyong na-click. Makakatipid ito sa pagkakaroon ng muling pag-type nito sa tugon. Maaari mo ring manual na i-highlight at kopyahin ang text sa isang post, pagkatapos ay i-paste ito sa iyong tugon at kapag naka-highlight ang text, pindutin ang Insert Quote button sa itaas ng post window upang ilagay ito sa isang Quote Box (Tingnan din ang Mark and Quote).</dd>
+    <dt><b>Kahon ng Panipi</b></dt>
+    <dd>Ito ay isang kahon na inilagay sa paligid ng naka-quote na text na nagtatakda sa naka-quote na text bukod sa mga salita ng iyong post ng tugon. Maaari mong ilakip ang text sa isang Quote Box sa pamamagitan ng pag-highlight sa text gamit ang iyong mouse at pag-click sa Insert Quote button sa itaas ng Post Window.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>R</b></dt>
+    <dt><b>Pagpaparehistro</b></dt>
+    <dd>Ang proseso kung saan ang isang user ay nagiging miyembro ng iyong forum. Mayroong apat na magkakaibang mga mode ng pagpaparehistro na maaaring piliin ng Administrator.</dd>
+    <dt><b>Mga Nakareserbang Pangalan</b></dt>
+    <dd>Ito ang mga pangalan na pinili ng Administrator na huwag payagan na gamitin sa Mga User ID o Screen Name.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>S</b></dt>
+    <dt><b>Pangalan ng Screen</b></dt>
+    <dd>Ito ang "pampublikong" pangalan ng user, ang pangalan na ipinapakita sa itaas ng kanilang avatar na larawan sa kaliwa ng Post Window at sa Listahan ng Miyembro. Maaaring baguhin ng user ang pangalang ito sa pamamagitan ng pag-edit ng Screen Name sa kanilang Profile.</dd>
+    <dt><b>Paghahanap</b></dt>
+    <dd>Ang tampok na ito ay nagpapahintulot sa isang user na maghanap sa forum para sa impormasyon sa mga post o post ng mga user. Nakalista ang ilang mga opsyon sa page ng Paghahanap.</dd>
+    <dt class="help_dd"><b><span class="underline">Tip ng User:</span></b> Para sa mga pangkalahatang paghahanap, gamitin ang opsyong "Any Poster" sa kahon ng pagpili sa ibaba ng mga seksyong "By User."</dt>
+    <dt><b>Lagda</b></dt>
+    <dd>Ito ay isang seksyon na lumalabas sa ibaba ng post ng bawat user. Ang isang lagda ay maaaring maglaman ng isang imahe, teksto, o kumbinasyon ng pareho. Ang mga lagda ay maaaring gawin ng bawat user sa kanilang Profile - Options page.</dd>
+    <dt><b>Smilies</b></dt>
+    <dd>Alam ng lahat kung ano ang Smiley. [yabbc][img]$imagesdir/wink.gif[/img][/yabbc]<br /><br />I-click lang ang smiley para idagdag ito sa iyong post.</dd>
+    <dt><b>Mga tauhan</b></dt>
+    <dd>Isang miyembro ng administrative staff ng Forum: Forum Administrator, Global Moderator, Forum Moderator, Board Moderator, o miyembro ng isang Moderator Group. Ang mga pribilehiyo ng kawani ay itinakda ng Administrator ng Forum.</dd>
+    <dt><b>Malagkit na Paksa</b></dt>
+    <dd>Isang Paksa na inilalagay ng isang miyembro ng Staff sa itaas ng karaniwang listahan ng mga Paksa sa isang Lupon. Ang Malagkit na Paksa ay mananatiling higit sa lahat ng iba pang Paksa sa listahan upang bigyan ng mas mataas na kahalagahan sa isang partikular na paksa.</dd>
+    <dt><b>Style Sheet</b></dt>
+    <dd>Ito ang .css file na kumokontrol sa mga elemento ng istilo para sa iyong forum. Ang mga kulay ng template, laki at kulay ng text, mga background, at ilang mga graphics ay lahat ay nagmula sa style sheet.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>T</b></dt>
+    <dt><b>Template</b></dt>
+    <dd>Ito ang pinakakaraniwang tumutukoy sa default.html file na bumubuo sa "look" ng iyong forum. Ang file na ito ay naglalaman ng logo ng forum, mga tab ng menu, copyright, at lahat ng mga item na lilitaw sa bawat pahina ng iyong forum.</dd>
+    <dd>Maaari din itong sumangguni sa koleksyon ng mga .template na file, .html file, .css file, at mga graphics na nagbibigay sa iyong forum ng hitsura nito. Ito ay hindi isang aktwal na <i>file</i>, ngunit ito ay <span class="underline">data</span> na naka-store sa 'templateset' na variable sa Settings.pm file sa folder ng Variables.</dd>
+    <dt><b>Screen ng Configuration ng Template</b></dt>
+    <dd>Ito ay isang seksyon sa loob ng Admin Center na nagbibigay-daan sa Administrator na i-configure ang isang partikular na template upang gumamit ng isang partikular na Style Sheet, .template file, o folder na naglalaman ng mga graphic na larawan.</dd>
+    <dt><b>Paksa</b></dt>
+    <dd>Naglalaman ito ng lahat ng mga post sa isang partikular na paksa ng talakayan. Ang paksa ng paksa ay tinutukoy ng paksang napili sa unang post sa isang paksa. Ang koleksyon ng unang post at lahat ng tugon dito ay tinatawag na "Thread."</dd>
+    <dt><b>Listahan ng Paksa</b></dt>
+    <dd>Isang listahang nagpapakita ng lahat ng Paksa sa isang Lupon sa isa o higit pang mga pahina, na may Mga Pandaigdigang Anunsyo at Malagkit na Paksa sa tuktok ng listahan.</dd>
+</dl><dl>
+    <dt class="help_dd"><b>U</b></dt>
+    <dt><b>User</b></dt>
+    <dd>Ito ay karaniwang miyembro ng iyong forum. Maaaring ituring na user ang mga bisita kung pinapayagan ang mga bisita na tumingin ng mga item o magsagawa ng mga aksyon sa iyong forum, bagama't wala silang Profile at hindi mailalagay sa anumang grupo ng miyembro.</dd>
+    <dt><b>User Control Panel (CP)</b></dt>
+    <dd>Ito ay isang control panel para basahin ng mga user ang kanilang mga PM at itakda ang kanilang mga indibidwal na kagustuhan para sa mga item gaya ng pagpapakita ng oras, pagpili ng template, larawan ng avatar, atbp. Kabilang dito ang seksyong PM ng user, seksyong Profile ng user, at seksyong Mga Notification ng user.</dd>
+    <dt><b>Pangalan ng User</b></dt>
+    <dd>Ito ay hindi nakikitang pangalan ng isang miyembro, at ang pangalan na ginagamit upang subaybayan ang mga post ng user at iba pang mga istatistika gaya ng kung anong mga post ang natingnan. Hindi mababago ang pangalang ito nang hindi nawawala ang lahat ng impormasyong nauugnay sa nakaraang user name. Lalabas pa rin ang lahat ng nakaraang post kasama ang lumang user name, na lalabas bilang "Ex-Member".</dd>
+</dl><dl>
+    <dt class="help_dd"><b>V</b></dt>
+    <dt><b>Imahe ng Pagpapatunay</b></dt>
+    <dd>Ito ay isang random na nabuong serye ng mga titik at numero na ginagamit para sa Pagpaparehistro at ilang partikular na pagkakataon kung saan pinapayagan ang mga Panauhin na ma-access ang ilang function ng forum (pag-post, pagboto sa Mga Poll, atbp.).</dd>
+</dl><dl>
+    <dt class="help_dd"><b>Y</b></dt>
+    <dt><b>YaBB Backup</b></dt>
+    <dd>Ito ay isang feature na nagbibigay-daan sa Administrator na gumawa ng backup ng lahat o bahagi ng kanilang forum.</dd>
+    <dt><b>YaBBC</b></dt>
+    <dd>Ito ay katulad ng Bulletin Board Code (BBC) ngunit partikular na inangkop para sa paggamit sa mga forum ng YaBB. Ang mga YaBBC code ay inilalagay bilang mga tag sa loob ng mga square bracket sa mga post. Tingnan ang <a href="#YaBBC_Reference">Tulong sa User - Pag-post - YaBBC Reference</a> para sa mga halimbawa.  </dd>
+</dl>
+~;
+##############################################
+
+1;

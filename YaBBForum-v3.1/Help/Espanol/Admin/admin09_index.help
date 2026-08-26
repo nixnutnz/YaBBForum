@@ -1,0 +1,91 @@
+$SectionName = "Help_Topic_Index";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Help_Topic_Index_Intro";
+$SectionBody1 = q~<p>El índice de temas de ayuda puede ayudarle a conocer rápidamente las funciones de su YaBB y ayudarle a localizar temas de ayuda en el Códice YaBB.</p><h2>Las secciones 2 a 4 están obsoletas (enlaces inactivos), lo han estado durante años, actualizaré esta sección en algún momento.</h2>
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Temas prácticos";
+$SectionBody2 = q~<p>Estos responden a muchas preguntas frecuentes de los nuevos administradores del foro sobre cómo utilizar las funciones del foro.</p>
+<p><b>CÓMO...</b></p>
+<ul>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1198368987/3#3" target="_blank">Agregar un nuevo tablero o categoría</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1230745563" target="_blank">Convertirse en moderador</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217400265" target="_blank">Conviértete en moderador global</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1231042413" target="_blank">Desarrollar grupos de miembros</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1231042413/2#2" target="_blank">Mover un usuario a un grupo de miembros post-dependiente diferente</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1231042413/3#3" target="_blank">Mover un usuario a un grupo de miembros post-independiente diferente</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217261075" target="_blank">Desactivar la función de búsqueda</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217258547" target="_blank">Utilice las opciones de registro</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1218776684" target="_blank">Cambiar el logotipo del foro</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217706934" target="_blank">Usa tu propia imagen como avatar</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?board=templates" target="_blank">Trabajar con plantillas</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?board=templates" target="_blank">Cambiar colores en la función Greybox</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1191988956" target="_blank">Configuración de enlaces permanentes</a></li>
+</ul>
+~;
+#############################################
+
+
+### Sección 3
+#############################################
+$SectionSub3 = "Qué_hacer_temas";
+$SectionBody3 = q~<p>Estos responden a muchas preguntas frecuentes de los nuevos administradores del foro sobre qué hacer si se encuentran problemas o errores.</p>
+<p><b>QUÉ DEBO HACER SI...</b></p>
+<ul>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?board=errors" target="_blank">¿Recibo un error del servidor?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217258342" target="_blank">¿Tengo problemas para iniciar sesión como administrador?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1202251271" target="_blank">¿Algunos miembros aparecen como exmiembros?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1192485451" target="_blank">¿Recibo un mensaje de error en el foro?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1212249372" target="_blank">¿Mi foro se carga lentamente?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217258894" target="_blank">¿Mi foro está bloqueado en modo de mantenimiento?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1218835928" target="_blank">¿Los gráficos de mi foro no se muestran correctamente?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217951488" target="_blank">¿No veo ningún botón para el Centro de administración?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1217810041" target="_blank">¿No estoy seguro de si mis rutas son correctas (instalación estándar)?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1190671650" target="_blank">¿No estoy seguro de si mis rutas son correctas (instalación de cPanel)?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1190669204" target="_blank">¿Necesito más ayuda con las rutas?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1190674425" target="_blank">¿Necesito mover mi foro?</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1218648482" target="_blank">¿Se registran nuevos usuarios pero no pueden publicar?</a></li>
+</ul>
+~;
+#############################################
+
+### Sección 4
+#############################################
+$SectionSub4 = "Modificando_su_foro";
+$SectionBody4 = q~<p>Esta sección contiene información sobre cómo modificar su foro. Antes de realizar CUALQUIER modificación, debes hacer una copia de seguridad de tu foro en caso de que algo salga mal. También tenga en cuenta que, si bien se proporciona información básica sobre el programa BoardMOD a los usuarios de YaBB, el equipo de YaBB no brinda soporte para el programa BoardMOD ni para ninguno de los MODS o plantillas disponibles allí. Si tiene preguntas de soporte sobre esos productos, debe abordarlas en el sitio <a href="https://www.boardmod.org" target="_blank">BoardMOD</a>.</p>
+<p><b>Enlaces de información de modificación</b></p>
+<ul>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?board=lng_1" target="_blank">Agregar otro idioma</a></li>
+    <li><a href="https://yabbforum.nzYaBB.pl?board=languagepack" target="_blank">Compatibilidad con el paquete de idiomas</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?board=modification" target="_blank">Realizar modificaciones menores en tu foro</a></li>
+    <li><a href="https://yabbforum.nz/codex/YaBB.pl?num=1190677475" target="_blank">Usando el programa BoardMOD</a></li>
+</ul>
+~;
+#############################################
+
+### Sección 5
+#############################################
+$SectionSub5 = "Obteniendo_apoyo_de_YaBB";
+$SectionBody5 = q~Esta sección contiene algunos consejos que le ayudarán a resolver cualquier problema lo más rápido posible en caso de que necesite publicar una solicitud de soporte en el <a href="https://yabbforum.nzYaBB.pl" target="_blank">Foro de soporte de YaBB</a>.
+<p><b>Cómo obtener soporte de YaBB</b></p>
+<ul>
+    <li class="help_attn_strong">Nunca publique los detalles de inicio de sesión del administrador de su foro ni sus detalles de FTP en una publicación. Si se necesita ese tipo de información privada para ayudarle a solucionar el problema, un miembro del personal le solicitará que se la envíe en un mensaje personal (PM)</li>
+    <li>Antes de publicar, pruebe con algunos términos de búsqueda diferentes.</li>
+    <li>Por favor, publique su solicitud en el foro correcto. Todos están identificados en las descripciones del tablero. Si no está seguro, utilice el tablero de solución de problemas de funciones y uso general.</li>
+    <li>No publiques en los foros de "Errores". Si sospecha que tiene un error, publíquelo en uno de los foros de soporte junto con los pasos a seguir para ver o reproducir el error. Si realmente se trata de un error, un miembro del equipo de soporte lo trasladará al panel de errores por usted.</li>
+    <li>Hay información valiosa en las publicaciones adhesivas en la parte superior de cada tablero de soporte. Por favor léalos.</li>
+    <li>Por favor, comience su propio tema y no salte al final de la solicitud de soporte de otra persona. Es posible que tenga los mismos síntomas, pero no siempre la misma solución, por lo que es mejor mantener su solicitud por separado.</li>
+    <li>NUNCA hagas publicaciones cruzadas. Eso significa exponer su problema en un tema y luego repetirlo en otro tema o tablero. El equipo de soporte los lee todos y no obtendrás una respuesta más rápido si les das el doble para que los lean primero.</li>
+    <li>Las funciones, archivos y opciones varían según las diferentes versiones. También lo hacen las respuestas. Asegúrese de indicar qué versión está utilizando en la primera publicación de cada solicitud de soporte. Otra información que ayuda es en qué tipo de servidor se encuentra (Unix, Windows, etc.), ¿es una cuenta alojada o su propio servidor en casa y su foro ha sido modificado de alguna manera?</li>
+    <li>¡Sea específico! “Mi auto no funciona” no ayudará a que tu mecánico lo arregle. Tampoco lo será decir que tu foro no funciona. Díganos QUÉ no funciona, qué pasos o situación se necesitan para ver cualquier error o problema que esté experimentando. ¿Quién se ve afectado: todos los usuarios? ¿Algunos usuarios? ¿Un usuario?</li>
+    <li>Lo más importante es que tenga paciencia. Algunos problemas tardan más que otros en resolverse. Si bien puede pensar que nadie le responde, es posible que el equipo de soporte esté buscando código o intentando duplicar su error en sus propios foros. La mayoría de las preguntas se responden en aproximadamente un día, pero recuerde que los miembros del equipo de soporte tienen trabajos, familias y vidas.</li>
+</ul>
+~;
+#############################################
+
+1;

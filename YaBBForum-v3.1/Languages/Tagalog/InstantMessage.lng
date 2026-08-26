@@ -1,0 +1,187 @@
+##################################################################################
+# InstantMessage.lng (Mga kahulugan ng teksto ng InstantMessage) #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.1                                                 #
+# Packaged:       01 Sep, 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$instantmessagelngver = 'YaBBForum 3.1';
+
+%inmes_txt = (
+'21' => 'Mga Post',
+'30' => 'naka-on',
+'remove' => 'Alisin',
+'70' => 'Paksa',
+'118' => 'Paksa',
+'143' => 'PM Messages Index',
+'144' => 'Personal na Mensahe',
+'145' => 'Sipi',
+'146' => 'Tumugon',
+'147' => 'Ipasa',
+'sendmess' => 'Magpadala ng Mensahe',
+'sendbroadmess' => 'Ipadala ang Broadcast Message',
+'151' => 'Walang mensahe...',
+'190' => 'Lahat',
+'inbox' => 'Inbox',
+'outbox' => 'Nakapadalang kahon',
+'draft' => 'Mga draft',
+'storage' => 'Storage',
+'folder' => 'folder',
+'317' => 'Petsa',
+'318' => 'Nagpadala',
+'320' => 'Huwag mag-imbak ng kopya ng Mensaheng ito sa Naipadalang kahon pagkatapos ipadala.',
+'321' => 'Tandaan na ang mga kalakip ay tinatanggal kasama ng mga mensahe sa iyong Naipadalang kahon, kaya kung nag-a-attach ka ng mga file ang opsyon sa itaas ay hindi nalalapat.',
+'datesave' => 'Petsa na na-save',
+'forward' => 'Ipasa ang mensahe',
+'replymess' => 'Tumugon sa mensahe',
+'error' => 'Error',
+'selectrecent' => 'pumili o magdagdag mula sa mga kamakailang PM:<br />double-click upang kopyahin sa &#39;to&#39;',
+'selectgroups' => 'pumili o magdagdag mula sa mga miyembrong grupo:<br />double-click upang kopyahin sa &#39;to&#39;',
+'allmembers' => 'lahat ng miyembro',
+'324' => 'Kay',
+'325' => 'CC',
+'326' => 'BCC',
+'327' => 'Pangkat',
+'bmallmembers' => 'Lahat ng miyembro ng forum',
+'bmadmins' => 'Mga Administrator',
+'bmgmods' => 'Mga pandaigdigang moderator',
+'bmymods' => 'Mga moderator ng forum',
+'bmmods' => 'Lahat ng board moderator / mod group',
+'470' => 'N/A',
+'500' => 'Pagmamarka sa lahat ng Mensahe bilang nabasa na', # sa loob ng JavaScript!
+'500a' => 'Kumpleto', # sa loob ng JavaScript!
+'507' => 'Preview',
+'511' => 'Naka-log ang IP',
+'preview' => 'I-preview ang text',
+'savedraft' => 'I-save bilang Draft',
+'536' => 'Masyadong mahaba ang post mo',
+'537' => 'mga character. Mangyaring paikliin ang iyong mensahe',
+'737' => 'Suriin lahat',
+'739' => 'Sigurado ka bang gusto mong tanggalin ang post na ito?',
+'761' => 'Ang gumagamit ',
+'762' => 'hindi tumatanggap ng mga PM',
+'763' => 'at',
+'764' => 'Markahan ang mga bagong mensahe bilang nabasa na',
+'765' => 'Mga Kagustuhan sa PM',
+'766' => 'Walang gumagamit',
+'767' => '(Walang Paksa)',
+'770' => 'Sigurado ka bang gusto mong tanggalin ang PM na ito?',
+'770a' => '\n\nTandaan na ang anumang mga file na iyong ikinabit sa mensaheng ito ay tatanggalin din.',
+'770b' => '\n\nTandaan na ang anumang mga file na iyong ikinabit sa mga napiling mensahe ay tatanggalin din.',
+'delmultipms' => 'Sigurado ka bang gusto mong tanggalin ang mga PM na ito?',
+'773' => 'Ipinadala',
+'774' => 'Tindahan',
+'775' => 'Bagong Mensahe',
+'775a' => 'Bagong Mensahe sa Broadcast',
+'storeor' => 'o',
+'storein' => 'in',
+'777' => 'TALISIN ang (mga) mensahe', #huwag tanggalin o isalin ang anumang CAPITAL na teksto
+'status' => 'Status ng mensahe',
+'addfolder' => 'Idagdag',
+'foldererror' => 'field,',
+'messages' => 'Aking mga personal na mensahe',
+'center' => 'Aking center',
+'profile' => 'Aking profile',
+'favs' => 'Aking mga paborito',
+'notify' => 'Aking mga notification',
+'viewprofile' => 'Tingnan ang aking Profile',
+'viewnotify' => 'Tingnan ang aking Mga Abiso',
+'viewfavs' => 'Tingnan ang aking mga Paborito',
+'viewrecentposts' => 'Tingnan ang huli ko',
+'viewrecentposts2' => 'Mga Post',
+'goviewrecent' => 'GO!',
+'broadcast' => 'I-broadcast ang mga mensahe',
+'alert' => 'Mga mensahe ng alerto',
+'bago' => 'bago',
+'delete' => 'Burahin',
+'clickto1' => 'Mag-click dito upang pumili',
+'clickto2' => '', # ang ginagamit para sa ibang mga wika
+'torecepients' => '(mga) tatanggap',
+'togroups' => '(mga) pangkat',
+'usercp' => 'User CP', 
+'attach_1' => 'Ang mensaheng ito ay naglalaman ng',
+'attach_2' => 'mga kalakip',
+'attach_3' => 'attachment',
+);
+
+%inmes_imtxt = (
+'01' => 'wala sa',
+'07' => 'Ito ay isang bagong Mensahe.',
+'08' => 'Nasagot mo na ang mensaheng ito.',
+'09' => 'Nabasa ang Mensaheng ito.',
+'13' => 'Meron ka',
+'19' => 'mga mensahe sa iyong',
+'status' => 'Katayuan',
+'39' => 'Walang PM',
+'40' => 'Nakaraang PM',
+'41' => 'Susunod na PM',
+'42' => 'Ipakita ang lahat ng PM papunta at galing',
+'49' => 'Ipadala sa MemberGroups:',
+'store' => 'Store',
+'60' => 'Online',
+'61' => 'Offline',
+'67' => 'Paggamit',
+'69' => 'Natanggal ang panipi',
+'73' => 'Gusto mo ba talagang tanggalin ang mensaheng iyon mula sa (mga) PM ng receiver?',
+'83' => 'Tumawag Bumalik',
+'84' => 'Natanggal ang Code',
+'callallback' => 'Tawagan ang lahat pabalik',
+'outread' => 'Ang mensaheng ito ay binuksan ng tatanggap,',
+'callback' => 'Ang mensaheng ito ay tinawag pabalik at samakatuwid ay hindi nakita ng tatanggap.',
+'outmulticallback' => 'Ang mensaheng ito ay tinawag pabalik at samakatuwid ay hindi nakita ng mga tatanggap.',
+'outsomemulticallback' => 'Ang mensaheng ito ay tinawag pabalik mula sa ilang mga tatanggap, samakatuwid ito ay nakita ng ilan at ng iba ay hindi.',
+'outnotread' => 'Ang mensaheng ito ay hindi pa nabubuksan ng tatanggap.',
+'inread' => 'Binuksan mo ang mensaheng ito',
+'innotread' => 'Hindi mo pa nabubuksan ang mensaheng ito',
+'outmultinotread' => 'Ang mensaheng ito ay hindi pa nabubuksan ng sinumang tatanggap.',
+'outmultiread' => 'Ang mensaheng ito ay binuksan ng mga tatanggap.',
+'outmultisomeread' => 'Ang mensaheng ito ay binuksan ng isa o higit pang mga tatanggap.',
+'multicallback' => 'Buksan ang mensahe para Tumawag muli',
+'newstorefolder' => 'Magdagdag ng bagong folder ng tindahan',
+);
+
+## status ng mensahe
+%im_message_status = (
+'confidential' => 'Confidential',
+'urgent' => 'Apurahan!',
+'standard' => 'Standard',
+'alertmod' => 'Alerto Moderator.',
+'guestpm' => 'PM mula sa Bisita',
+'guestpmreply' => 'Tumugon sa PM mula sa Bisita',
+);
+
+## mga pangalan para sa mga default na folder ng imbakan
+%im_folders_txt = (
+'in' => 'In',
+'out' => 'Out',
+);
+
+## pinagsunod-sunod na view
+%im_sorted = (
+'latest' => 'Mga pinakabagong mensahe',
+'oneweek' => 'Nakaraang linggo',
+'twoweeks' => 'Dalawang linggo ang nakalipas',
+'threeweeks' => 'Tatlong linggo na ang nakalipas',
+'fourweeks' => 'Apat na linggo ang nakalipas',
+'older' => 'Higit sa isang buwan na ang nakalipas',
+'important' => 'Mahahalagang mensahe',
+'standart' => 'Mga mensahe',
+);
+
+%guest_reply = (
+'guesttext' => 'Ang function na ito ay magbibigay-daan sa iyo na tumugon sa mensahe ng Bisita. Ipapadala ito sa kanyang e-mail address. Mangyaring huwag gumamit ng smilies o BB code, dahil hindi sila mapoproseso.',
+'origmess' => '----- Orihinal na Mensahe -----',
+'from' => 'Mula sa',
+'to' => 'To',
+'pinadala' => 'Ipinadala',
+'paksa' => 'Paksa',
+);
+
+1;

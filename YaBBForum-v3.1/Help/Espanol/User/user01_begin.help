@@ -1,0 +1,57 @@
+$SectionName = "Getting_started";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Registrar_una_cuenta";
+$SectionBody1 = q~<p>Dado que este foro funciona con YaBB, registrar una cuenta es muy simple; ¡Estarás chateando en poco tiempo!</p>
+<p><b>Paso 1:</b> En el menú de arriba, verá elementos titulados "Índice del tablero", "Ayuda", "Iniciar sesión", "Registrarse", etc. Haga clic en "Registrarse".</p>
+<p><b>Paso 2:</b> En esta nueva página, verá un formulario donde puede elegir su ID de usuario y nombre de pantalla, contraseña (si el administrador lo permite) e ingresar su dirección de correo electrónico.  Rellena los cuadros con tu información.</p>
+<p><b>Paso 3:</b> Si lo habilita el Administrador, es posible que deba completar los caracteres presentados en el cuadro Código de verificación (CAPTCHA) de acuerdo con las instrucciones en pantalla.</p>
+<p><b>Paso 4:</b> Marque la casilla para aceptar el Acuerdo de usuario si el administrador ha habilitado uno.</p>
+<p><b>Paso 5:</b> Haga clic en el botón "Registrarse" en la parte inferior de la página.</p>
+<p>¡Eso es todo! Es posible que el administrador le solicite que valide su cuenta antes de poder publicar. Si este es el caso, se le enviará un correo electrónico con su contraseña o un enlace para verificar su registro. Algunos administradores también optan por aprobar o desaprobar todos los registros. En ese caso, recibirá un correo electrónico cuando se apruebe su cuenta.</p>
+<p>¡Ahora estás listo para iniciar sesión y publicar!</p>
+<p class="help_attn"><b><span class="underline">Consejo para el usuario:</span></b> Algunos ISP y administradores de correo electrónico tratan el enlace que se le envía de tal manera que no funcionará si hace clic en él. Si eso sucede, intente copiar y pegar el enlace del correo electrónico en la ventana URL de su navegador y acceder al foro de esa manera. Además, algunos clientes de correo electrónico tratan los correos electrónicos de foros como spam. Si no recibe su contraseña o enlace de correo electrónico de manera oportuna, revise su carpeta de correo no deseado.</p>
+<p class="help_attn"><b><span class="underline">Consejo para el usuario:</span></b> Ocasionalmente, un administrador no permitirá registros desde el formulario de registro. Si no es miembro y el botón "Registrarse" no está visible, el administrador del foro no permite nuevos registros. Además, ocasionalmente surgen dificultades técnicas y el registro falla. En ese caso, intenta contactar con el administrador del foro. Algunos administradores tienen la opción "Enviar mensaje a los administradores" disponible para su uso, así que búsquela en el menú de este foro, si está allí.</p>
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Iniciar sesión_en_su_cuenta";
+$SectionBody2 = q~<p>Ahora que has registrado una cuenta, es hora de iniciar sesión.</p>
+<p><b>Paso 1:</b> En el menú de arriba, verá elementos titulados "Índice del tablero", "Ayuda", "Iniciar sesión", "Registrarse", etc. Haga clic en "Iniciar sesión".</p>
+<p><b>Paso 2:</b> En esta nueva página (o en el formulario en la parte inferior de la página), verá varias opciones.</p>
+<ul>
+    <li><span class="underline">ID de usuario o dirección de correo electrónico</span>: introduzca el ID de usuario o la dirección de correo electrónico con la que se registró.</li>
+    <li><span class="underline">Contraseña</span> - Escriba su contraseña.</li>
+    <li><span class="underline">Mantenerme conectado</span>: elija si desea permanecer o no conectado en la computadora desde la que está iniciando sesión.</li>
+    <li><span class="underline">Olvidé mi contraseña</span>: si no recuerda su contraseña, haga clic en este enlace para restablecerla. (Instrucciones completas a continuación).</li>
+</ul>
+<p><b>Paso 3</b> Una vez que tengas todo completado; haga clic en el botón del formulario titulado "Iniciar sesión".</p>
+<p>¡Felicitaciones! ¡Ya estás listo para participar en esta comunidad!</p>
+<p class="help_attn"><b><span class="underline">Consejo de usuario:</span></b> Si no ve el botón "Iniciar sesión" en el menú, es posible que ya haya iniciado sesión. Esto puede suceder en algunos foros configurados para el registro instantáneo.</p>
+<p class="help_attn"><b><span class="underline">Consejo de usuario:</span></b> Si está iniciando sesión en una computadora de acceso público <i>no</i> marque la casilla de verificación "Mantenerme conectado".</p>
+~;
+#############################################
+
+### Sección 3
+#############################################
+$SectionSub3 = "Cerrar sesión_en_su_cuenta";
+$SectionBody3 = q~<p>Cuando haya terminado de publicar, es una buena idea cerrar sesión en su cuenta para que otras personas que utilicen su computadora no tengan acceso a su información. Para hacer esto, busque el elemento del menú titulado "Cerrar sesión". Una vez que hagas clic en este botón, YaBB cerrará tu sesión del foro. Debes iniciar sesión nuevamente si deseas publicar o acceder a funciones exclusivas para miembros.</p>
+~;
+#############################################
+
+### Sección 4
+#############################################
+$SectionSub4 = "Contraseña_olvidada";
+$SectionBody4 = q~<p>Si olvidaste tu contraseña, YaBB puede permitirte restablecerla.</p>
+<p><b>Paso 1</b> En el menú de arriba, verá elementos titulados "Índice del tablero", "Iniciar sesión", "Registrarse", etc. Haga clic en "Iniciar sesión".</p>
+<p><b>Paso 2</b> En esta nueva página, verá un enlace titulado "Olvidé mi contraseña". Haga clic en este enlace.</p>
+<p><b>Paso 3</b> Se cargará una nueva página con al menos un cuadro. En el cuadro denominado "ID de usuario o dirección de correo electrónico", ingrese el ID de usuario o la dirección de correo electrónico con la que se registró. Otras casillas (dependiendo de qué formularios de validación haya elegido activar el administrador del foro) son para confirmar que el formulario no está siendo utilizado por un robot de spam o un sistema automatizado.</p>
+<p><b>Paso 4</b> Haga clic en el botón titulado "Enviar".</p>
+<p><b>Paso 5</b> YaBB enviará un correo electrónico a la dirección de correo electrónico registrada con un enlace para restablecer su contraseña. Al hacer clic en este enlace, accederá a su página de perfil para que pueda restablecer su contraseña. <b>Nota:</b> tienes diez minutos para ingresar una nueva contraseña después de ser redirigido a tu página de perfil.</p>
+~;
+#############################################
+
+1;

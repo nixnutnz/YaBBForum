@@ -1,0 +1,38 @@
+$SectionName = "Seguridad";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Security_Intro";
+$SectionBody1 = q~<p>Ang YaBB ay napaka-secure laban sa lahat ng uri ng mga umaatake. Ang maraming built-in na feature ng YaBB ay nagbibigay ng kaligtasan para sa iyong forum laban sa mga pag-atake. Tandaan, gayunpaman, marami sa mga tampok na panseguridad na ito ay maaaring piliin, kaya kung hindi mo paganahin ang mga ito, maaari itong magdulot ng mga panganib. Ang mga halimbawa nito ay hindi gumagamit ng isa sa mga opsyon sa Pagpapatunay para sa mga pagpaparehistro, o pagpapahintulot sa mga Bisita na mag-post nang walang pagsusuri sa Larawan ng Pagpapatunay o Tanong sa Pagpapatunay.</p>
+~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Mga Sesyon";
+$SectionBody2 = q~<p><b>Sessions</b> ay isang tampok na YaBB na idinisenyo upang protektahan ang mga administratibong function. Kung naka-enable ang mga session sa Admin Center, kakailanganin ng staff na muling i-validate ang kanilang session sa tuwing nagbabago ang kanilang koneksyon sa network ng IP address.</p>
+<p>Upang muling i-validate ang iyong session, i-click lang ang “I-update ang Session” sa pangunahing menu ng YaBB sa tuktok ng forum. Kung wala ang link na ito, hindi na kailangang i-update ang iyong session.</p>
+<p>Bilang default, hinihiling nito sa iyo na muling patunayan ang iyong Password. Maaaring baguhin iyon sa iyong Profile, sa ilalim ng seksyong “I-edit ang Profile,” malapit sa ibaba ng listahan ng mga setting.</p>
+<p>Upang tingnan kung pinagana ang mga session, pumunta sa Admin Center/Security Center/Mga Setting ng Seguridad at tumingin sa ilalim ng tab na “Pangkalahatan.” Pinagana ang mga session kung may check ang checkbox sa kanan ng "I-activate ang Mga Session ID."</p>
+~;
+##############################################
+
+### Seksyon 3
+##############################################
+$SectionSub3 = "Stealth_Mode";
+$SectionBody3 = q~<p><b>Stealth Mode</b> ay isang tampok na YaBB na idinisenyo upang payagan ang Mga Administrator, Global Moderator, o pareho ang kakayahang maingat na subaybayan ang aktibidad ng forum nang hindi "nakikita". Kapag napili ang opsyong ito, ang status na “Online” ng Mga Administrator at Global Moderator ay nakatago mula sa lahat ng iba pang Grupo ng Miyembro at Panauhin.</p>
+<p>Ang opsyong ito ay pinagana sa pamamagitan ng paglalagay ng check sa kahon sa tab na “Staff” na makikita sa Admin Center/Forum Configuration/Forum Settings.</p>
+~;
+##############################################
+
+### Seksyon 4
+##############################################
+$SectionSub4 = "Administrative_Functions";
+$SectionBody4 = q~<p>Maaaring piliin ng Administrator ng Forum kung anong mga function na administratibo ang maaaring kontrolin ng mga Global Moderator. Maaaring ganap na paghigpitan ng Administrator ang pag-access sa Admin Center, o maaaring piliing payagan ang mga Global Moderator na kontrolin ang isang napiling listahan ng mga function na ito. Kabilang dito ang mga item gaya ng pag-edit ng Mga Profile ng user, pagdaragdag ng mga Miyembro, pagtanggal ng mga Miyembro, pag-edit ng Forum News, pagbabago ng Mga Setting ng Seguridad ng forum, at marami pa.</p>
+<p>Ang pinakamahusay na paraan para malaman kung anong mga opsyon ang may kontrol ka ay talakayin ang mga ito sa Administrator ng Forum.</p>
+<p>Kung binigyan ka ng iyong Administrator ng access sa Admin Center, ipapakita sa iyo ng iba't ibang menu sa kaliwa ang mga function na mayroon kang <i>kahit ilang</i> na kontrol.</p>
+<p class="help_attn"><b><span class="underline">Tip sa Global Moderator:</span></b> Access sa ilang screen sa mga opsyon sa display ng Admin Center na <i>maaaring wala kang access sa</i>. Halimbawa, maaaring payagan ka ng Administrator na <b>magdagdag</b> at <b>tingnan</b> ang mga miyembro, ngunit <span class="underline">hindi</span> <b>magtanggal</b> ng mga miyembro. Ang screen kung saan mo tinitingnan ang mga ito, gayunpaman, ay maaaring maglaman ng mga checkbox at button para sa <b>delete</b> function. Kung susubukan mong gamitin ang mga ito nang walang pahintulot, magreresulta ito sa iyong pagtanggap ng mensahe ng error. Ito ay <i>hindi</i> isang bug - wala kang pahintulot - at ang tamang tugon ng program ay upang ibigay sa iyo ang mensahe ng error na iyon.</p>
+~;
+##############################################
+
+1;

@@ -1,0 +1,328 @@
+$SectionName = "Administrar_Boards";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Acceso_a_las_funciones_del_tablero";
+$SectionBody1 = q~<p>Ahora que has creado tus categorías, puedes usar las increíbles utilidades de creación de tableros de YaBB para administrar las secciones de tu comunidad que se pueden publicar. YaBB te permite crear un número<b>*</b> ilimitado de tableros en cada categoría. Para acceder a estas funciones, debe iniciar sesión como Administrador o Moderador global con los derechos de acceso adecuados. Una vez que lo estés, mira el menú principal. Verá un enlace titulado "Administrador". Al hacer clic aquí, aparecerá una pantalla de contraseña para que pueda verificar que, de hecho, está autorizado para trabajar en el Centro de administración. Una vez confirmada su contraseña, accederá al panel de control del Administrador. En el menú de la izquierda, busque la sección titulada "Controles del foro" y haga clic en el enlace titulado "Tableros".</p>
+<p><i><b>*</b> YaBB solo está limitado por el espacio asignado a usted en su servidor de alojamiento web.</i></p>
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Agregando_nuevos_tableros";
+$SectionBody2 = q~<p>YaBB ofrece a los administradores del foro la posibilidad de agregar varios tableros desde una sola pantalla. Para ello acceda a las funciones de Gestión de la Junta Directiva del foro como se explicó anteriormente. Una vez allí, desplácese hasta el final de la lista de tableros existentes (si los hay) y busque la función titulada "Agregar tableros". Ingrese la cantidad de tableros nuevos que desea crear en el cuadro de texto y luego presione el botón titulado "Agregar".</p>
+<p>En esta página Editar tableros, se le brindará un gran conjunto de opciones para cada uno de los nuevos tableros que intente agregar:</p>
+<ul>
+    <li><b><span class="underline">ID del tablero</span></b>
+        <ul>
+            <li>Esto solo se usa para funciones internas de YaBB y se usa en la URL utilizada para ver un tablero. Puede ingresar cualquier nombre alfanumérico que desee sin espacios.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Nombre</span></b>
+        <ul>
+            <li>Esto es lo que sus usuarios verán como el nombre del tablero. Puedes ingresar lo que desees aquí.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Descripción</span></b>
+        <ul>
+            <li>Describe este foro para que tus usuarios sepan cuál será el tema/tema.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Moderadores de la junta directiva</span></b>
+        <ul>
+            <li>Haga clic en el enlace debajo de la palabra "Moderadores" para agregar los miembros a los que desea otorgar acceso de moderador para <i>este foro</i>.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Moderadores de grupos de miembros</span></b>
+        <ul>
+            <li>Si elige que todos los miembros de uno o más grupos de miembros en particular actúen como moderadores de <i>este foro</i>, seleccione los grupos de miembros aquí.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Si configura un grupo de miembros en particular y lo asigna como moderador del grupo de miembros en un tablero, es fácil agregar un nuevo moderador a ese tablero; simplemente agréguelo a ese grupo de miembros.</p>
+        <p class="help_attn"><b><span class="underline">Consejo para administradores:</span></b> También puedes asignar moderadores y grupos de moderadores a un tablero específico yendo a ese tablero y haciendo clic en el enlace "Agregar/eliminar moderadores" cerca de la parte superior o yendo a la sección Editar administrador del perfil de un miembro y eligiendo el tablero o tableros que deseas que moderen.</p>
+    </li>
+    <li><b><span class="underline">Categoría</span></b>
+        <ul>
+            <li>Elija la categoría a la que le gustaría que perteneciera este foro.</li>
+        </ul>
+    </li>
+   <li><b><span class="underline">Junta de padres</span></b>
+        <ul>
+            <li>Elija de qué tablero le gustaría que este tablero sea un subtablero, si corresponde.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Puedes publicar?</span></b>
+        <ul>
+            <li>Elija si se pueden ver o no los temas de este foro.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Si se trata de un tablero nuevo/vacío, no se pueden publicar temas en él. Las publicaciones solo se pueden realizar en los subtableros que se encuentran dentro de él. Si este foro tiene hilos, convertirlo en un tablero "No publicar" significa que los hilos serán inaccesibles incluso para el administrador.</p>
+    </li>
+    <li><b><span class="underline">Imagen del tablero</span></b>
+        <ul>
+            <li>Aquí puedes asignar una pequeña imagen para representar este tablero. Elija a qué plantilla se aplicará la imagen del tablero. (Puede asignar diferentes gráficos de tablero para cada plantilla que tenga). Luego escriba la URL completa de la imagen en el cuadro de URL usando el formato estándar: https://www.domain.com/folder/imagename.jpg. También puedes subir fotos del tablero. Estos se almacenarán en la carpeta 'Tableros' en la carpeta de gráficos de la plantilla. Puede configurar el tamaño del gráfico del tablero yendo a la pestaña “Imágenes” del Centro de administración/Configuración del foro/Configuración avanzada. 50 por 50 es generalmente un buen tamaño para una fotografía de tablero. Los formatos de imagen permitidos son .gif, .jpg y .png.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">RSS</span></b>
+        <ul>
+            <li>Aquí puedes activar o desactivar la fuente RSS (Really Simple Syndication) para este foro. RSS permite a los usuarios mantenerse actualizados sobre la información más reciente en un foro sin tener que permanecer en el sitio del foro.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Tablero de recuento de publicaciones cero?</span></b>
+        <ul>
+            <li>Marque esta casilla si desea evitar que las publicaciones realizadas en este tablero aumenten el recuento de publicaciones de los usuarios.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Mostrar a todos?</span></b>
+        <ul>
+            <li>Al marcar esta opción se garantizará que el nombre y la descripción del tablero se muestren a todos los que puedan ver la categoría en la que se encuentra este tablero, incluso si no se les permite el acceso para ver el contenido del tablero en sí.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para administradores:</span></b> Esta es una buena manera de mostrarles a sus invitados que hay más contenido disponible para ellos si se registran y se convierten en miembros.</p>
+    </li>
+    <li><b><span class="underline">Permitir archivos adjuntos</span></b>
+        <ul>
+            <li>Marcar esta opción permitirá a los usuarios adjuntar archivos a sus publicaciones en este tablero siempre que aparezca el mensaje "¿Permitir adjuntar archivos en publicaciones?" La opción está marcada en el Centro de administración/Configuración del foro/Configuración avanzada en la pestaña "Archivos adjuntos".</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Anuncios globales</span></b>
+        <ul>
+            <li>Marcar esta opción garantizará que los mensajes de este tablero se muestren como importantes en la parte superior de cada tablero. No importa cómo se establezcan los permisos del foro, solo los administradores del foro y los moderadores globales pueden iniciar nuevos temas o responder. <b><span class="underline">Nota:</span> YaBB solo permite que un tablero tenga esta etiqueta.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Papelera de reciclaje</span></b>
+        <ul>
+            <li>Al marcar esta opción, este foro se convierte en una papelera de reciclaje para los mensajes eliminados por los moderadores. También se puede utilizar como papelera de reciclaje para los administradores del foro desmarcando la casilla que se encuentra en el Centro de administración/Configuración/Ajustes del foro en la pestaña "Personal". <b><span class="underline">Nota:</span> YaBB solo permite que un tablero tenga esta etiqueta.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Habilitar reglas del tablero</span></b>
+        <ul>
+            <li>Marque esta casilla si desea habilitar las reglas del tablero para este tablero. En esta sección puedes publicar reglas para un foro en particular que pueden ser diferentes a las reglas que tienes generalmente para tu foro.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Permitir contraer?</span></b>
+        <ul>
+            <li>Marque esta casilla si desea que los usuarios puedan contraer las reglas del tablero.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Título de las reglas</span></b>
+        <ul>
+            <li>Título de las reglas de este foro.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Reglas de la junta directiva</span></b>
+        <ul>
+            <li>Reglas para este foro. Puede utilizar etiquetas html en las reglas.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Edad mínima de acceso</span></b>
+        <ul>
+            <li>Restringir el acceso por edad mínima.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Edad máxima de acceso</span></b>
+        <ul>
+            <li>Restringir el acceso por edad máxima.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Acceso permitido por género</span></b>
+        <ul>
+            <li>Restringir el acceso por género.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Las restricciones de edad/género se basan en la información que los usuarios ingresan en su perfil para la selección de fecha de nacimiento y género. Si un usuario no ingresa una edad o selecciona un género, YaBB no tiene forma de saber su edad o género, por lo que <i>no se le permitirá el acceso a ningún foro que utilice estas restricciones.</i></p>
+    </li>
+    <li><b><span class="underline">Contraseña del tablero</span></b>
+        <ul>
+            <li>Si está marcada y se ha ingresado una contraseña, los miembros deberán usar la contraseña para acceder a este foro. Tenga en cuenta que agregar una contraseña a un foro de 'Enlace externo' no hace nada.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Permitido iniciar temas</span></b>
+        <ul>
+            <li>Limitar qué grupos de miembros pueden iniciar un nuevo tema.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Permitido responder a temas</span></b>
+        <ul>
+            <li>Limitar los grupos de miembros que pueden responder a los temas.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Permitido ver temas</span></b>
+        <ul>
+            <li>Limitar qué grupos de miembros pueden ver temas.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Permitido crear encuestas</span></b>
+        <ul>
+            <li>Limitar qué grupos de miembros pueden crear encuestas.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Para permitir que los invitados realicen <span class="underline">cualquier</span> de las cuatro funciones anteriores, <i><b>no seleccione ningún grupo de miembros</b></i> en ese cuadro de opción.</p>
+    </li>
+</ul>
+<p>Una vez que haya completado toda la información para sus nuevos tableros, desplácese hacia abajo hasta el final de la lista y haga clic en el botón titulado "Guardar". ¡Tus nuevos tableros se crearán y se abrirán para publicar!</p>
+~;
+#############################################
+
+### Sección 3
+#############################################
+$SectionSub3 = "Editando_un_Tablero";
+$SectionBody3 = q~<p>Si necesita realizar cambios en cualquiera de los tableros que ha creado, simplemente siga las instrucciones anteriores para acceder a la sección de administración de tableros. En la lista de tableros, verás una casilla de verificación que corresponde a cada título. Marque esta casilla para todos y cada uno de los tableros que desee editar. Una vez seleccionado, desplácese hasta la parte inferior de los listados del tablero y ubique el conjunto de botones de opción titulado "Con seleccionado". Haga clic en la radio etiquetada "Editar" y luego presione el botón a la derecha titulado "Ir".</p>
+<p>En esta página Editar tableros, se le brindará un gran conjunto de opciones para cada uno de los nuevos tableros que intente editar:</p>
+<ul>
+    <li><b><span class="underline">ID del tablero</span></b>
+        <ul>
+            <li>Esto solo se usa para funciones internas de YaBB y se usa en la URL utilizada para ver un tablero. Este ID de tablero <i>no es editable</i> y se muestra solo con fines informativos.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Nombre</span></b>
+        <ul>
+            <li>Esto es lo que sus usuarios verán como el nombre del tablero. Puedes ingresar lo que desees aquí.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Descripción</span></b>
+        <ul>
+            <li>Describe este foro para que tus usuarios sepan cuál será el tema/tema.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Moderadores</span></b>
+        <ul>
+            <li>Haga clic en el enlace debajo de la palabra "Moderadores" para agregar los miembros a los que desea otorgar acceso de moderador para <i>este foro</i>.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Moderadores de grupos de miembros</span></b>
+        <ul>
+            <li>Si elige que todos los miembros de uno o más grupos de miembros en particular actúen como moderadores de <i>este foro</i>, seleccione los grupos de miembros aquí.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Si configura un grupo de miembros en particular y lo asigna como moderador del grupo de miembros en un tablero, es fácil agregar un nuevo moderador a ese tablero; simplemente agréguelo a ese grupo de miembros.</p>
+        <p class="help_attn"><b><span class="underline">Consejo para administradores:</span></b> También puedes asignar moderadores y grupos de moderadores a un tablero específico yendo a ese tablero y haciendo clic en el enlace "Agregar/eliminar moderadores" cerca de la parte superior o yendo a la sección Editar administrador del perfil de un miembro y eligiendo el tablero o tableros que deseas que moderen.</p>
+    </li>
+    <li><b><span class="underline">Categoría</span></b>
+        <ul>
+            <li>Elija la categoría a la que le gustaría que perteneciera este foro.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Junta de padres</span></b>
+        <ul>
+            <li>Elige de qué tablero quieres que este tablero sea un subtablero.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Tableros secundarios</span></b>
+        <ul>
+            <li>Le indica qué tableros ya son subtableros dentro de este tablero.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Puedes publicar?</span></b>
+        <ul>
+            <li>Elija si se pueden ver o no los temas de este foro.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Si se trata de un tablero nuevo/vacío, no se pueden publicar temas en él. Las publicaciones solo se pueden realizar en los subtableros que se encuentran dentro de él. Si este foro tiene hilos, convertirlo en un tablero "No publicar" significa que los hilos serán inaccesibles incluso para el administrador.</p>
+    </li>
+    <li><b><span class="underline">Imagen del tablero</span></b>
+        <ul>
+            <li>Aquí puedes asignar una pequeña imagen para representar este tablero. Elija a qué plantilla se aplicará la imagen del tablero. (Puede asignar diferentes gráficos de tablero para cada plantilla que tenga). Luego escriba la URL completa de la imagen en el cuadro de URL usando el formato estándar: https://www.domain.com/folder/imagename.jpg. También puedes subir fotos del tablero. Estos se almacenarán en la carpeta 'Tableros' en la carpeta de gráficos de la plantilla. Puede configurar el tamaño del gráfico del tablero yendo a la pestaña “Imágenes” del Centro de administración/Configuración del foro/Configuración avanzada. 50 por 50 es generalmente un buen tamaño para una fotografía de tablero. Los formatos de imagen permitidos son .gif, .jpg y .png.</li>
+        </ul>
+       <p class="help_attn"><b><span class="underline">Consejo del administrador:</span></b> Si ya tiene una imagen del tablero asignada a una plantilla en particular y desea cambiar la imagen, elimine primero la imagen anterior.</p>
+    </li>
+    <li><b><span class="underline">RSS</span></b>
+        <ul>
+            <li>Aquí puedes activar o desactivar la fuente RSS (Really Simple Syndication) para este foro. RSS permite a los usuarios mantenerse actualizados sobre la información más reciente en un foro sin tener que permanecer en el sitio del foro.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Tablero de recuento de publicaciones cero?</span></b>
+        <ul>
+            <li>Marque esta casilla si desea evitar que las publicaciones realizadas en este tablero aumenten el recuento de publicaciones de los usuarios.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Mostrar a todos?</span></b>
+        <ul>
+            <li>Al marcar esta opción se garantizará que el nombre y la descripción del tablero se muestren a todos los que puedan ver la categoría en la que se encuentra este tablero, incluso si no se les permite el acceso para ver el contenido del tablero en sí.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para administradores:</span></b> Esta es una buena manera de mostrarles a sus invitados que hay más contenido disponible para ellos si se registran y se convierten en miembros.</p>
+    </li>
+    <li><b><span class="underline">Permitir archivos adjuntos</span></b>
+        <ul>
+            <li>Marcar esta opción permitirá a los usuarios adjuntar archivos a sus publicaciones en este tablero siempre que aparezca el mensaje "¿Permitir adjuntar archivos en publicaciones?" La opción está marcada en el Centro de administración/Configuración del foro/Configuración avanzada en la pestaña "Archivos adjuntos".</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Anuncios globales</span></b>
+        <ul>
+            <li>Marcar esta opción garantizará que los mensajes de este tablero se muestren como importantes en la parte superior de cada tablero. No importa cómo se establezcan los permisos del foro, solo los administradores del foro y los moderadores globales pueden iniciar nuevos temas o responder. <b><span class="underline">Nota:</span> YaBB solo permite que un tablero tenga esta etiqueta.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Papelera de reciclaje</span></b>
+        <ul>
+            <li>Al marcar esta opción, este foro se convierte en una papelera de reciclaje para los mensajes eliminados por los moderadores. También se puede utilizar como papelera de reciclaje para los administradores del foro desmarcando la casilla que se encuentra en el Centro de administración/Configuración/Ajustes del foro en la pestaña "Personal". <b><span class="underline">Nota:</span> YaBB solo permite que un tablero tenga esta etiqueta.</b></li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Habilitar reglas del tablero</span></b>
+        <ul>
+            <li>Marque esta casilla si desea habilitar las reglas del tablero para este tablero.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">¿Permitir contraer?</span></b>
+        <ul>
+            <li>Marque esta casilla si desea que los usuarios puedan contraer las reglas del tablero.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Título de las reglas</span></b>
+        <ul>
+            <li>Título de las reglas de este foro.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Reglas de la junta directiva</span></b>
+        <ul>
+            <li>Reglas para este foro. Puede utilizar etiquetas html en las reglas.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Edad mínima de acceso</span></b>
+        <ul>
+            <li>Restringir el acceso por edad mínima.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Edad máxima de acceso</span></b>
+        <ul>
+            <li>Restringir el acceso por edad máxima.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Acceso permitido por género</span></b>
+        <ul>
+            <li>Restringir el acceso por género.</li></ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Las restricciones de edad/género se basan en la información que los usuarios ingresan en su perfil para la selección de fecha de nacimiento y género. Si un usuario no ingresa una edad o selecciona un género, YaBB no tiene forma de saber su edad o género, por lo que <i>no se le permitirá el acceso a ningún foro que utilice estas restricciones.</i></p></li>
+    <li><b><span class="underline">Permitido iniciar temas</span></b>
+        <ul>
+            <li>Limitar qué grupos de miembros pueden iniciar un nuevo tema.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Permitido responder a temas</span></b>
+        <ul>
+            <li>Limitar los grupos de miembros que pueden responder a los temas.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Permitido ver temas</span></b>
+        <ul>
+            <li>Limitar qué grupos de miembros pueden ver temas.</li>
+        </ul>
+    </li>
+    <li><b><span class="underline">Permitido crear encuestas</span></b>
+        <ul>
+            <li>Limitar qué grupos de miembros pueden crear encuestas.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Para permitir que los invitados realicen <span class="underline">cualquier</span> de las cuatro funciones anteriores, <i><b>no seleccione ningún grupo de miembros</b></i> en ese cuadro de opción.</p>
+    </li>
+</ul>
+<p>Una vez que haya editado toda la información de sus tableros, desplácese hacia abajo hasta el final de la lista y haga clic en el botón titulado "Guardar". Tus cambios en los Foros se verán inmediatamente.</p>
+ ~;
+#############################################
+
+### Sección 4
+#############################################
+$SectionSub4 = "Eliminando_un_tablero";
+$SectionBody4 = q~<p>Si desea eliminar un tablero, siga las instrucciones en la sección Acceso a las funciones del tablero anterior para acceder a la página de administración de su tablero.</p>
+<h4>Eliminar un tablero</h4>
+<ul>
+    <li>En la lista de tableros, verá una casilla de verificación que corresponde a cada título. Marque esta casilla para todos y cada uno de los tableros que desee eliminar.</li>
+    <li>Una vez seleccionado, desplácese hasta la parte inferior de la lista del tablero y localice el conjunto de botones de opción titulados "Con seleccionado".</li>
+    <li>Haga clic en la radio con la etiqueta "Eliminar" y luego presione el botón a la derecha titulado "Ir".</li>
+    <li>Una pequeña ventana emergente le pedirá que confirme que desea eliminar estos tableros. Haga clic en "Aceptar" para eliminarlos o en "Cancelar" para conservarlos</li>
+</ul>
+~;
+#############################################
+
+1;

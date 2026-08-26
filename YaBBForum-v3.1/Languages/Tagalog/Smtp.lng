@@ -1,0 +1,55 @@
+###############################################################################
+# Smtp.lng (Smtp server text definitions)                                     #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.1                                                 #
+# Packaged:       01 Sep, 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$smtplngver = 'YaBBForum 3.1';
+
+%smtp_txt = (
+'1' => "SERVER ERROR:Hindi mahanap ang $smtpaddr",
+'2' => 'SERVER ERROR: Hindi mabuksan ang socket connection',
+'3' => "SERVER ERROR: Hindi makakonekta sa $smtpaddr sa port $port",
+'4' => 'SYSTEM ERROR: Walang laman ang To address',
+'5' => 'Log ng komunikasyon sa Mail Server:',
+'no_to' => 'Ang &#39;To&#39; variable (recipient address) ay walang laman at kailangan sa SMTP protocol',
+'no_from' => 'Ang &#39;Mula&#39; na variable (address ng nagpadala) ay walang laman at kailangan sa SMTP protocol',
+'211' => 'Status ng system, o tugon ng tulong ng system',
+'214' => 'Mensahe ng tulong',
+'220' => '<domain> Handa na ang serbisyo',
+'221' => '<domain> Serbisyo ng pagsasara ng transmission channel',
+'250' => 'Humiling ng aksyon sa mail okay, tapos na',
+'251' => 'User na hindi lokal: ay magpapasa sa <forward-path>',
+'354' => 'Simulan ang pag-input ng mail: magtatapos sa <CRLF>.<CRLF>',
+'421' => '<domain> Hindi available ang serbisyo',
+'432' => 'Kailangan ng paglipat ng password',
+'450' => 'Humiling ng aksyon sa mail na hindi ginawa: hindi magagamit ang mailbox',
+'451' => 'Tinanggal ang hiniling na aksyon: lokal na error sa pagproseso',
+'452' => 'Hindi ginawa ang hiniling na aksyon: hindi sapat ang imbakan ng system',
+'454' => 'Pansamantalang pagkabigo sa pagpapatunay',
+'500' => 'Error sa syntax, hindi nakikilalang utos',
+'501' => 'Di-wastong tatanggap ng mail. Ang relay ay nangangailangan ng SMTP AUTH',
+'502' => 'Hindi ipinatupad ang utos',
+'503' => 'Masamang pagkakasunod-sunod ng mga utos',
+'504' => 'Hindi ipinatupad ang parameter ng command o uri ng awtorisasyon',
+'530' => 'Kinakailangan ang pagpapatunay',
+'534' => 'Masyadong mahina ang mekanismo ng pagpapatunay',
+'538' => 'Kinakailangan ang pag-encrypt para sa hiniling na mekanismo ng pagpapatunay',
+'535' => 'Nabigo ang pagpapatunay',
+'550' => 'Hindi ginawa ang hiniling na aksyon: hindi magagamit ang mailbox o user',
+'551' => 'Hindi lokal ang user: mangyaring subukan ang <forward-path>',
+'552' => 'Ipinatigil ang hiniling na pagkilos sa koreo: lumampas sa paglalaan ng imbakan',
+'553' => 'Hindi ginawa ang hiniling na aksyon: hindi pinapayagan ang pangalan ng mailbox',
+'554' => 'Nabigo ang transaksyon',
+'555' => 'Miyembro',
+);
+
+1;

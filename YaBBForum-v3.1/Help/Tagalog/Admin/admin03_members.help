@@ -1,0 +1,142 @@
+$SectionName = "Pamahalaan ang_Mga Miyembro";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "Pag-access sa_Member_Controls";
+$SectionBody1 = q~<p>Dahil ang YaBB ay binuo upang hikayatin at pangasiwaan ang isang aktibong komunidad ng mga user, ito ay may kasamang ilang tool upang tulungan ang Mga Administrator ng Forum sa pamamahala ng mga Miyembro. Upang ma-access ang mga kontrol na ito, tiyaking naka-log in ka bilang isang Administrator at ilagay ang iyong “Admin Center”. Kapag nasa loob na, hanapin ang seksyon sa sidebar menu na may pamagat na “Mga Kontrol ng Miyembro”.</p>
+~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Manu-manong_Magdagdag_ng_Miyembro";
+$SectionBody2 = q~<p>Maaaring kailanganin paminsan-minsan para sa Administrator ng Forum na manu-manong lumikha ng bagong account ng miyembro. Halimbawa, madalas itong maging kapaki-pakinabang upang matulungan ang mga may kapansanan na maging Miyembro.</p>
+<p>Mula sa iyong seksyong Mga Kontrol ng Miyembro sa sidebar ng Admin Center, mag-click sa link na may pamagat na “Magdagdag ng Miyembro”. Ang bagong page na ito ay magbibigay sa iyo ng simpleng registration form na magbibigay-daan sa iyong magdagdag ng Miyembro nang hindi kinakailangang mag-logout. Punan lamang ang form na ito gamit ang User Name, Password at e-Mail ng bagong Miyembro.</p>
+~;
+##############################################
+
+
+### Seksyon 3
+##############################################
+$SectionSub3 = "Pagbabawal sa_Mga Miyembro";
+$SectionBody3 = q~<p>Sa kasamaang palad, ang mga user ay hindi palaging napupuno ng mahusay na pakiramdam ng komunidad na ibinibigay ng YaBB. Ang mga user na ito ay maaaring maging bastos, lumabag sa mga panuntunan, mang-harass sa ibang mga miyembro, o kahit na mag-spam sa iyong forum. Ito ang dahilan kung bakit binibigyan ka ng YaBB ng kakayahang harangan ang mga troublemaker na ito mula sa pag-istorbo sa iyong forum. Maaaring i-ban ang mga indibidwal na miyembro mula sa kanilang Profile Page at mula sa seksyong Ban Utilities ng Admin Center. Upang simulan ang pagbabawal ng isang Miyembro sa ganitong paraan, i-access ang iyong Admin Center at hanapin ang "Mga Kontrol ng Miyembro" tulad ng inilarawan sa itaas. Hanapin ang link na may pamagat na "Ban Utilities" at i-click ito. Ang bagong page na ito ay magbibigay sa iyo ng tatlong paraan para sa pagbabawal sa isang Miyembro:</p>
+<ol>
+    <li>sa pamamagitan ng IP address</li>
+    <li>sa pamamagitan ng e-Mail address</li>
+    <li>sa pamamagitan ng User ID</li>
+</ol>
+<h4>Pag-ban sa isang Miyembro mula sa Banning Utility</h4>
+<p class="help_attn">Tandaan na ang mga IP address, e-mail address, at User ID na pinagbawalan mula sa page ng Ban Utilities ay na-flag bilang mga permanenteng pagbabawal.</p>
+<ul>
+    <li><b>IP Address</b>
+        <ul>
+            <li>Ang pag-ban sa pamamagitan ng IP address ay pipigil sa sinuman na ma-access ang iyong board kung ang kanilang IP address ay nakalista dito. Bagama't epektibo, maaari nitong pigilan ang isang lehitimong user na mag-log on, gaya ng dalawang taong nagbabahagi ng parehong koneksyon sa ISP. Maaari rin itong mabigo kung ang user ay nasa likod ng isang proxy o may dynamic na IP. Upang maglagay ng partikular na IP address, ilagay ang lahat ng apat na octet ng IP address ng mga user (halimbawa: 192.168.255.8).</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Maaari mo ring i-block ang isang hanay ng mga IP address sa pamamagitan lamang ng pagpasok sa unang ilang octet ng address. Halimbawa, ang pagpasok ng IP bilang: 192.168. haharangan ang bawat IP address mula 192.168.0.0 hanggang 192.168.255.255. Maglagay lamang ng 1 IP address bawat linya.</p> </li>
+    <li><b>E-mail Address</b>
+        <ul>
+            <li>Ang pangalawang paraan na ito ay nagpapahintulot sa iyo na pigilan ang sinumang gumagamit ng isang partikular na e-mail address (halimbawa: bad@user.com) mula sa pagrehistro o pag-log in. Maglagay lamang ng 1 e-mail address bawat linya.</li>
+        </ul>
+    </li>
+    <li><b>Username</b>
+        <ul>
+            <li>Sa wakas, ang pinakasimpleng paraan upang i-ban ang isang user ay sa pamamagitan ng kanilang User ID. Tandaan na ito ay <i>hindi</i> ang kanilang Screen Name. Maglagay lamang ng 1 User ID bawat linya.</li>
+        </ul>
+    </li>
+</ul>
+<h4>Pagba-ban sa isang Miyembro mula sa kanilang Profile</h4>
+<p class="help_attn">Ang pag-ban sa kanilang Profile ay nagbibigay sa Admin (o iba pang awtorisadong tauhan) ng opsyon na i-ban ang miyembro para sa mga itinakdang yugto ng panahon, na nagbibigay ng dahilan para sa pagbabawal at ang opto na magpadala ng e-mail na nag-aabiso sa kanila ng pagbabawal.</p>
+<ul>
+    <li><b>IP Address</b>
+        <ul>
+            <li>Ang pag-ban sa pamamagitan ng IP address ay mapipigilan ang sinuman na ma-access ang iyong board kung ang kanilang IP address ay nakalista dito.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Maaari mo lamang i-block ang mga IP na nakalista sa profile ng miyembro.</p> </li>
+    <li><b>E-mail Address</b>
+        <ul>
+            <li>Pinapayagan ka ng paraang ito na pigilan ang sinumang gumagamit ng isang partikular na e-mail address (halimbawa: bad@user.com) mula sa pagrehistro o pag-log in.</li>
+        </ul>
+    </li>
+    <li><b>User ID</b>
+        <ul>
+            <li>Tandaan na ito ay <i>hindi</i> ang kanilang Screen Name.</li>
+        </ul>
+    </li>
+</ul>
+~;
+##############################################
+
+### Seksyon 4
+##############################################
+$SectionSub4 = "Miyembro_Groups";
+$SectionBody4 = q~<p>Ang Mga Grupo ng Miyembro ay nagbibigay sa iyo ng kakayahang magtalaga ng isang grupo o klasipikasyon sa isang Miyembro. Ang mga pangkat na ito ay maaaring gamitin upang magbigay ng mga espesyal na pribilehiyo at/o pag-access sa iyong forum o gamitin lamang para sa kasiyahan nito. Kung gusto mong lumikha ng isang Grupo ng Miyembro, ipasok ang iyong Admin Center at hanapin ang seksyong pinamagatang "Mga Kontrol ng Miyembro" tulad ng inilarawan sa itaas pagkatapos ay mag-click sa link na "Mga Grupo ng Miyembro".</p>
+<p>Ipapakita sa iyo ng bagong page na ito ang tatlong uri ng Pangkat ng Miyembro.</p>
+<ol>
+    <li>Ang una ay System/Static Groups. Ang mga ito ay maaaring palitan ng pangalan sa pamamagitan ng pag-click sa "I-edit" na button para sa bawat entry, gayunpaman, dahil sa kanilang kahalagahan, <i>hindi sila maaaring alisin</i>.</li>
+    <li>Ang pangalawa ay "Mga Grupo ng Mag-post ng Independent na Miyembro" at itinalaga sa isang Miyembro <i>manual</i> ng isang Administrator o Global Moderator dahil hindi sila nakatali sa Bilang ng Post ng User.</li>
+    <li>Ang ikatlong pangkat, gayunpaman, ay batay sa kung gaano karaming mga Post ang ginawa ng isang Miyembro. Ang YaBB ay <i>awtomatikong</i> itatalaga ang mga ito kapag naabot ng isang Miyembro ang nakalistang minimum na bilang ng mga Post.</li>
+</ol>
+<h4>Paggawa ng Bagong Grupo ng Miyembro</h4>
+<p>Upang lumikha ng bagong Grupo ng Miyembro, mag-click sa link na may pamagat na "Magdagdag ng Grupo" sa tabi ng alinman sa "Mag-post ng Independent" o "Mag-post ng Dependent" na Mga Grupo ng Miyembro. Maglalabas ito ng bagong page na may form para magdagdag ng mga bagong grupo.</p>
+<ul>
+    <li><b>Pangalan:</b>
+        <ul>
+            <li>Ito ang pangalan ng Pangkat ng Miyembro na ipapakita sa lahat.</li>
+        </ul>
+    </li>
+    <li><b># ng mga Bituin:</b>
+        <ul>
+            <li>Gaano karaming mga bituin ang dapat magkaroon ng Pangkat na ito?</li>
+        </ul>
+    </li>
+    <li><b>Uri ng Bituin:</b>
+        <ul>
+            <li>Pumili ng default na uri ng bituin mula sa drop down box, o ilagay ang URL sa ibang larawan.
+                <p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Kung nag-import ka ng mas lumang forum sa 2.6.0/2.6.1, hindi lilitaw ang iyong mga lumang default na star dahil gumagamit ang 2.6.0 ng ibang star graphics na may iba't ibang extension. Kung gusto mong gamitin ang mga lumang bituin o may mga custom na bituin, tiyaking kopyahin ang mga ito sa folder na naglalaman ng iyong mga template ng graphics. Ito ay malamang na 'yabbfiles/Templates/Forum/default'. Kung hindi, pumili lang ng bagong star graphics mula sa drop down na listahan.</p></li>
+        </ul>
+    </li>
+    <li><b>Kulay:</b>
+        <ul>
+            <li>Binibigyan nito ang Grupo ng espesyal na color treatment. Iwanang blangko para sa walang kulay, o pumili ng isang kulay ayon sa pangalan ng kulay, ayon sa hex na halaga (ang wastong hanay ay 000000 (6 na zero) hanggang FFFFFF), o sa pamamagitan ng paggamit ng Palette tool upang pumili ng custom na kulay.</li>
+        </ul>
+    </li>
+    <li><b>Mag-post ng Independent Group:</b>
+        <ul>
+            <li>Tingnan kung gusto mo itong maging isang Pangkat <b>hindi</b> itinalaga batay sa Bilang ng Post.</li>
+        </ul>
+    </li>
+    <li><b>Pampubliko?</b>
+        <ul>
+            <li>Lagyan ng check ang kahon na ito kung gusto mong ipakita ang pangalan ng Pangkat na ito sa lahat ng Miyembro at magpakita ng color bar ng Grupo sa Online na seksyon ng User ng Board Index.</li>
+        </ul>
+    </li>
+    <li><b>Post Dependent Group</b>
+        <ul>
+            <li>Piliin ito kung gusto mong awtomatikong maitalaga ang mga user sa pangkat na ito batay sa Bilang ng Post. Pagkatapos ay ilagay ang minimum na bilang ng mga Post na kinakailangan upang maging Miyembro ng Grupo na ito.</li>
+        </ul>
+        <p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Ang YaBB ay kasama ng Post-Dependent Member Group na tinatawag na “New Members” na may minimum na Post Count na <b>-1</b>. Ito ay nasa lugar upang awtomatikong magtalaga ng mga bagong nagpaparehistrong Miyembro sa isang grupo. Magsisimula ang isang bagong Miyembro sa Bilang ng Post na -1, kaya kung <i>tanggalin mo ang Pangkat na ito</i> o <i>baguhin ang pinakamababang Bilang ng Post</i>, ang iyong mga bagong Miyembro ay hindi makakapag-post o makakagamit ng mga PM hanggang sa manu-mano mo silang ilagay sa isang Grupo. Maaari mong i-edit ang pangalan ng Grupo, mga bituin, o mga kulay na walang epekto sa mga bagong Miyembro.</p>
+        <p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Ang isang magandang paraan upang i-customize ang iyong YaBB forum ay ang magtalaga ng mga pangalan sa iyong mga Post Dependent na grupo na nauugnay sa niche ng iyong forum.</p>
+    </li>
+</ul>
+~;
+##############################################
+
+### Seksyon 5
+##############################################
+$SectionSub5 = "Global_Moderator_Privileges";
+$SectionBody5 = q~<p>Binibigyan ka ng YaBB ng kakayahang pumili kung anong mga administratibong function ang nais mong ipagkatiwala sa iyong mga Global Moderator. Maaari mong piliin ang mga pahintulot sa pag-access na ito sa Admin Center sa ilalim ng General Controls sa seksyong Global Moderator Access. Ang paglipat ng iyong mouse sa bawat opsyon sa pagkilos ay nagbibigay sa iyo ng maikling paglalarawan ng kung ano ang pinapayagan ng bawat opsyon. Ang iyong mga Global Moderator ay dapat magkaroon ng malinaw na pag-unawa sa kung anong mga antas ng access ang ibinibigay mo sa kanila, at walang makakapag-usap na mas mahusay kaysa sa iyo, ang Administrator, na tinatalakay ito sa kanila.</p>
+<p>Ang pinakamahalagang opsyon ay nakalista bilang tatlong mga pagpipilian sa tuktok ng pahina. Tandaan na ang pag-access sa Admin Center ay HINDI nangangahulugang makokontrol ng iyong mga Global Moderator ang lahat ng mga item na makikita mo sa Admin Center. Kung papayagan mo ang access na ito, maaari mong i-customize ang mga pahintulot ng Global Moderator sa listahan ng mga aksyon sa ibaba.</p>
+<p>Ang pagpili sa Pag-edit sa Profile (ngunit hindi sa Admin Edits) ay magbibigay-daan sa Global Moderator na baguhin ang mga password, e-mail address, at lahat ng iba pang mga opsyon sa Profile ng User (maliban sa Admin Edits). <b>Tandaan:</b> Hindi maaaring i-edit o baguhin ng mga Global Moderator ang anumang Profile ng Administrator.</p>
+<p>Ang pagpili sa opsyon sa Admin Edits ay magbibigay-daan sa Mga Global Moderator na baguhin ang Bilang ng Post, Posisyon, at (mga) Grupo ng Miyembro ng user. <b>Tandaan:</b> Ang mga Global Moderator ay hindi maaaring mag-edit o magbago ng Administrator Admin Edits, at hindi rin nila maaaring "i-promote" ang ibang mga user sa Global Moderators o Forum Administrators.</p>
+<p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Nakadepende ang ilang pagkilos sa kung anong antas ng pag-edit ng Profile ang ibinigay sa Global Moderator. Ang pag-access sa mga bagay tulad ng Mga Attachment ng PM at pag-download ng mga backup ng YaBB ay nakadepende sa pagsuri sa opsyon ng Admin Edits.</p>
+<p class="help_attn"><b><span class="underline">Tip ng Administrator:</span></b> Sa karamihan ng mga kaso, ang mga aksyon na HINDI mo pipiliin para sa Global Moderator ay hindi rin nila makikita sa Admin Center; gayunpaman <i>hindi ito palaging nangyayari</i>.</p>
+~;
+##############################################
+### Seksyon 6
+##############################################
+$SectionSub6 = "Forum_Moderator";
+$SectionBody6 = q~<p>Bago sa YaBB 2.6 ay ang “Forum Moderator”. Ito ay isang posisyon na may higit pang pandaigdigang mga pribilehiyo kaysa sa Board Moderator at mas kaunti kaysa sa Global Moderator. Ang Moderator ng Forum ay may awtomatikong mga pribilehiyo sa pagmo-moderate para sa <strong>lahat</strong> na mga board na naa-access ng miyembro ngunit walang access sa mga function ng administrator maliban sa pag-ban at pag-unban ng mga miyembro sa Profile ng miyembro.</p>
+~;
+##############################################
+
+1;

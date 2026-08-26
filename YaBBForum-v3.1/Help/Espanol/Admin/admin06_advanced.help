@@ -1,0 +1,129 @@
+$SectionName = "Configuración_avanzada";
+
+### Sección 1
+#############################################
+$SectionSub1 = "Configuración_permalinks_and_RSS";
+$SectionBody1 = q~<p>YaBB te brinda la posibilidad de configurar enlaces permanentes (URI compatibles con motores de búsqueda y marcadores), así como canales RSS de todo tu foro, categorías específicas y tableros específicos. Para configurar estas funciones, debe iniciar sesión como administrador del foro o moderador global con los derechos de acceso adecuados. En el "Centro de administración", busque la sección en el menú de la izquierda titulada "Configuración del foro". Haga clic en "Configuración avanzada".</p>
+<ul>
+    <li><b>Enlaces permanentes</b>
+        <br />Para utilizar enlaces permanentes, su foro debe estar en un servidor que permita "FollowSymLinks" y "RedirectMatch" o "RewriteEngine" ya sea en un archivo .htaccess o como configuración del servidor. Consulte con su servicio de alojamiento para ver si estas funciones a nivel de servidor están disponibles para usted.
+        <br />Si esas funciones están disponibles: <a href="https://yabbforum.nz/codex/YaBB.pl?num=1191988956" target="_blank">Configuración de enlaces permanentes</a> tiene instrucciones sobre cómo configurar esa parte de los enlaces permanentes.
+        <br />Una vez configuradas las configuraciones a nivel del servidor, puede activar los enlaces permanentes dentro de YaBB y decirle cómo crear los nuevos URI de enlaces permanentes ingresando el nombre de la carpeta 'URI virtual' que se encuentra en "RedirectMatch" o "RewriteRule" en el archivo .htaccess.
+    </li>
+    <li><b>RSS</b>
+        <br />Antes de activar RSS en el nivel de foro, categoría o tablero, asegúrese de que no esté <strong>deshabilitado</strong> en "Configuración avanzada". Luego, establezca la cantidad de temas que se mostrarán en el feed (el valor predeterminado es 10). Elija también si se mostrarán o no las fechas de publicación y en qué orden se mostrarán los elementos del tema en el feed.
+        <br />Seleccione si se mostrarán o no los nombres de usuario y las direcciones de correo electrónico del autor (suponiendo que el autor haya decidido no ocultar esta información).
+        <br />La especificación RSS requiere que los autores tengan direcciones de correo electrónico. Ingrese la dirección de correo electrónico predeterminada que se mostrará en la fuente RSS si el correo electrónico del autor está oculto o "¿Mostrar el nombre de usuario y la dirección de correo electrónico del autor (si no está oculto)?" no está marcado. Si este campo se deja vacío, la dirección de correo electrónico predeterminada será la "Dirección de correo electrónico del webmaster" de "Configuración avanzada -> Correo electrónico".
+        <br /><span class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Para evitar que la dirección de correo electrónico del webmaster se llene de spam, cree una dirección de correo electrónico predeterminada RSS independiente, como 'noreply@yourforum.com'. No es necesario que sea una dirección real ya que nadie la comprobará de todos modos.</span>
+    </li>
+</ul>
+~;
+#############################################
+
+### Sección 2
+#############################################
+$SectionSub2 = "Configuración de correo electrónico";
+$SectionBody2 = q~<p>Configurar cómo YaBB envía correos electrónicos.</p>
+<ul>
+    <li><b>Correo electrónico</b>
+        <br />YaBB le ofrece múltiples formas para que YaBB envíe correos electrónicos a los miembros. Si su foro está en un sistema BSD/*nix, sendmail suele ser la mejor opción. Si sendmail está disponible en su servidor, obtenga su ubicación y coloque esa información en el cuadro de texto debajo de la selección desplegable. (Esta ubicación suele ser '/usr/sbin/sendmail'). Si sendmail no está disponible, elija una de las otras opciones en la selección desplegable.
+            <ul>
+                <li><strong>Servidor SMTP</strong>: la <em>URL</em> del servidor SMTP que utilizará. En muchos hosts, esto es del orden de 'smtp.tudominio.com' o 'mail.tudominio.com'.</li>
+                <li><strong>Autorización del servidor SMTP</strong>: tiene varias partes: tipo de autorización (normalmente automática), nombre de usuario SMTP y contraseña.</li>
+            </ul>
+        <span class="help_attn"><b><span class="underline">Consejo para el administrador:</span></b> Si tiene una dirección de correo electrónico configurada utilizando el servidor SMTP de su host, el tipo de autorización, el nombre de usuario y la contraseña probablemente se hayan guardado en la configuración de correo electrónico de su programa de correo electrónico personal.</span>
+    </li>
+    <li><b>Configuración del correo electrónico de notificación de nuevos miembros</b>
+        <br />Seleccione si se envía o no una 'notificación de nuevo miembro' a la dirección de correo electrónico designada.
+    </li>
+    <li><b>Configuración de correo electrónico del tema</b>
+        <br />Seleccione si y cómo se envían los correos electrónicos de 'Notificación de tema'.
+    </li>
+</ul>
+~;
+
+#############################################
+### Sección 3
+#############################################
+$SectionSub3 = "File_Attachments";
+$SectionBody3 = q~<p>Verifique los permisos en las carpetas Adjunto y PMAttachment y establezca permisos de usuario, tipos de archivos y otros parámetros.</p>
+<ul>
+    <li><b>Publicar archivos adjuntos</b>
+        <br />Compruebe la ruta de la carpeta y los permisos (permisos del servidor)
+        <br />Establecer el número de archivos adjuntos permitidos en las publicaciones. (Si se permiten o no archivos adjuntos en las publicaciones de un tablero en particular se establece para cada tablero en "Administrar tableros".)
+        <ul>
+            <li><strong>¿Mostrar archivos adjuntos de imágenes en publicaciones?</strong>: si está marcado, los archivos adjuntos que son imágenes también se mostrarán en la sección de archivos adjuntos de la publicación (el tamaño de esta imagen mostrada se establece en “Configuración avanzada -> Cambio de tamaño de imagen inteligente -> Imágenes adjuntas”).</li>
+            <li><strong>Extensiones de archivo</strong>: active Habilitar verificación de extensión de archivo y elija qué tipo de archivos se permitirán.
+                <br /><span class="help_attn important"><span class="underline"><b>NOTA:</b></span> desactivar la verificación de extensión de archivo podría permitir que se ejecuten archivos con contenido malicioso en su servidor. Si desea permitir la carga de elementos como archivos html, archivos javascript o archivos ejecutables, solicite que se empaqueten y carguen como un archivo zip o tar.</span>
+            </li>
+            <li><strong>Tamaño de archivos y directorios</strong>: establezca el tamaño máximo de los archivos adjuntos y el tamaño de la carpeta de archivos adjuntos. Establezca ambos límites en algo razonable para su foro.</li>
+            <li><strong>Renombrar/Sobrescribir archivos</strong>: elija cómo manejará YaBB los archivos adjuntos que tengan el mismo nombre que los archivos ya existentes.</li>
+        </ul>
+    </li>
+    <li><b>Adjuntos MP</b>
+        <br />Compruebe la ruta de la carpeta y los permisos (permisos del servidor)
+        <br />Establecer el número de archivos adjuntos permitidos en mensajes personales.
+        <ul>
+            <li><strong>¿Mostrar archivos adjuntos de imágenes en MP?</strong>: si está marcado, los archivos adjuntos que son imágenes también se mostrarán en la sección de archivos adjuntos del mensaje (el tamaño de esta imagen mostrada se establece en “Configuración avanzada -> Cambio de tamaño de imagen inteligente -> Imágenes adjuntas”).</li>
+            <li><strong>Extensiones de archivo</strong>: active Habilitar verificación de extensión de archivo y elija qué tipo de archivos se permitirán.
+            <br /><span class="help_attn important"><span class="underline"><b>NOTA:</b></span> desactivar la verificación de extensión de archivo podría permitir que se ejecuten archivos con contenido malicioso en su servidor. Si desea permitir la carga de elementos como archivos html, archivos javascript o archivos ejecutables, solicite que se empaqueten y carguen como un archivo zip o tar.</span>
+            </li>
+            <li><strong>Tamaño de archivos y directorios</strong>: establezca el tamaño máximo de los archivos adjuntos y el tamaño de la carpeta de archivos adjuntos PM. Establezca ambos límites en algo razonable para su foro.</li>
+            <li><strong>Renombrar/Sobrescribir archivos</strong>: elija cómo manejará YaBB los archivos adjuntos que tengan el mismo nombre que los archivos ya existentes.</li>
+        </ul>
+    </li>
+</ul>
+~;
+
+#############################################
+### Sección 4
+#############################################
+$SectionSub4 = "Smart_Image_Resize";
+$SectionBody4 = q~<p>Establezca los parámetros para cambiar el tamaño de avatares, imágenes de publicaciones, imágenes de firmas, imágenes de archivos adjuntos e imágenes de tableros/categorías</p>
+<ul>
+    <li><b>Para cada tipo de imagen</b>
+        <br />Puede elegir la altura y el ancho máximos de cada tipo de imagen en píxeles o desactivar el cambio de tamaño del tipo de imagen por completo. Las imágenes más grandes se "reducirán" para ajustarse a los límites máximos establecidos.
+        <br /><span class="help_attn"><span class="underline"><b>NOTA:</b></span> Una imagen más alta que su ancho estará limitada por la altura máxima y ajustará el ancho proporcionalmente, que será menor que el ancho máximo. Una imagen más ancha que alta estará limitada por el ancho máximo y ajustará la altura proporcionalmente, que será menor que la altura máxima.</span>
+    </li>
+    <li><strong>Caja gris</strong>
+        <br />Las imágenes adjuntas y las imágenes dentro de las publicaciones se pueden mostrar en una superficie ligeramente translúcida en lugar de en una nueva ventana. El administrador puede seleccionar entre una vista única y una vista de estilo galería para las imágenes adjuntas.
+    </li>
+</ul>
+~;
+### Sección 5
+#############################################
+$SectionSub5 = "Avanzado";
+$SectionBody5 = q~<p>Aquí puede configurar varios parámetros para los distintos registros de usuario/clic/error y otros elementos.</p>
+<ul>
+    <li><b>Compresión de salida</b>
+        <br />La compresión de salida comprime los datos que van al navegador, ahorrando ancho de banda. YaBB detectará qué tipo de compresión de salida está disponible en su servidor.
+        <br />También puede elegir si YaBB verifica o no si el navegador del usuario admite la compresión de salida. Se recomienda que YaBB haga esta verificación ya que algunos navegadores antiguos y minoritarios no admiten la compresión de salida y no podrán representar las páginas de su foro si se envían comprimidas.
+    </li>
+    <li><strong>Comportamiento de la caché del navegador</strong>
+        <br />Esta configuración coloca una 'metaetiqueta' en las páginas del foro que le indica al navegador del usuario si debe o no almacenar elementos/datos (como hojas de estilo e imágenes) que no cambian con el tiempo.
+        <br /><span class="help_attn"><span class="underline"><b>NOTA:</b></span> Aunque la mayoría de los navegadores siguen las instrucciones de caché que se encuentran en documentos individuales, esta es una característica obsoleta en HTML 5.</span>
+    </li>
+    <li><strong>Registro de clics (registro de acceso al foro)</strong>
+        <br />Cuando se activa, YaBB registra la identificación del usuario y la dirección IP, así como qué páginas fueron visitadas (y cuántas veces fueron visitadas) dentro del número de minutos establecido en 'Tiempo en minutos para registrar cada clic en su foro'.
+    </li>
+    <li><strong>Registrador de errores</strong>
+        <br />Habilite el Registro de errores, establezca si los errores antiguos se eliminan o no a medida que se registran los nuevos y cuántos errores aparecerán en el Registro de errores.
+        <br /><span class="help_attn"><span class="underline"><b>NOTA:</b></span> Deshabilitar el registro de errores significa que no tiene forma de verificar qué errores están ocurriendo en su foro; esto incluye cosas como miembros que tienen problemas para iniciar sesión, intentos de los motores de búsqueda de ingresar a áreas no permitidas para los invitados y otros problemas en su foro. Configurar el número de errores mostrados en un número muy pequeño significa que es posible que no vea mensajes de error importantes, ya que serán sobrescritos por otros más nuevos. (Los motores de búsqueda que se comportan mal y los intentos fallidos de registro o inicio de sesión pueden llenar un registro de errores muy rápidamente).</span>
+    </li>
+    <li><strong>Depurar</strong>
+        <br />Para usar en caso de que su foro tenga problemas con archivos que no se abren y/o cierran correctamente o necesita rastrear qué archivos se están utilizando en una sección en particular para poder solucionar un problema.
+        <br />Puede elegir si solo el administrador ve el resultado, todos ven el resultado completo, todos ven cuánto tiempo tarda una página en cargarse (útil si intenta rastrear si las cargas lentas de la página son un problema del servidor o de Internet), o si se desactiva la depuración.
+    </li>
+    <li><strong>Archivos</strong>
+        <br />Elija qué tipo de bloqueo de archivos (si corresponde) debe usar YaBB, dependiendo del sistema operativo que esté ejecutando el servidor de su foro.
+        <br /><span class="help_attn"><span class="underline"><b>NOTA:</b></span> A partir de 2015, es poco probable que su host esté ejecutando un servidor que necesite bloqueo de archivos de Windows 9x.</span>
+    </li>
+    <li><strong>Opciones de espacio libre en disco</strong>
+        <br />Activar esto le brinda un enlace para acceder a las diversas comprobaciones de espacio libre en disco que están disponibles en algunos servidores Unix/Linux/BSD.
+        <br />Si su foro se encuentra en un sistema host de múltiples usuarios, las "Funciones de espacio libre en disco" pueden informar un espacio disponible mayor que el que realmente tiene disponible.
+        <br /><span class="help_attn"><span class="underline"><b>NOTA:</b></span> Si la página "Funciones de espacio libre en disco" no se carga o si una función en la página "Funciones de espacio libre en disco" aparece atenuada o no se puede marcar, su servidor no admite estas funciones. Si la página no se carga, desmarque la casilla de verificación "Opciones de espacio libre en disco".</span>
+    </li>
+</ul>
+~;
+
+1;

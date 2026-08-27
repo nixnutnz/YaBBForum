@@ -1937,7 +1937,7 @@ Help/Dutch/User/user02_profile.help - 14838 bytes - updated Wed Aug 26 20:52:47 
 Help/Dutch/User/user00_agreement.help - 3854 bytes - updated Wed Aug 26 20:52:47 2026 - SHA-256 checksum = 3525b4e807451f0bd3d51b7e98d497cef1e9d68c23fdaf52ed57accef176bb3d
 Help/Dutch/User/user01_begin.help - 7395 bytes - updated Wed Aug 26 20:52:47 2026 - SHA-256 checksum = 7822c2e5ea6ed34afb96c98b6e934efa4a4b03525018b10d2501361fc1cf1914
 Help/Dutch/User/user03_posting.help - 23524 bytes - updated Wed Aug 26 20:52:47 2026 - SHA-256 checksum = d1924cd23e27139c1e82de6d24442834e91ddffc86b818f4bdaad879b1b83188
-Setup.pl - 130766 bytes - updated Wed Aug 26 20:53:07 2026 - SHA-256 checksum = e4aff608dabc0e91b198c0ab125b1b6a0f8e12790c2e3a8ef0c3b49b4075dac1
+Setup.pl - 131321 bytes - updated Thu Aug 27 13:15:25 2026 - SHA-256 checksum = 2cdca45ab9b4a2857a636173647c1926432f5e25716d8f87f538a8615d4ff880
 Admin/Settings_ExtendedProfiles.pm - 59620 bytes - updated Wed Aug 26 20:52:46 2026 - SHA-256 checksum = 8b07fb5f386d1ba090c2ab2f5ee6bf0d17491b0561a6fedb2d48fa54de4a6365
 Admin/HoneyPot.pm - 11033 bytes - updated Wed Aug 26 20:52:46 2026 - SHA-256 checksum = 928b7a1f0030c51f4e95b817964509e25f29544ec22f8d3c168e5336844cbbe8
 Admin/Maintenance.pm - 39395 bytes - updated Wed Aug 26 20:52:46 2026 - SHA-256 checksum = ce7634e4cc986d1cdc742bc3ea54fd77356dc0901c879d092f637eb4add84760

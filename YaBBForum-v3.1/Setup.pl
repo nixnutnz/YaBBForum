@@ -170,6 +170,8 @@ if ( !$lastsaved ) {
     $sourcedir = "$cwd/Sources";
     $memberdir = "$cwd/Members";
     $vardir    = "$cwd/Variables";
+    $datadir   = "$cwd/Messages";
+    $langdir   = "$cwd/Languages";
 }
 
 if   ( -e 'index.cgi' ) { $yyext = 'cgi'; }
@@ -256,13 +258,28 @@ sub adminlogin {
     open $LICENSE, '<', 'license.txt' or croak 'cannot load License.';
     my $license = do { local $/; <$LICENSE>; };
     close $LICENSE or croak 'cannot close License';
+    opendir LNGDIR, $langdir;
+    @lfilesanddirs = readdir LNGDIR;
+    closedir LNGDIR;
+    my $drawnldirs = q{};
+    foreach my $x ( sort keys %lngs ) {
+        my $sel = q{};
+        if ( $lngs{$x} eq 'English' ) { $sel = ' selected="selected"'; }
+        $drawnldirs .= qq~<option value="$x"$sel>$lngs{$x}</option>~;
+    }
+
+    my $getlangs =
+      qq~\n<br />Select your language:<br /><select name="getlang" size="2">
+$drawnldirs
+</select>
+~;
 
     $yymain .= qq~
     <div id="license" style="width:50em; height:40em; overflow:auto; margin:2em auto 0 auto; border:thin #000 solid; padding:1em; background-color:#fff">$license</div>
     <form action="$set_cgi?action=adminlogin2" method="post" name="loginform">
     <div style="width:25em; border: thin #000 solid; margin:2em auto; padding:1em; text-align:center; background-color:#fff">
         <label for="password">Enter the password for user <b>admin</b> to acknowledge acceptance of the above license and to gain access to the Setup Utility</label>
-        <p><input type="password" name="password" id="password" size="6" />
+        <p><input type="password" name="password" id="password" size="12" />
          <input type="hidden" name="username" value="admin" />
          <input type="hidden" name="cookielength" value="1500" /></p>
         <p><input type="submit" value="Submit" /></p>
@@ -1512,7 +1529,7 @@ sub SetInstall2 {
         $VeryHotTopic           = 25;
         $barmaxdepend           = 0;
         $barmaxnumb             = 500;
-        $defaultml              = 'regdate';
+        $defaultml              = 'username';
         $max_avatar_width       = 65;
         $max_avatar_height      = 65;
         $fix_avatar_img_size    = 0;
@@ -1651,7 +1668,8 @@ sub SetInstall2 {
 \$emailwelcome = $emailwelcome;                     # Set to 1 to email a welcome message to users even
                                                     # when you have mail password turned off
 \$name_cannot_be_userid = $name_cannot_be_userid;   # Set to 1 to require users to have different usernames and display names
-
+\$showuserage   = 1;
+\$showage = 1;
 \$gender_on_reg = 1;                   # 0: do not ask for gender on registration
                                                     # 1: ask for gender, no input required
                                                     # 2: ask for gender, input required
@@ -1888,7 +1906,7 @@ sub SetInstall2 {
 \$Show_WhosOn = 1;                                 # Set to 1 to add the text Who's Online to your YaBB menu
 \$onlopt = "";                                     # Member Groups that are allowed to view Online Overview
 \$adminwho = 1;                                    # Set to 1 to enable the actions display in the Online Overview
-\$whotime = 120;                                   # Number of Seconds to refresh the Online table
+\$whotime = 3600;                                   # Number of Seconds to refresh the Online table
 
 ########## RSS Settings ##########
 
@@ -2015,7 +2033,7 @@ sub SetInstall2 {
 ########## Advanced Tabs ##########
 
 \$addtab_on = $addtab_on;                         # show advanced tabs on Forum (For admin only.)
-\@AdvancedTabs = ("home","help","search","ml","admin","revalidatesession","login","register","guestpm","mycenter","logout","eventcal","birthdaylist","whoson","credits|./Quick-Guide/English/info/credits.html|0|0|0|0|"); # Advanced Tabs order and infos
+\@AdvancedTabs = ("home","help","search","ml","login","register","guestpm","mycenter","logout","eventcal","birthdaylist","whoson","admin","revalidatesession","credits|./Quick-Guide/English/info/credits.html|0|0|0|0|"); # Advanced Tabs order and infos
 
 ########## Smilies ##########
 

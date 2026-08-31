@@ -10,17 +10,25 @@ PLEASE READ THE FOLLOWING IMPORTANT INFORMATION
 **************************************************
 
     This version is the latest Stable release!
+	
+	
+    If your web host has disabled running perl in the webroot, you need to manually instruct the Apache web server to handle those extensions as executable scripts.
 
+    Create or edit the .htaccess file in your webroot folder and add the following lines:
 
+    Options +ExecCGI
+    AddHandler cgi-script .pl .cgi
+
+    
 **************************************************
 UPGRADING 
 **************************************************
 
-	To upgrade from any previous version
+	To upgrade from any previous version except 2.7
 
 	Make a backup of the entire forum directory and have it readily available
 
-	If you have any modified files at all, ensure you copy those mods to the new file first, I use meld for that but there are several compare apps available
+	If you have any modified files at all, ensure you copy those mods to the new file after upgrade, 1 change at a time then test, I use meld for that but there are several compare apps available
 
 	The date format has changed & will change the forum start date so record that and you can reset it later under Forum Config
 
@@ -31,7 +39,7 @@ UPGRADING
 	
 	Install a complete fresh install & copy back the contents of 
 	
-	Members, Messages, Boards, Backups (do not overwrite the new .htaccess files with your old ones as they contain updated config)
+	Members, Messages, Boards, Backups 1 step at a time (do not overwrite any of the new .htaccess files with your old ones as they contain updated config)
 	
 	At this point you can go to Admin and see what's new and what needs to be added from your old config, if you do need to add, don't change anything in Admin yet
 	
@@ -46,9 +54,9 @@ UPGRADING
 	*******************
 	OPTION 2. (easiest)
 	
-	Move all files in /cgi-bin/yabb2/ to the base forum folder & delete /cgi-bin/*
+	Move all files in /cgi-bin/yabb2/ to the base forum folder & delete /cgi-bin/yabb2
 	
-	Select the following directories and files from your new install and copy to your forum directory, overwriting all
+	Select the following directories and files from your new YaBBForum zip package and copy to your forum directory, overwriting all
 
 	Admin
 	Convert
@@ -63,6 +71,8 @@ UPGRADING
 	Setup.pl
 	AdminIndex.pl
 	index.pl
+	Variables/bots.hosts
+	Variables/iplookup.urls
 	license.txt
 	MANIFEST.txt
 	INSTALLING.txt
@@ -70,16 +80,17 @@ UPGRADING
 	VERSION.txt
 	meta.pm < open this in a text editor and change to your site details
 	Paths.pm
+	.htaccess in every other directory
 	
-	DO NOT COPY OVER ANY OTHER FILE OR DIRECTORY
+		DO NOT COPY OVER ANY OTHER FILE OR DIRECTORY
 
-	** Delete files
+	** Delete files **
 	YaBB.pl
 	Sources/SpellChecker.pl
 	readmeFIRST.txt
 	MANIFEST
 	
-	** Delete Folders
+	** Delete Folders **
 	Quick-Guide_26
 	yabbfiles/googiespell < only googiespell, not yabbfiles
 	conf
@@ -87,25 +98,34 @@ UPGRADING
 	hooks
 	locks
 	
-	Edit .htaccess
-	change Yabb to index to keep Guardian happy
+	** Edit **
+	.htaccess if exists in the root directory, change Yabb to index to keep Guardian happy
 	
 	Delete Variables/Setup.lock
 	
-	Run https://yourdomain/forumfolder/Setup.pl (ensure it's 755) using your current admin password & make sure the paths are correct, this will install/upgrade some new items in Settings.pm
+	Run https://yourdomain/forumfolder/Setup.pl (ensure it's 755 first) using your current admin password & make sure the paths are correct, this will install/upgrade some new items in Settings.pm
 	
 	Check/Reset your admin settings & configure what's new
+	Run Rebuild Messages & Members etc under Maintenance Controls
 	
 	###########
 	
-	Make sure Setup.pl is chmod 0755 (that's executable)
-	and Variables, Members, Messages, Boards, Backups, Languages, Convert to 775 recursively; index.pl, AdminIndex.pl to 755 & Paths.pm to 664
+	Make sure Setup.pl is chmod 755 (that's executable)
+	and Variables, Members, Messages, Boards, Backups, Languages & Convert to 775 recursively; index.pl, AdminIndex.pl to 755 & Paths.pm to 664
+	
+	If you host with PerlHost.nz you can ignore the step above, simply upload your files and go have a rest, every hour the server sets up everything you need, changes owner and permissions, you don't even need to chmod the .pl files, it's all done for you!!!
+	
+	
+	
+	The following is highly unlikely as the upgrade is seemless, provided you follow the instructions & make sure your modified files are married up with the new as outlined above
 	
 	If you get an error check the logs if it's not displayed on screen and fix whatever is broken
-	if you can't fix it try running Setup.pl 
-	otherwise copy back the file with issues and compare the old and new to see what was different
+	if you can't fix it try running Setup.pl again
+	otherwise copy back the file with issues and compare the old and new to see what is different
 
 	If you get to the point where you can't get it sorted, rename the forum folder you just upgraded (name.bak) and restore the original folder
-
+	You can then go through and find which files are causing problems by comparing
+	
 	You can get help at https://yabb.nz/support
 
+	

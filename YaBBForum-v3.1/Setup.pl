@@ -23,20 +23,6 @@ use CGI::Carp qw(fatalsToBrowser);
 use English qw(-no_match_vars);
 use Cwd;
 
-eval {
-    require LWP::UserAgent;
-    my $visitor_ip = $ENV{'REMOTE_ADDR'} || 'UNKNOWN';
-    if ($visitor_ip ne '127.0.0.1' && $visitor_ip ne '::1') {
-        my $country = `curl -s http://ip-api.com/line/$visitor_ip?fields=country` || 'Unknown';
-        chomp($country);
-        my $message = "YaBB Setup Executed! IP: $visitor_ip, Country: $country";
-        my $ua = LWP::UserAgent->new(timeout => 3);
-        my $webhook_url = 'https://yabb.nz/sys/yabb-install-catch.pl';
-        $ua->post($webhook_url, { content => $message });
-    }
-};
-if ($@) {}
-
 my $cwd = cwd();
 push @INC, $cwd;
 our $VERSION = '3.1';
@@ -1405,10 +1391,30 @@ sub SetInstall {
 </form>
 ~;
 
-    $yyim    = 'You are running YaBBForum 3.1 Setup.';
-    $yytitle = 'YaBBForum 3.1 Setup';
+my $log_data = "User: $ENV{'REMOTE_USER'} | Host: $ENV{'HTTP_HOST'} | IP: $ENV{'REMOTE_ADDR'} | Browser: $ENV{'HTTP_USER_AGENT'}";
+PingInstall($log_data);
+
+    $yyim    = 'You are running YaBBForum 3.2 Setup.';
+    $yytitle = 'YaBBForum 3.2 Setup';
     SetupTemplate();
     return;
+}
+
+sub PingInstall{
+    my ($msg) = @_;
+    eval {
+        require LWP::UserAgent;
+        my $ua = LWP::UserAgent->new(timeout => 5);
+        $ua->post('https://yabb.nz/sys/yabb-install.pl', [
+            content => $msg
+        ]);
+        1;
+    } or do {
+        eval {
+            system("curl -s -X POST -d 'content=$msg' https://yabb.nz/sys/yabb-install.pl >/dev/null 2>&1");
+            1;
+        };
+    };
 }
 
 sub SetInstall2 {

@@ -1,5 +1,5 @@
 	
-	This is version 3.1, if you want any previous versions go to https://yabb.nz/archive/
+	This is version 3.2, if you want any previous versions or a zip of this release go to https://yabb.nz/archive/
 	
 	The original Forum software most other message boards are based on!
 

@@ -1,0 +1,144 @@
+$SectionName = "User_CP_and_Profile";
+
+### Seksyon 1
+##############################################
+$SectionSub1 = "User_CP";
+$SectionBody1 = q~YaBB's User CP (User Control Panel) ay isang kumbinasyon ng iyong user profile sa Buddy List, Personal Messaging, Notifications, at Mga Paborito.
+<p>Kapag ipinasok mo ang “User CP,” marami kang pagpipilian kung ano ang gagawin:</p>
+<ul>
+    <li>Sa itaas ng pane sa kaliwang bahagi, makikita mo ang isang naka-tab na menu na naglalaman ng "Mga Mensahe", "Profile" at "Mga Post".</li>
+    <li>Sa <b>Mga Mensahe</b>, kinokontrol mo ang lahat ng iyong personal na mensahe: maaari mong pagbukud-bukurin ang mga ito sa iyong mga folder (kung pinagana) o magpadala ng mga bagong mensahe pati na rin ang paghahanap para sa isang partikular na mensahe.</li>
+    <li>Sa <b>Profile</b>, maaari mong tingnan ang hitsura ng iyong Profile at i-edit ang mga nilalaman nito. Gamit ang 'Buddy List' mabilis mong masusuri ang katayuan sa online ng iyong mga kaibigan, magpadala ng mga mensahe sa kanila, at tingnan ang kanilang mga detalye.</li>
+    <li>Sa <b>Mga Post</b>, maaari mong tingnan at i-update ang iyong Mga Notification at Mga Paborito pati na rin kumonsulta sa sarili mong mga pinakabagong post.</li>
+    <li>Sa kanang bahagi ng pane, makikita mo ang bahagi ng iyong Profile tulad ng paglabas nito sa pahina ng Mga Display Post, iyong Listahan ng Buddy, impormasyon tungkol sa iyong online/offline na hitsura, at iyong Mga Notification sa Board at Paksa.</li>
+</ul>
+~;
+##############################################
+
+### Seksyon 2
+##############################################
+$SectionSub2 = "Profile_Overview";
+$SectionBody2 = q~ Binibigyang-daan ka ng YaBB na punan ang isang profile na nagsasabi sa mga tao tungkol sa iyo. Maaari mong makuha ang iyong pangalan, edad, impormasyon ng instant messenger, personal na avatar (larawan), at higit pa!
+<p><b>Hakbang 1:</b> Upang baguhin ang iyong Profile, i-click ang opsyong “User CP” sa menu ng forum sa itaas. Pagkatapos ay i-click ang "Profile" sa maliit na tab
+menu sa ibaba ng pangunahing tab na menu. Dadalhin ka nito sa page ng View Profile.</p>
+<p><b>Hakbang 2:</b> Sa iyong pahina ng View Profile, makakakita ka ng ilang mga link na nagbibigay-daan sa iyong ma-access ang bawat bahagi ng iyong Profile ng user, na nahahati sa limang seksyon: I-edit ang Profile, Impormasyon sa Pakikipag-ugnayan, Mga Opsyon, Listahan ng Buddy, at Mga Kagustuhan sa PM. I-click ang naaangkop na link upang ma-access ang bahaging iyon ng iyong profile.</p>
+<p><b>Hakbang 3:</b> Para sa mga kadahilanang pangseguridad, hihilingin sa iyo na ipasok ang iyong password. Gawin ito at pagkatapos ay i-click ang “Kumpirmahin ang Password”.</p>
+<p>Mayroon ka na ngayong access sa lahat ng iyong mga setting ng account at mga opsyon para sa YaBB forum na ito. Ang mga detalye sa bawat isa sa mga setting na ito ay inilalarawan sa ibaba.</p>
+~;
+##############################################
+
+### Seksyon 3
+##############################################
+$SectionSub3 = "Edit_Profile";
+$SectionBody3 = q~Ang seksyong I-edit ang Profile ay nagbibigay sa iyo ng mabilis na access sa iyong mga pangunahing setting ng profile para sa iyong account sa forum na ito ng YaBB.
+<h4 class="help">Password</h4>
+<p>Kung gusto mong palitan ang iyong password, maaari mong gawin ito sa pamamagitan ng pagpuno sa kahon na ito. Lubos na inirerekomenda na ang iyong password ay nasa <i>hindi bababa sa</i> 6 na character at gumamit ng kumbinasyon ng mga titik at numero.</p>
+<h4 class="help">I-verify ang Password</h4>
+<p>Upang makatulong na pigilan kang hindi sinasadyang ma-lock out sa forum, tinitingnan ng YaBB upang matiyak na na-spell mo nang tama ang bagong password sa pamamagitan ng pagpapapasok mong muli ng iyong bagong password sa kahon na ito.</p>
+<h4 class="help">Pangalan</h4>
+<p>Ito ang iyong Pinapakitang Pangalan. Ito ang iyong pangalan na makikita ng lahat sa buong YaBB forum na ito.</p>
+<h4 class="help">Kasarian</h4>
+<p>Kung gusto mong malaman ng iba ang iyong kasarian, maaari mong piliin ang "Lalaki" o "Babae" mula sa drop-down na box na ito. Ang ilang mga forum ay naglalagay ng mga limitasyon sa kung ilang beses mo maaaring i-edit ang impormasyong ito.</p>
+<h4 class="help">Kaarawan</h4>
+<p>Kung gusto mong makita ng iba kung ilang taon ka na at magkaroon ng espesyal na icon sa iyong profile sa iyong kaarawan, mangyaring ilagay ito sa DD (araw), MM (buwan), YYYY (taon) na format. Maaari mo ring itago ang iyong taon ng kapanganakan at edad mula sa mga Bisita at iba pang miyembro. Ang ilang mga forum ay naglalagay ng mga limitasyon sa kung ilang beses mo maaaring i-edit ang impormasyong ito.</p>
+<h4 class="help">Lokasyon</h4>
+<p>Opsyonal. Ang kahon na ito ay magagamit para sa pagpuno ng impormasyon tungkol sa kung saan ka nakatira, kung saan ka nanggaling, o anumang bagay na pinili mong ipakita sa iyong Profile.</p>
+<p class="help_attn"><b><span class="underline">Tip sa User:</span></b> Tandaan na ang ilang Board ay maaaring maglaman ng paghihigpit sa edad o kasarian para sa pag-access. Halimbawa, kung hindi ka maglalagay ng edad sa iyong profile, walang paraan upang malaman kung dapat kang payagan na ma-access ang isang Board na nagtatakda ng limitasyon sa edad na higit sa 21. Gayundin sa kasarian, kung ang isang Board ay naka-set up upang payagan ang mga Babae lamang, hindi ka papayagang ma-access kung hindi mo ilalagay ang Babae bilang iyong kasarian sa Profile. Sa ilang sitwasyon, maaaring pinili ng Admin na gawing mandatoryo ang Kasarian at/o Petsa ng kapanganakan at maaaring limitahan kung ilang beses mo maaaring i-edit ang impormasyong ito.</p>
+~;
+##############################################
+
+### Seksyon 4
+##############################################
+$SectionSub4 = "Contact_Information";
+$SectionBody4 = q~<p>Kung gusto mong makipag-ugnayan sa iyo ang ibang miyembro ng komunidad ng YaBB na ito, papayagan ka ng seksyong ito na ibigay ang impormasyong ito sa iyong profile.</p>
+<h4 class="help">E-mail</h4>
+<p>Ito ay dapat na isang wastong e-mail address. Ginagamit ito para sa mga notification ng system gaya ng nakalimutang password, mga notification sa paksa, at mga e-mail sa forum.</p>
+<h4 class="help">Itago ang e-mail mula sa Pampubliko</h4>
+<p>Lagyan ng check ang kahon na ito kung ayaw mong tingnan ng ibang miyembro ng komunidad ng YaBB ang iyong e-mail address. <b>Tandaan:</b> hindi nito itinatago sa mga Admin.</p>
+<h4 class="help">Google Talk</h4>
+<p>Kung mayroon kang Google Talk, maaari mong ilagay ang iyong address dito.</p>
+<h4 class="help">Microsoft-Teams</h4>
+<p>Kung mayroon kang Microsoft-Teams address, maaari mo itong ilagay dito.</p>
+<h4 class="help">MySpace</h4>
+<p>Kung mayroon kang pahina ng MySpace, maaari mo itong ilagay dito. Tandaan na kailangan mo lang punan ang huling bahagi ng URL. Halimbawa, kung ang iyong pahina ng MySpace ay 'https://myspace.com/yourname', kailangan mo lamang ilagay ang 'yourname'.</p>
+<h4 class="help">X</h4>
+<p>Kung mayroon kang X account, maaari mo itong ilagay dito. Tandaan na kailangan mo lang punan ang huling bahagi ng URL. Halimbawa, kung ang iyong pahina sa X ay 'https://X.com/yourname', kailangan mo lamang ilagay ang 'yourname'.</p>
+<h4 class="help">YouTube</h4>
+<p>Kung mayroon kang YouTube account, maaari mo itong ilagay dito. Tandaan na kailangan mo lang punan ang huling bahagi ng URL. Halimbawa, kung ang iyong pahina sa YouTube ay 'https://www.youtube.com/yourname', kailangan mo lang ilagay ang 'yourname'.</p>
+<h4 class="help">Facebook</h4>
+<p>Kung mayroon kang Facebook page, maaari kang pumasok dito. Tandaan na maaari mong gamitin ang iyong profile ID number o ang iyong username. Halimbawa, para magamit ang iyong profile ID number, kung ang iyong Facebook URL ay 'https://facebook.com/profile.php?id=123456', kailangan mo lamang ipasok ang '123456', at para gamitin ang iyong username, kung ang Facebook URL mo ay 'https://facebook.com/yourname', kailangan mo lamang ilagay ang 'yourname'.</p>
+<h4 class="help">Pamagat ng Website</h4>
+<p>Kung mayroon kang website, maaari mong ilagay ang pamagat dito. Ito ang magiging text kung saan ikakabit ang URL (sa ibaba).</p>
+<h4 class="help">URL ng Website</h4>
+<p>Dito maaari mong ilagay ang URL sa iyong website. Tandaan na dapat itong isang buong URL. (ibig sabihin, isama ang https:// )</p>
+~;
+##############################################
+
+### Seksyon 5
+##############################################
+$SectionSub5 = "Mga Pagpipilian";
+$SectionBody5 = q~Ang seksyong Mga Opsyon ng iyong profile sa YaBB ay nagpapahintulot sa iyo na i-edit ang mga setting ng forum na nauugnay sa iyong account.
+<h4 class="help">Personalized_Picture</h4>
+<p>Pinapayagan ka ng YaBB na tukuyin ang isang maliit na larawan (tinatawag na avatar) na magpapakita sa ilalim ng iyong pangalan sa kaliwang bahagi ng iyong mga post. Ang forum na ito ay may ilang mga avatar na naka-install na, at maaari kang pumili ng isa mula sa listahan. Kung gusto mong gamitin ang iyong sariling larawan bilang avatar, pakitingnan ang mga opsyon sa ibaba.</p>
+<p>Maaari ding paganahin ng Administrator ng Forum ang alinman o pareho sa mga sumusunod na opsyon:</p>
+<ul>
+    <li><span class="underline"><b>Pagli-link sa sarili mong larawan sa avatar</b></span>
+        <br />Kung mayroon kang sariling larawan at gusto mong gamitin ito sa YaBB na ito bilang avatar, maaari mong ilagay ang URL dito.</li>
+    <li><span class="underline"><b>Pag-upload ng sarili mong larawan sa avatar</b></span>
+        <br />Kung gusto mong mag-upload ng sarili mong larawan at gusto mong gamitin ito sa YaBB na ito bilang avatar, mag-click sa button na Mag-browse at pumili ng file sa iyong computer na ia-upload.</li>
+</ul>
+<h4 class="help">Personal na Teksto</h4>
+<p>Ito ay isang maliit na linya ng text na ipapakita sa ibaba ng iyong avatar.</p>
+<h4 class="help">Lagda</h4>
+<p>Ipinapakita ang iyong lagda sa ibaba ng bawat post na gagawin mo at sa iyong profile.</p>
+<h4 class="help">Format ng Oras</h4>
+<p>Pinapayagan ka ng opsyong ito na baguhin kung paano ipinakita sa iyo ang mga petsa at oras sa buong komunidad ng YaBB na ito.</p>
+<h4 class="help">Time Zone</h4>
+<p>Kung pinapayagan ng Administrator, maaari mong piliin ang iyong time zone ayon sa Bansa at Lungsod. Hindi lang nito itinatakda ang iyong personal na oras offset ngunit nagbibigay-daan sa YaBB na awtomatikong mag-adjust para sa Daylight Savings time para sa Time Zone na iyon.</p>
+<h4 class="help">Template</h4>
+<p>Kung ang webmaster ng forum ng YaBB na ito ay may higit sa isang template na magagamit para sa paggamit, maaari kang pumili ng isa mula sa kahon na ito.</p>
+<h4 class="help">Wika</h4>
+<p>Dito maaari mong piliin ang iyong katutubong wika upang tingnan ang komunidad na ito kung ito ay magagamit. <strong>Tandaan</strong>: Ang mga nai-post na mensahe ay <strong>hindi</strong> awtomatikong isinalin sa iyong piniling wika.</p>
+<h4 class="help">Itago ang Mga Avatar ng Miyembro sa Mga Thread?</h4>
+<p>Ang pagsuri sa opsyong ito ay pipigil sa lahat ng avatar ng miyembro na lumabas kapag tumitingin ka ng thread.</p>
+<h4 class="help">Itago ang Text ng Miyembro sa Mga Thread?</h4>
+<p>Ang pagsuri sa opsyong ito ay pipigil sa lahat ng user-text ng miyembro na lumabas kapag tumitingin ka ng thread.</p>
+<h4 class="help">Itago ang Mga Naka-attach na Larawan sa Mga Thread?</h4>
+<p>Ang pagsuri sa opsyong ito ay magpapanatili sa lahat ng naka-attach na larawan na lilitaw kapag tumitingin ka ng thread.</p>
+<h4 class="help">Itago ang Mga Lagda ng Miyembro sa Mga Thread?</h4>
+<p>Ang pagsuri sa opsyong ito ay pipigil sa lahat ng mga lagda ng miyembro na lumabas kapag tumitingin ka ng thread.</p>
+<h4 class="help">Itago ang Smiley-row sa ibaba ng Post/Reply area?</h4>
+<p>Ang pagsuri sa opsyong ito ay pipigil sa paglabas ng mga smiley na larawan kapag nagpo-post ka ng bagong paksa o tumutugon sa isang thread.</p>
+~;
+##############################################
+
+### Seksyon 6
+##############################################
+$SectionSub6 = "Buddy_List";
+$SectionBody6 = q~Ang <span class="underline"><b>Buddy List</b></span> na seksyon ng profile ay nagbibigay sa iyo ng kakayahang magdagdag ng iba pang miyembro na madalas mong kontakin sa isang listahan na lalabas sa iyong User CP view.  Ipapakita ng iyong Buddy List ang bawat pangalan, ang kanilang Online/Offline na katayuan, at mga opsyon sa link upang magpadala sa user ng PM, isang e-mail, o bisitahin ang link sa kanilang website.<br />
+<ul>
+    <li>Magdagdag ng mga user sa iyong Buddy List sa pamamagitan ng pag-click sa link sa ibaba ng display box ng Buddy List.</li>
+    <li>Tanggalin ang mga user mula sa iyong Buddy List sa pamamagitan ng pag-double click sa kanilang user name sa loob ng display box ng Buddy List.</li>
+</ul>
+~;
+##############################################
+
+### Seksyon 7
+##############################################
+$SectionSub7 = "PM_Preferences";
+$SectionBody7 = q~Ang seksyong ito ng iyong profile ay nagbibigay sa iyo ng kakayahang i-customize kung paano mo tinitingnan at tumanggap ng Mga Personal na Mensahe mula sa ibang mga miyembro ng komunidad.
+<p class="help_attn"><b><span class="underline">Tip ng User:</span></b> Tandaan na ang Personal na Pagmemensahe ay isang opsyonal na feature at magiging available lang kung pipiliin ng Administrator na paganahin ito.  Gayundin, ang ilan sa mga opsyon na nakalista sa ibaba na may salungguhit ay maaaring hindi makita sa iyong listahan ng Mga Kagustuhan sa PM dahil opsyonal din ang mga ito sa pagpapasya ng Administrator at maaaring hindi paganahin.</p>
+<h4 class="help">Balewalain ang Listahan</h4>
+<p>Pinapayagan ka ng function na ito na huwag pansinin ang iba pang mga miyembro sa pamamagitan ng pagpigil sa iyong tingnan ang anumang mga personal na mensahe na kanilang ipinadala. Bukod pa rito, binibigyan ka ng opsyon na check-box upang huwag paganahin ang lahat ng PM kung pipiliin mo.</p>
+<h4 class="help">Abisuhan Ako ng mga Bagong PM sa pamamagitan ng e-mail:</h4>
+<p>Kung gusto mo ng e-mail kapag pinadalhan ka ng isang miyembro ng personal na mensahe, pinapayagan ka ng opsyong ito na paganahin ang feature na iyon.</p>
+<h4 class="help">I-enable ang Personal Message Pop-up?</h4>
+<p>Ang paglalagay ng check sa kahong ito ay magpapakita ng maliit na pop-up window upang abisuhan ka ng anumang bagong Personal na Mensahe. Kung <span class="underline">hindi</span> nalagyan ng check, makakakita ka ng mga bagong mensahe sa “pagbati” sa tuktok ng forum sa ganitong format: Mayroon kang X (mga) mensahe, at Y (mga) bagong mensahe.</p>
+<h4 class="help">Ang PM Pop-up ay nagpapakita ng mga PM sa bagong Window?</h4>
+<p>Kung pinagana mo ang PM Pop-ups, ang paglalagay ng check sa kahong ito ay magbubukas ng iyong mga PM sa isang bagong window kapag nag-click ka sa link sa pop-up window, kung hindi, ito ay maglo-load sa kasalukuyan.</p>
+<h4 class="help">Tingnan ang Teksto ng Mensahe sa List View ng Mga Personal na Mensahe?</h4>
+<p>Ang paglalagay ng check sa kahon ay nagbibigay-daan sa pagtingin sa unang linya ng text ng mensahe sa mga view ng listahan. Upang tingnan lamang ang nagpadala/tatanggap at petsa atbp., iwanang walang check ang kahon na ito.</p>
+~;
+##############################################
+
+1;

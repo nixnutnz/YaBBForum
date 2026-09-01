@@ -1,5 +1,0 @@
-20|Digg|digg.png|https://digg.com/submit?phase=2&amp;url={url}&amp;title={title}|1298959262
-30|Facebook|facebook.png|https://www.facebook.com/sharer/sharer.php?u={url}&amp;t={title}|1298955803
-60|Linked in|linkedin.png|https://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={title}&amp;ro=false|1298959786
-70|reddit|reddit.png|https://reddit.com/submit?url={url}&amp;title={title}|1298959598
-90|X|twitter.png|https://twitter.com/home?status={title}%20-%20{url}|1298959653

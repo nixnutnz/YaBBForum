@@ -1,0 +1,44 @@
+###############################################################################
+# Debug.lng (Debugging text definitions)                                      #
+###############################################################################
+# German/Sie - Translation by Pyragony                                        #
+# and other members of the YaBB community                                     #
+# review & changes by Pyragony (webmaster@yabbtest.de)                        #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:		YaBB 2.6.0                                            #
+# Packaged:		4. Mai 2014                                     #
+# Distributed by: http://www.yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2014 YaBB (www.yabbforum.nz) - All Rights Reserved.     #
+# Software by: The YaBB Development Team                                      #
+#              with assistance from the YaBB community.                       #
+###############################################################################
+
+$debuglngver = 'YaBBForum 3.1';
+
+%debug_txt = (
+'getpairs' => 'eingehende GET Paare',
+'postpairs' => 'eingehende POST Paare',
+'name' => 'Name',
+'value' => 'Wert',
+'opened' => 'geöffnet',
+'closed' => 'geschlossene Dateien und ',
+'equal' => 'Dateien. (Sollten gleiche Zahlen sein)',
+'nohires' => 'Ihr Server hat vermutlich nicht',
+'nomodule' => 'installiert oder das lokale Modul wird hier nicht unterstützt',
+'pagespeed' => 'Seite geladen in',
+'loaded' => 'Sekunden',
+'debugging' => 'Debugging-Information',
+'benchmarking' => 'Benchmarking',
+'ipaddress' => 'Ihre IP-Adresse ist',
+'browser' => 'Ihr Browser-Agent',
+'trace' => 'Debug-Parameter',
+'check' => 'Dateiüberprüfung auf Öffnen/Schliessen',
+'filehandles' => 'Dateihandlung/Dateien geöffnet',
+'filehandleslegend' => 'öffnen des DATEIHANDLES (Zeit) &nbsp; &nbsp; <i>MODUS</i>DateiPfadName &nbsp; &nbsp; schließen des DATEIHANDLES (Zeit)<br />[Namensraum (package), SkriptPfadName, Zeile]',
+'filesloaded' => 'Dateien geladen von',
+);
+
+1;

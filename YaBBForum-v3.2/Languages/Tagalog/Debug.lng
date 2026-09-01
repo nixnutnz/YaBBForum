@@ -1,0 +1,40 @@
+##################################################################################
+# Debug.lng (Pagde-debug ng mga kahulugan ng teksto) #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.2                                                 #
+# Packaged:       01 Sep 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$debuglngver = 'YaBBForum 3.2';
+
+%debug_txt = (
+'getpairs' => 'papasok na mga pares ng GET',
+'postpairs' => 'papasok na mga pares ng POST',
+'name' => 'pangalan',
+'value' => 'value',
+'open' => 'Bukas',
+'closed' => 'mga file at Sarado ',
+'equal' => 'mga file. (dapat magkaparehong mga numero)',
+'nohires' => 'Malamang ay wala ang iyong server',
+'nomodule' => 'naka-install o hindi sumusuporta sa lokal na module para dito',
+'pagespeed' => 'Nakumpleto ang pahina noong',
+'loaded' => 'segundo',
+'debugging' => 'Impormasyon sa pag-debug',
+'benchmarking' => 'benchmarking',
+'ipaddress' => 'Ang iyong IP address ay',
+'browser' => 'Iyong Ahente ng Browser',
+'trace' => 'debug tracer',
+'check' => 'File Check on Open/Close',
+'filehandles' => 'Filehandle/File Opened',
+'filehandleslegend' => 'binuksan ang FILEHANDLE (oras)     <i>MODE</i>filepathname     closed FILEHANDLE (oras)<br />[package, scriptpathname, line]',
+'filesloaded' => 'Mga file na ni-load ni',
+);
+
+1;

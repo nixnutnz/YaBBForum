@@ -1,0 +1,123 @@
+##################################################################################
+# Menu.lng (Image text/images definitions) #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.2                                                 #
+# Packaged:       01 Sep 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$menulngver = 'YaBBForum 3.2';
+
+if (!$language){$language = $lang;}
+
+%img_txt =(
+'whoson' => 'Sino si Where?',
+'2' => 'Admin',
+'27' => 'Tingnan ang Profile',
+'31' => 'Alisin',
+'33' => 'Magsimula ng bagong paksa',
+'34' => 'Login',
+'34a' => 'I-update ang Session',
+'54' => 'Alisin',
+'55' => 'Alisin ang Napili',
+'63' => 'Mga Moderator',
+'66' => 'Baguhin',
+'69' => 'E-mail',
+'70' => 'Aking Mga Paborito',
+'71' => 'Idagdag sa Mga Paborito',
+'72' => 'Alisin sa Mga Paborito',
+'79' => 'I-edit ang Profile',
+'97' => 'Magparehistro',
+'102' => qq~<img src="$imagesdir/back_to_top.png" alt="Top" title="to Top" />~,
+'102b' => qq~<img src="$imagesdir/back_to_bot.png" alt="Bottom" title="to Bottom" />~,
+'103' => 'Board Index',
+'104' => 'I-lock/I-unlock',
+'105' => 'Huling Post',
+'108' => 'Logout',
+'119' => 'Tulong',
+'121' => 'Alisin',
+'131' => 'Abisuhan ang mga tugon',
+'131a' => 'Magdagdag ng Abiso sa Paksa',
+'131d' => 'Tanggalin ang Abiso sa Paksa',
+'132' => 'Ilipat',
+'144' => 'PM',
+'144a' => 'Personal na Mensahe',
+'145' => 'Sipi',
+'145q' => 'Markahan at Sipi',
+'146' => 'Tumugon',
+'182' => 'Paghahanap',
+'300' => 'Markahan ang mga Paksa bilang Nabasa na',
+'316' => 'Inbox',
+'320' => 'Kahon na ipinadala',
+'321' => 'Bagong Mensahe',
+'323' => 'Mga Kagustuhan',
+'331' => 'Mga Miyembro',
+'418' => 'Abiso',
+'452' => 'Markahan ang Lahat ng mga Post bilang Nabasa na',
+'465' => 'I-print',
+'465a' => 'I-print ang Post',
+'467' => 'Profile',
+'515' => 'WWW',
+'707' => 'Ipadala ang Paksa',
+'781' => 'Malagkit',
+'620' => 'Hati',
+'621' => 'Ilipat, Hatiin at Pagdugtong',
+'620a' => 'Hatiin ang paksang ito simula sa mensaheng ito bilang unang mensahe sa isang bagong paksa, na sinusundan ng iba pang mga post hanggang sa huling post na idinagdag sa thread na ito.',
+'621a' => 'Buksan ang window para Ilipat, Hatiin o I-splice ang mga paksa.',
+'622' => 'Itago',
+'623' => 'I-collapse',
+'624' => 'Palawakin',
+'625' => 'Idagdag sa Aking Mga Paborito',
+'626' => 'Alisin sa Aking Mga Paborito',
+'627' => 'Markahan bilang Hindi Nabasa',
+'mycenter' => "CP ng Gumagamit",
+'addbuddy' => 'Idagdag sa My Buddy List',
+'pmadmin' => 'Magpadala ng mensahe sa (mga) Admin',
+'alertmod' => 'Alert Board Moderator tungkol sa Post na ito',
+'alertmodtext' => 'I-ulat ang Post',
+'forward' => 'Forward',
+'sendpm' => 'Magpadala ng mensahe',
+'sendbmess' => 'Ipadala ang broadcast message',
+'facebook' => 'Facebook',
+'gtalk' => 'GTalk',
+'msn' => 'MSN',
+'myspace' => 'MySpace',
+'skype' => 'Microsoft-Teams',
+'X' => 'X',
+'youtube' => 'YouTube',
+'birthdaylist' => 'Listahan ng Kaarawan',
+'eventcal' => 'Kalendaryo',
+'to_top' => 'Sa Tuktok ng Pahina', 
+);
+
+%img_polltxt = (
+'1' => 'Gumawa ng Poll',
+'2' => 'Magdagdag ng Poll',
+'20' => 'Buksan',
+'21' => 'Isara',
+'27' => 'Alisin',
+'33' => 'Tingnan ang mga Boto',
+'33a' => 'Tingnan ang Paksa',
+'39' => 'Baguhin',
+'43' => 'Alisin ang Boto',
+'44' => 'Poll',
+'45' => 'Bagong Poll',
+'46' => 'Sarado ang botohan',
+);
+
+%img_imtxt = (
+'42' => 'Buddylist',
+'46' => 'Imbakan',
+);
+
+
+require Sources::Menu;
+SetMenu();
+
+1;

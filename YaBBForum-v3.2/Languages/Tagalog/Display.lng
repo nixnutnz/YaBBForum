@@ -1,0 +1,83 @@
+##################################################################################
+# Display.lng (Display text definitions) #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.2                                                 #
+# Packaged:       01 Sep 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$displaylngver = 'YaBBForum 3.2';
+
+%display_txt = (
+'10' => 'Permalink para sa artikulong ito',
+'19' => 'Page Index Toggle',
+'21' => 'Mga Post',
+'24' => '(Walang paksa)',
+'28' => 'Bisita',
+'29' => 'May-akda',
+'30' => 'naka-on',
+'63' => 'Mga Moderator',
+'63a' => 'Mga Grupo ng Moderator',
+'116' => 'Mag-post ng Tugon',
+'118' => 'Paksa',
+'139' => 'Mga Pahina',
+'146' => 'Tumugon',
+'146n' => 'Idikit ang Pangalan ng Miyembro sa Quick Reply Box',
+'162' => 'Sigurado ka bang gusto mong alisin ang paksang ito?',
+'rempost' => 'Sigurado ka bang gusto mong tanggalin ang post na ito?',
+'211' => 'Huling Pag-edit',
+'211a' => 'Dahilan',
+'298' => 'Moderator',
+'298a' => 'Pangkat ng Moderator',
+'470' => 'N/A',
+'470a' => '<i>Dating Miyembro</i>',
+'511' => 'Naka-log ang IP',
+'525' => 'ni',
+'526' => 'Pagdaragdag ng Paborito',
+'527' => 'Pag-alis ng Paborito',
+'528' => 'Kumpleto na',
+'529' => 'Pagdaragdag ng Notification',
+'530' => 'Pag-alis ng Abiso',
+'641' => 'Basahin',
+'642' => 'beses',
+'643' => 'Bumalik sa itaas',
+'644' => 'Mga miyembrong tumitingin sa paksang ito',
+'645' => 'sagot',
+'646' => 'Mga miyembrong tumutugon sa paksang ito',
+'739' => 'Sigurado ka bang gusto mong tanggalin ang post na ito?',
+'739a' => 'Burahin ang post na ito',
+'766' => 'Walang Paksa',
+'767' => 'Susunod na Paksa',
+'768' => 'Nakaraang Paksa',
+'769' => 'Lokasyon ng Flash',
+'888' => 'Paksa sa Pagba-browse',
+'999' => 'Pahayag ng Lupon',
+'posttolocked' => 'Babala: Magpo-post ka na sa isang naka-lock na thread. I-click ang [OK] para kumpirmahin ito o [Cancel] para bumalik sa thread.',
+'modifyinlocked' => 'Babala: Babaguhin mo ang isang naka-lock na thread. I-click ang [OK] para kumpirmahin ito o [Cancel] para bumalik sa thread.',
+'isbuddy' => 'Sa aking Buddy List.',
+'split_confirm' => 'Sigurado ka bang gusto mong hatiin ang paksang ito?',
+'alertmod_confirm' => 'Sigurado ka bang gusto mong alertuhan ang moderator tungkol sa post na ito?',
+'reverse' => 'Mag-click dito kung gusto mong baguhin ang pagkakasunud-sunod ng mga paksang ipinapakita.',
+'sendtopicemail' => 'I-click ang [OK] kung gusto mong ipadala ang e-mail sa pamamagitan ng iyong e-mail program, kung hindi ay gagamitin ang forums e-mail program.',
+'lokasyon' => 'Lokasyon', 
+'edad' => 'Edad',
+'regdate' => 'Sumali: ', 
+'mylastposts' => 'Tingnan ang aking huling 5 post',
+'lastposts' => 'Tingnan ang huling 5 post ni ',
+'lft' => "‹",
+'rgt' => "›",
+'upt' => 'ˆ',
+'guest_message' => 'Mensahe ng Panauhin', 
+'guest_message_block' => qq~Kumusta Bisita,<br><br>Paumanhin, ngunit nalampasan mo na ang dami ng mga paksang pinapayagan kang tingnan bilang bisita. Upang tingnan ang maraming paksa hangga&#39;t gusto mo at upang makinabang mula sa marami pang mga tampok, bakit hindi ka <a href="$scripturl?action=register" style="font-weight: bold;">magparehistro ng account sa amin</a>. Madali ang pagpaparehistro at aabutin ka lang ng ilang minuto.<br><br>Kung mayroon ka nang account sa amin, maaari kang <a href="$scripturl?action=login" style="font-weight: bold;">mag-login dito</a> upang hindi na makita ang mensaheng ito.<br><br>Salamat,<br><br>Ang $mbname Team~,
+'guest_message_warn' => qq~Kumusta Bisita,<br><br>Mukhang nag-eenjoy kang basahin ang aming forum, kaya bakit hindi ka <a href="$scripturl?action=register" style="font-weight: bold;">magparehistro ng account sa amin</a> upang hindi na makita ang mensaheng ito at makinabang sa marami pang feature. Madali ang pagpaparehistro at aabutin ka lang ng ilang minuto.<br><br>Kung mayroon ka nang account sa amin, <a href="$scripturl?action=login" style="font-weight: bold;">mag-click dito upang mag-log in.</a><br><br>Salamat,<br><br>Ang $mbname Team~, 
+'bookmarks' => 'Mga Bookmark', # Mga Social Bookmark
+'google' => 'Google Chat',
+);
+
+1;

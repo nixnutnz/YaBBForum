@@ -1,0 +1,74 @@
+##################################################################################
+# MyCenter.lng (My Center text definitions) #
+###############################################################################
+# YaBB: Yet another Bulletin Board                                            #
+# Open-Source Community Software for Webmasters                               #
+# Version:        YaBBForum 3.2                                                 #
+# Packaged:       01 Sep 2026                                             #
+# Distributed by: https://yabbforum.nz                                    #
+# =========================================================================== #
+# Copyright (c) 2000-2026 YaBB (yabbforum.nz) - All Rights Reserved.     #
+# Software by:  The YaBB Development Team                                     #
+#               with assistance from the YaBB community.                      #
+###############################################################################
+
+$mycenterlngver = 'YaBBForum 3.2';
+
+## IWAN ANG USERLABEL na buo. Ilipat sa loob ng string para sa tamang syntax ng wika!
+
+%mycenter_txt = (
+'welcometxt' => "Control Panel ng USERLABEL",
+'buddylisttitle' => 'Iyong mga Kaibigan',
+'buddylistnone' => 'Walang laman ang iyong Buddy List',
+'buddydeleted' => 'Ang Buddy na ito ay tinanggal. Hindi na available ang pangalan.',
+'hiddenemail' => 'Nakatagong E-mail',
+'currentsettings' => 'Iyong mga kasalukuyang Setting:',
+'onoffstatus' => 'Online/Offline na Katayuan:', 
+'onoffstatuson' => 'Online/Offline',
+'onoffstatusaway' => 'Malayo',
+'view' => 'View',
+'stealth' => 'Pananakaw:',
+'stealth_off' => 'Stealth Mode Off',
+'stealth_on' => 'Stealth Mode On',
+'posts' => 'Mga Post',
+'lokasyon' => 'Lokasyon', 
+'mylastposts' => 'Tingnan ang aking huling 5 post', 
+);
+
+%display_txt = (
+'139' => 'Mga Pahina',
+);
+
+%mc_menus = (
+'messages' => 'Mga mensahe',
+'profile' => 'Profile',
+'posts' => 'Mga Post',
+);
+
+%pm_search = (
+'all' => 'Lahat',
+'justthis' => 'Itong folder lamang',
+'byuser' => 'sa Pangalan ng Screen',
+'desc' => 'Hanapin ang aking mga PM',
+'search' => 'Paghahanap',
+);
+
+%mc_folders = (
+'foldername' => 'Pangalan ng Folder',
+);
+
+%my_favs = (
+'70' => 'Paksa',
+'109' => 'Sinimulan Ni',
+'110' => 'Mga Tugon',
+'301' => 'Mga View',
+'330' => 'Mga Paksa',
+'21' => 'Mga Post',
+'22' => 'Huling Post',
+'525' => 'Ni',
+'526' => 'ni',
+'527' => 'Nagsimula',
+'737' => 'Suriin lahat',
+);
+
+1;

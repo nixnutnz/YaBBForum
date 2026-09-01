@@ -1,0 +1,142 @@
+$SectionName = "User_CP_and_Profile";
+
+### Abschnitt 1
+##########################################
+$SectionSub1 = "User_CP";
+$SectionBody1 = q~YaBBs User CP (User Control Panel) ist eine Kombination aus Ihrem Benutzerprofil mit Buddy-Liste, persönlichen Nachrichten, Benachrichtigungen und Favoriten.
+<p>Wenn Sie den „Benutzer-CP“ eingeben, haben Sie mehrere Möglichkeiten, was zu tun ist:</p>
+<ul> 
+<li>Über dem linken Seitenbereich sehen Sie ein Menü mit Registerkarten, das „Nachrichten“ und „Profil“ enthält. und &#8220;Beiträge&#8221;.</li> 
+<li>In <b>Nachrichten</b> steuern Sie alle Ihre persönlichen Nachrichten: Sie können sie in Ihren Ordnern sortieren (falls aktiviert) oder neue Nachrichten senden sowie nach einer bestimmten Nachricht suchen.</li> 
+<li>In <b>Profil</b> können Sie das Erscheinungsbild Ihres Profils anzeigen und seinen Inhalt bearbeiten. Mit der „Buddy-Liste“ können Sie schnell den Online-Status Ihrer Freunde überprüfen, ihnen Nachrichten senden und ihre Details überprüfen.</li> 
+<li>In <b>Beiträge</b> können Sie überprüfen &amp; Aktualisieren Sie Ihre Benachrichtigungen und Favoriten und konsultieren Sie Ihre eigenen neuesten Beiträge.</li> 
+<li>Im rechten Bereich sehen Sie einen Teil Ihres Profils, wie er auf der Seite „Beiträge anzeigen“ angezeigt wird, Ihre Buddy-Liste, Informationen zu Ihrem Online-/Offline-Auftritt sowie Ihre Board- und Themenbenachrichtigungen.</li>
+</ul>
+~;
+##########################################
+
+### Abschnitt 2
+##########################################
+$SectionSub2 = "Profile_Overview";
+$SectionBody2 = q~ Mit YaBB können Sie ein Profil ausfüllen, das anderen von Ihnen erzählt. Sie können Ihren Namen, Ihr Alter, Instant-Messenger-Informationen, Ihren persönlichen Avatar (Bild) und mehr angeben!
+<p><b>Schritt 1:</b> Um Ihr Profil zu ändern, klicken Sie auf die Schaltfläche „Benutzer-CP“. Option im Forum-Menü oben. Klicken Sie dann auf „Profil“. im kleinen Tabbed
+Menü unterhalb des Hauptmenüs mit Registerkarten. Dadurch gelangen Sie zur Seite „Profil anzeigen“.</p>
+<p><b>Schritt 2:</b> Auf Ihrer Seite „Profil anzeigen“ sehen Sie mehrere Links, die Ihnen den Zugriff auf jeden Teil Ihres Benutzerprofils ermöglichen, das in fünf Abschnitte unterteilt ist: Profil bearbeiten, Kontaktinformationen, Optionen, Buddy-Liste und PM-Einstellungen. Klicken Sie auf den entsprechenden Link, um auf diesen Teil Ihres Profils zuzugreifen.</p>
+<p><b>Schritt 3:</b> Aus Sicherheitsgründen werden Sie anschließend aufgefordert, Ihr Passwort einzugeben. Tun Sie dies und klicken Sie dann auf „Passwort bestätigen“.</p>
+<p>Sie haben jetzt Zugriff auf alle Ihre Kontoeinstellungen und Optionen für dieses YaBB-Forum. Details zu jeder dieser Einstellungen werden unten beschrieben.</p>
+~;
+##########################################
+### Abschnitt 3
+##########################################
+$SectionSub3 = "Edit_Profile";
+$SectionBody3 = q~Der Abschnitt „Profil bearbeiten“ bietet Ihnen schnellen Zugriff auf Ihre grundlegenden Profileinstellungen für Ihr Konto in diesem YaBB-Forum.
+<h4 class="help">Passwort</h4>
+<p>Wenn Sie Ihr Passwort ändern möchten, können Sie dies tun, indem Sie dieses Feld ausfüllen. Es wird dringend empfohlen, dass Ihr Passwort mindestens <i>mindestens</i> 6 Zeichen lang ist und eine Kombination aus Buchstaben und Zahlen enthält.</p>
+<h4 class="help">Passwort bestätigen</h4>
+<p>Um zu verhindern, dass Sie versehentlich aus dem Forum ausgeschlossen werden, überprüft YaBB, ob Sie das neue Passwort richtig geschrieben haben, indem es Sie in diesem Feld erneut eintragen lässt.</p>
+<h4 class="help">Name</h4>
+<p>Dies ist Ihr angezeigter Name. Dies ist Ihr Name, den jeder in diesem YaBB-Forum sehen wird.</p>
+<h4 class="help">Geschlecht</h4>
+<p>Wenn Sie möchten, dass andere Ihr Geschlecht kennen, können Sie „Männlich“ auswählen. oder „Weiblich“ aus diesem Dropdown-Feld. In einigen Foren gibt es Beschränkungen dafür, wie oft Sie diese Informationen bearbeiten können.</p>
+<h4 class="help">Geburtstag</h4>
+<p>Wenn Sie möchten, dass andere an Ihrem Geburtstag sehen, wie alt Sie sind, und ein spezielles Symbol in Ihrem Profil haben, geben Sie es bitte im Format TT (Tag), MM (Monat) und JJJJ (Jahr) ein. Möglicherweise haben Sie auch die Möglichkeit, Ihr Geburtsjahr und Alter vor Gästen und anderen Mitgliedern zu verbergen. In einigen Foren gibt es Beschränkungen dafür, wie oft Sie diese Informationen bearbeiten können.</p>
+<h4 class="help">Standort</h4>
+<p>Optional. In dieses Feld können Sie Informationen über Ihren Wohnort, Ihre Herkunft oder alles andere eingeben, was Sie in Ihrem Profil anzeigen möchten.</p>
+<p class="help_attn"><b><span class="underline">Benutzertipp:</span></b> Beachten Sie, dass einige Foren möglicherweise eine Alters- oder Geschlechtsbeschränkung für den Zugriff enthalten. Wenn Sie beispielsweise in Ihrem Profil kein Alter eingeben, können Sie nicht wissen, ob Ihnen Zugriff auf ein Forum gewährt werden soll, das eine Altersgrenze von über 21 Jahren festlegt. Ebenso gilt: Wenn ein Forum nur für Frauen zugelassen ist, erhalten Sie keinen Zugriff, wenn Sie im Profil nicht „Weiblich“ als Geschlecht eingeben. In einigen Fällen hat der Administrator möglicherweise beschlossen, Geschlecht und/oder Geburtsdatum obligatorisch zu machen, und kann die Häufigkeit der Bearbeitung dieser Informationen einschränken.</p>
+~;
+##########################################
+
+### Abschnitt 4
+##########################################
+$SectionSub4 = "Contact_Information";
+$SectionBody4 = q~<p>Wenn Sie möchten, dass andere Mitglieder dieser YaBB-Community Sie kontaktieren können, können Sie in diesem Abschnitt diese Informationen in Ihrem Profil angeben.</p>
+<h4 class="help">E-Mail</h4>
+<p>Dies muss eine gültige E-Mail-Adresse sein. Es wird für Systembenachrichtigungen wie ein vergessenes Passwort, Themenbenachrichtigungen und Forum-E-Mails verwendet.</p>
+<h4 class="help">E-Mails vor der Öffentlichkeit verbergen</h4>
+<p>Aktivieren Sie dieses Kästchen, wenn Sie nicht möchten, dass andere Mitglieder der YaBB-Community Ihre E-Mail-Adresse sehen. <b>Hinweis:</b> Dadurch wird es nicht vor Administratoren verborgen.</p>
+<h4 class="help">Google Talk</h4>
+<p>Wenn Sie Google Chat haben, können Sie hier Ihre Adresse eingeben.</p>
+<h4 class="help">Microsoft-Teams</h4>
+<p>Wenn Sie eine Microsoft-Teams-Adresse haben, können Sie diese hier eingeben.</p>
+<h4 class="help">MySpace</h4>
+<p>Wenn Sie eine MySpace-Seite haben, können Sie diese hier eingeben. Beachten Sie, dass Sie nur den letzten Teil der URL ausfüllen müssen. Wenn Ihre MySpace-Seite beispielsweise „https://myspace.com/IhrName“ lautet, müssen Sie nur „IhrName“ eingeben.</p>
+<h4 class="help">X</h4>
+<p>Wenn Sie ein X-Konto haben, können Sie es hier eingeben. Beachten Sie, dass Sie nur den letzten Teil der URL ausfüllen müssen. Wenn Ihre X-Seite beispielsweise „https://X.com/IhrName“ lautet, müssen Sie nur „IhrName“ eingeben.</p>
+<h4 class="help">YouTube</h4>
+<p>Wenn Sie ein YouTube-Konto haben, können Sie es hier eingeben. Beachten Sie, dass Sie nur den letzten Teil der URL ausfüllen müssen. Wenn Ihre YouTube-Seite beispielsweise „https://www.youtube.com/IhrName“ lautet, müssen Sie nur „IhrName“ eingeben.</p>
+<h4 class="help">Facebook</h4>
+<p>Wenn Sie eine Facebook-Seite haben, können Sie diese hier eingeben. Beachten Sie, dass Sie entweder Ihre Profil-ID-Nummer oder Ihren Benutzernamen verwenden können. Um beispielsweise Ihre Profil-ID-Nummer zu verwenden, wenn Ihre Facebook-URL „https://facebook.com/profile.php?id=123456“ lautet, müssen Sie nur „123456“ eingeben, und um Ihren Benutzernamen zu verwenden, wenn Ihre Facebook-URL „https://facebook.com/IhrName“ lautet, müssen Sie nur „IhrName“ eingeben.</p>
+<h4 class="help">Website-Titel</h4>
+<p>Wenn Sie eine Website haben, können Sie hier den Titel eingeben. Dies ist der Text, an den die URL (unten) angehängt wird.</p>
+<h4 class="help">Website-URL</h4>
+<p>Hier können Sie die URL zu Ihrer Website eingeben. Beachten Sie, dass es sich hierbei um eine vollständige URL handeln muss. (d. h. https:// einschließen)</p>
+~;
+##########################################
+### Abschnitt 5
+##########################################
+$SectionSub5 = "Optionen";
+$SectionBody5 = q~Im Abschnitt „Optionen“ Ihres YaBB-Profils können Sie Forumeinstellungen bearbeiten, die sich auf Ihr Konto beziehen.
+<h4 class="help">Personalisiertes_Bild</h4>
+<p>YaBB ermöglicht es Ihnen, ein kleines Bild (Avatar genannt) zu definieren, das unter Ihrem Namen auf der linken Seite Ihrer Beiträge angezeigt wird. In diesem Forum sind bereits mehrere Avatare installiert, und Sie können einen aus der Liste auswählen. Wenn Sie Ihr eigenes Bild als Avatar verwenden möchten, sehen Sie sich bitte die folgenden Optionen an.</p>
+<p>Der Forum-Administrator kann auch eine oder beide der folgenden Optionen aktivieren:</p>
+<ul> 
+<li><span class="underline"><b>Verlinkung zu Ihrem eigenen Avatar-Bild</b></span> 
+<br />Wenn Sie ein eigenes Bild haben und es auf diesem YaBB als Avatar verwenden möchten, können Sie hier die URL eingeben.</li> 
+<li><span class="underline"><b>Laden Sie Ihr eigenes Avatar-Bild hoch</b></span> 
+<br />Wenn Sie Ihr eigenes Bild hochladen und es auf diesem YaBB als Avatar verwenden möchten, klicken Sie auf die Schaltfläche „Durchsuchen“ und wählen Sie eine Datei auf Ihrem Computer zum Hochladen aus.</li>
+</ul>
+<h4 class="help">Persönlicher Text</h4>
+<p>Dies ist eine kleine Textzeile, die unter Ihrem Avatar angezeigt wird.</p>
+<h4 class="help">Signatur</h4>
+<p>Ihre Signatur wird unten in jedem von Ihnen verfassten Beitrag und in Ihrem Profil angezeigt.</p>
+<h4 class="help">Zeitformat</h4>
+<p>Mit dieser Option können Sie ändern, wie Datum und Uhrzeit in der gesamten YaBB-Community angezeigt werden.</p>
+<h4 class="help">Zeitzone</h4>
+<p>Wenn der Administrator es zulässt, können Sie Ihre Zeitzone nach Land und Stadt auswählen. Dadurch wird nicht nur Ihr persönlicher Zeitversatz festgelegt, sondern YaBB ermöglicht auch die automatische Anpassung an die Sommerzeit für diese Zeitzone.</p>
+<h4 class="help">Vorlage</h4>
+<p>Wenn der Webmaster dieses YaBB-Forums mehr als eine Vorlage zur Verwendung bereithält, können Sie in diesem Feld eine auswählen.</p>
+<h4 class="help">Sprache</h4>
+<p>Hier können Sie Ihre Muttersprache auswählen, in der diese Community angezeigt werden soll, sofern diese verfügbar ist. <strong>Hinweis</strong>: Gepostete Nachrichten werden <strong>nicht</strong> automatisch in die von Ihnen gewählte Sprache übersetzt.</p>
+<h4 class="help">Mitglieder-Avatare in Threads ausblenden?</h4>
+<p>Wenn Sie diese Option aktivieren, wird verhindert, dass alle Mitglieds-Avatare angezeigt werden, wenn Sie einen Thread anzeigen.</p>
+<h4 class="help">Mitgliedstext in Threads ausblenden?</h4>
+<p>Wenn Sie diese Option aktivieren, wird verhindert, dass der Benutzertext aller Mitglieder angezeigt wird, wenn Sie einen Thread anzeigen.</p>
+<h4 class="help">Angehängte Bilder in Threads ausblenden?</h4>
+<p>Wenn Sie diese Option aktivieren, werden alle angehängten Bilder weiterhin angezeigt, wenn Sie einen Thread anzeigen.</p>
+<h4 class="help">Mitgliedersignaturen in Threads ausblenden?</h4>
+<p>Wenn Sie diese Option aktivieren, werden die Unterschriften aller Mitglieder nicht angezeigt, wenn Sie einen Thread anzeigen.</p>
+<h4 class="help">Smiley-Zeile unter dem Beitrags-/Antwortbereich ausblenden?</h4>
+<p>Wenn Sie diese Option aktivieren, werden die Smiley-Bilder nicht angezeigt, wenn Sie ein neues Thema veröffentlichen oder auf einen Thread antworten.</p>
+~;
+##########################################
+
+### Abschnitt 6
+##########################################
+$SectionSub6 = "Buddy_List";
+$SectionBody6 = q~Der Abschnitt <span class="underline"><b>Buddy-Liste</b></span> des Profils gibt Ihnen die Möglichkeit, andere Mitglieder, mit denen Sie häufig Kontakt haben, zu einer Liste hinzuzufügen, die in Ihrer Benutzer-CP-Ansicht angezeigt wird. Ihre Buddy-Liste zeigt jeden Namen, seinen Online-/Offline-Status und Linkoptionen an, um dem Benutzer eine PN oder eine E-Mail zu senden oder den Link zu seiner Website zu besuchen.<br />
+<ul> 
+<li>Fügen Sie Benutzer zu Ihrer Buddy-Liste hinzu, indem Sie auf den Link unter dem Anzeigefeld der Buddy-Liste klicken.</li> 
+<li>Löschen Sie Benutzer aus Ihrer Buddy-Liste, indem Sie im Anzeigefeld der Buddy-Liste auf ihren Benutzernamen doppelklicken.</li>
+</ul>
+~;
+##########################################
+
+### Abschnitt 7
+##########################################
+$SectionSub7 = "PM_Preferences";
+$SectionBody7 = q~In diesem Abschnitt Ihres Profils können Sie anpassen, wie Sie persönliche Nachrichten von anderen Community-Mitgliedern anzeigen und empfangen.
+<p class="help_attn"><b><span class="underline">Benutzertipp:</span></b> Beachten Sie, dass Personal Messaging eine optionale Funktion ist und nur verfügbar ist, wenn der Administrator sie aktiviert. Ebenso werden einige der unten aufgeführten, unterstrichenen Optionen möglicherweise nicht in Ihrer PM-Präferenzenliste angezeigt, da sie ebenfalls nach Ermessen des Administrators optional sind und möglicherweise deaktiviert werden.</p>
+<h4 class="help">Ignorierungsliste</h4>
+<p>Mit dieser Funktion können Sie andere Mitglieder ignorieren, indem Sie verhindern, dass Sie die von ihnen gesendeten persönlichen Nachrichten sehen. Darüber hinaus erhalten Sie die Möglichkeit, alle PMs zu deaktivieren, wenn Sie dies wünschen.</p>
+<h4 class="help">Benachrichtigen Sie mich per E-Mail über neue PMs:</h4>
+<p>Wenn Sie eine E-Mail erhalten möchten, wenn Ihnen ein Mitglied eine persönliche Nachricht sendet, können Sie diese Funktion mit dieser Option aktivieren.</p>
+<h4 class="help">Popup für persönliche Nachrichten aktivieren?</h4>
+<p>Wenn Sie dieses Kontrollkästchen aktivieren, wird ein kleines Popup-Fenster angezeigt, das Sie über neue persönliche Nachrichten informiert. Wenn <span class="underline">nicht</span> aktiviert ist, werden neue Nachrichten im Bereich „Begrüßung“ angezeigt. oben im Forum in diesem Format: Sie haben X Nachrichten und Y neue Nachrichten.</p>
+<h4 class="help">PM-Popup zeigt PMs in neuem Fenster an?</h4>
+<p>Wenn Sie PM-Popups aktiviert haben, werden durch Aktivieren dieses Kontrollkästchens Ihre PMs in einem neuen Fenster geöffnet, wenn Sie auf den Link im Popup-Fenster klicken. Andernfalls werden sie im aktuellen Fenster geladen.</p>
+<h4 class="help">Nachrichtentext in der Listenansicht persönlicher Nachrichten anzeigen?</h4>
+<p>Durch Aktivieren des Kontrollkästchens wird die Anzeige der ersten Zeile des Nachrichtentexts in Listenansichten ermöglicht. Um nur den Absender/Empfänger und das Datum usw. anzuzeigen, lassen Sie dieses Kontrollkästchen deaktiviert.</p>
+~;
+##########################################
+
+1;

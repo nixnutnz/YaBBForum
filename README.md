@@ -1,5 +1,5 @@
 	
-	This is version 3.2, if you want any previous versions or a zip of this release go to https://yabb.nz/archive/
+	This is version 3.2, if you want any previous versions or a zip of this release go to <a href=https://yabb.nz/archive/>YaBBForum Archive</a>
 	
 	The original Forum software most other message boards are based on!
 
@@ -13,9 +13,8 @@
 	Currently over 50,000 web communities using YaBB worldwide, 
 	and Millions of registered users throughout these forums!
 
-	Download the YaBBForum zip from Releases on the right (below if you're on a mobile device)
 
-	For help go to https://yabbforum.nz/support/
+	For help go to <a href=https://yabbforum.nz/support/>Support</a>
 
 	To contribute to development or help in any way use the contacts on the site above.
 	
@@ -25,5 +24,5 @@
 	Perl coding, style sheets & ideas people, 
 	all working to bring this fantastic software to perfection.
 
-	https://perlhost.nz offers hassle free hosting for YaBBForum, can be preinstalled for you.
+	<a href=https://perlhost.nz/>Perlhost</a> offers hassle free hosting for YaBBForum, can be preinstalled for you.
 

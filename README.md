@@ -1,5 +1,8 @@
 This is version 3.2, if you want any previous versions or a zip of this release go to <a href="https://yabb.nz/archive/">YaBBForum Archive</a>
 
+Log in to the <a href="https://yabbforum.nz/demo/">Demo</a> to see the admin section
+
+
 The original Forum software most other message boards are based on!
 
 YaBB (Yet Another Bulletin Board) first came on the scene in 2000, 

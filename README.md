@@ -1,3 +1,5 @@
+[![YaBBForum status](https://ujwq2736xtoa.montastic.io/badge)](https://ujwq2736xtoa.montastic.io?utm_source=badge&utm_medium=markdown)
+
 This is version 3.2, if you want any previous versions or a zip of this release go to <a href="https://yabb.nz/archive/">YaBBForum Archive</a>
 
 Log in to the <a href="https://yabbforum.nz/demo/">Demo</a> to see the admin section

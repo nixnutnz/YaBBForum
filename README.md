@@ -5,10 +5,14 @@
 
 This is version 3.2, if you want any previous versions or a zip of this release go to <a href="https://yabb.nz/archive/">YaBBForum Archive</a>
 
-Log in to the <a href="https://yabbforum.nz/demo/">Demo</a> to see the admin section
+3.3 is now available from <a href="https://yabbforum.nz/support/index.pl?num=1791010624/0#0">here</a>
+
+Log in to the <a href="https://yabbforum.nz/demo/">Demo v3.4</a> to see the admin area
 
 
 The original Forum software most other message boards are based on!
+
+YaBB is legendary in the forum world—it basically helped pave the way for modern forum software. It represents exactly what makes forums great: dedicated, open-source communities that have survived decades of internet shifts because real humans wanted a space to connect and build things together.
 
 YaBB (Yet Another Bulletin Board) first came on the scene in 2000, 
 when teenager Zef Hemel and a team of collaborators released YaBB 1.0  

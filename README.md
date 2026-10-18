@@ -3,9 +3,9 @@
 [![YaBBForum status](https://ujwq2736xtoa.montastic.io/badge)](https://ujwq2736xtoa.montastic.io?utm_source=badge&utm_medium=markdown)
 
 
-Version 3.3 is now available from <a href="https://yabbforum.nz/support/index.pl?num=1791010624/0#0">here</a>
+Version 3.3 is now available from <a href="https://yabb.forum/support/index.pl?num=1791010624/0#0">here</a>
 
-Log in to the <a href="https://yabbforum.nz/demo/">Demo v3.4</a> to see the admin area
+Log in to the <a href="https://yabb.forum/demo/">Demo v3.4</a> to see the admin area
 
 If you want any previous versions go to <a href="https://yabb.nz/archive/">YaBBForum Archive</a>
 
@@ -24,7 +24,7 @@ Currently over 50,000 web communities using YaBB worldwide,
 and Millions of registered users throughout these forums!
 
 
-For help go to <a href="https://yabbforum.nz/support/">Support</a>
+For help go to <a href="https://yabb.forum/support/">Support</a>
 
 To contribute to development or help in any way use the contacts on the site above.
 

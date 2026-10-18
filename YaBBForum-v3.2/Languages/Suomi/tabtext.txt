@@ -1,3 +1,0 @@
-credits	Credits
-
-donate	Donate

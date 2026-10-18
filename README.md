@@ -3,12 +3,11 @@
 [![YaBBForum status](https://ujwq2736xtoa.montastic.io/badge)](https://ujwq2736xtoa.montastic.io?utm_source=badge&utm_medium=markdown)
 
 
-This is version 3.2, if you want any previous versions or a zip of this release go to <a href="https://yabb.nz/archive/">YaBBForum Archive</a>
-
 3.3 is now available from <a href="https://yabbforum.nz/support/index.pl?num=1791010624/0#0">here</a>
 
 Log in to the <a href="https://yabbforum.nz/demo/">Demo v3.4</a> to see the admin area
 
+If you want any previous versions go to <a href="https://yabb.nz/archive/">YaBBForum Archive</a>
 
 The original Forum software most other message boards are based on!
 

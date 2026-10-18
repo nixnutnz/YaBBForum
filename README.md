@@ -3,7 +3,7 @@
 [![YaBBForum status](https://ujwq2736xtoa.montastic.io/badge)](https://ujwq2736xtoa.montastic.io?utm_source=badge&utm_medium=markdown)
 
 
-3.3 is now available from <a href="https://yabbforum.nz/support/index.pl?num=1791010624/0#0">here</a>
+Version 3.3 is now available from <a href="https://yabbforum.nz/support/index.pl?num=1791010624/0#0">here</a>
 
 Log in to the <a href="https://yabbforum.nz/demo/">Demo v3.4</a> to see the admin area
 
